@@ -1,0 +1,355 @@
+/* =========================================================================
+   rio-quant-design トークン
+   出典: Copy of Design System（tokens/colors.css, typography.css, spacing.css, fonts.css）
+   このサイト単体で完結させるため、外部フォルダを参照せず値をそのまま埋め込む。
+   ========================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root{
+  --font-sans:'Noto Sans JP',-apple-system,'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;
+  --font-mono:'JetBrains Mono','SFMono-Regular',Consolas,monospace;
+
+  --navy-950:#070b14;--navy-900:#0b1220;--navy-800:#111a2e;--navy-700:#1a2540;--navy-600:#26365a;
+  --gray-50:#f7f8fa;--gray-100:#eef0f4;--gray-200:#dfe3ea;--gray-300:#c5cbd6;--gray-400:#9aa3b5;--gray-500:#6b7488;--gray-600:#4d5568;--gray-700:#363d4d;--gray-800:#232838;--gray-900:#141824;
+  --white:#ffffff;
+  --green-500:#1a9e5c;--green-600:#157d49;--green-100:#e3f6ec;
+  --red-500:#d64545;--red-600:#b83535;--red-100:#fbe9e9;
+  --amber-500:#d99a2b;--amber-600:#b87e1c;--amber-100:#fbf1de;
+  --blue-500:#2f6fed;--blue-600:#2456c2;--blue-100:#e8f0fe;
+
+  --surface-page:var(--gray-50);
+  --surface-card:var(--white);
+  --surface-header:var(--navy-900);
+  --surface-header-alt:var(--navy-800);
+  --surface-sunken:var(--gray-100);
+  --surface-inverse:var(--navy-900);
+
+  --text-primary:var(--navy-950);
+  --text-secondary:var(--gray-600);
+  --text-tertiary:var(--gray-500);
+  --text-inverse:var(--white);
+  --text-inverse-secondary:var(--gray-300);
+
+  --border-subtle:var(--gray-200);
+  --border-strong:var(--gray-300);
+  --border-inverse:var(--navy-600);
+
+  --positive:var(--green-500);
+  --positive-bg:var(--green-100);
+  --negative:var(--red-500);
+  --negative-bg:var(--red-100);
+  --caution:var(--amber-500);
+  --caution-bg:var(--amber-100);
+  --accent:var(--blue-500);
+  --accent-bg:var(--blue-100);
+
+  --score-strong:var(--green-500);
+  --score-mid:var(--amber-500);
+  --score-weak:var(--red-500);
+
+  /* サイト独自：株価の増減は日本の株式慣習（赤=上昇／青=下落）に合わせるためのエイリアス。
+     スコアの強弱バンドやBadgeの強気/弱気トーンは上の --positive / --negative（緑/赤）のまま使う。 */
+  --up:var(--red-500);
+  --up-bg:var(--red-100);
+  --down:var(--blue-500);
+  --down-bg:var(--blue-100);
+
+  --text-display:700 34px/1.2 var(--font-sans);
+  --text-h1:700 26px/1.3 var(--font-sans);
+  --text-h2:700 20px/1.35 var(--font-sans);
+  --text-h3:600 16px/1.4 var(--font-sans);
+  --text-label:600 12px/1.3 var(--font-sans);
+  --text-body:400 14px/1.6 var(--font-sans);
+  --text-body-sm:400 13px/1.5 var(--font-sans);
+  --text-caption:400 12px/1.4 var(--font-sans);
+  --num-xl:700 40px/1 var(--font-mono);
+  --num-lg:700 24px/1.1 var(--font-mono);
+  --num-md:600 16px/1.2 var(--font-mono);
+  --num-sm:500 13px/1.2 var(--font-mono);
+  --letter-label:0.06em;
+
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-7:32px;--sp-8:40px;--sp-9:56px;
+  --radius-sm:4px;--radius-md:8px;--radius-lg:12px;
+  --shadow-card:0 1px 2px rgba(15,23,42,0.06),0 1px 8px rgba(15,23,42,0.05);
+  --shadow-elevated:0 4px 16px rgba(15,23,42,0.10),0 2px 4px rgba(15,23,42,0.06);
+}
+
+/* =========================================================================
+   基本
+   ========================================================================= */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-sans);color:var(--text-primary);background:var(--surface-page);line-height:1.7}
+.container{width:min(1180px,92%);margin:auto}
+a{color:inherit}
+
+/* =========================================================================
+   ヘッダー（NavHeader）
+   ========================================================================= */
+.topbar{background:var(--surface-header);position:sticky;top:0;z-index:20}
+.nav{height:64px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;flex-direction:column;line-height:1.15;margin-right:8px;flex-shrink:0;white-space:nowrap;overflow:hidden}
+.logo{font:800 16px/1 var(--font-sans);color:var(--text-inverse);text-decoration:none;white-space:nowrap}
+.logo span{color:var(--accent)}
+.tagline{font:400 11px/1 var(--font-sans);color:var(--text-inverse-secondary);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav nav{display:flex;gap:16px;flex:1;min-width:0;overflow:hidden;white-space:nowrap}
+.nav nav a{color:var(--text-inverse-secondary);text-decoration:none;font:500 13px/1 var(--font-sans);padding-bottom:20px;border-bottom:2px solid transparent;flex-shrink:0}
+.nav nav a:hover{color:var(--text-inverse)}
+.nav nav a.active{color:var(--text-inverse);font-weight:700;border-bottom-color:var(--accent)}
+.nav-search{position:relative;flex-shrink:0}
+.nav-search input{background:var(--navy-800);border:1px solid var(--border-inverse);border-radius:var(--radius-sm);padding:7px 12px;color:var(--text-inverse);font:13px var(--font-sans);width:200px;outline:none}
+.nav-search input::placeholder{color:var(--text-inverse-secondary)}
+.nav-search input:focus{border-color:var(--accent)}
+.nav-search-result{display:none;position:absolute;right:0;top:calc(100% + 8px);width:280px;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);box-shadow:var(--shadow-elevated);padding:14px;font:var(--text-body-sm);color:var(--text-secondary)}
+.nav-search-result.open{display:block}
+
+/* =========================================================================
+   Hero
+   ========================================================================= */
+.hero{background:var(--navy-900);color:var(--text-inverse);padding:64px 0}
+.eyebrow{font:700 11px/1 var(--font-sans);letter-spacing:2px;color:#77a6e8}
+.hero h1{font:var(--text-display);font-size:44px;line-height:1.2;letter-spacing:-1px;margin:14px 0 18px;color:var(--text-inverse)}
+.hero h1 strong{color:var(--text-inverse)}
+.lead{font:var(--text-body);font-size:17px;color:var(--text-inverse-secondary);margin:0}
+.hero-actions{display:flex;gap:12px;margin:26px 0}
+.btn{display:inline-block;border-radius:var(--radius-sm);padding:11px 19px;text-decoration:none;font:700 14px/1 var(--font-sans);border:1px solid transparent;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--white)}
+.btn.primary:hover{background:var(--blue-600)}
+.btn.secondary{border-color:var(--border-inverse);color:var(--text-inverse);background:transparent}
+.disclaimer{font:var(--text-caption);color:var(--text-inverse-secondary);opacity:.8;max-width:640px;margin:0}
+
+/* =========================================================================
+   ティッカー帯
+   ========================================================================= */
+.ticker{background:var(--surface-card);border-bottom:1px solid var(--border-subtle)}
+.ticker-inner{display:flex;gap:32px;align-items:center;height:47px;font:var(--text-body-sm);white-space:nowrap;overflow:hidden}
+.ticker-inner b{font-family:var(--font-mono);color:var(--up)}
+.ticker-label{font:700 11px/1 var(--font-sans);letter-spacing:1px;color:var(--accent)}
+
+/* =========================================================================
+   共通セクション
+   ========================================================================= */
+.section{padding:56px 0}
+.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;gap:16px}
+.section-title .eyebrow{color:var(--accent-bg)}
+.section-title:not(.light) .eyebrow{color:var(--blue-600)}
+.section-title h2{font:var(--text-h1);margin:6px 0 0;color:var(--text-primary)}
+.section-title.light h2{color:var(--text-inverse)}
+.section-title>a{color:var(--accent);text-decoration:none;font:700 13px/1 var(--font-sans)}
+.card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:24px}
+
+/* =========================================================================
+   本日のマーケット指数（IndexCard）
+   ========================================================================= */
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.index-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);box-shadow:var(--shadow-card);padding:16px;display:flex;flex-direction:column;gap:6px}
+.index-card .idx-name{font:var(--text-label);color:var(--text-tertiary);letter-spacing:var(--letter-label);text-transform:uppercase}
+.index-card .idx-value{font:var(--num-lg);color:var(--text-primary)}
+.index-card .idx-change{font:var(--num-sm)}
+.index-card .idx-change.up{color:var(--up)}
+.index-card .idx-change.down{color:var(--down)}
+.section-note{font:var(--text-caption);color:var(--text-tertiary);margin-top:14px}
+
+/* =========================================================================
+   マーケットレジーム／マーケットスコア
+   ========================================================================= */
+.two-col{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}
+.regime-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--positive-bg);font-family:var(--font-sans)}
+.regime-badge .dot{width:10px;height:10px;border-radius:50%;background:var(--green-500);flex-shrink:0}
+.regime-badge span:last-child{font:700 15px/1 var(--font-sans);color:#0f6b3c}
+.score-bar-list{display:flex;flex-direction:column;gap:16px;margin-top:20px}
+.score-bar-row{display:flex;flex-direction:column;gap:6px;width:100%}
+.score-bar-head{display:flex;justify-content:space-between;align-items:center}
+.score-bar-head span{font:var(--text-body-sm);color:var(--text-secondary)}
+.score-bar-head b{font:var(--num-md);color:var(--text-primary)}
+.score-bar-track{height:6px;border-radius:999px;background:var(--gray-200);overflow:hidden}
+.score-bar-fill{height:100%;border-radius:999px}
+.score-bar-fill.strong{background:var(--score-strong)}
+.score-bar-fill.mid{background:var(--score-mid)}
+.score-bar-fill.weak{background:var(--score-weak)}
+
+.score-panel{display:flex;gap:24px;align-items:center}
+.score-gauge{width:160px;height:160px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.score-gauge-inner{width:136px;height:136px;border-radius:50%;background:var(--surface-card);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.score-gauge-inner .val{font:700 42px/1 var(--font-mono);color:var(--text-primary)}
+.score-gauge-inner .max{font:var(--text-caption);color:var(--text-tertiary)}
+.score-gauge-inner .status{font:700 13px/1 var(--font-sans);margin-top:4px;color:var(--score-strong)}
+
+.badge{display:inline-block;padding:3px 10px;border-radius:999px;font:700 11px/1.4 var(--font-sans);letter-spacing:var(--letter-label);text-transform:uppercase}
+.badge.positive{background:var(--positive-bg);color:#0f6b3c}
+.badge.negative{background:var(--negative-bg);color:#943232}
+.badge.caution{background:var(--caution-bg);color:#8a6415}
+.badge.accent{background:var(--accent-bg);color:#1f4bab}
+
+.factor-list{display:flex;flex-direction:column;gap:6px;font:var(--text-body-sm);color:var(--text-secondary);margin:8px 0 0;padding:0}
+.factor-list li{list-style:none;padding-left:16px;position:relative}
+.factor-list li:before{content:'•';position:absolute;left:0}
+.factor-block+.factor-block{margin-top:16px}
+
+/* =========================================================================
+   マーケットの値幅（Breadth）
+   ========================================================================= */
+.breadth-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.breadth-row:last-child{margin-bottom:0}
+.breadth-label{width:190px;flex-shrink:0;font:var(--text-body-sm);color:var(--text-secondary)}
+.breadth-track{flex:1;height:8px;background:var(--gray-200);border-radius:999px;overflow:hidden;display:flex}
+.breadth-track .pos{background:var(--up)}
+.breadth-track .neg{background:var(--down)}
+.breadth-value{font:var(--num-sm);color:var(--text-tertiary);width:90px;text-align:right;flex-shrink:0}
+
+/* =========================================================================
+   セクター別パフォーマンス
+   ========================================================================= */
+.sector-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.sector-tile{border-radius:var(--radius-sm);padding:14px;display:flex;flex-direction:column;gap:6px;min-height:72px;justify-content:space-between}
+.sector-tile .name{font:600 13px/1.3 var(--font-sans)}
+.sector-tile .change{font:var(--num-md)}
+
+/* =========================================================================
+   注目のクオンツ分析（研究記事）
+   ========================================================================= */
+.research-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:18px}
+.research-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:24px;min-height:240px}
+.research-card.featured{background:var(--accent-bg)}
+.research-card .tag{display:inline-block;font:700 10px/1 var(--font-sans);letter-spacing:1px;color:var(--accent);background:var(--white);padding:4px 8px;border-radius:var(--radius-sm)}
+.research-card h3{font:var(--text-h2);line-height:1.4;margin:16px 0 12px;color:var(--text-primary)}
+.research-card p{font:var(--text-body-sm);color:var(--text-secondary)}
+.research-card .meta{font:var(--text-caption);color:var(--text-tertiary);margin-top:20px}
+
+/* =========================================================================
+   ランキング（実データ：data/stocks.json）
+   ========================================================================= */
+.section.dark{background:var(--navy-900);color:var(--text-inverse)}
+.tabs{display:flex;gap:6px}
+.tabs button{background:var(--navy-800);color:var(--text-inverse-secondary);border:1px solid var(--border-inverse);border-radius:var(--radius-sm);padding:7px 12px;cursor:pointer;font:500 13px var(--font-sans)}
+.tabs button.active{background:var(--accent);color:var(--white);border-color:var(--accent)}
+.rank-card{background:var(--navy-800);border:1px solid var(--border-inverse);border-radius:var(--radius-lg);overflow:hidden}
+.table-wrap{overflow:auto}
+.rank-header,.rank-row{display:grid;grid-template-columns:48px 1.1fr 90px 100px 90px 110px 110px 100px;gap:12px;align-items:center;min-width:920px}
+.rank-header{padding:0 20px 10px;font:var(--text-label);color:var(--text-tertiary);text-transform:uppercase;letter-spacing:var(--letter-label);border-bottom:1px solid var(--border-inverse);padding-top:18px}
+.rank-header span:not(:first-child){text-align:right}
+.rank-row{padding:14px 20px;border-bottom:1px solid var(--navy-700)}
+.rank-row:last-child{border-bottom:none}
+.rank-row .rank-num{font:var(--num-sm);color:var(--text-tertiary);text-align:left}
+.rank-row span:not(.rank-num){font:var(--num-sm);color:var(--text-inverse-secondary);text-align:right}
+.rank-row .name-cell{display:flex;flex-direction:column;text-align:left;gap:2px}
+.rank-row .name-cell .ticker{font:700 15px/1.3 var(--font-sans);color:var(--text-inverse)}
+.rank-row .name-cell .company{font:var(--text-caption);color:var(--text-tertiary)}
+.rank-row span.up{color:var(--up)}
+.rank-row span.down{color:var(--down)}
+.rank-row .quant-score{font:700 15px/1 var(--font-mono);text-align:center;padding:4px 0;border-radius:var(--radius-sm)}
+.rank-row .quant-score.strong{color:var(--score-strong)}
+.rank-row .quant-score.mid{color:var(--score-mid)}
+.rank-row .quant-score.weak{color:var(--score-weak)}
+.table-note{font:var(--text-caption);color:var(--text-tertiary);margin-top:14px}
+
+/* =========================================================================
+   市場シグナル
+   ========================================================================= */
+.signal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.signal{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);box-shadow:var(--shadow-card);padding:20px}
+.signal span:first-child{display:block;font:var(--text-label);color:var(--text-tertiary);text-transform:uppercase;letter-spacing:var(--letter-label)}
+.signal strong{font:var(--text-h2);display:block;margin:8px 0}
+.meter{height:6px;background:var(--gray-200);border-radius:999px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.signal small{font:var(--text-caption);color:var(--text-tertiary)}
+
+/* =========================================================================
+   分析手法
+   ========================================================================= */
+.method{background:var(--surface-sunken)}
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden}
+.method-grid>div{background:var(--surface-sunken);padding:24px}
+.method-grid span{color:var(--accent);font:700 16px/1 var(--font-mono)}
+.method-grid h3{margin:10px 0;font:var(--text-h3)}
+.method-grid p{font:var(--text-body-sm);color:var(--text-secondary)}
+
+/* =========================================================================
+   About
+   ========================================================================= */
+.about{background:var(--surface-card)}
+.about-box{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;border-top:1px solid var(--border-subtle);padding-top:48px}
+.about-box h2{font:var(--text-h1);font-size:30px;line-height:1.35;margin-top:8px;color:var(--text-primary)}
+.about-box p{font:var(--text-body);color:var(--text-secondary)}
+.about-box .small{font:var(--text-caption);color:var(--text-tertiary)}
+
+/* =========================================================================
+   フッター
+   ========================================================================= */
+footer{background:var(--navy-900);color:var(--text-inverse-secondary);padding:36px 0}
+.footer-inner{display:grid;grid-template-columns:1fr auto;gap:24px}
+.footer-inner .logo{color:var(--text-inverse)}
+.footer-inner p{font:var(--text-caption)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{text-decoration:none;color:var(--text-inverse-secondary);font:var(--text-body-sm)}
+.footer-links a:hover{color:var(--text-inverse)}
+.copyright{grid-column:1/-1;border-top:1px solid var(--navy-700);padding-top:16px;font:var(--text-caption)}
+
+/* =========================================================================
+   大川式クオンツ診断レポート（okawa-report.html）
+   ========================================================================= */
+.report-hero{background:var(--navy-900);color:var(--text-inverse);padding:48px 0 40px}
+.report-hero h1{font:var(--text-display);font-size:32px;margin:14px 0 16px;color:var(--text-inverse)}
+.report-hero p{font:var(--text-body);color:var(--text-inverse-secondary);max-width:760px;margin:0 0 10px}
+.report-hero .methodology{background:var(--navy-800);border:1px solid var(--border-inverse);border-radius:var(--radius-md);padding:18px 20px;margin-top:20px;font:var(--text-body-sm);color:var(--text-inverse-secondary);line-height:1.8}
+.report-hero .methodology b{color:var(--text-inverse)}
+.report-hero .source-links{margin-top:10px;font:var(--text-caption);color:var(--text-inverse-secondary)}
+.report-hero .source-links a{color:#77a6e8;text-decoration:none}
+.report-hero .source-links a:hover{text-decoration:underline}
+
+.okawa-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.okawa-filters button{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:999px;padding:8px 16px;font:500 13px var(--font-sans);color:var(--text-secondary);cursor:pointer}
+.okawa-filters button.active{background:var(--navy-900);color:var(--text-inverse);border-color:var(--navy-900)}
+.okawa-count{font:var(--text-caption);color:var(--text-tertiary);margin-bottom:16px}
+
+.okawa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.okawa-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;display:flex;flex-direction:column;gap:14px}
+.okawa-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.okawa-card-head .name-cell{display:flex;flex-direction:column;gap:2px}
+.okawa-card-head .ticker{font:700 17px/1.3 var(--font-sans);color:var(--text-primary)}
+.okawa-card-head .company{font:var(--text-caption);color:var(--text-tertiary)}
+.okawa-card-head .okawa-score{font:700 22px/1 var(--font-mono);flex-shrink:0;text-align:right}
+.okawa-card-head .okawa-score small{display:block;font:var(--text-caption);color:var(--text-tertiary);font-weight:400;margin-top:2px}
+.okawa-score.strong{color:var(--score-strong)}
+.okawa-score.mid{color:var(--score-mid)}
+.okawa-score.weak{color:var(--score-weak)}
+.okawa-score.neutral{color:var(--text-tertiary)}
+
+.okawa-badge{display:inline-block;align-self:flex-start;padding:4px 12px;border-radius:999px;font:700 12px/1.4 var(--font-sans)}
+.okawa-badge.strong{background:var(--positive-bg);color:#0f6b3c}
+.okawa-badge.weak{background:var(--negative-bg);color:#943232}
+.okawa-badge.mid{background:var(--caution-bg);color:#8a6415}
+.okawa-badge.neutral{background:var(--surface-sunken);color:var(--text-secondary)}
+
+.okawa-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 0;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
+.okawa-metric{display:flex;flex-direction:column;gap:4px;text-align:center}
+.okawa-metric .label{font:var(--text-caption);color:var(--text-tertiary)}
+.okawa-metric .value{font:var(--num-md);color:var(--text-primary)}
+
+.okawa-comment{font:var(--text-body-sm);color:var(--text-secondary);line-height:1.8;margin:0}
+
+/* =========================================================================
+   レスポンシブ
+   ========================================================================= */
+@media(max-width:900px){
+  .sector-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:800px){
+  .nav{gap:12px}
+  .nav nav{display:none}
+  .hero h1{font-size:34px}
+  .hero-actions{flex-wrap:wrap}
+  .two-col,.about-box{grid-template-columns:1fr}
+  .research-grid{grid-template-columns:1fr}
+  .signal-grid,.method-grid{grid-template-columns:1fr 1fr}
+  .sector-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:44px 0}
+  .section{padding:40px 0}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-links{flex-wrap:wrap}
+  .copyright{grid-column:auto}
+  .section-title{align-items:start;gap:12px;flex-direction:column}
+  .score-panel{flex-direction:column;align-items:flex-start}
+  .okawa-grid{grid-template-columns:1fr}
+  .okawa-metrics{grid-template-columns:repeat(2,1fr);row-gap:12px}
+}

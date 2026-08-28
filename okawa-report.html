@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="大川式クオンツ診断｜大川智宏氏の考え方（割安×高ROE×増益）を参考にポートフォリオ32銘柄を独自に判定">
+  <title>大川式クオンツ診断 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <a class="logo" href="index.html">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">マーケット</a>
+        <a href="index.html#research">銘柄</a>
+        <a href="okawa-report.html" class="active">クオンツスコア</a>
+        <a href="index.html#sectors">セクター</a>
+        <a href="#" title="準備中">決算</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+      <div class="nav-search">
+        <input id="navSearchInput" placeholder="銘柄を検索：NVDA / AAPL / MSFT" onkeydown="if(event.key==='Enter') doSearch()">
+        <div class="nav-search-result" id="navSearchResult"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-hero">
+      <div class="container">
+        <div class="eyebrow">QUANT DIAGNOSIS</div>
+        <h1>大川式クオンツ診断</h1>
+        <p>保有ポートフォリオ32銘柄を、大川智宏氏（智剣・Oskarグループ代表、野村総研・JPモルガン・クレディスイス出身のクオンツストラテジスト）が公開コメントで述べている考え方を参考に、独自にスコア化・判定しました。</p>
+        <div class="methodology">
+          <b>診断の考え方（大川氏の公開コメントを基にした独自解釈）</b><br>
+          ・安易な低PER・低PBR銘柄は「割安には理由がある」として評価しない<br>
+          ・ただし<b>低PER×増益</b>の組み合わせは例外的に評価される<br>
+          ・<b>ROE10%以上</b>を優良企業の目安とする<br>
+          ・理想形は「<b>低PER×低PBR×高ROE×増益</b>」の組み合わせ＝割安でありながらしっかり稼ぐ力を持つ銘柄<br><br>
+          上記を踏まえ、各銘柄を「安さスコア（PER・PBRのポートフォリオ内順位）」「稼ぐ力スコア（ROEの順位）」「増益確認（利益成長率）」の3軸で採点し、組み合わせから4パターンに判定しています。ETF・コモディティ連動商品は個別企業のファンダメンタルズ分析の対象外としています。
+        </div>
+        <p class="source-links">
+          ※本ページは大川智宏氏ご本人の監修・公式手法ではなく、公開記事を基にrioが独自に数値化したものです。投資助言ではありません。<br>
+          出典: <a href="https://www.nomura.co.jp/wealthstyle/article/0139/" target="_blank" rel="noopener">野村ウェルスタイル「個人投資家にとっての優良株の探し方」</a>、
+          <a href="https://selection.kabutan.jp/%E4%BC%9A%E5%93%A1%E9%99%90%E5%AE%9A%E3%82%B3%E3%83%A9%E3%83%A0/%E6%97%A5%E6%9C%AC%E6%A0%AA%E3%83%BB%E6%95%B0%E5%AD%97%E3%81%A7%E5%BE%B9%E5%BA%95%E8%A8%BA%E6%96%AD%EF%BC%81/" target="_blank" rel="noopener">株探「日本株・数字で徹底診断！」</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="okawaFilters" class="okawa-filters"></div>
+        <p id="okawaCount" class="okawa-count"></p>
+        <div id="okawaGrid" class="okawa-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="index.html#about">運営者情報</a><a href="index.html#method">分析手法</a><a href="#">免責事項</a><a href="#">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="okawa-report.js"></script>
+</body>
+</html>

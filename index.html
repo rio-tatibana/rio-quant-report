@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="rioの勝手にクオンツ分析｜米国個別株をクオンツ・ファンダメンタル・モメンタムの視点から分析する個人投資家向けメディア">
+  <title>rioの勝手にクオンツ分析 | 米国株クオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <a class="logo" href="#">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="#" class="active">ホーム</a>
+        <a href="#market">マーケット</a>
+        <a href="#research">銘柄</a>
+        <a href="okawa-report.html">クオンツスコア</a>
+        <a href="#sectors">セクター</a>
+        <a href="#" title="準備中">決算</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="#about">サイトについて</a>
+      </nav>
+      <div class="nav-search">
+        <input id="navSearchInput" placeholder="銘柄を検索：NVDA / AAPL / MSFT" onkeydown="if(event.key==='Enter') doSearch()">
+        <div class="nav-search-result" id="navSearchResult"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">U.S. EQUITY QUANT RESEARCH</div>
+        <h1>rioの<br><strong>勝手にクオンツ分析</strong></h1>
+        <p class="lead">米国個別株を、数字で見る。<br>企業の強さ・株価の勢い・バリュエーションを独自スコアで整理します。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#rankings">銘柄ランキングを見る</a>
+          <a class="btn secondary" href="#method">分析方法を見る</a>
+        </div>
+        <p class="disclaimer">※本サイトは個人による投資情報・分析サイトです。特定銘柄の売買を推奨するものではありません。</p>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div class="container ticker-inner">
+        <span class="ticker-label">TODAY'S FOCUS</span>
+        <span>NVDA <b>+2.31%</b></span><span>MSFT <b>+1.18%</b></span><span>AMZN <b>+1.76%</b></span><span>GOOGL <b>+0.92%</b></span><span>META <b>+2.08%</b></span>
+      </div>
+    </section>
+
+    <section id="market" class="section">
+      <div class="container">
+        <div class="section-title">
+          <div><span class="eyebrow">TODAY'S MARKET</span><h2>本日のマーケット</h2></div>
+        </div>
+        <div class="index-grid">
+          <div class="index-card"><span class="idx-name">S&amp;P 500</span><span class="idx-value">6,412.83</span><span class="idx-change up">▲ +0.42%</span></div>
+          <div class="index-card"><span class="idx-name">Nasdaq 100</span><span class="idx-value">22,845.10</span><span class="idx-change up">▲ +0.71%</span></div>
+          <div class="index-card"><span class="idx-name">Dow Jones</span><span class="idx-value">41,203.55</span><span class="idx-change down">▼ −0.18%</span></div>
+          <div class="index-card"><span class="idx-name">VIX</span><span class="idx-value">14.32</span><span class="idx-change down">▼ −3.10%</span></div>
+          <div class="index-card"><span class="idx-name">10Y Treasury</span><span class="idx-value">4.28%</span><span class="idx-change up">▲ +0.02%</span></div>
+          <div class="index-card"><span class="idx-name">USD/JPY</span><span class="idx-value">148.62</span><span class="idx-change up">▲ +0.15%</span></div>
+        </div>
+        <p class="section-note">※サンプル表示：実データ連携時に自動更新されます。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2 style="font:var(--text-h2);margin:0 0 16px">マーケットレジーム</h2>
+          <div class="regime-badge"><span class="dot"></span><span>Risk-On</span></div>
+          <div class="score-bar-list">
+            <div class="score-bar-row"><div class="score-bar-head"><span>トレンド</span><b>82</b></div><div class="score-bar-track"><div class="score-bar-fill strong" style="width:82%"></div></div></div>
+            <div class="score-bar-row"><div class="score-bar-head"><span>値幅（Breadth）</span><b>67</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:67%"></div></div></div>
+            <div class="score-bar-row"><div class="score-bar-head"><span>モメンタム</span><b>74</b></div><div class="score-bar-track"><div class="score-bar-fill strong" style="width:74%"></div></div></div>
+            <div class="score-bar-row"><div class="score-bar-head"><span>ボラティリティ</span><b>55</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:55%"></div></div></div>
+            <div class="score-bar-row"><div class="score-bar-head"><span>流動性</span><b>61</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:61%"></div></div></div>
+            <div class="score-bar-row"><div class="score-bar-head"><span>金利</span><b>48</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:48%"></div></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="font:var(--text-h2);margin:0 0 16px">マーケットスコア</h2>
+          <div class="score-panel">
+            <div class="score-gauge" style="background:conic-gradient(var(--score-strong) 280.8deg, var(--gray-200) 280.8deg)">
+              <div class="score-gauge-inner"><span class="val">78</span><span class="max">/ 100</span><span class="status">Bullish</span></div>
+            </div>
+            <div style="flex:1">
+              <div class="factor-block">
+                <span class="badge positive">強気材料</span>
+                <ul class="factor-list">
+                  <li>Nasdaqのトレンドは依然として強い</li>
+                  <li>市場の内部の強さ（Breadth）が改善傾向</li>
+                  <li>決算修正はポジティブ</li>
+                </ul>
+              </div>
+              <div class="factor-block">
+                <span class="badge negative">弱気材料</span>
+                <ul class="factor-list">
+                  <li>VIXが高水準を維持</li>
+                  <li>長期金利の上昇が継続</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <h2 style="font:var(--text-h2);margin:0 0 16px">市場の値幅（Market Breadth）</h2>
+        <div class="breadth-row">
+          <span class="breadth-label">値上がり／値下がり銘柄数</span>
+          <div class="breadth-track"><div class="pos" style="width:62%"></div><div class="neg" style="width:38%"></div></div>
+          <span class="breadth-value">62% / 38%</span>
+        </div>
+        <div class="breadth-row">
+          <span class="breadth-label">新高値／新安値</span>
+          <div class="breadth-track"><div class="pos" style="width:74%"></div><div class="neg" style="width:26%"></div></div>
+          <span class="breadth-value">74% / 26%</span>
+        </div>
+        <div class="breadth-row">
+          <span class="breadth-label">50日移動平均線超え</span>
+          <div class="breadth-track"><div class="pos" style="width:58%"></div><div class="neg" style="width:42%"></div></div>
+          <span class="breadth-value">58% / 42%</span>
+        </div>
+        <div class="breadth-row">
+          <span class="breadth-label">200日移動平均線超え</span>
+          <div class="breadth-track"><div class="pos" style="width:66%"></div><div class="neg" style="width:34%"></div></div>
+          <span class="breadth-value">66% / 34%</span>
+        </div>
+        <p class="section-note">※サンプル表示：実データ連携時に自動更新されます。</p>
+      </div>
+    </section>
+
+    <section id="sectors" class="section">
+      <div class="container">
+        <div class="section-title">
+          <div><span class="eyebrow">SECTOR PERFORMANCE</span><h2>セクター別パフォーマンス</h2></div>
+        </div>
+        <div class="sector-grid">
+          <div class="sector-tile" style="background:rgba(214,69,69,0.48);color:#fff"><span class="name">情報技術</span><span class="change">+1.8%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.24);color:var(--text-primary)"><span class="name">金融</span><span class="change">+0.6%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.20);color:var(--text-primary)"><span class="name">ヘルスケア</span><span class="change">+0.4%</span></div>
+          <div class="sector-tile" style="background:rgba(47,111,237,0.54);color:#fff"><span class="name">エネルギー</span><span class="change">−2.1%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.16);color:var(--text-primary)"><span class="name">資本財</span><span class="change">+0.2%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.34);color:var(--text-primary)"><span class="name">一般消費財</span><span class="change">+1.1%</span></div>
+          <div class="sector-tile" style="background:rgba(47,111,237,0.18);color:var(--text-primary)"><span class="name">生活必需品</span><span class="change">−0.3%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.30);color:var(--text-primary)"><span class="name">コミュニケーション</span><span class="change">+0.9%</span></div>
+          <div class="sector-tile" style="background:rgba(47,111,237,0.22);color:var(--text-primary)"><span class="name">公益事業</span><span class="change">−0.5%</span></div>
+          <div class="sector-tile" style="background:rgba(47,111,237,0.36);color:var(--text-primary)"><span class="name">不動産</span><span class="change">−1.2%</span></div>
+          <div class="sector-tile" style="background:rgba(214,69,69,0.14);color:var(--text-primary)"><span class="name">素材</span><span class="change">+0.1%</span></div>
+        </div>
+        <p class="section-note">※サンプル表示：実データ連携時に自動更新されます。</p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-title">
+          <div><span class="eyebrow">LATEST RESEARCH</span><h2>注目のクオンツ分析</h2></div>
+          <a href="#rankings">すべて見る →</a>
+        </div>
+        <div class="research-grid">
+          <article class="research-card featured">
+            <div class="tag">QUANT SCORE</div>
+            <h3>半導体セクターはまだ買える？<br>利益成長×モメンタムで比較</h3>
+            <p>成長率、ROE、営業利益率、相対強度、バリュエーションを組み合わせて主要銘柄をスコアリング。</p>
+            <div class="meta">2026.08.08　|　読了 6分</div>
+          </article>
+          <article class="research-card">
+            <div class="tag">MOMENTUM</div>
+            <h3>強い株には共通点がある？<br>上昇トレンド銘柄を抽出</h3>
+            <p>52週高値、移動平均、出来高などから株価モメンタムを確認。</p>
+            <div class="meta">2026.08.07　|　読了 5分</div>
+          </article>
+          <article class="research-card">
+            <div class="tag">VALUATION</div>
+            <h3>割安株ランキング<br>PERだけでは見えない割安度</h3>
+            <p>利益成長率とバリュエーションのバランスをチェック。</p>
+            <div class="meta">2026.08.05　|　読了 7分</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rankings" class="section dark">
+      <div class="container">
+        <div class="section-title light">
+          <div><span class="eyebrow">QUANT RANKING</span><h2>米国株 総合スコア</h2></div>
+          <div class="tabs"><button class="active">総合</button><button>成長</button><button>割安</button><button>モメンタム</button></div>
+        </div>
+        <p class="section-note" style="margin:-10px 0 20px"><a href="okawa-report.html" style="color:var(--accent);text-decoration:none;font-weight:700">→ 大川式クオンツ診断（割安×高ROE×増益で32銘柄を判定）を見る</a></p>
+        <div class="rank-card">
+          <div class="table-wrap">
+            <div class="rank-header">
+              <span>#</span><span style="text-align:left">銘柄</span><span>クオンツスコア</span><span>現在価格</span><span>1日リターン</span><span>50日移動平均</span><span>52週高値乖離</span><span>ボラティリティ(20日)</span>
+            </div>
+            <div id="stocks-table-body"><!-- データはJSから挿入されます --></div>
+          </div>
+        </div>
+        <p class="table-note">※データはmoomoo OpenD経由で取得。クオンツスコアは保有銘柄内での相対順位（成長性・収益性・モメンタム・バリュエーションの4ファクター平均、0〜100）です。投資助言ではありません。</p>
+      </div>
+    </section>
+
+    <section id="signals" class="section">
+      <div class="container">
+        <div class="section-title">
+          <div><span class="eyebrow">MARKET SIGNALS</span><h2>市場シグナル</h2></div>
+        </div>
+        <div class="signal-grid">
+          <div class="signal"><span>Market Trend</span><strong>強気</strong><div class="meter"><i style="width:78%"></i></div><small>78 / 100</small></div>
+          <div class="signal"><span>Market Breadth</span><strong>良好</strong><div class="meter"><i style="width:69%"></i></div><small>69 / 100</small></div>
+          <div class="signal"><span>Risk Appetite</span><strong>中立〜強気</strong><div class="meter"><i style="width:63%"></i></div><small>63 / 100</small></div>
+          <div class="signal"><span>Volatility</span><strong>低め</strong><div class="meter"><i style="width:34%"></i></div><small>34 / 100</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div class="container">
+        <div class="section-title">
+          <div><span class="eyebrow">HOW IT WORKS</span><h2>rio式クオンツスコア</h2></div>
+        </div>
+        <div class="method-grid">
+          <div><span>01</span><h3>成長性</h3><p>売上高・EPS成長、将来の利益成長などを評価。</p></div>
+          <div><span>02</span><h3>収益性</h3><p>ROE、営業利益率、FCFなど企業の稼ぐ力を評価。</p></div>
+          <div><span>03</span><h3>モメンタム</h3><p>相対強度、移動平均、52週高値など株価の勢いを評価。</p></div>
+          <div><span>04</span><h3>バリュエーション</h3><p>PER、P/S、FCF利回りなどから価格の妥当性を評価。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-box">
+        <div><span class="eyebrow">ABOUT</span><h2>「勝手に」だから、<br>数字で淡々と。</h2></div>
+        <div><p>「rioの勝手にクオンツ分析」は、米国個別株を中心に、ファンダメンタルズと株価データを組み合わせて分析する個人メディアです。</p><p>ニュースの印象だけではなく、「数字で見るとどうなのか？」をできるだけシンプルに整理します。</p><p class="small">投資判断はご自身でお願いします。本サイトの情報は投資助言ではありません。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="#about">運営者情報</a><a href="#method">分析手法</a><a href="#">免責事項</a><a href="#">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
