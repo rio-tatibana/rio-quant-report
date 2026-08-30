@@ -16,6 +16,25 @@ document.addEventListener('click', (e) => {
   if (wrap && !wrap.contains(e.target)) result.classList.remove('open');
 });
 
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.querySelector('.nav nav');
+if (navToggle && navLinks) {
+  const closeNav = () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinks.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeNav));
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav')) closeNav();
+  });
+}
+
 let stockData = {};
 
 function scoreBand(score) {

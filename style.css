@@ -87,7 +87,7 @@ a{color:inherit}
    ヘッダー（NavHeader）
    ========================================================================= */
 .topbar{background:var(--surface-header);position:sticky;top:0;z-index:20}
-.nav{height:64px;display:flex;align-items:center;gap:24px}
+.nav{height:64px;display:flex;align-items:center;gap:24px;position:relative}
 .brand{display:flex;flex-direction:column;line-height:1.15;margin-right:8px;flex-shrink:0;white-space:nowrap;overflow:hidden}
 .logo{font:800 16px/1 var(--font-sans);color:var(--text-inverse);text-decoration:none;white-space:nowrap}
 .logo span{color:var(--accent)}
@@ -102,6 +102,11 @@ a{color:inherit}
 .nav-search input:focus{border-color:var(--accent)}
 .nav-search-result{display:none;position:absolute;right:0;top:calc(100% + 8px);width:280px;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);box-shadow:var(--shadow-elevated);padding:14px;font:var(--text-body-sm);color:var(--text-secondary)}
 .nav-search-result.open{display:block}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0}
+.nav-toggle span{display:block;width:100%;height:2px;background:var(--text-inverse);transition:transform .2s,opacity .2s}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* =========================================================================
    Hero
@@ -378,7 +383,13 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
 }
 @media(max-width:800px){
   .nav{gap:12px}
-  .nav nav{display:none}
+  .nav-toggle{display:flex}
+  .tagline{display:none}
+  .nav-search input{width:130px}
+  .nav nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy-900);border-top:1px solid var(--navy-700);box-shadow:var(--shadow-elevated);padding:8px 20px;overflow:visible;white-space:normal;z-index:30}
+  .nav nav.open{display:flex}
+  .nav nav a{padding:14px 0;border-bottom:1px solid var(--navy-700)}
+  .nav nav a:last-child{border-bottom:none}
   .hero h1{font-size:34px}
   .hero-actions{flex-wrap:wrap}
   .two-col,.about-box{grid-template-columns:1fr}
