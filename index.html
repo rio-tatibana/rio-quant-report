@@ -70,40 +70,13 @@
       <div class="container two-col">
         <div class="card">
           <h2 style="font:var(--text-h2);margin:0 0 16px">マーケットレジーム</h2>
-          <div class="regime-badge"><span class="dot"></span><span>Risk-On</span></div>
-          <div class="score-bar-list">
-            <div class="score-bar-row"><div class="score-bar-head"><span>トレンド</span><b>82</b></div><div class="score-bar-track"><div class="score-bar-fill strong" style="width:82%"></div></div></div>
-            <div class="score-bar-row"><div class="score-bar-head"><span>値幅（Breadth）</span><b>67</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:67%"></div></div></div>
-            <div class="score-bar-row"><div class="score-bar-head"><span>モメンタム</span><b>74</b></div><div class="score-bar-track"><div class="score-bar-fill strong" style="width:74%"></div></div></div>
-            <div class="score-bar-row"><div class="score-bar-head"><span>ボラティリティ</span><b>55</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:55%"></div></div></div>
-            <div class="score-bar-row"><div class="score-bar-head"><span>流動性</span><b>61</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:61%"></div></div></div>
-            <div class="score-bar-row"><div class="score-bar-head"><span>金利</span><b>48</b></div><div class="score-bar-track"><div class="score-bar-fill mid" style="width:48%"></div></div></div>
-          </div>
+          <div id="regimeBadge"></div>
+          <div class="score-bar-list" id="regimeFactors"><!-- データはJSから挿入されます --></div>
         </div>
         <div class="card">
           <h2 style="font:var(--text-h2);margin:0 0 16px">マーケットスコア</h2>
-          <div class="score-panel">
-            <div class="score-gauge" style="background:conic-gradient(var(--score-strong) 280.8deg, var(--gray-200) 280.8deg)">
-              <div class="score-gauge-inner"><span class="val">78</span><span class="max">/ 100</span><span class="status">Bullish</span></div>
-            </div>
-            <div style="flex:1">
-              <div class="factor-block">
-                <span class="badge positive">強気材料</span>
-                <ul class="factor-list">
-                  <li>Nasdaqのトレンドは依然として強い</li>
-                  <li>市場の内部の強さ（Breadth）が改善傾向</li>
-                  <li>決算修正はポジティブ</li>
-                </ul>
-              </div>
-              <div class="factor-block">
-                <span class="badge negative">弱気材料</span>
-                <ul class="factor-list">
-                  <li>VIXが高水準を維持</li>
-                  <li>長期金利の上昇が継続</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <div class="score-panel" id="regimeScore"><!-- データはJSから挿入されます --></div>
+          <p class="section-note" id="regimeNote" style="margin-top:16px">出典：Yahoo Finance</p>
         </div>
       </div>
     </section>

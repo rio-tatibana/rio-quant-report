@@ -1,0 +1,96 @@
+{
+  "total_score": 66.8,
+  "regime": "Risk-On",
+  "regime_ja": "リスクオン",
+  "factors": [
+    {
+      "key": "trend",
+      "label": "トレンド",
+      "score": 76.1,
+      "band": "strong",
+      "note": "S&P500の50日・200日移動平均からの乖離",
+      "detail": {
+        "ma50_dev_pct": 2.03,
+        "ma200_dev_pct": 8.4
+      }
+    },
+    {
+      "key": "breadth",
+      "label": "市場の広がり（騰落レシオ）",
+      "score": 64.6,
+      "band": "mid",
+      "note": "S&P500全構成銘柄の25日騰落レシオ",
+      "detail": {
+        "ad_ratio": 108.8,
+        "universe": 503,
+        "advances": 6527,
+        "declines": 6001
+      }
+    },
+    {
+      "key": "rotation",
+      "label": "循環物色",
+      "score": 75.2,
+      "band": "strong",
+      "note": "景気敏感セクターとディフェンシブセクターの騰落率の差",
+      "detail": {
+        "spread_1m_pt": 6.65,
+        "spread_3m_pt": 1.4,
+        "top": [
+          {
+            "label": "情報技術",
+            "return_1m_pct": 11.48
+          },
+          {
+            "label": "エネルギー",
+            "return_1m_pct": 6.87
+          },
+          {
+            "label": "一般消費財",
+            "return_1m_pct": 5.02
+          }
+        ],
+        "bottom": [
+          {
+            "label": "生活必需品",
+            "return_1m_pct": -2.19
+          },
+          {
+            "label": "不動産",
+            "return_1m_pct": -3.22
+          },
+          {
+            "label": "公益事業",
+            "return_1m_pct": -4.85
+          }
+        ]
+      }
+    },
+    {
+      "key": "volatility",
+      "label": "ボラティリティ",
+      "score": 51.7,
+      "band": "mid",
+      "note": "VIXの過去1年レンジ内での位置（落ち着きすぎも減点）",
+      "detail": {
+        "vix": 14.43,
+        "percentile_1y": 2.8,
+        "complacency": true
+      }
+    },
+    {
+      "key": "rates",
+      "label": "金利（イールドカーブ）",
+      "score": 66.3,
+      "band": "mid",
+      "note": "10年債利回り - 3ヶ月債利回り",
+      "detail": {
+        "yield_10y": 4.72,
+        "yield_3m": 3.73,
+        "spread": 0.99
+      }
+    }
+  ],
+  "source_name": "Yahoo Finance",
+  "generated_at": "2026-08-31T00:40:55+09:00"
+}

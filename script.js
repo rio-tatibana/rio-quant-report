@@ -234,6 +234,108 @@ async function loadMarketIndices() {
 
 document.addEventListener('DOMContentLoaded', loadMarketIndices);
 
+// ===== マーケットレジーム／マーケットスコア =====
+
+// レジーム(Risk-On / Neutral / Risk-Off)に応じたバッジの配色
+const REGIME_STYLE = {
+  'Risk-On': { bg: 'var(--positive-bg)', dot: 'var(--green-500)', text: '#0f6b3c' },
+  Neutral: { bg: 'var(--amber-100)', dot: 'var(--amber-500)', text: '#8a5a00' },
+  'Risk-Off': { bg: 'var(--negative-bg)', dot: 'var(--red-500)', text: '#a52121' },
+};
+
+// detailの数値を「10年債4.72% − 3ヶ月債3.73% ＝ +0.99%」のような補足文にする
+function regimeDetailText(f) {
+  const d = f.detail || {};
+  const pct = (v) => `${v >= 0 ? '+' : ''}${v}%`;
+  const pt = (v) => `${v >= 0 ? '+' : ''}${v}pt`;
+
+  if (f.key === 'trend') return `50日線 ${pct(d.ma50_dev_pct)}／200日線 ${pct(d.ma200_dev_pct)}`;
+
+  if (f.key === 'breadth') {
+    let s = `騰落レシオ ${d.ad_ratio}%（S&P500 ${d.universe}銘柄の25日集計）`;
+    if (d.overbought) s += '　※120%超は買われすぎのサイン';
+    if (d.oversold) s += '　※70%未満は売られすぎのサイン';
+    return s;
+  }
+
+  if (f.key === 'rotation') {
+    const top = (d.top || []).map((s) => `${s.label} ${pct(s.return_1m_pct)}`).join('、');
+    return `景気敏感−ディフェンシブ 1ヶ月 ${pt(d.spread_1m_pt)}／3ヶ月 ${pt(d.spread_3m_pt)}　上位：${top}`;
+  }
+
+  if (f.key === 'volatility') {
+    let s = `VIX ${d.vix}（過去1年で下位${d.percentile_1y}%）`;
+    if (d.complacency) s += '　※低すぎるVIXは楽観の行き過ぎのサイン';
+    return s;
+  }
+
+  if (f.key === 'rates') return `10年債 ${d.yield_10y}% − 3ヶ月債 ${d.yield_3m}% ＝ ${pct(d.spread)}`;
+  return '';
+}
+
+function renderMarketRegime(data) {
+  const badge = document.getElementById('regimeBadge');
+  const factors = document.getElementById('regimeFactors');
+  const scorePanel = document.getElementById('regimeScore');
+  const note = document.getElementById('regimeNote');
+  if (!badge || !factors || !scorePanel) return;
+
+  const st = REGIME_STYLE[data.regime] || REGIME_STYLE.Neutral;
+  badge.innerHTML = `
+    <div class="regime-badge" style="background:${st.bg}">
+      <span class="dot" style="background:${st.dot}"></span>
+      <span style="color:${st.text}">${data.regime}（${data.regime_ja}）</span>
+    </div>
+  `;
+
+  factors.innerHTML = data.factors.map((f) => `
+    <div class="score-bar-row">
+      <div class="score-bar-head"><span>${f.label}</span><b>${f.score}</b></div>
+      <div class="score-bar-track"><div class="score-bar-fill ${f.band}" style="width:${f.score}%"></div></div>
+      <small style="display:block;margin-top:4px;color:var(--text-tertiary)">${regimeDetailText(f)}</small>
+    </div>
+  `).join('');
+
+  const deg = (data.total_score / 100) * 360;
+  const gaugeColor = data.total_score >= 70 ? 'var(--score-strong)' : data.total_score >= 40 ? 'var(--score-mid)' : 'var(--score-weak)';
+  scorePanel.innerHTML = `
+    <div class="score-gauge" style="background:conic-gradient(${gaugeColor} ${deg}deg, var(--gray-200) ${deg}deg)">
+      <div class="score-gauge-inner">
+        <span class="val">${data.total_score}</span>
+        <span class="max">/ 100</span>
+        <span class="status" style="color:${gaugeColor}">${data.regime}</span>
+      </div>
+    </div>
+    <div style="flex:1">
+      <p style="margin:0 0 12px;color:var(--text-secondary)">下記${data.factors.length}項目のスコア（各0〜100）を平均した総合点です。60以上でリスクオン、40未満でリスクオフと判定しています。</p>
+      <ul class="factor-list">
+        ${data.factors.map((f) => `<li>${f.label}：${f.score}（${f.note}）</li>`).join('')}
+      </ul>
+    </div>
+  `;
+
+  if (note) {
+    const d = new Date(data.generated_at);
+    const asOf = isNaN(d) ? '' : `　${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日時点`;
+    note.textContent = `出典：${data.source_name}${asOf}　※スコアへの換算方法は当サイト独自の目安であり、投資助言ではありません。CNN Fear & Greed Index とは算出方法が異なるため、数値は一致しません。`;
+  }
+}
+
+async function loadMarketRegime() {
+  const factors = document.getElementById('regimeFactors');
+  if (!factors) return; // マーケットレジーム欄が無いページでは何もしない
+  try {
+    const res = await fetch('data/market_regime.json');
+    if (!res.ok) throw new Error('Network response was not ok');
+    renderMarketRegime(await res.json());
+  } catch (err) {
+    console.error('Error loading market regime data:', err);
+    factors.innerHTML = '<p style="padding:20px;color:var(--text-tertiary)">マーケットレジームのデータを読み込めませんでした。</p>';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadMarketRegime);
+
 document.addEventListener('DOMContentLoaded', async () => {
   if (!document.getElementById('stocks-table-body')) return; // ランキング表が無いページ(okawa-report.html等)では何もしない
 
