@@ -1,5 +1,5 @@
 {
-  "total_score": 66.8,
+  "total_score": 65.7,
   "regime": "Risk-On",
   "regime_ja": "リスクオン",
   "factors": [
@@ -15,16 +15,30 @@
       }
     },
     {
+      "key": "volume_trend",
+      "label": "出来高を伴ったトレンド",
+      "score": 68.0,
+      "band": "mid",
+      "note": "S&P500の25日「出来高加重の日次騰落率」",
+      "detail": {
+        "window_days": 25,
+        "weighted_return_pct": 0.192,
+        "simple_return_pct": 0.173,
+        "up_volume_share_pct": 57.1,
+        "volume_backed": true
+      }
+    },
+    {
       "key": "breadth",
       "label": "市場の広がり（騰落レシオ）",
-      "score": 64.6,
+      "score": 57.1,
       "band": "mid",
       "note": "S&P500全構成銘柄の25日騰落レシオ",
       "detail": {
-        "ad_ratio": 108.8,
+        "ad_ratio": 104.3,
         "universe": 503,
-        "advances": 6527,
-        "declines": 6001
+        "advances": 6394,
+        "declines": 6133
       }
     },
     {
@@ -91,6 +105,123 @@
       }
     }
   ],
+  "trend_rows": [
+    {
+      "label": "出来高を伴った上昇／下落（25日）",
+      "pos_pct": 57.1,
+      "value": "57% / 43%"
+    },
+    {
+      "label": "値上がり／値下がり銘柄数（前日比）",
+      "pos_pct": 45.8,
+      "value": "46% / 54%"
+    },
+    {
+      "label": "50日移動平均線超え",
+      "pos_pct": 52.9,
+      "value": "53% / 47%"
+    },
+    {
+      "label": "200日移動平均線超え",
+      "pos_pct": 68.7,
+      "value": "69% / 31%"
+    },
+    {
+      "label": "52週高値／安値更新",
+      "pos_pct": 75.0,
+      "value": "6銘柄 / 2銘柄"
+    }
+  ],
+  "sectors": [
+    {
+      "symbol": "XLC",
+      "label": "コミュニケーション",
+      "change_1d_pct": 1.42,
+      "change_1m_pct": 3.18
+    },
+    {
+      "symbol": "XLY",
+      "label": "一般消費財",
+      "change_1d_pct": 1.15,
+      "change_1m_pct": 5.02
+    },
+    {
+      "symbol": "XLE",
+      "label": "エネルギー",
+      "change_1d_pct": 0.63,
+      "change_1m_pct": 6.87
+    },
+    {
+      "symbol": "XLP",
+      "label": "生活必需品",
+      "change_1d_pct": 0.43,
+      "change_1m_pct": -2.19
+    },
+    {
+      "symbol": "XLF",
+      "label": "金融",
+      "change_1d_pct": 0.38,
+      "change_1m_pct": 2.51
+    },
+    {
+      "symbol": "XLB",
+      "label": "素材",
+      "change_1d_pct": -0.09,
+      "change_1m_pct": 2.78
+    },
+    {
+      "symbol": "XLV",
+      "label": "ヘルスケア",
+      "change_1d_pct": -0.24,
+      "change_1m_pct": 2.96
+    },
+    {
+      "symbol": "XLRE",
+      "label": "不動産",
+      "change_1d_pct": -0.4,
+      "change_1m_pct": -3.22
+    },
+    {
+      "symbol": "XLI",
+      "label": "資本財",
+      "change_1d_pct": -0.93,
+      "change_1m_pct": 0.27
+    },
+    {
+      "symbol": "XLU",
+      "label": "公益事業",
+      "change_1d_pct": -1.04,
+      "change_1m_pct": -4.85
+    },
+    {
+      "symbol": "XLK",
+      "label": "情報技術",
+      "change_1d_pct": -1.55,
+      "change_1m_pct": 11.48
+    }
+  ],
+  "focus": [
+    {
+      "symbol": "WDAY",
+      "change_pct": 5.76
+    },
+    {
+      "symbol": "DPZ",
+      "change_pct": 5.4
+    },
+    {
+      "symbol": "LULU",
+      "change_pct": 5.05
+    },
+    {
+      "symbol": "NOW",
+      "change_pct": 4.54
+    },
+    {
+      "symbol": "SLB",
+      "change_pct": 4.22
+    }
+  ],
   "source_name": "Yahoo Finance",
-  "generated_at": "2026-08-31T00:40:55+09:00"
+  "generated_at": "2026-08-31T02:09:28+09:00"
 }

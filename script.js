@@ -236,12 +236,36 @@ document.addEventListener('DOMContentLoaded', loadMarketIndices);
 
 // ===== マーケットレジーム／マーケットスコア =====
 
-// レジーム(Risk-On / Neutral / Risk-Off)に応じたバッジの配色
-const REGIME_STYLE = {
-  'Risk-On': { bg: 'var(--positive-bg)', dot: 'var(--green-500)', text: '#0f6b3c' },
-  Neutral: { bg: 'var(--amber-100)', dot: 'var(--amber-500)', text: '#8a5a00' },
-  'Risk-Off': { bg: 'var(--negative-bg)', dot: 'var(--red-500)', text: '#a52121' },
-};
+// 総合スコアに応じた配色。0=赤 / 50=黄（アンバー） / 100=緑 の3点を基準に、
+// 途中のスコアは色をなめらかにつないで決める。
+// HSL＝色相(h)・彩度(s)・明度(l)で色を表す方式で、この3つを別々に補間すると
+// 「赤→橙→黄→黄緑→緑」と自然に変化する（RGBで補間すると途中が濁ってしまう）。
+// 3点の値は、サイトの配色 --red-500 / --amber-500 / --green-500 をHSLに直したもの。
+const SCORE_COLOR_STOPS = [
+  { at: 0, h: 0, s: 64, l: 55 },     // --red-500   #d64545
+  { at: 50, h: 38, s: 70, l: 51 },   // --amber-500 #d99a2b
+  { at: 70, h: 75, s: 55, l: 42 },   // 黄緑。ここだけ彩度を落として原色っぽさを抑える
+  { at: 100, h: 150, s: 72, l: 36 }, // --green-500 #1a9e5c
+];
+
+function scoreColor(score) {
+  const v = Math.max(0, Math.min(100, Number(score) || 0));
+  const stops = SCORE_COLOR_STOPS;
+  // スコアが入る区間を探し、その両端の色を混ぜる
+  let i = 0;
+  while (i < stops.length - 2 && v > stops[i + 1].at) i += 1;
+  const a = stops[i];
+  const b = stops[i + 1];
+  const t = (v - a.at) / (b.at - a.at);
+  const h = Math.round(a.h + (b.h - a.h) * t);
+  const s = Math.round(a.s + (b.s - a.s) * t);
+  const l = Math.round(a.l + (b.l - a.l) * t);
+  return {
+    main: `hsl(${h},${s}%,${l}%)`,               // 点・ゲージの輪の色
+    bg: `hsl(${h},${Math.round(s * 0.72)}%,93%)`, // バッジの背景（薄い色）
+    text: `hsl(${h},${s}%,30%)`,                  // 文字の色（濃い色）
+  };
+}
 
 // detailの数値を「10年債4.72% − 3ヶ月債3.73% ＝ +0.99%」のような補足文にする
 function regimeDetailText(f) {
@@ -250,6 +274,12 @@ function regimeDetailText(f) {
   const pt = (v) => `${v >= 0 ? '+' : ''}${v}pt`;
 
   if (f.key === 'trend') return `50日線 ${pct(d.ma50_dev_pct)}／200日線 ${pct(d.ma200_dev_pct)}`;
+
+  if (f.key === 'volume_trend') {
+    // 加重値が単純平均より高い＝上昇した日のほうに出来高が寄っている、という読み方
+    const backed = d.volume_backed ? '上昇日に出来高が集まっている' : '下落日に出来高が集まっている';
+    return `出来高加重の${d.window_days}日騰落率 ${pct(d.weighted_return_pct)}／単純平均 ${pct(d.simple_return_pct)}　※${backed}`;
+  }
 
   if (f.key === 'breadth') {
     let s = `騰落レシオ ${d.ad_ratio}%（S&P500 ${d.universe}銘柄の25日集計）`;
@@ -280,10 +310,11 @@ function renderMarketRegime(data) {
   const note = document.getElementById('regimeNote');
   if (!badge || !factors || !scorePanel) return;
 
-  const st = REGIME_STYLE[data.regime] || REGIME_STYLE.Neutral;
+  // バッジも下のゲージも、同じ総合スコアから作った同じ色を使う
+  const st = scoreColor(data.total_score);
   badge.innerHTML = `
     <div class="regime-badge" style="background:${st.bg}">
-      <span class="dot" style="background:${st.dot}"></span>
+      <span class="dot" style="background:${st.main}"></span>
       <span style="color:${st.text}">${data.regime}（${data.regime_ja}）</span>
     </div>
   `;
@@ -297,13 +328,12 @@ function renderMarketRegime(data) {
   `).join('');
 
   const deg = (data.total_score / 100) * 360;
-  const gaugeColor = data.total_score >= 70 ? 'var(--score-strong)' : data.total_score >= 40 ? 'var(--score-mid)' : 'var(--score-weak)';
   scorePanel.innerHTML = `
-    <div class="score-gauge" style="background:conic-gradient(${gaugeColor} ${deg}deg, var(--gray-200) ${deg}deg)">
+    <div class="score-gauge" style="background:conic-gradient(${st.main} ${deg}deg, var(--gray-200) ${deg}deg)">
       <div class="score-gauge-inner">
         <span class="val">${data.total_score}</span>
         <span class="max">/ 100</span>
-        <span class="status" style="color:${gaugeColor}">${data.regime}</span>
+        <span class="status" style="color:${st.text}">${data.regime}</span>
       </div>
     </div>
     <div style="flex:1">
@@ -315,10 +345,107 @@ function renderMarketRegime(data) {
   `;
 
   if (note) {
-    const d = new Date(data.generated_at);
-    const asOf = isNaN(d) ? '' : `　${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日時点`;
-    note.textContent = `出典：${data.source_name}${asOf}　※スコアへの換算方法は当サイト独自の目安であり、投資助言ではありません。CNN Fear & Greed Index とは算出方法が異なるため、数値は一致しません。`;
+    note.textContent = `出典：${data.source_name}${asOfText(data.generated_at)}　※スコアへの換算方法は当サイト独自の目安であり、投資助言ではありません。CNN Fear & Greed Index とは算出方法が異なるため、数値は一致しません。`;
   }
+}
+
+// ===== ページ上部の TODAY'S FOCUS（S&P500の上昇率トップ5） =====
+
+function renderFocus(data) {
+  const box = document.getElementById('tickerFocus');
+  if (!box) return;
+
+  const focus = data.focus || [];
+  if (!focus.length) {
+    box.innerHTML = '';
+    return;
+  }
+
+  box.innerHTML = focus.map((f) => {
+    // 全銘柄が下落した日でも正しく見えるよう、マイナスのときは色を青にする
+    const color = f.change_pct >= 0 ? '' : 'style="color:var(--down)"';
+    const sign = f.change_pct >= 0 ? '+' : '−';
+    return `<span>${f.symbol} <b ${color}>${sign}${Math.abs(f.change_pct).toFixed(2)}%</b></span>`;
+  }).join('');
+}
+
+// ===== 市場のトレンド =====
+
+// 「値上がり54% / 値下がり46%」のような左右2色のバーを並べる
+function renderMarketTrend(data) {
+  const box = document.getElementById('marketTrend');
+  const note = document.getElementById('marketTrendNote');
+  if (!box) return;
+
+  const rows = data.trend_rows || [];
+  if (!rows.length) {
+    box.innerHTML = '<p style="color:var(--text-tertiary)">市場のトレンドのデータを取得できませんでした。</p>';
+    return;
+  }
+
+  box.innerHTML = rows.map((r) => `
+    <div class="breadth-row">
+      <span class="breadth-label">${r.label}</span>
+      <div class="breadth-track">
+        <div class="pos" style="width:${r.pos_pct}%"></div>
+        <div class="neg" style="width:${(100 - r.pos_pct).toFixed(1)}%"></div>
+      </div>
+      <span class="breadth-value">${r.value}</span>
+    </div>
+  `).join('');
+
+  if (note) {
+    const breadth = (data.factors || []).find((f) => f.key === 'breadth');
+    const universe = breadth && breadth.detail ? breadth.detail.universe : null;
+    const target = universe ? `S&P500の全${universe}銘柄` : 'S&P500の構成銘柄';
+    note.textContent = `出典：${data.source_name}${asOfText(data.generated_at)}　※${target}と、S&P500指数の出来高から算出しています。赤が強気側、青が弱気側です。`;
+  }
+}
+
+// ===== セクター別パフォーマンス =====
+
+// 赤＝上昇 / 青＝下落。±2%で最も濃くなるよう透明度を決める
+function sectorTileStyle(v) {
+  const alpha = Math.min(Math.abs(v) / 2, 1) * 0.46 + 0.08;
+  const rgb = v >= 0 ? '214,69,69' : '47,111,237';
+  const color = alpha > 0.4 ? '#fff' : 'var(--text-primary)';
+  return `background:rgba(${rgb},${alpha.toFixed(2)});color:${color}`;
+}
+
+function renderSectors(data) {
+  const grid = document.getElementById('sectorGrid');
+  const note = document.getElementById('sectorNote');
+  if (!grid) return;
+
+  const sectors = data.sectors || [];
+  if (!sectors.length) {
+    grid.innerHTML = '<p style="color:var(--text-tertiary)">セクターのデータを取得できませんでした。</p>';
+    return;
+  }
+
+  // マイナス記号は見やすさのため全角のマイナス（−）にそろえる
+  const fmt = (v, digits) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(digits) + '%';
+
+  grid.innerHTML = sectors.map((s) => {
+    const day = s.change_1d_pct;
+    return `
+      <div class="sector-tile" style="${sectorTileStyle(day == null ? 0 : day)}">
+        <span class="name">${s.label}</span>
+        <span class="change">${day == null ? '—' : fmt(day, 2)}</span>
+        <small style="font:var(--text-body-sm);opacity:.8">1ヶ月 ${fmt(s.change_1m_pct, 1)}</small>
+      </div>
+    `;
+  }).join('');
+
+  if (note) {
+    note.textContent = `出典：${data.source_name}（SPDRセクターETF）${asOfText(data.generated_at)}　※大きい数字が前日比、小さい数字が1ヶ月の騰落率です。`;
+  }
+}
+
+// 「　2026年8月31日時点」のような日付の補足文を作る（取得できないときは空文字）
+function asOfText(generatedAt) {
+  const d = new Date(generatedAt);
+  return isNaN(d) ? '' : `　${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日時点`;
 }
 
 async function loadMarketRegime() {
@@ -327,10 +454,20 @@ async function loadMarketRegime() {
   try {
     const res = await fetch('data/market_regime.json');
     if (!res.ok) throw new Error('Network response was not ok');
-    renderMarketRegime(await res.json());
+    // 1つのJSONで「TODAY'S FOCUS」「マーケットレジーム」「市場のトレンド」
+    // 「セクター別パフォーマンス」の4か所をまかなう
+    const data = await res.json();
+    renderFocus(data);
+    renderMarketRegime(data);
+    renderMarketTrend(data);
+    renderSectors(data);
   } catch (err) {
     console.error('Error loading market regime data:', err);
     factors.innerHTML = '<p style="padding:20px;color:var(--text-tertiary)">マーケットレジームのデータを読み込めませんでした。</p>';
+    const box = document.getElementById('marketTrend');
+    if (box) box.innerHTML = '<p style="color:var(--text-tertiary)">市場のトレンドのデータを読み込めませんでした。</p>';
+    const grid = document.getElementById('sectorGrid');
+    if (grid) grid.innerHTML = '<p style="color:var(--text-tertiary)">セクターのデータを読み込めませんでした。</p>';
   }
 }
 
