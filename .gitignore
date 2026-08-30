@@ -1,1 +1,17 @@
 *.bak
+
+# APIキー・認証情報・秘密情報ファイル
+.env
+.env.*
+*.key
+*.pem
+client_secret.json
+token.json
+config.py
+*secret*
+*credential*
+*password*
+*api_key*
+
+# Pythonが自動生成する一時キャッシュ
+__pycache__/

@@ -241,6 +241,8 @@ def fetch_many_quotes(symbols, rng="1y"):
                     "closes": vals,
                     # Yahooが公表している前日比。取れないときは終値から計算する
                     "change_pct": meta.get("regularMarketChangePercent"),
+                    # 会社名。fetch_minervini_report.py が銘柄カードの表示に使う
+                    "name": meta.get("shortName") or meta.get("longName"),
                 }
     return out
 

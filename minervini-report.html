@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ミネルヴィニのトレンドテンプレート｜マーク・ミネルヴィニ氏が公開している8条件で、S&P500の全構成銘柄をスクリーニング">
+  <title>トレンドテンプレート診断 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <a class="logo" href="index.html">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">マーケット</a>
+        <a href="index.html#research">銘柄</a>
+        <a href="minervini-report.html" class="active">トレンドテンプレート</a>
+        <a href="index.html#sectors">セクター</a>
+        <a href="daily-report.html">デイリーレポート</a>
+        <a href="golden-cross-report.html">ゴールデンクロス</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+      <div class="nav-search">
+        <input id="navSearchInput" placeholder="銘柄を検索：NVDA / AAPL / MSFT" onkeydown="if(event.key==='Enter') doSearch()">
+        <div class="nav-search-result" id="navSearchResult"></div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-hero">
+      <div class="container">
+        <div class="eyebrow">TREND TEMPLATE</div>
+        <h1>ミネルヴィニのトレンドテンプレート</h1>
+        <p>マーク・ミネルヴィニ氏（米国投資選手権で2度優勝したトレーダー。著書『Trade Like a Stock Market Wizard』）が公開している<b>8つの条件</b>を使い、S&amp;P500の全構成銘柄をふるいにかけました。上昇トレンドが始まっている銘柄だけを候補として残すための、シンプルな仕組みです。</p>
+        <div class="methodology">
+          <b>8つの条件（すべて株価データから判定）</b><br>
+          1. 株価が150日移動平均線と200日移動平均線を上回っている<br>
+          2. 150日移動平均線が200日移動平均線を上回っている<br>
+          3. 200日移動平均線が少なくとも1ヶ月間、上向きである<br>
+          4. 50日線 &gt; 150日線 &gt; 200日線 の並びになっている<br>
+          5. 株価が50日移動平均線を上回っている<br>
+          6. 株価が52週安値より少なくとも30%高い<br>
+          7. 株価が52週高値から25%以内にある<br>
+          8. レラティブストレングス（相対力）が70以上<br><br>
+          <b>移動平均線</b>とは、直近◯日間の株価の平均をつないだ線です。株価がこの線より上にあり、かつ短い期間の線ほど上に並んでいる状態が「きれいな上昇トレンド」とされます。<b>レラティブストレングス</b>は、その銘柄が他の銘柄と比べてどれだけ強く上昇したかを0〜99で表した順位です。
+        </div>
+        <p class="source-links">
+          ※本ページはミネルヴィニ氏ご本人の監修・公式ツールではなく、氏が公開している条件をrioが独自にプログラム化したものです。投資助言ではありません。<br>
+          ※条件8のレラティブストレングスは、本来 Investor's Business Daily 社が独自に算出する「RS Rating」ですが算出式が非公開のため、広く使われている近似（直近3ヶ月を重めに見た加重リターンの順位）で代用しています。また同社は米国の全上場銘柄で順位付けしますが、当ページはS&amp;P500の中での順位です。そのため同社の数字とは一致しません。
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="screener-summary" id="screenerSummary"><!-- データはJSから挿入されます --></div>
+        <div id="screenerFilters" class="screener-filters"></div>
+        <p id="screenerCount" class="screener-count"></p>
+        <div id="screenerGrid" class="screener-grid"></div>
+        <p class="section-note" id="screenerNote" style="margin-top:24px">出典：Yahoo Finance</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="index.html#about">運営者情報</a><a href="index.html#method">分析手法</a><a href="#">免責事項</a><a href="#">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="minervini-report.js"></script>
+</body>
+</html>

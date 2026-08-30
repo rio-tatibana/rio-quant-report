@@ -313,7 +313,7 @@ footer{background:var(--navy-900);color:var(--text-inverse-secondary);padding:36
 .copyright{grid-column:1/-1;border-top:1px solid var(--navy-700);padding-top:16px;font:var(--text-caption)}
 
 /* =========================================================================
-   大川式クオンツ診断レポート（okawa-report.html）
+   銘柄スクリーニングのレポート（minervini-report.html）
    ========================================================================= */
 .report-hero{background:var(--navy-900);color:var(--text-inverse);padding:48px 0 40px}
 .report-hero h1{font:var(--text-display);font-size:32px;margin:14px 0 16px;color:var(--text-inverse)}
@@ -324,36 +324,58 @@ footer{background:var(--navy-900);color:var(--text-inverse-secondary);padding:36
 .report-hero .source-links a{color:#77a6e8;text-decoration:none}
 .report-hero .source-links a:hover{text-decoration:underline}
 
-.okawa-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
-.okawa-filters button{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:999px;padding:8px 16px;font:500 13px var(--font-sans);color:var(--text-secondary);cursor:pointer}
-.okawa-filters button.active{background:var(--navy-900);color:var(--text-inverse);border-color:var(--navy-900)}
-.okawa-count{font:var(--text-caption);color:var(--text-tertiary);margin-bottom:16px}
+.screener-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.screener-filters button{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:999px;padding:8px 16px;font:500 13px var(--font-sans);color:var(--text-secondary);cursor:pointer}
+.screener-filters button.active{background:var(--navy-900);color:var(--text-inverse);border-color:var(--navy-900)}
+.screener-count{font:var(--text-caption);color:var(--text-tertiary);margin-bottom:16px}
 
-.okawa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.okawa-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;display:flex;flex-direction:column;gap:14px}
-.okawa-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.okawa-card-head .name-cell{display:flex;flex-direction:column;gap:2px}
-.okawa-card-head .ticker{font:700 17px/1.3 var(--font-sans);color:var(--text-primary)}
-.okawa-card-head .company{font:var(--text-caption);color:var(--text-tertiary)}
-.okawa-card-head .okawa-score{font:700 22px/1 var(--font-mono);flex-shrink:0;text-align:right}
-.okawa-card-head .okawa-score small{display:block;font:var(--text-caption);color:var(--text-tertiary);font-weight:400;margin-top:2px}
-.okawa-score.strong{color:var(--score-strong)}
-.okawa-score.mid{color:var(--score-mid)}
-.okawa-score.weak{color:var(--score-weak)}
-.okawa-score.neutral{color:var(--text-tertiary)}
+.screener-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.screener-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;display:flex;flex-direction:column;gap:14px}
+.screener-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.screener-card-head .name-cell{display:flex;flex-direction:column;gap:2px}
+.screener-card-head .ticker{font:700 17px/1.3 var(--font-sans);color:var(--text-primary)}
+.screener-card-head .company{font:var(--text-caption);color:var(--text-tertiary)}
+.screener-card-head .screener-score{font:700 22px/1 var(--font-mono);flex-shrink:0;text-align:right}
+.screener-card-head .screener-score small{display:block;font:var(--text-caption);color:var(--text-tertiary);font-weight:400;margin-top:2px}
+.screener-score.strong{color:var(--score-strong)}
+.screener-score.mid{color:var(--score-mid)}
+.screener-score.weak{color:var(--score-weak)}
+.screener-score.neutral{color:var(--text-tertiary)}
 
-.okawa-badge{display:inline-block;align-self:flex-start;padding:4px 12px;border-radius:999px;font:700 12px/1.4 var(--font-sans)}
-.okawa-badge.strong{background:var(--positive-bg);color:#0f6b3c}
-.okawa-badge.weak{background:var(--negative-bg);color:#943232}
-.okawa-badge.mid{background:var(--caution-bg);color:#8a6415}
-.okawa-badge.neutral{background:var(--surface-sunken);color:var(--text-secondary)}
+.screener-badge{display:inline-block;align-self:flex-start;padding:4px 12px;border-radius:999px;font:700 12px/1.4 var(--font-sans)}
+.screener-badge.strong{background:var(--positive-bg);color:#0f6b3c}
+.screener-badge.weak{background:var(--negative-bg);color:#943232}
+.screener-badge.mid{background:var(--caution-bg);color:#8a6415}
+.screener-badge.neutral{background:var(--surface-sunken);color:var(--text-secondary)}
 
-.okawa-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 0;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
-.okawa-metric{display:flex;flex-direction:column;gap:4px;text-align:center}
-.okawa-metric .label{font:var(--text-caption);color:var(--text-tertiary)}
-.okawa-metric .value{font:var(--num-md);color:var(--text-primary)}
+.screener-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 0;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
+.screener-metric{display:flex;flex-direction:column;gap:4px;text-align:center}
+.screener-metric .label{font:var(--text-caption);color:var(--text-tertiary)}
+.screener-metric .value{font:var(--num-md);color:var(--text-primary)}
 
-.okawa-comment{font:var(--text-body-sm);color:var(--text-secondary);line-height:1.8;margin:0}
+.screener-comment{font:var(--text-body-sm);color:var(--text-secondary);line-height:1.8;margin:0}
+
+/* 8条件のチェックリスト */
+.screener-checks{display:flex;flex-direction:column;gap:5px;margin:0;padding:0;list-style:none}
+.screener-checks li{display:flex;gap:8px;align-items:flex-start;font:var(--text-caption);line-height:1.5}
+.screener-checks li .mark{flex-shrink:0;font-weight:700;width:14px}
+.screener-checks li.ok .mark{color:var(--score-strong)}
+.screener-checks li.ok{color:var(--text-secondary)}
+.screener-checks li.ng .mark{color:var(--red-500)}
+.screener-checks li.ng{color:var(--text-tertiary)}
+
+/* 保有銘柄であることを示す小さなラベル */
+.screener-held{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;background:var(--surface-sunken);color:var(--text-secondary);font:700 10px/1.6 var(--font-sans);vertical-align:middle}
+
+/* 8条件の通過状況をまとめた集計パネル */
+.screener-summary{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;margin-bottom:24px}
+.screener-summary h3{font:700 14px/1.4 var(--font-sans);margin:0 0 14px;color:var(--text-primary)}
+.screener-summary .row{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.screener-summary .row:last-child{margin-bottom:0}
+.screener-summary .row .label{flex:1;font:var(--text-caption);color:var(--text-secondary)}
+.screener-summary .row .track{width:120px;height:6px;background:var(--gray-200);border-radius:999px;overflow:hidden;flex-shrink:0}
+.screener-summary .row .track i{display:block;height:100%;background:var(--score-mid)}
+.screener-summary .row .num{width:88px;text-align:right;font:var(--num-sm);color:var(--text-tertiary);flex-shrink:0}
 
 /* =========================================================================
    デイリーレポート（値動き上位5銘柄の解説, daily-report.html）
@@ -426,7 +448,7 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
   .copyright{grid-column:auto}
   .section-title{align-items:start;gap:12px;flex-direction:column}
   .score-panel{flex-direction:column;align-items:flex-start}
-  .okawa-grid{grid-template-columns:1fr}
-  .okawa-metrics{grid-template-columns:repeat(2,1fr);row-gap:12px}
+  .screener-grid{grid-template-columns:1fr}
+  .screener-metrics{grid-template-columns:repeat(2,1fr);row-gap:12px}
   .gc-kpis{grid-template-columns:1fr 1fr}
 }

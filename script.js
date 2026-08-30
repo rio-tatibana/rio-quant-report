@@ -474,7 +474,7 @@ async function loadMarketRegime() {
 document.addEventListener('DOMContentLoaded', loadMarketRegime);
 
 document.addEventListener('DOMContentLoaded', async () => {
-  if (!document.getElementById('stocks-table-body')) return; // ランキング表が無いページ(okawa-report.html等)では何もしない
+  if (!document.getElementById('stocks-table-body')) return; // ランキング表が無いページ(minervini-report.html等)では何もしない
 
   try {
     const response = await fetch('data/stocks.json');
