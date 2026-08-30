@@ -258,6 +258,7 @@ a{color:inherit}
 .meter{height:6px;background:var(--gray-200);border-radius:999px;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--accent);border-radius:999px}
 .signal small{font:var(--text-caption);color:var(--text-tertiary);display:block;line-height:1.6}
+.fng-raw{margin-top:6px;padding-top:6px;border-top:1px dashed var(--border-subtle);color:var(--text-secondary);font-weight:600}
 /* 恐怖=青 / 中立=黄 / 強欲=赤（このサイトの「赤=上昇・青=下落」に合わせる） */
 .fear{color:var(--blue-500)}
 .neutral{color:var(--amber-600)}

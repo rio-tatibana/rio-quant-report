@@ -43,7 +43,15 @@
       "band": "greed",
       "key": "put_call_options",
       "label_ja": "プット/コール比率",
-      "note_ja": "強気・弱気オプションの比率"
+      "note_ja": "強気・弱気オプションの比率",
+      "raw": {
+        "underlying": "US.SPY",
+        "underlying_name": "SPDR S&P 500 ETF",
+        "as_of": "2026-08-28",
+        "ratio": 1.029,
+        "call_volume": 6053443,
+        "put_volume": 6231373
+      }
     },
     {
       "score": 50.0,
@@ -52,7 +60,11 @@
       "band": "neutral",
       "key": "market_volatility_vix",
       "label_ja": "市場ボラティリティ",
-      "note_ja": "VIX(恐怖指数)の水準"
+      "note_ja": "VIX(恐怖指数)の水準",
+      "raw": {
+        "value": 14.43,
+        "previous_close": 15.85
+      }
     },
     {
       "score": 90.2,
@@ -75,5 +87,5 @@
   ],
   "source_name": "CNN Business Fear & Greed Index",
   "source_url": "https://edition.cnn.com/markets/fear-and-greed",
-  "generated_at": "2026-08-30T20:28:45+09:00"
+  "generated_at": "2026-08-30T20:49:54+09:00"
 }

@@ -147,8 +147,25 @@ function renderFearGreed(data) {
       <strong class="${ind.band}">${ind.rating_ja}</strong>
       <div class="meter"><i class="${ind.band}" style="width:${ind.score}%"></i></div>
       <small>${ind.score} / 100　${ind.note_ja}</small>
+      ${rawLine(ind)}
     </div>
   `).join('');
+}
+
+// VIX・プット/コール比率の「実測値」を、スコアの下に小さく添える
+function rawLine(ind) {
+  if (!ind.raw) return '';
+  if (ind.key === 'market_volatility_vix') {
+    const r = ind.raw;
+    const diff = r.previous_close != null ? r.value - r.previous_close : null;
+    const diffTxt = diff == null ? '' : `　（前日比 ${diff >= 0 ? '+' : ''}${diff.toFixed(2)}）`;
+    return `<small class="fng-raw">実測値：VIX ${r.value}${diffTxt}</small>`;
+  }
+  if (ind.key === 'put_call_options') {
+    const r = ind.raw;
+    return `<small class="fng-raw">実測値：${r.underlying_name}のPut/Call出来高比率 ${r.ratio}（${r.as_of}）</small>`;
+  }
+  return '';
 }
 
 // スコアから fear / neutral / greed を判定（過去値の色分け用）
