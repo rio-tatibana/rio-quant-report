@@ -346,6 +346,31 @@ footer{background:var(--navy-900);color:var(--text-inverse-secondary);padding:36
 .mover-source a:hover{text-decoration:underline}
 
 /* =========================================================================
+   ゴールデンクロス銘柄スクリーニング（golden-cross-report.html）
+   ========================================================================= */
+.gc-controls{display:flex;align-items:center;gap:10px;margin-top:20px;font:var(--text-body-sm);color:var(--text-inverse-secondary)}
+.gc-controls select{background:var(--navy-800);border:1px solid var(--border-inverse);border-radius:var(--radius-sm);padding:7px 12px;color:var(--text-inverse);font:13px var(--font-sans)}
+.gc-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:20px}
+.gc-kpi{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px 16px;text-align:center}
+.gc-kpi .label{font:var(--text-caption);color:var(--text-tertiary)}
+.gc-kpi .value{font:700 30px/1 var(--font-mono);color:var(--text-primary);margin:8px 0 4px}
+.gc-kpi .value.accent{color:var(--accent)}
+.gc-kpi .sub{font:var(--text-caption);color:var(--text-tertiary)}
+.gc-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.gc-filter-btn{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:999px;padding:7px 14px;font:500 13px var(--font-sans);color:var(--text-secondary);cursor:pointer}
+.gc-filter-btn.active{background:var(--navy-900);color:var(--white);border-color:var(--navy-900)}
+table.data{width:100%;border-collapse:collapse}
+table.data th,table.data td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border-subtle);font:var(--text-body-sm);white-space:nowrap}
+table.data th{color:var(--text-tertiary);font-weight:600}
+table.data td{color:var(--text-primary)}
+table.data td.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--font-mono)}
+table.data tr:nth-child(even){background:var(--surface-sunken)}
+table.data th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:22px}
+table.data th.sortable::after{content:'\2195';position:absolute;right:6px;color:var(--text-tertiary);font-weight:400}
+table.data th.sortable.sorted-asc::after{content:'\25B2';color:var(--accent)}
+table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
+
+/* =========================================================================
    レスポンシブ
    ========================================================================= */
 @media(max-width:900px){
@@ -369,4 +394,5 @@ footer{background:var(--navy-900);color:var(--text-inverse-secondary);padding:36
   .score-panel{flex-direction:column;align-items:flex-start}
   .okawa-grid{grid-template-columns:1fr}
   .okawa-metrics{grid-template-columns:repeat(2,1fr);row-gap:12px}
+  .gc-kpis{grid-template-columns:1fr 1fr}
 }

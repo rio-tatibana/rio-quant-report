@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ゴールデンクロス銘柄スクリーニング｜日足50日移動平均が200日移動平均を上抜けた米国大型株をセクター別に一覧表示">
+  <title>ゴールデンクロス銘柄スクリーニング | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <a class="logo" href="index.html">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">マーケット</a>
+        <a href="index.html#research">銘柄</a>
+        <a href="okawa-report.html">クオンツスコア</a>
+        <a href="index.html#sectors">セクター</a>
+        <a href="daily-report.html">デイリーレポート</a>
+        <a href="golden-cross-report.html" class="active">ゴールデンクロス</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+      <div class="nav-search">
+        <input id="navSearchInput" placeholder="銘柄を検索：NVDA / AAPL / MSFT" onkeydown="if(event.key==='Enter') doSearch()">
+        <div class="nav-search-result" id="navSearchResult"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-hero">
+      <div class="container">
+        <div class="eyebrow">GOLDEN CROSS SCREENING</div>
+        <h1>ゴールデンクロス銘柄スクリーニング</h1>
+        <p>米国上場・時価総額1,000億ドル以上の個別株のうち、日足で50日移動平均線が200日移動平均線を上抜けた銘柄をスクリーニングしています。</p>
+        <div class="methodology">
+          <b>このレポートについて</b><br>
+          moomoo OpenAPIとNasdaq公式データをもとに機械的に判定しています。セクター別の絞り込み、列見出しクリックでの並び替えができます。投資助言ではありません。
+        </div>
+        <div class="gc-controls">
+          <label for="gcDateSelect">表示する週：</label>
+          <select id="gcDateSelect"></select>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="gc-kpis" id="gcKpis"></div>
+        <div class="gc-filters" id="gcFilters"></div>
+        <div class="card">
+          <h2 style="font:var(--text-h2);margin:0 0 4px">全該当銘柄一覧</h2>
+          <p class="section-note" style="margin-top:0" id="gcTableNote">読み込み中...</p>
+          <div class="table-wrap">
+            <table class="data" id="gcTable">
+              <thead id="gcTableHead"></thead>
+              <tbody id="gcTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <p class="table-note">※本レポートは公開市場データ(moomoo OpenAPI・Nasdaq)に基づく機械的な判定であり、投資助言ではありません。ゴールデンクロスは過去の価格から計算するテクニカル指標で、将来の上昇を保証するものではありません。投資判断はご自身の責任で行ってください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="index.html#about">運営者情報</a><a href="index.html#method">分析手法</a><a href="#">免責事項</a><a href="#">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="golden-cross-report.js"></script>
+</body>
+</html>
