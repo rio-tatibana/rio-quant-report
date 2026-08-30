@@ -191,6 +191,49 @@ async function loadFearGreed() {
 
 document.addEventListener('DOMContentLoaded', loadFearGreed);
 
+// ===== 本日のマーケット(主要指数) =====
+
+function renderMarketIndices(data) {
+  const grid = document.getElementById('marketIndices');
+  const note = document.getElementById('marketIndicesNote');
+  if (!grid) return;
+
+  grid.innerHTML = data.indices.map((idx) => {
+    const isUp = idx.change_pct >= 0;
+    const cls = isUp ? 'up' : 'down';
+    const arrow = isUp ? '▲' : '▼';
+    const sign = isUp ? '+' : '';
+    return `
+      <div class="index-card">
+        <span class="idx-name">${idx.label}</span>
+        <span class="idx-value">${idx.value}</span>
+        <span class="idx-change ${cls}">${arrow} ${sign}${idx.change_pct.toFixed(2)}%</span>
+      </div>
+    `;
+  }).join('');
+
+  if (note) {
+    const d = new Date(data.generated_at);
+    const asOf = isNaN(d) ? '' : `　${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日 ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}時点`;
+    note.textContent = `出典：${data.source_name}${asOf}`;
+  }
+}
+
+async function loadMarketIndices() {
+  const grid = document.getElementById('marketIndices');
+  if (!grid) return; // 本日のマーケット欄が無いページでは何もしない
+  try {
+    const res = await fetch('data/market_indices.json');
+    if (!res.ok) throw new Error('Network response was not ok');
+    renderMarketIndices(await res.json());
+  } catch (err) {
+    console.error('Error loading market indices data:', err);
+    grid.innerHTML = '<p style="padding:20px;color:var(--text-tertiary)">マーケットデータを読み込めませんでした。</p>';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadMarketIndices);
+
 document.addEventListener('DOMContentLoaded', async () => {
   if (!document.getElementById('stocks-table-body')) return; // ランキング表が無いページ(okawa-report.html等)では何もしない
 

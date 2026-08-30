@@ -1,0 +1,42 @@
+{
+  "indices": [
+    {
+      "key": "sp500",
+      "label": "S&P 500",
+      "value": "7,711.76",
+      "change_pct": -0.25
+    },
+    {
+      "key": "nasdaq100",
+      "label": "Nasdaq 100",
+      "value": "29,433.43",
+      "change_pct": -0.7
+    },
+    {
+      "key": "dow",
+      "label": "Dow Jones",
+      "value": "53,559.99",
+      "change_pct": -0.02
+    },
+    {
+      "key": "vix",
+      "label": "VIX",
+      "value": "14.43",
+      "change_pct": -0.55
+    },
+    {
+      "key": "treasury10y",
+      "label": "10Y Treasury",
+      "value": "4.72%",
+      "change_pct": 1.03
+    },
+    {
+      "key": "usdjpy",
+      "label": "USD/JPY",
+      "value": "160.04",
+      "change_pct": 0.42
+    }
+  ],
+  "source_name": "Yahoo Finance",
+  "generated_at": "2026-08-31T00:03:02+09:00"
+}
