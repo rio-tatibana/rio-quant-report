@@ -163,7 +163,8 @@ function rawLine(ind) {
   }
   if (ind.key === 'put_call_options') {
     const r = ind.raw;
-    return `<small class="fng-raw">実測値：${r.underlying_name}のPut/Call出来高比率 ${r.ratio}（${r.as_of}）</small>`;
+    const eq = r.equity_ratio != null ? `　（個別株のみ：${r.equity_ratio}）` : '';
+    return `<small class="fng-raw">実測値：${r.source} ${r.ratio}${eq}（${r.as_of}）</small>`;
   }
   return '';
 }

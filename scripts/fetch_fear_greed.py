@@ -3,43 +3,38 @@
 CNN Business の Fear & Greed Index を取得し、
 サイト表示用の data/fear_greed.json を書き出すスクリプト。
 あわせて、VIX(Yahoo Finance)とプット/コール比率の実測値
-(moomoo-screenerが生成した put_call_ratio.json、あれば)も追加する。
+(CBOEの日次統計ページ、CNBC等が使っているのと同じ公式値)も追加する。
 
 使い方:
   python scripts/fetch_fear_greed.py
-  python scripts/fetch_fear_greed.py --moomoo-source E:\\rio-work\\moomoo-screener
 
 出力:
   data/fear_greed.json  (CNN総合スコア + 7つの構成指標 + VIX/Put-Call実測値)
 
 注意:
-  CNNとYahoo Financeは、どちらも公式に公開されたAPIではなく、各サイトが
-  内部的に使っているエンドポイントから取得しています。そのため、サイト側の
-  都合で予告なく使えなくなる可能性があります。取得できなかった項目は、
-  既存の data/fear_greed.json にあればその値をそのまま残します
-  (サイトは前回の値を表示し続けます)。
-  プット/コール比率の実測値は、事前に moomoo-screener 側で
-  `fetch_put_call_ratio.py` を実行して put_call_ratio.json を
-  生成しておく必要があります(OpenD起動が必要なため、このスクリプトは
-  moomoo APIを直接は呼び出さない)。無ければこの項目は省略される。
+  CNN・Yahoo Finance・CBOEは、いずれも公式に公開されたAPIではなく、
+  各サイトが内部的に使っているエンドポイント/ページから取得しています。
+  そのため、サイト側の都合で予告なく使えなくなる可能性があります。
+  取得できなかった項目は、既存の data/fear_greed.json にあればその値を
+  そのまま残します(サイトは前回の値を表示し続けます)。
 
 このスクリプトは git操作(add/commit/push)を一切行いません。
 生成物を確認してから、手動でコミット・pushしてください。
 """
-import argparse
 import datetime
 import json
 import pathlib
+import re
 import urllib.error
 import urllib.request
 
 BASE = pathlib.Path(__file__).resolve().parent.parent  # rio_quant_homepage/
 OUT_PATH = BASE / "data" / "fear_greed.json"
-DEFAULT_MOOMOO_SOURCE = pathlib.Path(r"E:\rio-work\moomoo-screener")
 
 SOURCE_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
 SOURCE_PAGE = "https://edition.cnn.com/markets/fear-and-greed"
 VIX_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?range=5d&interval=1d"
+CBOE_URL = "https://www.cboe.com/markets/us/options/market-statistics/daily"
 
 # CNNのエンドポイントはブラウザ以外からのアクセスを弾くため、
 # ブラウザと同じヘッダーを付けてリクエストする
@@ -98,22 +93,27 @@ def fetch_vix():
         return None
 
 
-def load_put_call_raw(moomoo_source: pathlib.Path):
-    """moomoo-screener側が生成した put_call_ratio.json を読む。無ければNone"""
-    path = moomoo_source / "put_call_ratio.json"
-    if not path.exists():
-        print(f"{path} が見つかりません(プット/コール実測値はスキップします)。")
+def fetch_cboe_put_call():
+    """CBOEの日次統計ページから、CNBC等と同じ公式のPut/Call Ratioを取得する。取得失敗時はNone"""
+    try:
+        req = urllib.request.Request(CBOE_URL, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=30) as res:
+            html = res.read().decode("utf-8")
+        date_m = re.search(r'\\"selectedDate\\":\\"([\d-]+)\\"', html)
+        pairs = dict(re.findall(r'\\"name\\":\\"([A-Z0-9 +/()]+ RATIO)\\",\\"value\\":\\"([0-9.]+)\\"', html))
+        total = pairs.get("TOTAL PUT/CALL RATIO")
+        equity = pairs.get("EQUITY PUT/CALL RATIO")
+        if total is None or date_m is None:
+            raise ValueError("ページの構造が変わり、必要な値が見つかりませんでした")
+        return {
+            "source": "CBOE Total Put/Call Ratio",
+            "as_of": date_m.group(1),
+            "ratio": float(total),
+            "equity_ratio": float(equity) if equity else None,
+        }
+    except Exception as e:  # noqa: BLE001 - 取得失敗時は項目を省略するだけなので握りつぶす
+        print(f"CBOEプット/コール比率の取得に失敗しました(スキップします): {e}")
         return None
-    with path.open(encoding="utf-8") as f:
-        d = json.load(f)
-    return {
-        "underlying": d["underlying"],
-        "underlying_name": d.get("underlying_name", d["underlying"]),
-        "as_of": d["as_of"],
-        "ratio": d["put_call_volume_ratio"],
-        "call_volume": d["call_volume"],
-        "put_volume": d["put_volume"],
-    }
 
 
 def to_band(rating):
@@ -184,10 +184,6 @@ def carry_over_raw(payload, key):
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--moomoo-source", default=str(DEFAULT_MOOMOO_SOURCE))
-    args = parser.parse_args()
-
     try:
         raw = fetch_raw()
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
@@ -198,7 +194,7 @@ def main():
         raise SystemExit(1)
 
     vix = fetch_vix()
-    put_call = load_put_call_raw(pathlib.Path(args.moomoo_source))
+    put_call = fetch_cboe_put_call()
 
     payload = build_payload(raw, vix, put_call)
     if vix is None:
