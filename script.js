@@ -103,6 +103,76 @@ document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click
   renderTable(stockData, sortBy);
 }));
 
+// ===== CNN Fear & Greed Index（市場シグナル） =====
+
+// 基準日時を「2026年8月29日」の形にする（CNNはUTC、表示は日本時間）
+function fmtAsOf(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
+}
+
+function renderFearGreed(data) {
+  const panel = document.getElementById('fngPanel');
+  const grid = document.getElementById('fngSignals');
+  if (!panel || !grid) return;
+
+  const prev = [
+    ['前日', data.previous_close],
+    ['1週間前', data.previous_1_week],
+    ['1ヶ月前', data.previous_1_month],
+    ['1年前', data.previous_1_year],
+  ];
+
+  panel.innerHTML = `
+    <div class="fng-main">
+      <div class="fng-score ${data.band}">
+        <span class="val">${data.score}</span>
+        <span class="max">/ 100</span>
+      </div>
+      <div class="fng-summary">
+        <span class="fng-rating ${data.band}">${data.rating_ja}</span>
+        <p>CNNが7つの指標から算出する、市場心理の指数です。0に近いほど「恐怖（弱気）」、100に近いほど「強欲（強気）」を表します。</p>
+        <div class="fng-history">
+          ${prev.map(([label, v]) => `<div><span>${label}</span><b class="${bandOf(v)}">${v}</b></div>`).join('')}
+        </div>
+        <small class="fng-asof">${fmtAsOf(data.as_of)}時点</small>
+      </div>
+    </div>
+  `;
+
+  grid.innerHTML = data.indicators.map((ind) => `
+    <div class="signal">
+      <span>${ind.label_ja}</span>
+      <strong class="${ind.band}">${ind.rating_ja}</strong>
+      <div class="meter"><i class="${ind.band}" style="width:${ind.score}%"></i></div>
+      <small>${ind.score} / 100　${ind.note_ja}</small>
+    </div>
+  `).join('');
+}
+
+// スコアから fear / neutral / greed を判定（過去値の色分け用）
+function bandOf(score) {
+  if (score < 45) return 'fear';
+  if (score > 55) return 'greed';
+  return 'neutral';
+}
+
+async function loadFearGreed() {
+  const panel = document.getElementById('fngPanel');
+  if (!panel) return; // 市場シグナル欄が無いページでは何もしない
+  try {
+    const res = await fetch('data/fear_greed.json');
+    if (!res.ok) throw new Error('Network response was not ok');
+    renderFearGreed(await res.json());
+  } catch (err) {
+    console.error('Error loading fear & greed data:', err);
+    panel.innerHTML = '<p style="padding:20px;color:var(--text-tertiary)">市場シグナルのデータを読み込めませんでした。</p>';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadFearGreed);
+
 document.addEventListener('DOMContentLoaded', async () => {
   if (!document.getElementById('stocks-table-body')) return; // ランキング表が無いページ(okawa-report.html等)では何もしない
 

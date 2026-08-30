@@ -1,0 +1,79 @@
+{
+  "score": 54.4,
+  "rating": "neutral",
+  "rating_ja": "中立",
+  "band": "neutral",
+  "as_of": "2026-08-28T23:59:58+00:00",
+  "previous_close": 58.2,
+  "previous_1_week": 54.5,
+  "previous_1_month": 37.9,
+  "previous_1_year": 64.4,
+  "indicators": [
+    {
+      "score": 40.0,
+      "rating": "fear",
+      "rating_ja": "恐怖",
+      "band": "fear",
+      "key": "market_momentum_sp125",
+      "label_ja": "市場モメンタム",
+      "note_ja": "S&P500と125日移動平均の差"
+    },
+    {
+      "score": 29.0,
+      "rating": "fear",
+      "rating_ja": "恐怖",
+      "band": "fear",
+      "key": "stock_price_strength",
+      "label_ja": "株価の強さ",
+      "note_ja": "52週高値を更新した銘柄数"
+    },
+    {
+      "score": 58.8,
+      "rating": "greed",
+      "rating_ja": "強欲",
+      "band": "greed",
+      "key": "stock_price_breadth",
+      "label_ja": "市場の値幅",
+      "note_ja": "上昇銘柄と下落銘柄の出来高差"
+    },
+    {
+      "score": 73.2,
+      "rating": "greed",
+      "rating_ja": "強欲",
+      "band": "greed",
+      "key": "put_call_options",
+      "label_ja": "プット/コール比率",
+      "note_ja": "強気・弱気オプションの比率"
+    },
+    {
+      "score": 50.0,
+      "rating": "neutral",
+      "rating_ja": "中立",
+      "band": "neutral",
+      "key": "market_volatility_vix",
+      "label_ja": "市場ボラティリティ",
+      "note_ja": "VIX(恐怖指数)の水準"
+    },
+    {
+      "score": 90.2,
+      "rating": "extreme greed",
+      "rating_ja": "極度の強欲",
+      "band": "greed",
+      "key": "junk_bond_demand",
+      "label_ja": "ジャンク債需要",
+      "note_ja": "低格付け債と国債の利回り差"
+    },
+    {
+      "score": 39.8,
+      "rating": "fear",
+      "rating_ja": "恐怖",
+      "band": "fear",
+      "key": "safe_haven_demand",
+      "label_ja": "安全資産需要",
+      "note_ja": "株式と国債のリターン差"
+    }
+  ],
+  "source_name": "CNN Business Fear & Greed Index",
+  "source_url": "https://edition.cnn.com/markets/fear-and-greed",
+  "generated_at": "2026-08-30T20:28:45+09:00"
+}

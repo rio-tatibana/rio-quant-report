@@ -257,7 +257,28 @@ a{color:inherit}
 .signal strong{font:var(--text-h2);display:block;margin:8px 0}
 .meter{height:6px;background:var(--gray-200);border-radius:999px;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--accent);border-radius:999px}
-.signal small{font:var(--text-caption);color:var(--text-tertiary)}
+.signal small{font:var(--text-caption);color:var(--text-tertiary);display:block;line-height:1.6}
+/* 恐怖=青 / 中立=黄 / 強欲=赤（このサイトの「赤=上昇・青=下落」に合わせる） */
+.fear{color:var(--blue-500)}
+.neutral{color:var(--amber-600)}
+.greed{color:var(--red-500)}
+.meter i.fear{background:var(--blue-500)}
+.meter i.neutral{background:var(--amber-500)}
+.meter i.greed{background:var(--red-500)}
+/* Fear & Greed 総合パネル */
+.fng-panel{margin-bottom:15px}
+.fng-main{display:flex;align-items:center;gap:32px}
+.fng-score{flex-shrink:0;width:150px;height:150px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;border:8px solid currentColor}
+.fng-score .val{font:700 46px/1 var(--font-mono)}
+.fng-score .max{font:var(--text-caption);color:var(--text-tertiary);margin-top:4px}
+.fng-summary{flex:1;min-width:0}
+.fng-rating{font:700 26px/1 var(--font-sans)}
+.fng-summary p{font:var(--text-body-sm);color:var(--text-secondary);margin:10px 0 16px;line-height:1.8}
+.fng-history{display:flex;flex-wrap:wrap;gap:10px}
+.fng-history div{background:var(--surface-sunken);border-radius:var(--radius-sm);padding:8px 14px;display:flex;flex-direction:column;gap:4px}
+.fng-history span{font:var(--text-caption);color:var(--text-tertiary)}
+.fng-history b{font:700 17px/1 var(--font-mono)}
+.fng-asof{display:block;font:var(--text-caption);color:var(--text-tertiary);margin-top:14px}
 
 /* =========================================================================
    分析手法
@@ -395,6 +416,7 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
   .two-col,.about-box{grid-template-columns:1fr}
   .research-grid{grid-template-columns:1fr}
   .signal-grid,.method-grid{grid-template-columns:1fr 1fr}
+  .fng-main{flex-direction:column;align-items:flex-start;gap:20px}
   .sector-grid{grid-template-columns:repeat(2,1fr)}
   .hero{padding:44px 0}
   .section{padding:40px 0}
