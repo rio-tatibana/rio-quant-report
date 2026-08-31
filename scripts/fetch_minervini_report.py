@@ -49,7 +49,7 @@ import sys
 # 同じフォルダの fetch_market_regime.py から、銘柄リストと株価の取得処理を借りる
 # (同じ処理を2か所に書くと、片方だけ直して食い違うため)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from fetch_market_regime import fetch_many_quotes, fetch_sp500_symbols  # noqa: E402
+from fetch_market_regime import fetch_many_quotes, fetch_sp500_rows  # noqa: E402
 
 BASE = pathlib.Path(__file__).resolve().parent.parent  # rio_quant_homepage/
 OUT_PATH = BASE / "data" / "minervini_report.json"
@@ -144,7 +144,9 @@ def evaluate(values, rs):
 
 def main():
     try:
-        symbols = fetch_sp500_symbols()
+        rows = fetch_sp500_rows()  # (ティッカー, セクター日本語名) の一覧
+        symbols = sorted({symbol for symbol, _ in rows})
+        sector_of = dict(rows)
         if len(symbols) < 100:
             raise ValueError(f"構成銘柄の取得数が少なすぎます({len(symbols)}件)")
         quotes = fetch_many_quotes(symbols, rng="1y")
@@ -163,12 +165,14 @@ def main():
     counts_per_criterion = [0] * len(CRITERIA)
     passed_histogram = [0] * (len(CRITERIA) + 1)  # 0条件〜8条件が何銘柄ずつか
     evaluated = 0
+    evaluated_symbols = []  # セクター別集計の母数に使う
 
     for symbol, q in sorted(quotes.items()):
         values = q["closes"]
         if len(values) < MIN_BARS or symbol not in rs_ranks:
             continue  # 上場から日が浅く1年分のデータが無い銘柄は判定できない
         evaluated += 1
+        evaluated_symbols.append(symbol)
 
         checks, detail = evaluate(values, rs_ranks[symbol])
         for i, ok in enumerate(checks):
@@ -182,6 +186,7 @@ def main():
             "symbol": symbol,
             "name": q.get("name") or symbol,
             "name_ja": portfolio.get(symbol),
+            "sector": sector_of.get(symbol, "その他"),
             "held": symbol in portfolio,
             "passed": passed,
             "checks": checks,
@@ -191,6 +196,25 @@ def main():
     # 条件を満たした数が多い順、同数ならレラティブストレングスが高い順
     stocks.sort(key=lambda s: (-s["passed"], -s["rs"]))
 
+    # セクター別の集計(判定した銘柄数・掲載した銘柄数・8条件すべて満たした銘柄数)
+    sector_stats = {}
+    for symbol in evaluated_symbols:
+        name = sector_of.get(symbol, "その他")
+        sector_stats.setdefault(name, {"sector": name, "universe": 0, "listed": 0, "pass_all": 0})
+        sector_stats[name]["universe"] += 1
+    for s in stocks:
+        row = sector_stats.setdefault(
+            s["sector"], {"sector": s["sector"], "universe": 0, "listed": 0, "pass_all": 0}
+        )
+        row["listed"] += 1
+        if s["passed"] == len(CRITERIA):
+            row["pass_all"] += 1
+    # 8条件すべて満たした割合が高いセクター順に並べる
+    sectors = sorted(
+        sector_stats.values(),
+        key=lambda r: (-(r["pass_all"] / r["universe"] if r["universe"] else 0), -r["pass_all"]),
+    )
+
     payload = {
         "criteria": CRITERIA,
         "universe": evaluated,
@@ -199,6 +223,7 @@ def main():
         "passed_histogram": passed_histogram,
         "pass_all": passed_histogram[len(CRITERIA)],
         "stocks": stocks,
+        "sectors": sectors,
         "source_name": "Yahoo Finance",
         "generated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
     }
@@ -215,6 +240,9 @@ def main():
     print(f"  8条件すべて満たす: {payload['pass_all']}銘柄")
     print(f"  条件を満たした数の分布(0〜8条件): {passed_histogram}")
     print(f"  JSONに載せた銘柄({MIN_PASSED_TO_LIST}条件以上): {len(stocks)}")
+    print("  セクター別(8条件すべて満たした数 / 判定した数):")
+    for row in sectors:
+        print(f"    {row['sector']:<12} {row['pass_all']:>3} / {row['universe']:>3}")
     held = [s["symbol"] for s in stocks if s["held"] and s["passed"] == len(CRITERIA)]
     print(f"  保有銘柄で8条件すべて満たす: {', '.join(held) if held else 'なし'}")
 

@@ -38,6 +38,7 @@
       "symbol": "MRNA",
       "name": "Moderna, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -60,6 +61,7 @@
       "symbol": "LITE",
       "name": "Lumentum Holdings Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -82,6 +84,7 @@
       "symbol": "DELL",
       "name": "Dell Technologies Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -104,6 +107,7 @@
       "symbol": "HPE",
       "name": "Hewlett Packard Enterprise Comp",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -126,6 +130,7 @@
       "symbol": "PANW",
       "name": "Palo Alto Networks, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -148,6 +153,7 @@
       "symbol": "VLO",
       "name": "Valero Energy Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -170,6 +176,7 @@
       "symbol": "MPC",
       "name": "Marathon Petroleum Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -192,6 +199,7 @@
       "symbol": "FTNT",
       "name": "Fortinet, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -214,6 +222,7 @@
       "symbol": "CRWD",
       "name": "CrowdStrike Holdings, Inc.",
       "name_ja": "クラウド ストライク ホールディングス A",
+      "sector": "情報技術",
       "held": true,
       "passed": 8,
       "checks": [
@@ -236,6 +245,7 @@
       "symbol": "CRL",
       "name": "Charles River Laboratories Inte",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -258,6 +268,7 @@
       "symbol": "PSX",
       "name": "Phillips 66",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -280,6 +291,7 @@
       "symbol": "TGT",
       "name": "Target Corporation",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 8,
       "checks": [
@@ -302,6 +314,7 @@
       "symbol": "NTAP",
       "name": "NetApp, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -324,6 +337,7 @@
       "symbol": "ABNB",
       "name": "Airbnb, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -346,6 +360,7 @@
       "symbol": "STT",
       "name": "State Street Corporation",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -368,6 +383,7 @@
       "symbol": "HUM",
       "name": "Humana Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -390,6 +406,7 @@
       "symbol": "APA",
       "name": "APA Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -412,6 +429,7 @@
       "symbol": "ZBRA",
       "name": "Zebra Technologies Corporation",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -434,6 +452,7 @@
       "symbol": "MRK",
       "name": "Merck & Company, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -456,6 +475,7 @@
       "symbol": "FCX",
       "name": "Freeport-McMoRan, Inc.",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 8,
       "checks": [
@@ -478,6 +498,7 @@
       "symbol": "TRGP",
       "name": "Targa Resources, Inc.",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -500,6 +521,7 @@
       "symbol": "ANET",
       "name": "Arista Networks, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 8,
       "checks": [
@@ -522,6 +544,7 @@
       "symbol": "NUE",
       "name": "Nucor Corporation",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 8,
       "checks": [
@@ -544,6 +567,7 @@
       "symbol": "BNY",
       "name": "The Bank of New York Mellon Cor",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -566,6 +590,7 @@
       "symbol": "BAX",
       "name": "Baxter International Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -588,6 +613,7 @@
       "symbol": "RVTY",
       "name": "Revvity, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -610,6 +636,7 @@
       "symbol": "EXPD",
       "name": "Expeditors International of Was",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -632,6 +659,7 @@
       "symbol": "AMGN",
       "name": "Amgen Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -654,6 +682,7 @@
       "symbol": "IBKR",
       "name": "Interactive Brokers Group, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -676,6 +705,7 @@
       "symbol": "IVZ",
       "name": "Invesco Ltd",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -698,6 +728,7 @@
       "symbol": "CSX",
       "name": "CSX Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -720,6 +751,7 @@
       "symbol": "CF",
       "name": "CF Industries Holdings, Inc.",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 8,
       "checks": [
@@ -742,6 +774,7 @@
       "symbol": "INCY",
       "name": "Incyte Corporation",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -764,6 +797,7 @@
       "symbol": "BEN",
       "name": "Franklin Templeton, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -786,6 +820,7 @@
       "symbol": "NTRS",
       "name": "Northern Trust Corporation",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -808,6 +843,7 @@
       "symbol": "TRV",
       "name": "The Travelers Companies, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -830,6 +866,7 @@
       "symbol": "FDX",
       "name": "FedEx Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -852,6 +889,7 @@
       "symbol": "DXCM",
       "name": "DexCom, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -874,6 +912,7 @@
       "symbol": "DGX",
       "name": "Quest Diagnostics Incorporated",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -896,6 +935,7 @@
       "symbol": "WAB",
       "name": "Westinghouse Air Brake Technolo",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -918,6 +958,7 @@
       "symbol": "SJM",
       "name": "The J.M. Smucker Company",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 8,
       "checks": [
@@ -940,6 +981,7 @@
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -962,6 +1004,7 @@
       "symbol": "BMY",
       "name": "Bristol-Myers Squibb Company",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -984,6 +1027,7 @@
       "symbol": "LH",
       "name": "Labcorp Holdings Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1006,6 +1050,7 @@
       "symbol": "NDSN",
       "name": "Nordson Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1028,6 +1073,7 @@
       "symbol": "ALL",
       "name": "Allstate Corporation (The)",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1050,6 +1096,7 @@
       "symbol": "GRMN",
       "name": "Garmin Ltd.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1072,6 +1119,7 @@
       "symbol": "BDX",
       "name": "Becton, Dickinson and Company",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1094,6 +1142,7 @@
       "symbol": "UNP",
       "name": "Union Pacific Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1116,6 +1165,7 @@
       "symbol": "BIIB",
       "name": "Biogen Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1138,6 +1188,7 @@
       "symbol": "VRTX",
       "name": "Vertex Pharmaceuticals Incorpor",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1160,6 +1211,7 @@
       "symbol": "CPAY",
       "name": "Corpay, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1182,6 +1234,7 @@
       "symbol": "MET",
       "name": "MetLife, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1204,6 +1257,7 @@
       "symbol": "WELL",
       "name": "Welltower Inc.",
       "name_ja": null,
+      "sector": "不動産",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1226,6 +1280,7 @@
       "symbol": "CAH",
       "name": "Cardinal Health, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1248,6 +1303,7 @@
       "symbol": "BAC",
       "name": "Bank of America Corporation",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1270,6 +1326,7 @@
       "symbol": "IEX",
       "name": "IDEX Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1292,6 +1349,7 @@
       "symbol": "IFF",
       "name": "International Flavors & Fragran",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1314,6 +1372,7 @@
       "symbol": "WSM",
       "name": "Williams-Sonoma, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1336,6 +1395,7 @@
       "symbol": "RTX",
       "name": "RTX Corporation",
       "name_ja": "RTX",
+      "sector": "資本財",
       "held": true,
       "passed": 8,
       "checks": [
@@ -1358,6 +1418,7 @@
       "symbol": "DE",
       "name": "Deere & Company",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1380,6 +1441,7 @@
       "symbol": "HSIC",
       "name": "Henry Schein, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1402,6 +1464,7 @@
       "symbol": "KO",
       "name": "Coca-Cola Company (The)",
       "name_ja": "コカ-コーラ",
+      "sector": "生活必需品",
       "held": true,
       "passed": 8,
       "checks": [
@@ -1424,6 +1487,7 @@
       "symbol": "OKE",
       "name": "ONEOK, Inc.",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1446,6 +1510,7 @@
       "symbol": "PH",
       "name": "Parker-Hannifin Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1468,6 +1533,7 @@
       "symbol": "XYZ",
       "name": "Block, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1490,6 +1556,7 @@
       "symbol": "BALL",
       "name": "Ball Corporation",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1512,6 +1579,7 @@
       "symbol": "NWSA",
       "name": "News Corporation",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1534,6 +1602,7 @@
       "symbol": "GM",
       "name": "General Motors Company",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 8,
       "checks": [
@@ -1556,6 +1625,7 @@
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
       "name_ja": "マイクロン テクノロジー",
+      "sector": "情報技術",
       "held": true,
       "passed": 7,
       "checks": [
@@ -1578,6 +1648,7 @@
       "symbol": "STX",
       "name": "Seagate Technology Holdings PLC",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1600,6 +1671,7 @@
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "name_ja": "アドバンスト マイクロ デバイシズ",
+      "sector": "情報技術",
       "held": true,
       "passed": 7,
       "checks": [
@@ -1622,6 +1694,7 @@
       "symbol": "CNC",
       "name": "Centene Corporation",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1644,6 +1717,7 @@
       "symbol": "DDOG",
       "name": "Datadog, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1666,6 +1740,7 @@
       "symbol": "WBD",
       "name": "Warner Bros. Discovery, Inc. - ",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1688,6 +1763,7 @@
       "symbol": "KEYS",
       "name": "Keysight Technologies Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1710,6 +1786,7 @@
       "symbol": "NEM",
       "name": "Newmont Corporation",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1732,6 +1809,7 @@
       "symbol": "SLB",
       "name": "SLB Limited",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1754,6 +1832,7 @@
       "symbol": "FFIV",
       "name": "F5, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1776,6 +1855,7 @@
       "symbol": "JBHT",
       "name": "J.B. Hunt Transport Services, I",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1798,6 +1878,7 @@
       "symbol": "CSCO",
       "name": "Cisco Systems, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1820,6 +1901,7 @@
       "symbol": "STLD",
       "name": "Steel Dynamics, Inc.",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1842,6 +1924,7 @@
       "symbol": "COP",
       "name": "ConocoPhillips",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1864,6 +1947,7 @@
       "symbol": "WST",
       "name": "West Pharmaceutical Services, I",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1886,6 +1970,7 @@
       "symbol": "CFG",
       "name": "Citizens Financial Group, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1908,6 +1993,7 @@
       "symbol": "MS",
       "name": "Morgan Stanley",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1930,6 +2016,7 @@
       "symbol": "PFG",
       "name": "Principal Financial Group Inc",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1952,6 +2039,7 @@
       "symbol": "USB",
       "name": "U.S. Bancorp",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1974,6 +2062,7 @@
       "symbol": "AMP",
       "name": "Ameriprise Financial, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -1996,6 +2085,7 @@
       "symbol": "LLY",
       "name": "Eli Lilly and Company",
       "name_ja": "イーライ リリィ",
+      "sector": "ヘルスケア",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2018,6 +2108,7 @@
       "symbol": "JPM",
       "name": "JP Morgan Chase & Co.",
       "name_ja": "JPモルガン チェース",
+      "sector": "金融",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2040,6 +2131,7 @@
       "symbol": "GL",
       "name": "Globe Life Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2062,6 +2154,7 @@
       "symbol": "ROST",
       "name": "Ross Stores, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2084,6 +2177,7 @@
       "symbol": "C",
       "name": "Citigroup, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2106,6 +2200,7 @@
       "symbol": "APH",
       "name": "Amphenol Corporation",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2128,6 +2223,7 @@
       "symbol": "GWW",
       "name": "W.W. Grainger, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2150,6 +2246,7 @@
       "symbol": "HWM",
       "name": "Howmet Aerospace Inc.",
       "name_ja": "ハウメット エアロスペース",
+      "sector": "資本財",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2172,6 +2269,7 @@
       "symbol": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2194,6 +2292,7 @@
       "symbol": "TXN",
       "name": "Texas Instruments Incorporated",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2216,6 +2315,7 @@
       "symbol": "GS",
       "name": "Goldman Sachs Group, Inc. (The)",
       "name_ja": "ゴールドマン サックス",
+      "sector": "金融",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2238,6 +2338,7 @@
       "symbol": "XOM",
       "name": "ExxonMobil Holdings Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2260,6 +2361,7 @@
       "symbol": "NSC",
       "name": "Norfolk Southern Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2282,6 +2384,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "name_ja": "アップル",
+      "sector": "情報技術",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2304,6 +2407,7 @@
       "symbol": "NWS",
       "name": "News Corporation",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2326,6 +2430,7 @@
       "symbol": "ADM",
       "name": "Archer-Daniels-Midland Company",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2348,6 +2453,7 @@
       "symbol": "SBUX",
       "name": "Starbucks Corporation",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2370,6 +2476,7 @@
       "symbol": "SW",
       "name": "Smurfit WestRock plc",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2392,6 +2499,7 @@
       "symbol": "OMC",
       "name": "Omnicom Group Inc.",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2414,6 +2522,7 @@
       "symbol": "LYV",
       "name": "Live Nation Entertainment, Inc.",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2436,6 +2545,7 @@
       "symbol": "FANG",
       "name": "Diamondback Energy, Inc.",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2458,6 +2568,7 @@
       "symbol": "EOG",
       "name": "EOG Resources, Inc.",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2480,6 +2591,7 @@
       "symbol": "MSI",
       "name": "Motorola Solutions, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2502,6 +2614,7 @@
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
       "name_ja": "アマゾン ドットコム",
+      "sector": "一般消費財",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2524,6 +2637,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "name_ja": "エヌビディア",
+      "sector": "情報技術",
       "held": true,
       "passed": 7,
       "checks": [
@@ -2546,6 +2660,7 @@
       "symbol": "PM",
       "name": "Philip Morris International Inc",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2568,6 +2683,7 @@
       "symbol": "CTVA",
       "name": "Corteva, Inc.",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2590,6 +2706,7 @@
       "symbol": "WMB",
       "name": "Williams Companies, Inc. (The)",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2612,6 +2729,7 @@
       "symbol": "APD",
       "name": "Air Products and Chemicals, Inc",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2634,6 +2752,7 @@
       "symbol": "VRSN",
       "name": "VeriSign, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2656,6 +2775,7 @@
       "symbol": "KVUE",
       "name": "Kenvue Inc.",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 7,
       "checks": [
@@ -2678,6 +2798,7 @@
       "symbol": "SNDK",
       "name": "Sandisk Corporation",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2700,6 +2821,7 @@
       "symbol": "WDC",
       "name": "Western Digital Corporation",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2722,6 +2844,7 @@
       "symbol": "MRVL",
       "name": "Marvell Technology, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2744,6 +2867,7 @@
       "symbol": "INTC",
       "name": "Intel Corporation",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2766,6 +2890,7 @@
       "symbol": "LRCX",
       "name": "Lam Research Corporation",
       "name_ja": "ラムリサーチ",
+      "sector": "情報技術",
       "held": true,
       "passed": 6,
       "checks": [
@@ -2788,6 +2913,7 @@
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2810,6 +2936,7 @@
       "symbol": "TER",
       "name": "Teradyne, Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2832,6 +2959,7 @@
       "symbol": "EXPE",
       "name": "Expedia Group, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2854,6 +2982,7 @@
       "symbol": "FLEX",
       "name": "Flex Ltd.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2876,6 +3005,7 @@
       "symbol": "IQV",
       "name": "IQVIA Holdings, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2898,6 +3028,7 @@
       "symbol": "TECH",
       "name": "Bio-Techne Corp",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2920,6 +3051,7 @@
       "symbol": "CAT",
       "name": "Caterpillar, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2942,6 +3074,7 @@
       "symbol": "GEV",
       "name": "GE Vernova Inc.",
       "name_ja": "GEベルノバ",
+      "sector": "資本財",
       "held": true,
       "passed": 6,
       "checks": [
@@ -2964,6 +3097,7 @@
       "symbol": "TMO",
       "name": "Thermo Fisher Scientific Inc",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -2986,6 +3120,7 @@
       "symbol": "GPC",
       "name": "Genuine Parts Company",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3008,6 +3143,7 @@
       "symbol": "HPQ",
       "name": "HP Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3030,6 +3166,7 @@
       "symbol": "REGN",
       "name": "Regeneron Pharmaceuticals, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3052,6 +3189,7 @@
       "symbol": "SOLV",
       "name": "Solventum Corporation",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3074,6 +3212,7 @@
       "symbol": "CASY",
       "name": "Caseys General Stores, Inc.",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3096,6 +3235,7 @@
       "symbol": "WAT",
       "name": "Waters Corporation",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3118,6 +3258,7 @@
       "symbol": "WTW",
       "name": "Willis Towers Watson Public Lim",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3140,6 +3281,7 @@
       "symbol": "PAYX",
       "name": "Paychex, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3162,6 +3304,7 @@
       "symbol": "DVA",
       "name": "DaVita Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3184,6 +3327,7 @@
       "symbol": "GPN",
       "name": "Global Payments Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3206,6 +3350,7 @@
       "symbol": "ADP",
       "name": "Automatic Data Processing, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3228,6 +3373,7 @@
       "symbol": "GEN",
       "name": "Gen Digital Inc.",
       "name_ja": null,
+      "sector": "情報技術",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3250,6 +3396,7 @@
       "symbol": "HAL",
       "name": "Halliburton Company",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3272,6 +3419,7 @@
       "symbol": "CVX",
       "name": "Chevron Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3294,6 +3442,7 @@
       "symbol": "ABBV",
       "name": "AbbVie Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3316,6 +3465,7 @@
       "symbol": "EQIX",
       "name": "Equinix, Inc.",
       "name_ja": null,
+      "sector": "不動産",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3338,6 +3488,7 @@
       "symbol": "PNC",
       "name": "PNC Financial Services Group, I",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3360,6 +3511,7 @@
       "symbol": "VTR",
       "name": "Ventas, Inc.",
       "name_ja": null,
+      "sector": "不動産",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3382,6 +3534,7 @@
       "symbol": "FITB",
       "name": "Fifth Third Bancorp",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3404,6 +3557,7 @@
       "symbol": "DAL",
       "name": "Delta Air Lines, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3426,6 +3580,7 @@
       "symbol": "MTB",
       "name": "M&T Bank Corporation",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3448,6 +3603,7 @@
       "symbol": "OXY",
       "name": "Occidental Petroleum Corporatio",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3470,6 +3626,7 @@
       "symbol": "EG",
       "name": "Everest Group, Ltd.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3492,6 +3649,7 @@
       "symbol": "PCAR",
       "name": "PACCAR Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3514,6 +3672,7 @@
       "symbol": "DVN",
       "name": "Devon Energy Corporation",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3536,6 +3695,7 @@
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3558,6 +3718,7 @@
       "symbol": "ELV",
       "name": "Elevance Health, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3580,6 +3741,7 @@
       "symbol": "URI",
       "name": "United Rentals, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3602,6 +3764,7 @@
       "symbol": "CBOE",
       "name": "Cboe Global Markets, Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3624,6 +3787,7 @@
       "symbol": "GOOG",
       "name": "Alphabet Inc.",
       "name_ja": "アルファベット C",
+      "sector": "コミュニケーション",
       "held": true,
       "passed": 6,
       "checks": [
@@ -3646,6 +3810,7 @@
       "symbol": "CVS",
       "name": "CVS Health Corporation",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3668,6 +3833,7 @@
       "symbol": "GILD",
       "name": "Gilead Sciences, Inc.",
       "name_ja": null,
+      "sector": "ヘルスケア",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3690,6 +3856,7 @@
       "symbol": "HST",
       "name": "Host Hotels & Resorts, Inc.",
       "name_ja": null,
+      "sector": "不動産",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3712,6 +3879,7 @@
       "symbol": "AMCR",
       "name": "Amcor plc",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3734,6 +3902,7 @@
       "symbol": "IRM",
       "name": "Iron Mountain Incorporated (Del",
       "name_ja": null,
+      "sector": "不動産",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3756,6 +3925,7 @@
       "symbol": "BKR",
       "name": "Baker Hughes Company",
       "name_ja": null,
+      "sector": "エネルギー",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3778,6 +3948,7 @@
       "symbol": "FAST",
       "name": "Fastenal Company",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3800,6 +3971,7 @@
       "symbol": "AME",
       "name": "AMETEK, Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3822,6 +3994,7 @@
       "symbol": "EMR",
       "name": "Emerson Electric Company",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3844,6 +4017,7 @@
       "symbol": "GD",
       "name": "General Dynamics Corporation",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3866,6 +4040,7 @@
       "symbol": "EBAY",
       "name": "eBay Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3888,6 +4063,7 @@
       "symbol": "KEY",
       "name": "KeyCorp",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3910,6 +4086,7 @@
       "symbol": "KDP",
       "name": "Keurig Dr Pepper Inc.",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3932,6 +4109,7 @@
       "symbol": "HAS",
       "name": "Hasbro, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3954,6 +4132,7 @@
       "symbol": "VZ",
       "name": "Verizon Communications Inc.",
       "name_ja": null,
+      "sector": "コミュニケーション",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3976,6 +4155,7 @@
       "symbol": "ITW",
       "name": "Illinois Tool Works Inc.",
       "name_ja": null,
+      "sector": "資本財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -3998,6 +4178,7 @@
       "symbol": "DRI",
       "name": "Darden Restaurants, Inc.",
       "name_ja": null,
+      "sector": "一般消費財",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4020,6 +4201,7 @@
       "symbol": "CHD",
       "name": "Church & Dwight Company, Inc.",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4042,6 +4224,7 @@
       "symbol": "ECL",
       "name": "Ecolab Inc.",
       "name_ja": null,
+      "sector": "素材",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4064,6 +4247,7 @@
       "symbol": "HIG",
       "name": "The Hartford Insurance Group, I",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4086,6 +4270,7 @@
       "symbol": "CME",
       "name": "CME Group Inc.",
       "name_ja": null,
+      "sector": "金融",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4108,6 +4293,7 @@
       "symbol": "MDLZ",
       "name": "Mondelez International, Inc.",
       "name_ja": null,
+      "sector": "生活必需品",
       "held": false,
       "passed": 6,
       "checks": [
@@ -4127,6 +4313,74 @@
       "ret_1y_pct": 0.9
     }
   ],
+  "sectors": [
+    {
+      "sector": "ヘルスケア",
+      "universe": 58,
+      "listed": 33,
+      "pass_all": 18
+    },
+    {
+      "sector": "エネルギー",
+      "universe": 21,
+      "listed": 17,
+      "pass_all": 6
+    },
+    {
+      "sector": "素材",
+      "universe": 25,
+      "listed": 12,
+      "pass_all": 5
+    },
+    {
+      "sector": "金融",
+      "universe": 74,
+      "listed": 31,
+      "pass_all": 12
+    },
+    {
+      "sector": "資本財",
+      "universe": 79,
+      "listed": 26,
+      "pass_all": 10
+    },
+    {
+      "sector": "情報技術",
+      "universe": 72,
+      "listed": 32,
+      "pass_all": 9
+    },
+    {
+      "sector": "生活必需品",
+      "universe": 33,
+      "listed": 10,
+      "pass_all": 3
+    },
+    {
+      "sector": "一般消費財",
+      "universe": 45,
+      "listed": 12,
+      "pass_all": 4
+    },
+    {
+      "sector": "コミュニケーション",
+      "universe": 22,
+      "listed": 8,
+      "pass_all": 1
+    },
+    {
+      "sector": "不動産",
+      "universe": 28,
+      "listed": 5,
+      "pass_all": 1
+    },
+    {
+      "sector": "公益事業",
+      "universe": 26,
+      "listed": 0,
+      "pass_all": 0
+    }
+  ],
   "source_name": "Yahoo Finance",
-  "generated_at": "2026-08-31T02:23:44+09:00"
+  "generated_at": "2026-08-31T10:37:26+09:00"
 }

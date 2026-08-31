@@ -77,6 +77,22 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*",
 }
 
+# WikipediaのS&P500一覧に載っているGICSセクター名(英語)を日本語にする対応表。
+# 下の SECTORS(セクターETF)の日本語名と表記をそろえてある。
+GICS_JA = {
+    "Information Technology": "情報技術",
+    "Consumer Discretionary": "一般消費財",
+    "Industrials": "資本財",
+    "Financials": "金融",
+    "Materials": "素材",
+    "Energy": "エネルギー",
+    "Health Care": "ヘルスケア",
+    "Consumer Staples": "生活必需品",
+    "Utilities": "公益事業",
+    "Real Estate": "不動産",
+    "Communication Services": "コミュニケーション",
+}
+
 # セクターETF: (シンボル, 日本語名, 区分)
 # 区分 cyclical=景気敏感 / defensive=ディフェンシブ / other=どちらとも言えない
 SECTORS = [
@@ -191,17 +207,37 @@ def score_volume_trend(closes, volumes):
     return score, detail, row
 
 
-def fetch_sp500_symbols():
-    """WikipediaのS&P500構成銘柄一覧からティッカーを取得する"""
+def fetch_sp500_rows():
+    """WikipediaのS&P500構成銘柄一覧から (ティッカー, セクター日本語名) の一覧を取得する。
+
+    表の3列目がGICSセクター(Information Technology など11分類)。
+    銘柄リストとセクターを1回の通信でまとめて取るための関数。
+    """
     req = urllib.request.Request(SP500_LIST_URL, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=30) as res:
         html = res.read().decode("utf-8", "ignore")
     seg = html[html.find('id="constituents"'):]
     seg = seg[: seg.find("</table>")]
-    # <a href>を拾う方式だとNYSE分しか取れないため、テンプレート引数から抽出する
-    symbols = re.findall(r'"params":\{"1":\{"wt":"([A-Z\.\-]{1,6})"\}\}', seg)
-    # BRK.B → BRK-B のように、Yahoo Financeの表記に合わせる
-    return sorted({s.replace(".", "-") for s in symbols})
+
+    rows = []
+    for row in seg.split("<tr")[1:]:
+        # <a href>を拾う方式だとNYSE分しか取れないため、テンプレート引数から抽出する
+        m = re.search(r'"params":\{"1":\{"wt":"([A-Z\.\-]{1,6})"\}\}', row)
+        if not m:
+            continue
+        # BRK.B → BRK-B のように、Yahoo Financeの表記に合わせる
+        symbol = m.group(1).replace(".", "-")
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+        sector = ""
+        if len(cells) >= 3:
+            sector = re.sub(r"<[^>]+>", "", cells[2]).strip()
+        rows.append((symbol, GICS_JA.get(sector, sector or "その他")))
+    return rows
+
+
+def fetch_sp500_symbols():
+    """WikipediaのS&P500構成銘柄一覧からティッカーだけを取得する"""
+    return sorted({symbol for symbol, _ in fetch_sp500_rows()})
 
 
 def fetch_many_quotes(symbols, rng="1y"):

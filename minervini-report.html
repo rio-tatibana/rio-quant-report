@@ -62,9 +62,33 @@
 
     <section class="section">
       <div class="container">
-        <div class="screener-summary" id="screenerSummary"><!-- データはJSから挿入されます --></div>
-        <div id="screenerFilters" class="screener-filters"></div>
+        <div class="screener-headline" id="screenerHeadline"><!-- データはJSから挿入されます --></div>
+
+        <div class="screener-overview">
+          <div class="screener-summary" id="screenerSummary"><!-- データはJSから挿入されます --></div>
+          <div class="screener-summary" id="screenerSectorSummary"><!-- データはJSから挿入されます --></div>
+        </div>
+
+        <div class="screener-controls">
+          <div class="control-group">
+            <span class="control-label">条件クリア数でしぼる</span>
+            <div id="screenerFilters" class="screener-filters"></div>
+          </div>
+          <div class="control-group">
+            <span class="control-label">セクター</span>
+            <select id="screenerSector" class="screener-select"></select>
+          </div>
+          <div class="control-group">
+            <span class="control-label">並び替え</span>
+            <select id="screenerSort" class="screener-select"></select>
+          </div>
+        </div>
+
         <p id="screenerCount" class="screener-count"></p>
+        <p class="screener-legend">
+          カード内の四角は8つの条件です。<span class="cell ok">1</span> 緑＝満たしている
+          <span class="cell ng">2</span> 赤＝満たしていない（数字は上の条件の番号。マウスを乗せると条件名が出ます）
+        </p>
         <div id="screenerGrid" class="screener-grid"></div>
         <p class="section-note" id="screenerNote" style="margin-top:24px">出典：Yahoo Finance</p>
       </div>
