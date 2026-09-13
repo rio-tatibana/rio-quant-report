@@ -1,0 +1,161 @@
+{
+  "updated_at": "2026-09-13 21:23:47",
+  "universe": "VLO/XOM/CVX/MPC/PSXの5銘柄内相対順位",
+  "results": {
+    "VLO": {
+      "name": "バレロエナジー",
+      "price": 390.42,
+      "ret_1d": 1.29,
+      "ret_5d": 5.31,
+      "ret_20d": 14.27,
+      "ret_60d": 63.46,
+      "ret_1y": 153.0,
+      "ma50": 324.39,
+      "ma200": 242.25,
+      "dist_high_52w": -2.21,
+      "vol_20d": 21.98,
+      "pe_ttm": 16.28,
+      "pb_ratio": 4.5,
+      "roe": 8.72,
+      "growth_cagr": 50.75,
+      "div_yield_ttm": 1.19,
+      "peer_scores": {
+        "growth": 100.0,
+        "profitability": 25.0,
+        "momentum": 100.0,
+        "okawa_value": 37.5
+      },
+      "okawa": {
+        "score": 54.2,
+        "verdict": "様子見",
+        "badge": "mid",
+        "comment": "PER16.3倍・PBR4.5倍、ROE8.7%、利益成長率50.7%。際立った割安感・収益力・成長性の組み合わせは見られず、様子見が妥当な銘柄です。",
+        "roe_threshold": 20.0
+      }
+    },
+    "XOM": {
+      "name": "エクソンモービル",
+      "price": 165.99,
+      "ret_1d": 0.46,
+      "ret_5d": 4.09,
+      "ret_20d": 4.35,
+      "ret_60d": 18.7,
+      "ret_1y": 52.31,
+      "ma50": 154.57,
+      "ma200": 144.05,
+      "dist_high_52w": -4.65,
+      "vol_20d": 23.17,
+      "pe_ttm": 21.36,
+      "pb_ratio": 2.63,
+      "roe": 10.62,
+      "growth_cagr": 7.28,
+      "div_yield_ttm": 2.46,
+      "peer_scores": {
+        "growth": 25.0,
+        "profitability": 50.0,
+        "momentum": 25.0,
+        "okawa_value": 37.5
+      },
+      "okawa": {
+        "score": 37.5,
+        "verdict": "様子見",
+        "badge": "mid",
+        "comment": "PER21.4倍・PBR2.6倍、ROE10.6%、利益成長率7.3%。際立った割安感・収益力・成長性の組み合わせは見られず、様子見が妥当な銘柄です。",
+        "roe_threshold": 20.0
+      }
+    },
+    "CVX": {
+      "name": "シェブロン",
+      "price": 214.06,
+      "ret_1d": 0.61,
+      "ret_5d": 2.62,
+      "ret_20d": 7.96,
+      "ret_60d": 21.59,
+      "ret_1y": 40.6,
+      "ma50": 193.67,
+      "ma200": 179.53,
+      "dist_high_52w": -1.54,
+      "vol_20d": 17.7,
+      "pe_ttm": 20.6,
+      "pb_ratio": 2.23,
+      "roe": 6.9,
+      "growth_cagr": 15.75,
+      "div_yield_ttm": 3.26,
+      "peer_scores": {
+        "growth": 50.0,
+        "profitability": 0.0,
+        "momentum": 0.0,
+        "okawa_value": 62.5
+      },
+      "okawa": {
+        "score": 37.5,
+        "verdict": "割安の罠に警戒",
+        "badge": "weak",
+        "comment": "PER20.6倍・PBR2.2倍と割安に見えますが、ROE6.9%(目安20%以上)と収益力の裏付けは弱めです。大川氏が「割安には理由がある」と警鐘を鳴らす、安いだけで質の裏付けが弱いパターンに注意が必要です。",
+        "roe_threshold": 20.0
+      }
+    },
+    "MPC": {
+      "name": "マラソンペトロリアム",
+      "price": 395.93,
+      "ret_1d": 0.89,
+      "ret_5d": 1.81,
+      "ret_20d": 11.7,
+      "ret_60d": 62.3,
+      "ret_1y": 120.8,
+      "ma50": 332.45,
+      "ma200": 244.42,
+      "dist_high_52w": -3.22,
+      "vol_20d": 20.63,
+      "pe_ttm": 13.73,
+      "pb_ratio": 5.83,
+      "roe": 19.46,
+      "growth_cagr": -1.57,
+      "div_yield_ttm": 0.99,
+      "peer_scores": {
+        "growth": 0.0,
+        "profitability": 100.0,
+        "momentum": 75.0,
+        "okawa_value": 50.0
+      },
+      "okawa": {
+        "score": 50.0,
+        "verdict": "様子見",
+        "badge": "mid",
+        "comment": "PER13.7倍・PBR5.8倍、ROE19.5%、利益成長率-1.6%。際立った割安感・収益力・成長性の組み合わせは見られず、様子見が妥当な銘柄です。",
+        "roe_threshold": 20.0
+      }
+    },
+    "PSX": {
+      "name": "フィリップス66",
+      "price": 259.47,
+      "ret_1d": 0.37,
+      "ret_5d": 1.72,
+      "ret_20d": 11.66,
+      "ret_60d": 56.04,
+      "ret_1y": 101.59,
+      "ma50": 220.58,
+      "ma200": 173.08,
+      "dist_high_52w": -2.25,
+      "vol_20d": 21.32,
+      "pe_ttm": 14.81,
+      "pb_ratio": 3.29,
+      "roe": 13.67,
+      "growth_cagr": 40.23,
+      "div_yield_ttm": 1.9,
+      "peer_scores": {
+        "growth": 75.0,
+        "profitability": 75.0,
+        "momentum": 50.0,
+        "okawa_value": 62.5
+      },
+      "okawa": {
+        "score": 70.8,
+        "verdict": "割安の罠に警戒",
+        "badge": "weak",
+        "comment": "PER14.8倍・PBR3.3倍と割安に見えますが、ROE13.7%(目安20%以上)と収益力の裏付けは弱めです。大川氏が「割安には理由がある」と警鐘を鳴らす、安いだけで質の裏付けが弱いパターンに注意が必要です。",
+        "roe_threshold": 20.0
+      }
+    }
+  }
+}

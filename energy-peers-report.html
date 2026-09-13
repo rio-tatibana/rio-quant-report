@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="エネルギー同業比較｜バレロエナジー(VLO)とXOM・CVX・MPC・PSXを株価・バリュエーション・ROE・配当で横比較">
+  <title>エネルギー同業比較 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <a class="logo" href="index.html">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">マーケット</a>
+        <a href="index.html#research">銘柄</a>
+        <a href="minervini-report.html">トレンドテンプレート</a>
+        <a href="index.html#sectors">セクター</a>
+        <a href="daily-report.html">デイリーレポート</a>
+        <a href="golden-cross-report.html">ゴールデンクロス</a>
+        <a href="energy-peers-report.html" class="active">エネルギー比較</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+      <div class="nav-search">
+        <input id="navSearchInput" placeholder="銘柄を検索：NVDA / AAPL / MSFT" onkeydown="if(event.key==='Enter') doSearch()">
+        <div class="nav-search-result" id="navSearchResult"></div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-hero">
+      <div class="container">
+        <div class="eyebrow">ENERGY PEERS COMPARISON</div>
+        <h1>エネルギー同業比較：VLO / XOM / CVX / MPC / PSX</h1>
+        <p>バレロエナジー（VLO）の新規買い検討用に、精製・統合型エネルギーの同業5銘柄を同じ物差し（moomoo OpenD取得値＋大川式判定の米国基準ROE20%）で横比較しています。</p>
+        <div class="methodology">
+          <b>このレポートについて</b><br>
+          株価・リターン・MA・ボラティリティは日足ヒストリカル、PE・成長率はバリュエーション詳細、PBR・ROE・配当利回りはスナップショットから算出しています。ROEは net_profit / net_asset の簡易算出です。同業5銘柄内の相対順位（0〜100）も併記しています。投資助言ではありません。
+        </div>
+        <div class="gc-controls">
+          <label for="epDateSelect">表示する日付：</label>
+          <select id="epDateSelect"></select>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="gc-kpis" id="epKpis"></div>
+        <div class="card">
+          <h2 style="font:var(--text-h2);margin:0 0 4px">5銘柄比較表</h2>
+          <p class="section-note" style="margin-top:0" id="epTableNote">読み込み中...</p>
+          <div class="table-wrap">
+            <table class="data" id="epTable">
+              <thead id="epTableHead"></thead>
+              <tbody id="epTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <p class="table-note">※本レポートは公開市場データ（moomoo OpenD）に基づく機械的な判定であり、投資助言ではありません。精製株は原油価格・精製マージンの影響を強く受けるシクリカル銘柄です。投資判断はご自身の責任で行ってください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="index.html#about">運営者情報</a><a href="index.html#method">分析手法</a><a href="#">免責事項</a><a href="privacy-policy.html">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="energy-peers-report.js"></script>
+</body>
+</html>

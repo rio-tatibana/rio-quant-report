@@ -14,6 +14,7 @@
 | `daily-report.html` | デイリーレポート（値動き上位5銘柄） |
 | `minervini-report.html` | トレンドテンプレート診断（ミネルヴィニの条件による銘柄診断） |
 | `golden-cross-report.html` | ゴールデンクロス銘柄スクリーニング |
+| `energy-peers-report.html` | エネルギー同業比較（VLO/XOM/CVX/MPC/PSX） |
 
 共通ファイル: `style.css`（デザイン）、`script.js`（トップページの動作）
 ページ専用: `minervini-report.js`、`golden-cross-report.js`
