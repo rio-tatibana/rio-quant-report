@@ -1,21 +1,3 @@
-function doSearch() {
-  const input = document.getElementById('navSearchInput');
-  const result = document.getElementById('navSearchResult');
-  const q = input.value.trim().toUpperCase();
-  result.classList.add('open');
-  if (!q) {
-    result.textContent = '銘柄コードを入力してください。';
-    return;
-  }
-  result.textContent = `「${q}」の分析ページは、データ連携後にここから表示できるようになります。`;
-}
-
-document.addEventListener('click', (e) => {
-  const wrap = document.querySelector('.nav-search');
-  const result = document.getElementById('navSearchResult');
-  if (wrap && !wrap.contains(e.target)) result.classList.remove('open');
-});
-
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav nav');
 if (navToggle && navLinks) {
