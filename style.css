@@ -1,6 +1,6 @@
 /* =========================================================================
    rio-quant-design トークン
-   出典: Copy of Design System（tokens/colors.css, typography.css, spacing.css, fonts.css）
+   出典: .claude/skills/rio-quant-design（旧 claude-work/Copy of Design System。tokens/colors.css, typography.css, spacing.css, fonts.css）
    このサイト単体で完結させるため、外部フォルダを参照せず値をそのまま埋め込む。
    ========================================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
@@ -84,23 +84,26 @@ body{margin:0;font-family:var(--font-sans);color:var(--text-primary);background:
 a{color:inherit}
 
 /* =========================================================================
-   ヘッダー（NavHeader）
+   ヘッダー（サイドバー）
    ========================================================================= */
-.topbar{background:var(--surface-header);position:sticky;top:0;z-index:20}
-.nav{height:64px;display:flex;align-items:center;gap:24px;position:relative}
-.brand{display:flex;flex-direction:column;line-height:1.15;margin-right:8px;flex-shrink:0;white-space:nowrap;overflow:hidden}
+.layout{display:flex;min-height:100vh}
+.page{flex:1;min-width:0}
+.sidebar{width:230px;flex-shrink:0;background:var(--surface-header);position:sticky;top:0;height:100vh;overflow-y:auto;padding:24px 0;z-index:20}
+.sidebar-brand{display:flex;flex-direction:column;line-height:1.15;padding:0 20px 24px;white-space:nowrap;overflow:hidden}
 .logo{font:800 16px/1 var(--font-sans);color:var(--text-inverse);text-decoration:none;white-space:nowrap}
 .logo span{color:var(--accent)}
-.tagline{font:400 11px/1 var(--font-sans);color:var(--text-inverse-secondary);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav nav{display:flex;gap:16px;flex:1;min-width:0;overflow:hidden;white-space:nowrap}
-.nav nav a{color:var(--text-inverse-secondary);text-decoration:none;font:500 13px/1 var(--font-sans);padding-bottom:20px;border-bottom:2px solid transparent;flex-shrink:0}
-.nav nav a:hover{color:var(--text-inverse)}
-.nav nav a.active{color:var(--text-inverse);font-weight:700;border-bottom-color:var(--accent)}
-.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0}
-.nav-toggle span{display:block;width:100%;height:2px;background:var(--text-inverse);transition:transform .2s,opacity .2s}
-.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.nav-toggle.open span:nth-child(2){opacity:0}
-.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.tagline{font:400 11px/1 var(--font-sans);color:var(--text-inverse-secondary);margin-top:4px}
+.sidebar nav{display:flex;flex-direction:column;gap:2px;padding:0 12px}
+.sidebar nav a{color:var(--text-inverse-secondary);text-decoration:none;font:500 13px/1 var(--font-sans);padding:12px 12px;border-radius:var(--radius-sm);border-left:3px solid transparent}
+.sidebar nav a:hover{color:var(--text-inverse);background:var(--navy-800)}
+.sidebar nav a.active{color:var(--text-inverse);font-weight:700;border-left-color:var(--accent);background:var(--navy-800)}
+.mobile-bar{display:none;align-items:center;justify-content:space-between;height:56px;padding:0 20px;background:var(--surface-header)}
+.sidebar-backdrop{display:none}
+.sidebar-toggle{flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;flex-shrink:0}
+.sidebar-toggle span{display:block;width:100%;height:2px;background:var(--text-inverse);transition:transform .2s,opacity .2s}
+.sidebar-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.sidebar-toggle.open span:nth-child(2){opacity:0}
+.sidebar-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* =========================================================================
    Hero
@@ -469,13 +472,10 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
   .sector-grid{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:800px){
-  .nav{gap:12px}
-  .nav-toggle{display:flex}
-  .tagline{display:none}
-  .nav nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy-900);border-top:1px solid var(--navy-700);box-shadow:var(--shadow-elevated);padding:8px 20px;overflow:visible;white-space:normal;z-index:30}
-  .nav nav.open{display:flex}
-  .nav nav a{padding:14px 0;border-bottom:1px solid var(--navy-700)}
-  .nav nav a:last-child{border-bottom:none}
+  .mobile-bar{display:flex;position:sticky;top:0;z-index:30}
+  .sidebar{position:fixed;top:0;left:-260px;width:240px;height:100vh;z-index:40;transition:left .25s ease;box-shadow:var(--shadow-elevated)}
+  .sidebar.open{left:0}
+  .sidebar-backdrop.open{display:block;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:35}
   .hero h1{font-size:34px}
   .hero-actions{flex-wrap:wrap}
   .two-col,.about-box{grid-template-columns:1fr}

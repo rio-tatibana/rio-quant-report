@@ -8,9 +8,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <div class="brand">
+  <header class="mobile-bar">
+    <a class="logo" href="index.html">rio<span>Quant</span></a>
+    <button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
         <a class="logo" href="index.html">rio<span>Quant</span></a>
         <span class="tagline">数字で見る米国株・マーケット分析</span>
       </div>
@@ -22,16 +29,18 @@
         <a href="index.html#sectors">セクター</a>
         <a href="daily-report.html">デイリーレポート</a>
         <a href="golden-cross-report.html">ゴールデンクロス</a>
+        <a href="energy-peers-report.html">エネルギー比較</a>
+        <a href="dell-vs-hpe-report.html">DELL vs HPE比較</a>
+        <a href="dell-vs-hpe-editorial.html">DELL vs HPE(読み物)</a>
+        <a href="photonics-5stocks-report.html">光電融合5銘柄</a>
         <a href="#" title="準備中">マクロ</a>
         <a href="index.html#about">サイトについて</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-  <main>
+    <div class="page">
+    <main>
     <section class="section">
       <div class="container" style="max-width:820px">
         <div class="section-title">
@@ -70,5 +79,9 @@
       <p class="copyright">© 2026 rio Quant Research</p>
     </div>
   </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

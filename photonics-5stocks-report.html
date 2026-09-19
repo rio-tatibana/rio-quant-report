@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="光電融合 米株5銘柄比較レポート｜GLW・APH・COHR・MRVL・CIENを業績・財務指標で比較">
+  <title>光電融合 米株5銘柄 比較レポート | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mobile-bar">
+    <a class="logo" href="index.html">rio<span>Quant</span></a>
+    <button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <a class="logo" href="index.html">rio<span>Quant</span></a>
+        <span class="tagline">数字で見る米国株・マーケット分析</span>
+      </div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">マーケット</a>
+        <a href="index.html#research">銘柄</a>
+        <a href="minervini-report.html">トレンドテンプレート</a>
+        <a href="index.html#sectors">セクター</a>
+        <a href="daily-report.html">デイリーレポート</a>
+        <a href="golden-cross-report.html">ゴールデンクロス</a>
+        <a href="energy-peers-report.html">エネルギー比較</a>
+        <a href="dell-vs-hpe-report.html">DELL vs HPE比較</a>
+        <a href="dell-vs-hpe-editorial.html">DELL vs HPE(読み物)</a>
+        <a href="photonics-5stocks-report.html" class="active">光電融合5銘柄</a>
+        <a href="#" title="準備中">マクロ</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <div class="page">
+    <main>
+    <section class="report-hero">
+      <div class="container">
+        <div class="eyebrow">PHOTONICS US 5 STOCKS COMPARISON</div>
+        <h1>光電融合 米株5銘柄 比較レポート</h1>
+        <p>対象：GLW（コーニング）・APH（アンフェノール）・COHR（コヒレント）・MRVL（マーベル）・CIEN（シエナ）。観点：業績・財務のみ。</p>
+        <div class="methodology">
+          <b>このレポートについて</b><br>
+          データ：moomoo OpenD（年次決算・スナップショット、2026-09-14取得）。GLW・APHは2025/FY（2025-12期）、COHR・MRVLは2026/FY（2026-06／02期寄り）、CIENは2025/FYで、会計期末が異なるため単純比較には注意。PER・PBRは過去平均トレンドに対する現在値で、リアルタイム気配とはずれ得ます。投資助言ではありません。
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-note" style="margin:0 0 16px;font:var(--text-h3);color:var(--text-primary)">稼ぐ力はAPHが断トツ（営業利益率25.9%・ROE36.8%）。成長はAPH +51.7%とMRVL +42.1%が2強。光の中核COHRは黒字転換で復活。バリュエーション（PER）は5社とも約40〜73倍と高め。唯一40倍台のAPHが相対的に割安。ディフェンシブに見るならGLW（配当あり・ROIC改善中）、装置側の出遅れを見るならCIEN、という位置づけです。</p>
+
+        <div class="gc-kpis">
+          <div class="gc-kpi"><div class="label">売上トップ</div><div class="value accent">APH</div><div class="sub">$230.9億（2025/FY・前年比+51.7%）</div></div>
+          <div class="gc-kpi"><div class="label">営業利益率トップ</div><div class="value accent">APH 25.9%</div><div class="sub">2位 MRVL 16.3%／3位 GLW 14.6%</div></div>
+          <div class="gc-kpi"><div class="label">ROEトップ</div><div class="value accent">APH 36.8%</div><div class="sub">2位 MRVL 19.3%／5年平均もAPH 28.9%で安定</div></div>
+        </div>
+
+        <div class="card">
+          <h2 style="font:var(--text-h2);margin:0 0 4px">業績・財務比較表（直近FY・年次）</h2>
+          <p class="section-note" style="margin-top:0" id="phTableNote">列見出しクリックで並べ替えできます。単位：売上・利益は億ドル。</p>
+          <div class="table-wrap">
+            <table class="data" id="phTable">
+              <thead id="phTableHead"></thead>
+              <tbody id="phTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2 style="font:var(--text-h2);margin:32px 0 16px">光電融合での立ち位置（1行メモ）</h2>
+        <div class="index-grid">
+          <div class="card"><span class="badge accent">FIBER</span><h3 style="margin:10px 0 6px">GLW コーニング</h3><p class="section-note" style="margin:0">光ファイバー・ガラスの本家。CPO向けのファイバー／コネクティビティで土台を担う。配当あり。</p></div>
+          <div class="card"><span class="badge accent">CONNECT</span><h3 style="margin:10px 0 6px">APH アンフェノール</h3><p class="section-note" style="margin:0">コネクタ・高速相互接続の最大手。CPOの「つなぐ」部分で規模と利益率が最大。</p></div>
+          <div class="card"><span class="badge accent">LASER</span><h3 style="margin:10px 0 6px">COHR コヒレント</h3><p class="section-note" style="margin:0">レーザー・光学部品の中核。前期赤字から黒字転換。PBRは5社で最低。</p></div>
+          <div class="card"><span class="badge accent">CHIP/DSP</span><h3 style="margin:10px 0 6px">MRVL マーベル</h3><p class="section-note" style="margin:0">光DSP・スイッチチップの電気側。粗利率51%で技術料型。純利益に一時要因の可能性あり。</p></div>
+          <div class="card"><span class="badge accent">SYSTEM</span><h3 style="margin:10px 0 6px">CIEN シエナ</h3><p class="section-note" style="margin:0">光伝送装置・システム側。利益率は低めだが堅実成長。小型で値動きは大きめ。</p></div>
+        </div>
+
+        <div class="card" style="margin-top:20px">
+          <h2 style="font:var(--text-h2);margin:0 0 4px">時価・株価スナップショット</h2>
+          <div class="table-wrap">
+            <table class="data">
+              <thead><tr><th>銘柄</th><th>株価($)</th><th>時価総額(億$)</th><th>決算期</th><th>希薄化EPS($)</th></tr></thead>
+              <tbody>
+                <tr><td>APH</td><td class="num">78.62</td><td class="num">1938.6</td><td>2025/FY</td><td class="num">1.67</td></tr>
+                <tr><td>GLW</td><td class="num">149.61</td><td class="num">1288.7</td><td>2025/FY</td><td class="num">1.83</td></tr>
+                <tr><td>MRVL</td><td class="num">214.47</td><td class="num">1880.7</td><td>2026/FY</td><td class="num">3.07</td></tr>
+                <tr><td>COHR</td><td class="num">275.38</td><td class="num">539.3</td><td>2026/FY</td><td class="num">4.12</td></tr>
+                <tr><td>CIEN</td><td class="num">323.50</td><td class="num">458.8</td><td>2025/FY</td><td class="num">0.85</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="table-note">出典：moomoo OpenD get_market_snapshot／get_valuation_detail（trend current_valueをPER・PBRとして引用）／get_financials_statements（年次 financial_type=7）。取得日時2026-09-14 22:40 JST。会計期末が異なるため単純比較には注意。本レポートは情報提供のみで投資助言・推奨ではありません。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div>
+      <div class="footer-links"><a href="index.html#about">運営者情報</a><a href="index.html#method">分析手法</a><a href="#">免責事項</a><a href="privacy-policy.html">プライバシーポリシー</a></div>
+      <p class="copyright">© 2026 rio Quant Research</p>
+    </div>
+  </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="photonics-5stocks-report.js"></script>
+</body>
+</html>

@@ -1,19 +1,23 @@
 const navToggle = document.getElementById('navToggle');
-const navLinks = document.querySelector('.nav nav');
-if (navToggle && navLinks) {
+const sidebar = document.getElementById('sidebar');
+const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+if (navToggle && sidebar) {
   const closeNav = () => {
-    navLinks.classList.remove('open');
+    sidebar.classList.remove('open');
+    if (sidebarBackdrop) sidebarBackdrop.classList.remove('open');
     navToggle.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
   };
   navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
+    const isOpen = sidebar.classList.toggle('open');
+    if (sidebarBackdrop) sidebarBackdrop.classList.toggle('open', isOpen);
     navToggle.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
-  navLinks.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeNav));
+  sidebar.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeNav));
+  if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeNav);
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav')) closeNav();
+    if (!e.target.closest('.sidebar, .mobile-bar')) closeNav();
   });
 }
 
