@@ -46,6 +46,30 @@ jobs:
             -H "Click: $REPORT_URL" \
             -d "無料データ（Yahoo Finance・TDnet）で日本株レポートを更新しました。" \
             "$NTFY_URL"
+      # NTFY_URLの形を手動実行時だけ検査する。値そのものは絶対に出力せず、
+      # 判定結果（OK/NG）だけを表示する。curlのURL不正エラーの原因切り分け用。
+      - name: Check the shape of NTFY_URL (the value is never printed)
+        if: github.event_name == 'workflow_dispatch' && env.NTFY_URL != ''
+        run: |
+          url="$NTFY_URL"
+          case "$url" in
+            https://ntfy.sh/*) echo "形式: https://ntfy.sh/... で始まる → OK" ;;
+            https://*)         echo "形式: httpsだがntfy.sh以外のホスト → 自前サーバーなら問題なし" ;;
+            http://*)          echo "形式: httpで始まる → NG（httpsにする）" ;;
+            *)                 echo "形式: スキーム(https://)が無い → NG" ;;
+          esac
+          if printf '%s' "$url" | LC_ALL=C grep -q '[^ -~]'; then
+            echo "文字種: 非ASCII（全角・日本語など）を含む → NG。これがURL不正の原因"
+          else
+            echo "文字種: 半角ASCIIのみ → OK"
+          fi
+          if printf '%s' "$url" | LC_ALL=C grep -q '[[:space:]]'; then
+            echo "空白: スペースまたは改行を含む → NG"
+          else
+            echo "空白: なし → OK"
+          fi
+          echo "末尾の文字が英数字か: $(printf '%s' "$url" | LC_ALL=C grep -qE '[A-Za-z0-9]$' && echo 'OK' || echo 'NG（記号や不可視文字で終わっている）')"
+
       # 手動実行のときだけ送る通知テスト。ntfyは存在しないトピック名にも成功を返すため、
       # 実際に届くかはこうして送ってみないと確認できない。定時実行では送らない。
       - name: Send a test notification on manual runs
