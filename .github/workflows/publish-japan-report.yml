@@ -46,6 +46,19 @@ jobs:
             -H "Click: $REPORT_URL" \
             -d "無料データ（Yahoo Finance・TDnet）で日本株レポートを更新しました。" \
             "$NTFY_URL"
+      # 手動実行のときだけ送る通知テスト。ntfyは存在しないトピック名にも成功を返すため、
+      # 実際に届くかはこうして送ってみないと確認できない。定時実行では送らない。
+      - name: Send a test notification on manual runs
+        if: github.event_name == 'workflow_dispatch' && env.NTFY_URL != ''
+        env:
+          REPORT_URL: https://rio-tatibana.github.io/rio-quant-report/japan-report.html
+        run: |
+          curl --fail --silent --show-error \
+            -H "Title: 日本株レポートの通知テスト" \
+            -H "Click: $REPORT_URL" \
+            -d "手動実行によるテストです。これが届けば、更新通知の設定は正常です。" \
+            "$NTFY_URL"
+
       - name: Notify workflow failure through ntfy
         if: failure() && env.NTFY_URL != ''
         env:
