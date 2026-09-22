@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日本株のマーケット概況、週足ゴールデンクロス監視、決算・重要開示をまとめた無料の自動更新レポート">
+  <title>日本株レポート | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mobile-bar">
+    <a class="logo" href="index.html">rio<span>Quant</span></a>
+    <button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand"><a class="logo" href="index.html">rio<span>Quant</span></a><span class="tagline">数字で見る株式・マーケット分析</span></div>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="index.html#market">米国マーケット</a>
+        <a href="japan-report.html" class="active">日本株</a>
+        <a href="golden-cross-report.html">米国株ゴールデンクロス</a>
+        <a href="minervini-report.html">トレンドテンプレート</a>
+        <a href="daily-report.html">デイリーレポート</a>
+        <a href="index.html#about">サイトについて</a>
+      </nav>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <div class="page">
+      <main>
+        <section class="report-hero">
+          <div class="container">
+            <div class="eyebrow">JAPAN EQUITY QUANT REPORT</div>
+            <h1>日本株 マーケット・監視レポート</h1>
+            <p>市場の動き、週足ゴールデンクロスを維持する監視銘柄、決算・重要開示を平日引け後に自動更新します。</p>
+            <div class="methodology"><b>判定方法</b><br>事前に指定した銘柄を対象に、週足の13週単純移動平均線が26週線を上回る状態を毎週金曜の引け後に判定します。投資助言ではありません。</div>
+            <p class="jp-updated" id="jpUpdated">データを読み込み中...</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title"><div><span class="eyebrow">MARKET SNAPSHOT</span><h2>本日のマーケット</h2></div></div>
+            <div class="jp-market-grid" id="jpMarket"></div>
+          </div>
+        </section>
+
+        <section class="section dark">
+          <div class="container">
+            <div class="section-title light"><div><span class="eyebrow">WEEKLY TREND</span><h2>週足ゴールデンクロス監視リスト</h2></div></div>
+            <p class="section-note jp-light-note" id="jpWatchNote">読み込み中...</p>
+            <div class="table-wrap"><table class="data jp-data"><thead><tr><th>コード</th><th>銘柄</th><th>終値</th><th>前日比</th><th>13週線</th><th>26週線</th><th>13週騰落</th><th>TOPIX相対</th><th>52週高値乖離</th><th>クオンツスコア</th></tr></thead><tbody id="jpWatchlist"></tbody></table></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title"><div><span class="eyebrow">WATCHLIST SECTORS</span><h2>監視対象内の業種別パフォーマンス</h2></div></div>
+            <p class="section-note">指定銘柄に含まれる業種の平均前日比です。市場全体の33業種ランキングではありません。</p>
+            <div class="jp-sector-grid" id="jpSectors"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title"><div><span class="eyebrow">DISCLOSURES</span><h2>決算・重要開示</h2></div></div>
+            <div class="jp-disclosures" id="jpDisclosures"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <h2>クオンツスコアの見方</h2>
+            <p class="section-note">成長性・収益性・モメンタム・割安性を、データが取得できた項目だけで100点満点に再配分します。欠損データを0点扱いにはしません。スコアは指定銘柄内での相対評価です。</p>
+            <p class="table-note">出典：株価・基本指標はYahoo Finance、決算・会社開示はTDnet公開情報。データの遅延・欠損や計算誤差の可能性があります。本サイトは特定の金融商品の売買を推奨するものではありません。</p>
+          </div>
+        </section>
+      </main>
+      <footer><div class="container footer-inner"><div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div><div class="footer-links"><a href="index.html#about">運営者情報</a><a href="privacy-policy.html">プライバシーポリシー</a></div><p class="copyright">© 2026 rio Quant Research</p></div></footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="japan-report.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+name: Publish Japan equity report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 18:17 JST（月〜金）。毎時00分の混雑を避けるため17分に実行する。
+    - cron: '17 9 * * 1-5'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NTFY_URL: ${{ secrets.NTFY_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free data libraries
+        run: pip install -r requirements.txt
+      - name: Generate report data
+        run: python scripts/generate_japan_report.py
+      - name: Commit updated report data
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/japan
+          git commit -m "chore: update Japan equity report"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Notify the published report through ntfy
+        if: steps.changes.outputs.changed == 'true' && env.NTFY_URL != ''
+        env:
+          REPORT_URL: https://rio-tatibana.github.io/rio-quant-report/japan-report.html
+        run: |
+          curl --fail --silent --show-error \
+            -H "Title: 日本株レポートを更新しました" \
+            -H "Click: $REPORT_URL" \
+            -d "無料データ（Yahoo Finance・TDnet）で日本株レポートを更新しました。" \
+            "$NTFY_URL"
+      - name: Notify workflow failure through ntfy
+        if: failure() && env.NTFY_URL != ''
+        env:
+          ACTIONS_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl --fail --silent --show-error \
+            -H "Title: 日本株レポートの更新に失敗しました" \
+            -H "Click: $ACTIONS_URL" \
+            -H "Priority: high" \
+            -d "GitHub Actionsの実行ログを確認してください。" \
+            "$NTFY_URL"

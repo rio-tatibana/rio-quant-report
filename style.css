@@ -466,6 +466,36 @@ table.data th.sortable.sorted-asc::after{content:'\25B2';color:var(--accent)}
 table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
 
 /* =========================================================================
+   日本株レポート（japan-report.html）
+   ========================================================================= */
+.jp-updated{margin-top:16px!important;font:var(--text-caption)!important;color:var(--text-inverse-secondary)!important}
+.jp-market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.jp-market-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px}
+.jp-market-card .label{font:var(--text-caption);color:var(--text-tertiary)}
+.jp-market-card .value{font:var(--num-lg);color:var(--text-primary);margin-top:10px}
+.jp-market-card .change{font:var(--text-body-sm);margin-top:8px;color:var(--text-secondary)}
+.jp-market-card .change.up,table.data td.up{color:var(--up)}
+.jp-market-card .change.down,table.data td.down{color:var(--down)}
+.jp-light-note{color:var(--text-inverse-secondary)!important}
+.jp-data{background:var(--surface-card)}
+.jp-disclosures{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.jp-sector-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.jp-sector-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;display:flex;flex-direction:column;gap:7px;font:var(--text-body-sm);color:var(--text-secondary)}
+.jp-sector-card strong{font:var(--num-md);color:var(--text-primary)}
+.jp-sector-card strong.up{color:var(--up)}
+.jp-sector-card strong.down{color:var(--down)}
+.jp-sector-card small{font:var(--text-caption);color:var(--text-tertiary)}
+.jp-disclosure-card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px}
+.jp-disclosure-card h3{font:var(--text-h3);margin:8px 0;color:var(--text-primary)}
+.jp-disclosure-card h3 a{color:inherit;text-decoration:none}
+.jp-disclosure-card h3 a:hover{color:var(--accent);text-decoration:underline}
+.jp-disclosure-card p,.jp-disclosure-meta{font:var(--text-caption);color:var(--text-tertiary);margin:0}
+.jp-earnings-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0;padding:12px;background:var(--surface-sunken);border-radius:var(--radius-md)}
+.jp-earnings-grid div{display:flex;flex-direction:column;gap:3px}
+.jp-earnings-grid span{font:var(--text-caption);color:var(--text-tertiary)}
+.jp-earnings-grid strong{font:var(--num-sm);color:var(--text-primary)}
+
+/* =========================================================================
    レスポンシブ
    ========================================================================= */
 @media(max-width:900px){
@@ -498,4 +528,5 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
   .screener-summary .row .track{width:60px}
   .screener-summary .row .num{width:76px}
   .gc-kpis{grid-template-columns:1fr 1fr}
+  .jp-market-grid{grid-template-columns:1fr 1fr}
 }
