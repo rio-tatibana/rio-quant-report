@@ -46,6 +46,21 @@ jobs:
             -H "Click: $REPORT_URL" \
             -d "無料データ（Yahoo Finance・TDnet）で日本株レポートを更新しました。" \
             "$NTFY_URL"
+      # Secretに混入した空白・改行・制御文字を取り除いてから使う。コピペ事故で
+      # URLが複数行になると curl が "Malformed input to a URL function" で落ちるため。
+      # 加工後は元のSecretと文字列が一致せず自動マスクが効かないので、add-maskで再登録する。
+      - name: Normalize NTFY_URL (the value is never printed)
+        if: env.NTFY_URL != ''
+        run: |
+          normalized=$(printf '%s' "$NTFY_URL" | tr -d '[:space:]')
+          echo "::add-mask::$normalized"
+          echo "NTFY_URL=$normalized" >> "$GITHUB_ENV"
+          if [ "$normalized" = "$NTFY_URL" ]; then
+            echo "空白の混入なし。そのまま使用します。"
+          else
+            echo "空白・改行を除去しました（値は表示しません）。"
+          fi
+
       # NTFY_URLの形を手動実行時だけ検査する。値そのものは絶対に出力せず、
       # 判定結果（OK/NG）だけを表示する。curlのURL不正エラーの原因切り分け用。
       - name: Check the shape of NTFY_URL (the value is never printed)
