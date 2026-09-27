@@ -1,3 +1,37 @@
+// サイドバーのメニュー(全ページ共通)。ページを増やしたら、ここに1行足すだけで全ページに反映される
+const NAV_ITEMS = [
+  { href: 'index.html', label: 'ホーム' },
+  { href: 'index.html#market', label: 'マーケット' },
+  { href: 'index.html#research', label: '銘柄' },
+  { href: 'minervini-report.html', label: 'トレンドテンプレート' },
+  { href: 'index.html#sectors', label: 'セクター' },
+  { href: 'daily-report.html', label: 'デイリーレポート' },
+  { href: 'golden-cross-report.html', label: 'ゴールデンクロス' },
+  { href: 'energy-peers-report.html', label: 'エネルギー比較' },
+  { href: 'dell-vs-hpe-report.html', label: 'DELL vs HPE比較' },
+  { href: 'dell-vs-hpe-editorial.html', label: 'DELL vs HPE(読み物)' },
+  { href: 'photonics-5stocks-report.html', label: '光電融合5銘柄' },
+  { href: '408a-holdings-report.html', label: '408A構成銘柄' },
+  { href: 'japan-report.html', label: '日本株' },
+  { href: 'japan-list-report.html', label: 'List 日本株' },
+  { href: 'index.html#about', label: 'サイトについて' },
+];
+
+function renderSiteNav() {
+  const nav = document.querySelector('#sidebar nav');
+  if (!nav) return;
+  const current = location.pathname.split('/').pop() || 'index.html';
+  nav.innerHTML = NAV_ITEMS.map((item) => {
+    const [file, hash] = item.href.split('#');
+    // トップページ上では「index.html#market」を「#market」にして、再読み込みせずにスクロールさせる
+    const href = file === current && hash !== undefined ? `#${hash}` : item.href;
+    const active = file === current && hash === undefined ? ' class="active"' : '';
+    return `<a href="${href}"${active}>${item.label}</a>`;
+  }).join('');
+}
+
+renderSiteNav();
+
 const navToggle = document.getElementById('navToggle');
 const sidebar = document.getElementById('sidebar');
 const sidebarBackdrop = document.getElementById('sidebarBackdrop');
