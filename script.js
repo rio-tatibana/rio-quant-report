@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { href: '408a-holdings-report.html', label: '408A構成銘柄' },
   { href: 'japan-report.html', label: '日本株' },
   { href: 'japan-list-report.html', label: 'List 日本株' },
-  { href: 'index.html#about', label: 'サイトについて' },
+  { href: 'about.html', label: 'サイトについて' },
 ];
 
 function renderSiteNav() {
