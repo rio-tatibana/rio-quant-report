@@ -476,6 +476,9 @@ table.data th.sortable.sorted-desc::after{content:'\25BC';color:var(--accent)}
 .jp-market-card .change{font:var(--text-body-sm);margin-top:8px;color:var(--text-secondary)}
 .jp-market-card .change.up,table.data td.up{color:var(--up)}
 .jp-market-card .change.down,table.data td.down{color:var(--down)}
+/* 損益・成長率など「良い/悪い」を示す数値(株価の上下=up/downとは別) */
+table.data td.positive{color:var(--positive)}
+table.data td.negative{color:var(--negative)}
 .jp-light-note{color:var(--text-inverse-secondary)!important}
 .jp-data{background:var(--surface-card)}
 .jp-disclosures{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}

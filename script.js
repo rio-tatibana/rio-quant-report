@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { href: 'dell-vs-hpe-editorial.html', label: 'DELL vs HPE(読み物)' },
   { href: 'photonics-5stocks-report.html', label: '光電融合5銘柄' },
   { href: '408a-holdings-report.html', label: '408A構成銘柄' },
+  { href: 'tempus-ai-report.html', label: 'Tempus AI(オンリーワン)' },
   { href: 'japan-report.html', label: '日本株' },
   { href: 'japan-list-report.html', label: 'List 日本株' },
   { href: 'about.html', label: 'サイトについて' },
