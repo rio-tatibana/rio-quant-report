@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at": "2026-10-06T03:32:59+09:00",
-  "as_of": "2026-10-02",
+  "generated_at": "2026-10-07T01:00:27+09:00",
+  "as_of": "2026-10-05",
   "source_notes": [
     "株価・基本指標: Yahoo Finance（yfinance）",
     "適時開示: TDnet公開情報"
@@ -9,8 +9,8 @@
   "market": [
     {
       "label": "日経平均",
-      "value": 68309.461,
-      "change_1d_pct": -0.94
+      "value": 69946.859,
+      "change_1d_pct": 2.4
     },
     {
       "label": "TOPIX連動ETF",
@@ -24,8 +24,8 @@
     },
     {
       "label": "ドル円",
-      "value": 158.054,
-      "change_1d_pct": 0.08
+      "value": 158.11,
+      "change_1d_pct": 0.24
     }
   ],
   "watchlist_count": 19,
@@ -48,8 +48,8 @@
         "earnings_growth": 0.509,
         "roe": 0.09458999,
         "margin": 0.45599997,
-        "pe": 15.287352,
-        "pb": 1.7925074,
+        "pe": 15.524168,
+        "pb": 1.8202752,
         "sector": "Financial Services"
       },
       "scores": {
@@ -77,8 +77,8 @@
         "earnings_growth": 0.953,
         "roe": 0.56895,
         "margin": 0.51702,
-        "pe": 78.50853,
-        "pb": 27.982613,
+        "pe": 81.53127,
+        "pb": 29.058867,
         "sector": "Technology"
       },
       "scores": {
@@ -106,8 +106,8 @@
         "earnings_growth": 0.737,
         "roe": 0.36222,
         "margin": 0.24433,
-        "pe": 47.859486,
-        "pb": 13.049535,
+        "pe": 48.83768,
+        "pb": 13.316253,
         "sector": "Communication Services"
       },
       "scores": {
@@ -135,8 +135,8 @@
         "earnings_growth": 2.101,
         "roe": 0.112670004,
         "margin": 0.12778,
-        "pe": 19.405027,
-        "pb": 1.260265,
+        "pe": 19.359415,
+        "pb": 1.2573028,
         "sector": "Consumer Cyclical"
       },
       "scores": {
@@ -164,16 +164,16 @@
         "earnings_growth": 2.783,
         "roe": 0.13575,
         "margin": 0.16672,
-        "pe": 15.156068,
-        "pb": 1.4301656,
+        "pe": 15.381406,
+        "pb": 1.4514291,
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 70.4,
+        "total": 70.0,
         "growth": 100.0,
         "profitability": 35.1,
         "momentum": 67.6,
-        "valuation": 86.5
+        "valuation": 83.8
       }
     },
     {
@@ -193,16 +193,16 @@
         "earnings_growth": 0.35,
         "roe": 0.08569,
         "margin": 0.40895998,
-        "pe": 15.128688,
-        "pb": 1.5920088,
+        "pe": 15.375302,
+        "pb": 0.80898,
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 67.4,
+        "total": 67.8,
         "growth": 40.5,
         "profitability": 73.0,
         "momentum": 75.7,
-        "valuation": 83.8
+        "valuation": 86.5
       }
     },
     {
@@ -222,8 +222,8 @@
         "earnings_growth": 0.404,
         "roe": 0.30929002,
         "margin": 0.28866,
-        "pe": 10.204734,
-        "pb": 2.7083027,
+        "pe": 10.2367935,
+        "pb": 2.7167892,
         "sector": "Technology"
       },
       "scores": {
@@ -251,8 +251,8 @@
         "earnings_growth": 0.111,
         "roe": 0.12546,
         "margin": 0.18114,
-        "pe": 18.03054,
-        "pb": 2.0578396,
+        "pe": 18.31972,
+        "pb": 2.0908437,
         "sector": "Basic Materials"
       },
       "scores": {
@@ -280,8 +280,8 @@
         "earnings_growth": 0.55,
         "roe": null,
         "margin": 0.27538002,
-        "pe": 21.255798,
-        "pb": 3.0589414,
+        "pe": 21.456223,
+        "pb": 3.0877845,
         "sector": "Communication Services"
       },
       "scores": {
@@ -290,35 +290,6 @@
         "profitability": 83.8,
         "momentum": 54.1,
         "valuation": 54.1
-      }
-    },
-    {
-      "code": "7203",
-      "name": "トヨタ自動車",
-      "symbol": "7203.T",
-      "price": 2893.5,
-      "change_1d_pct": 1.3,
-      "ma13w": 2993.65,
-      "ma26w": 2987.37,
-      "golden_cross_active": true,
-      "return_13w_pct": 2.73,
-      "relative_topix_13w_pct": 1.16,
-      "distance_52w_high_pct": -26.64,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.869,
-        "roe": 0.12404,
-        "margin": 0.07863,
-        "pe": 8.234674,
-        "pb": 0.91839767,
-        "sector": "Consumer Cyclical"
-      },
-      "scores": {
-        "total": 56.4,
-        "growth": 73.0,
-        "profitability": 16.2,
-        "momentum": 56.8,
-        "valuation": 94.6
       }
     },
     {
@@ -338,8 +309,8 @@
         "earnings_growth": 0.476,
         "roe": 0.13159999,
         "margin": 0.16721001,
-        "pe": 19.986042,
-        "pb": 2.61232,
+        "pe": 20.227615,
+        "pb": 2.6438951,
         "sector": "Technology"
       },
       "scores": {
@@ -348,6 +319,35 @@
         "profitability": 32.4,
         "momentum": 83.8,
         "valuation": 62.2
+      }
+    },
+    {
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "symbol": "7203.T",
+      "price": 2893.5,
+      "change_1d_pct": 1.3,
+      "ma13w": 2993.65,
+      "ma26w": 2987.37,
+      "golden_cross_active": true,
+      "return_13w_pct": 2.73,
+      "relative_topix_13w_pct": 1.16,
+      "distance_52w_high_pct": -26.64,
+      "fundamentals": {
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.869,
+        "roe": 0.12404,
+        "margin": 0.07863,
+        "pe": 8.339973,
+        "pb": 0.9301415,
+        "sector": "Consumer Cyclical"
+      },
+      "scores": {
+        "total": 56.0,
+        "growth": 73.0,
+        "profitability": 16.2,
+        "momentum": 56.8,
+        "valuation": 91.9
       }
     },
     {
@@ -367,45 +367,16 @@
         "earnings_growth": -0.015,
         "roe": 0.092180006,
         "margin": 0.15597,
-        "pe": 19.755667,
-        "pb": 1.7488649,
+        "pe": 19.101671,
+        "pb": 1.7539082,
         "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 53.6,
+        "total": 54.5,
         "growth": 13.5,
         "profitability": 29.7,
         "momentum": 94.6,
-        "valuation": 64.9
-      }
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "symbol": "7701.T",
-      "price": 4026.0,
-      "change_1d_pct": 3.28,
-      "ma13w": 4043.38,
-      "ma26w": 3917.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -5.28,
-      "relative_topix_13w_pct": -6.84,
-      "distance_52w_high_pct": -9.95,
-      "fundamentals": {
-        "revenue_growth": 0.103,
-        "earnings_growth": 0.683,
-        "roe": 0.12335,
-        "margin": 0.109230004,
-        "pe": 19.22728,
-        "pb": 2.0225556,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 51.9,
-        "growth": 62.2,
-        "profitability": 21.6,
-        "momentum": 59.5,
-        "valuation": 67.6
+        "valuation": 70.3
       }
     },
     {
@@ -425,8 +396,8 @@
         "earnings_growth": 0.417,
         "roe": 0.12655,
         "margin": 0.21139,
-        "pe": 114.13549,
-        "pb": 12.029015,
+        "pe": 115.39178,
+        "pb": 12.161418,
         "sector": "Technology"
       },
       "scores": {
@@ -435,6 +406,35 @@
         "profitability": 48.6,
         "momentum": 78.4,
         "valuation": 0.0
+      }
+    },
+    {
+      "code": "7701",
+      "name": "島津製作所",
+      "symbol": "7701.T",
+      "price": 4026.0,
+      "change_1d_pct": 3.28,
+      "ma13w": 4043.38,
+      "ma26w": 3917.88,
+      "golden_cross_active": true,
+      "return_13w_pct": -5.28,
+      "relative_topix_13w_pct": -6.84,
+      "distance_52w_high_pct": -9.95,
+      "fundamentals": {
+        "revenue_growth": 0.103,
+        "earnings_growth": 0.683,
+        "roe": 0.12335,
+        "margin": 0.109230004,
+        "pe": 19.661875,
+        "pb": 2.0682716,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 51.5,
+        "growth": 62.2,
+        "profitability": 21.6,
+        "momentum": 59.5,
+        "valuation": 64.9
       }
     },
     {
@@ -454,8 +454,8 @@
         "earnings_growth": 0.704,
         "roe": null,
         "margin": 0.21118,
-        "pe": 81.57629,
-        "pb": 10.888608,
+        "pe": 80.370346,
+        "pb": 10.727642,
         "sector": "Technology"
       },
       "scores": {
@@ -483,8 +483,8 @@
         "earnings_growth": 0.168,
         "roe": 0.18486,
         "margin": 0.12911999,
-        "pe": 38.457645,
-        "pb": 6.5576234,
+        "pe": 38.826252,
+        "pb": 6.6204762,
         "sector": "Consumer Defensive"
       },
       "scores": {
@@ -512,8 +512,8 @@
         "earnings_growth": -0.372,
         "roe": 0.1887,
         "margin": 0.118,
-        "pe": 32.43804,
-        "pb": 6.0041776,
+        "pe": 33.352512,
+        "pb": 6.1734433,
         "sector": "Technology"
       },
       "scores": {
@@ -542,7 +542,7 @@
         "roe": -0.49664003,
         "margin": -0.87868,
         "pe": null,
-        "pb": 3.1466465,
+        "pb": 3.1249955,
         "sector": "Industrials"
       },
       "scores": {
@@ -571,7 +571,7 @@
         "roe": -0.04061,
         "margin": -0.02728,
         "pe": null,
-        "pb": 2.2449362,
+        "pb": 2.292334,
         "sector": "Technology"
       },
       "scores": {
@@ -601,8 +601,8 @@
         "earnings_growth": 0.509,
         "roe": 0.09458999,
         "margin": 0.45599997,
-        "pe": 15.287352,
-        "pb": 1.7925074,
+        "pe": 15.524168,
+        "pb": 1.8202752,
         "sector": "Financial Services"
       },
       "scores": {
@@ -630,8 +630,8 @@
         "earnings_growth": 0.953,
         "roe": 0.56895,
         "margin": 0.51702,
-        "pe": 78.50853,
-        "pb": 27.982613,
+        "pe": 81.53127,
+        "pb": 29.058867,
         "sector": "Technology"
       },
       "scores": {
@@ -659,8 +659,8 @@
         "earnings_growth": 0.737,
         "roe": 0.36222,
         "margin": 0.24433,
-        "pe": 47.859486,
-        "pb": 13.049535,
+        "pe": 48.83768,
+        "pb": 13.316253,
         "sector": "Communication Services"
       },
       "scores": {
@@ -688,8 +688,8 @@
         "earnings_growth": 2.101,
         "roe": 0.112670004,
         "margin": 0.12778,
-        "pe": 19.405027,
-        "pb": 1.260265,
+        "pe": 19.359415,
+        "pb": 1.2573028,
         "sector": "Consumer Cyclical"
       },
       "scores": {
@@ -717,16 +717,16 @@
         "earnings_growth": 2.783,
         "roe": 0.13575,
         "margin": 0.16672,
-        "pe": 15.156068,
-        "pb": 1.4301656,
+        "pe": 15.381406,
+        "pb": 1.4514291,
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 70.4,
+        "total": 70.0,
         "growth": 100.0,
         "profitability": 35.1,
         "momentum": 67.6,
-        "valuation": 86.5
+        "valuation": 83.8
       }
     },
     {
@@ -746,16 +746,16 @@
         "earnings_growth": 0.35,
         "roe": 0.08569,
         "margin": 0.40895998,
-        "pe": 15.128688,
-        "pb": 1.5920088,
+        "pe": 15.375302,
+        "pb": 0.80898,
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 67.4,
+        "total": 67.8,
         "growth": 40.5,
         "profitability": 73.0,
         "momentum": 75.7,
-        "valuation": 83.8
+        "valuation": 86.5
       }
     },
     {
@@ -775,8 +775,8 @@
         "earnings_growth": 0.404,
         "roe": 0.30929002,
         "margin": 0.28866,
-        "pe": 10.204734,
-        "pb": 2.7083027,
+        "pe": 10.2367935,
+        "pb": 2.7167892,
         "sector": "Technology"
       },
       "scores": {
@@ -804,8 +804,8 @@
         "earnings_growth": 0.111,
         "roe": 0.12546,
         "margin": 0.18114,
-        "pe": 18.03054,
-        "pb": 2.0578396,
+        "pe": 18.31972,
+        "pb": 2.0908437,
         "sector": "Basic Materials"
       },
       "scores": {
@@ -833,8 +833,8 @@
         "earnings_growth": 0.55,
         "roe": null,
         "margin": 0.27538002,
-        "pe": 21.255798,
-        "pb": 3.0589414,
+        "pe": 21.456223,
+        "pb": 3.0877845,
         "sector": "Communication Services"
       },
       "scores": {
@@ -843,35 +843,6 @@
         "profitability": 83.8,
         "momentum": 54.1,
         "valuation": 54.1
-      }
-    },
-    {
-      "code": "7203",
-      "name": "トヨタ自動車",
-      "symbol": "7203.T",
-      "price": 2893.5,
-      "change_1d_pct": 1.3,
-      "ma13w": 2993.65,
-      "ma26w": 2987.37,
-      "golden_cross_active": true,
-      "return_13w_pct": 2.73,
-      "relative_topix_13w_pct": 1.16,
-      "distance_52w_high_pct": -26.64,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.869,
-        "roe": 0.12404,
-        "margin": 0.07863,
-        "pe": 8.234674,
-        "pb": 0.91839767,
-        "sector": "Consumer Cyclical"
-      },
-      "scores": {
-        "total": 56.4,
-        "growth": 73.0,
-        "profitability": 16.2,
-        "momentum": 56.8,
-        "valuation": 94.6
       }
     },
     {
@@ -891,8 +862,8 @@
         "earnings_growth": 0.476,
         "roe": 0.13159999,
         "margin": 0.16721001,
-        "pe": 19.986042,
-        "pb": 2.61232,
+        "pe": 20.227615,
+        "pb": 2.6438951,
         "sector": "Technology"
       },
       "scores": {
@@ -901,6 +872,35 @@
         "profitability": 32.4,
         "momentum": 83.8,
         "valuation": 62.2
+      }
+    },
+    {
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "symbol": "7203.T",
+      "price": 2893.5,
+      "change_1d_pct": 1.3,
+      "ma13w": 2993.65,
+      "ma26w": 2987.37,
+      "golden_cross_active": true,
+      "return_13w_pct": 2.73,
+      "relative_topix_13w_pct": 1.16,
+      "distance_52w_high_pct": -26.64,
+      "fundamentals": {
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.869,
+        "roe": 0.12404,
+        "margin": 0.07863,
+        "pe": 8.339973,
+        "pb": 0.9301415,
+        "sector": "Consumer Cyclical"
+      },
+      "scores": {
+        "total": 56.0,
+        "growth": 73.0,
+        "profitability": 16.2,
+        "momentum": 56.8,
+        "valuation": 91.9
       }
     },
     {
@@ -920,45 +920,16 @@
         "earnings_growth": -0.015,
         "roe": 0.092180006,
         "margin": 0.15597,
-        "pe": 19.755667,
-        "pb": 1.7488649,
+        "pe": 19.101671,
+        "pb": 1.7539082,
         "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 53.6,
+        "total": 54.5,
         "growth": 13.5,
         "profitability": 29.7,
         "momentum": 94.6,
-        "valuation": 64.9
-      }
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "symbol": "7701.T",
-      "price": 4026.0,
-      "change_1d_pct": 3.28,
-      "ma13w": 4043.38,
-      "ma26w": 3917.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -5.28,
-      "relative_topix_13w_pct": -6.84,
-      "distance_52w_high_pct": -9.95,
-      "fundamentals": {
-        "revenue_growth": 0.103,
-        "earnings_growth": 0.683,
-        "roe": 0.12335,
-        "margin": 0.109230004,
-        "pe": 19.22728,
-        "pb": 2.0225556,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 51.9,
-        "growth": 62.2,
-        "profitability": 21.6,
-        "momentum": 59.5,
-        "valuation": 67.6
+        "valuation": 70.3
       }
     },
     {
@@ -978,8 +949,8 @@
         "earnings_growth": 0.417,
         "roe": 0.12655,
         "margin": 0.21139,
-        "pe": 114.13549,
-        "pb": 12.029015,
+        "pe": 115.39178,
+        "pb": 12.161418,
         "sector": "Technology"
       },
       "scores": {
@@ -988,6 +959,35 @@
         "profitability": 48.6,
         "momentum": 78.4,
         "valuation": 0.0
+      }
+    },
+    {
+      "code": "7701",
+      "name": "島津製作所",
+      "symbol": "7701.T",
+      "price": 4026.0,
+      "change_1d_pct": 3.28,
+      "ma13w": 4043.38,
+      "ma26w": 3917.88,
+      "golden_cross_active": true,
+      "return_13w_pct": -5.28,
+      "relative_topix_13w_pct": -6.84,
+      "distance_52w_high_pct": -9.95,
+      "fundamentals": {
+        "revenue_growth": 0.103,
+        "earnings_growth": 0.683,
+        "roe": 0.12335,
+        "margin": 0.109230004,
+        "pe": 19.661875,
+        "pb": 2.0682716,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 51.5,
+        "growth": 62.2,
+        "profitability": 21.6,
+        "momentum": 59.5,
+        "valuation": 64.9
       }
     },
     {
@@ -1007,8 +1007,8 @@
         "earnings_growth": 0.704,
         "roe": null,
         "margin": 0.21118,
-        "pe": 81.57629,
-        "pb": 10.888608,
+        "pe": 80.370346,
+        "pb": 10.727642,
         "sector": "Technology"
       },
       "scores": {
@@ -1036,8 +1036,8 @@
         "earnings_growth": 0.168,
         "roe": 0.18486,
         "margin": 0.12911999,
-        "pe": 38.457645,
-        "pb": 6.5576234,
+        "pe": 38.826252,
+        "pb": 6.6204762,
         "sector": "Consumer Defensive"
       },
       "scores": {
@@ -1065,8 +1065,8 @@
         "earnings_growth": -0.372,
         "roe": 0.1887,
         "margin": 0.118,
-        "pe": 32.43804,
-        "pb": 6.0041776,
+        "pe": 33.352512,
+        "pb": 6.1734433,
         "sector": "Technology"
       },
       "scores": {
@@ -1095,7 +1095,7 @@
         "roe": -0.49664003,
         "margin": -0.87868,
         "pe": null,
-        "pb": 3.1466465,
+        "pb": 3.1249955,
         "sector": "Industrials"
       },
       "scores": {
@@ -1124,7 +1124,7 @@
         "roe": -0.04061,
         "margin": -0.02728,
         "pe": null,
-        "pb": 2.2449362,
+        "pb": 2.292334,
         "sector": "Technology"
       },
       "scores": {
@@ -1152,8 +1152,8 @@
         "earnings_growth": 0.893,
         "roe": 0.17809,
         "margin": 0.32092,
-        "pe": 20.027235,
-        "pb": 2.6907651,
+        "pe": 20.308977,
+        "pb": 2.7286189,
         "sector": "Technology"
       },
       "scores": {
@@ -1181,8 +1181,8 @@
         "earnings_growth": 1.279,
         "roe": 0.26163998,
         "margin": 0.35062,
-        "pe": 31.13307,
-        "pb": 6.3937616,
+        "pe": 31.855957,
+        "pb": 6.542355,
         "sector": "Technology"
       },
       "scores": {
@@ -1210,8 +1210,8 @@
         "earnings_growth": 0.979,
         "roe": 0.09846,
         "margin": 0.27302998,
-        "pe": 28.570778,
-        "pb": 2.1939843,
+        "pe": 28.878342,
+        "pb": 2.2176194,
         "sector": "Industrials"
       },
       "scores": {
@@ -1239,8 +1239,8 @@
         "earnings_growth": 0.842,
         "roe": 0.28395,
         "margin": 0.23341998,
-        "pe": 14.642437,
-        "pb": 3.4507017,
+        "pe": 15.86264,
+        "pb": 3.73826,
         "sector": "Consumer Cyclical"
       },
       "scores": {
@@ -1268,8 +1268,8 @@
         "earnings_growth": 0.445,
         "roe": 0.144,
         "margin": 0.16126,
-        "pe": 33.168358,
-        "pb": 4.2772965,
+        "pe": 33.729275,
+        "pb": 4.349631,
         "sector": "Technology"
       },
       "scores": {
@@ -1297,8 +1297,8 @@
         "earnings_growth": 0.579,
         "roe": 0.10077,
         "margin": 0.02901,
-        "pe": 22.447327,
-        "pb": 1.7900608,
+        "pe": 22.466394,
+        "pb": 1.7915813,
         "sector": "Industrials"
       },
       "scores": {
@@ -1326,8 +1326,8 @@
         "earnings_growth": 0.583,
         "roe": 0.15192,
         "margin": 0.27497998,
-        "pe": 41.11406,
-        "pb": 5.7051187,
+        "pe": 41.214672,
+        "pb": 5.71908,
         "sector": "Technology"
       },
       "scores": {
@@ -1355,16 +1355,16 @@
         "earnings_growth": -0.032,
         "roe": 0.17087999,
         "margin": 0.24513,
-        "pe": 17.865688,
-        "pb": 2.8547616,
+        "pe": 18.184717,
+        "pb": 2.9057395,
         "sector": "Basic Materials"
       },
       "scores": {
-        "total": 47.3,
+        "total": 46.9,
         "growth": 24.3,
         "profitability": 62.2,
         "momentum": 43.2,
-        "valuation": 70.3
+        "valuation": 67.6
       }
     },
     {
@@ -1384,8 +1384,8 @@
         "earnings_growth": 0.435,
         "roe": 0.27376,
         "margin": 0.42685002,
-        "pe": 51.152187,
-        "pb": 11.873956,
+        "pe": 52.57159,
+        "pb": 12.203735,
         "sector": "Technology"
       },
       "scores": {
@@ -1413,8 +1413,8 @@
         "earnings_growth": -0.349,
         "roe": 0.33929002,
         "margin": 0.44412997,
-        "pe": 53.568527,
-        "pb": 16.771547,
+        "pe": 53.98541,
+        "pb": 16.902264,
         "sector": "Technology"
       },
       "scores": {
@@ -1442,8 +1442,8 @@
         "earnings_growth": 0.391,
         "roe": 0.22481,
         "margin": 0.20999001,
-        "pe": 47.935665,
-        "pb": 8.399926,
+        "pe": 48.513905,
+        "pb": 8.501143,
         "sector": "Consumer Cyclical"
       },
       "scores": {
@@ -1471,16 +1471,16 @@
         "earnings_growth": -0.178,
         "roe": 0.31964,
         "margin": -0.115509994,
-        "pe": 7.446675,
-        "pb": 2.0312824,
+        "pe": 7.215148,
+        "pb": 1.9681274,
         "sector": "Communication Services"
       },
       "scores": {
-        "total": 43.0,
+        "total": 43.4,
         "growth": 10.8,
         "profitability": 18.9,
         "momentum": 62.2,
-        "valuation": 91.9
+        "valuation": 94.6
       }
     },
     {
@@ -1500,8 +1500,8 @@
         "earnings_growth": 0.422,
         "roe": 0.19358999,
         "margin": 0.18983,
-        "pe": 27.53138,
-        "pb": 4.4569745,
+        "pe": 28.027494,
+        "pb": 4.5372887,
         "sector": "Technology"
       },
       "scores": {
@@ -1529,8 +1529,8 @@
         "earnings_growth": 1.233,
         "roe": 0.07804,
         "margin": 0.06297,
-        "pe": 24.246876,
-        "pb": 1.7180465,
+        "pe": 24.318876,
+        "pb": 1.7231482,
         "sector": "Industrials"
       },
       "scores": {
@@ -1558,8 +1558,8 @@
         "earnings_growth": 0.057,
         "roe": 0.112320006,
         "margin": 0.26237,
-        "pe": 24.626717,
-        "pb": 2.5366535,
+        "pe": 25.034655,
+        "pb": 2.578673,
         "sector": "Basic Materials"
       },
       "scores": {
@@ -1587,8 +1587,8 @@
         "earnings_growth": null,
         "roe": 0.09986,
         "margin": 0.13668,
-        "pe": 40.689316,
-        "pb": 2.4746916,
+        "pe": 42.028748,
+        "pb": 2.556155,
         "sector": "Technology"
       },
       "scores": {
@@ -1616,8 +1616,8 @@
         "earnings_growth": -0.326,
         "roe": 0.20497999,
         "margin": 0.14246,
-        "pe": 25.281889,
-        "pb": 5.2714458,
+        "pe": 25.663612,
+        "pb": 5.351038,
         "sector": "Technology"
       },
       "scores": {
@@ -1645,8 +1645,8 @@
         "earnings_growth": null,
         "roe": 0.059959996,
         "margin": -0.01696,
-        "pe": 45.661407,
-        "pb": 3.0810196,
+        "pe": 45.711975,
+        "pb": 3.0844316,
         "sector": "Industrials"
       },
       "scores": {
@@ -1674,8 +1674,8 @@
         "earnings_growth": -0.495,
         "roe": 0.097770005,
         "margin": 0.06825,
-        "pe": 37.238365,
-        "pb": 3.6507146,
+        "pe": 38.356026,
+        "pb": 3.7602859,
         "sector": "Industrials"
       },
       "scores": {
