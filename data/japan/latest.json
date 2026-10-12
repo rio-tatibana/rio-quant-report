@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at": "2026-10-10T01:18:20+09:00",
-  "as_of": "2026-10-08",
+  "generated_at": "2026-10-13T04:07:35+09:00",
+  "as_of": "2026-10-09",
   "source_notes": [
     "株価・基本指標: Yahoo Finance（yfinance）",
     "適時開示: TDnet公開情報"
@@ -9,75 +9,46 @@
   "market": [
     {
       "label": "日経平均",
-      "value": 69042.109,
-      "change_1d_pct": -1.42
+      "value": 69030.922,
+      "change_1d_pct": -0.02
     },
     {
       "label": "TOPIX連動ETF",
-      "value": 429.5,
-      "change_1d_pct": -1.72
+      "value": 432.5,
+      "change_1d_pct": 0.7
     },
     {
       "label": "東証グロース250連動ETF",
-      "value": 631.9,
-      "change_1d_pct": -1.28
+      "value": 639.0,
+      "change_1d_pct": 1.12
     },
     {
       "label": "ドル円",
-      "value": 158.339,
-      "change_1d_pct": 0.18
+      "value": 158.671,
+      "change_1d_pct": 0.38
     }
   ],
-  "watchlist_count": 19,
+  "watchlist_count": 15,
   "universe_count": 38,
   "watchlist": [
-    {
-      "code": "8306",
-      "name": "三菱ＵＦＪフィナンシャル・グループ",
-      "symbol": "8306.T",
-      "price": 3504.0,
-      "change_1d_pct": -3.26,
-      "ma13w": 3615.31,
-      "ma26w": 3320.0,
-      "golden_cross_active": true,
-      "return_13w_pct": 7.95,
-      "relative_topix_13w_pct": 6.38,
-      "distance_52w_high_pct": -7.77,
-      "fundamentals": {
-        "revenue_growth": 0.288,
-        "earnings_growth": 0.509,
-        "roe": 0.09458999,
-        "margin": 0.45599997,
-        "pe": 14.640335,
-        "pb": 1.716642,
-        "sector": "Financial Services"
-      },
-      "scores": {
-        "total": 81.2,
-        "growth": 64.9,
-        "profitability": 81.1,
-        "momentum": 91.9,
-        "valuation": 83.8
-      }
-    },
     {
       "code": "6857",
       "name": "アドバンテスト",
       "symbol": "6857.T",
-      "price": 40930.0,
-      "change_1d_pct": -0.87,
-      "ma13w": 32961.54,
-      "ma26w": 30595.77,
+      "price": 41610.0,
+      "change_1d_pct": 1.66,
+      "ma13w": 33867.69,
+      "ma26w": 31235.0,
       "golden_cross_active": true,
-      "return_13w_pct": 31.64,
-      "relative_topix_13w_pct": 30.07,
-      "distance_52w_high_pct": -2.2,
+      "return_13w_pct": 39.49,
+      "relative_topix_13w_pct": 37.03,
+      "distance_52w_high_pct": -0.57,
       "fundamentals": {
         "revenue_growth": 0.393,
         "earnings_growth": 0.953,
         "roe": 0.56895,
         "margin": 0.51702,
-        "pe": 66.00571,
+        "pe": 66.00676,
         "pb": 28.892221,
         "sector": "Technology"
       },
@@ -93,20 +64,20 @@
       "code": "6098",
       "name": "リクルートホールディングス",
       "symbol": "6098.T",
-      "price": 17200.0,
-      "change_1d_pct": 1.18,
-      "ma13w": 15006.92,
-      "ma26w": 12139.08,
+      "price": 17755.0,
+      "change_1d_pct": 3.23,
+      "ma13w": 15431.15,
+      "ma26w": 12548.23,
       "golden_cross_active": true,
-      "return_13w_pct": 40.09,
-      "relative_topix_13w_pct": 38.52,
-      "distance_52w_high_pct": -5.57,
+      "return_13w_pct": 45.17,
+      "relative_topix_13w_pct": 42.71,
+      "distance_52w_high_pct": -2.53,
       "fundamentals": {
         "revenue_growth": 0.189,
         "earnings_growth": 0.737,
         "roe": 0.36222,
         "margin": 0.24433,
-        "pe": 43.42031,
+        "pe": 43.41925,
         "pb": 13.928133,
         "sector": "Communication Services"
       },
@@ -119,17 +90,46 @@
       }
     },
     {
+      "code": "8306",
+      "name": "三菱ＵＦＪフィナンシャル・グループ",
+      "symbol": "8306.T",
+      "price": 3462.0,
+      "change_1d_pct": -1.2,
+      "ma13w": 3615.38,
+      "ma26w": 3343.85,
+      "golden_cross_active": true,
+      "return_13w_pct": 1.34,
+      "relative_topix_13w_pct": -1.13,
+      "distance_52w_high_pct": -8.87,
+      "fundamentals": {
+        "revenue_growth": 0.288,
+        "earnings_growth": 0.509,
+        "roe": 0.09458999,
+        "margin": 0.45599997,
+        "pe": 14.640335,
+        "pb": 1.716642,
+        "sector": "Financial Services"
+      },
+      "scores": {
+        "total": 71.8,
+        "growth": 64.9,
+        "profitability": 81.1,
+        "momentum": 64.9,
+        "valuation": 83.8
+      }
+    },
+    {
       "code": "5108",
       "name": "ブリヂストン",
       "symbol": "5108.T",
-      "price": 3882.0,
-      "change_1d_pct": 1.33,
-      "ma13w": 3894.46,
-      "ma26w": 3636.92,
+      "price": 3913.0,
+      "change_1d_pct": 0.8,
+      "ma13w": 3920.92,
+      "ma26w": 3655.12,
       "golden_cross_active": true,
-      "return_13w_pct": 7.54,
-      "relative_topix_13w_pct": 5.97,
-      "distance_52w_high_pct": -10.14,
+      "return_13w_pct": 9.64,
+      "relative_topix_13w_pct": 7.17,
+      "distance_52w_high_pct": -9.42,
       "fundamentals": {
         "revenue_growth": 0.142,
         "earnings_growth": 2.101,
@@ -140,10 +140,10 @@
         "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 71.9,
+        "total": 69.1,
         "growth": 97.3,
         "profitability": 27.0,
-        "momentum": 86.5,
+        "momentum": 78.4,
         "valuation": 70.3
       }
     },
@@ -151,14 +151,14 @@
       "code": "8750",
       "name": "第一ライフグループ",
       "symbol": "8750.T",
-      "price": 1793.5,
-      "change_1d_pct": -2.39,
-      "ma13w": 1869.92,
-      "ma26w": 1739.5,
+      "price": 1785.0,
+      "change_1d_pct": -0.47,
+      "ma13w": 1864.08,
+      "ma26w": 1751.15,
       "golden_cross_active": true,
-      "return_13w_pct": -1.24,
-      "relative_topix_13w_pct": -2.8,
-      "distance_52w_high_pct": -8.45,
+      "return_13w_pct": -2.27,
+      "relative_topix_13w_pct": -4.74,
+      "distance_52w_high_pct": -8.88,
       "fundamentals": {
         "revenue_growth": 0.28,
         "earnings_growth": 2.783,
@@ -169,83 +169,25 @@
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 70.8,
+        "total": 66.1,
         "growth": 100.0,
         "profitability": 35.1,
-        "momentum": 67.6,
+        "momentum": 54.1,
         "valuation": 89.2
-      }
-    },
-    {
-      "code": "8316",
-      "name": "三井住友フィナンシャルグループ",
-      "symbol": "8316.T",
-      "price": 3297.0,
-      "change_1d_pct": -2.22,
-      "ma13w": 3429.0,
-      "ma26w": 3200.58,
-      "golden_cross_active": true,
-      "return_13w_pct": 2.18,
-      "relative_topix_13w_pct": 0.61,
-      "distance_52w_high_pct": -8.59,
-      "fundamentals": {
-        "revenue_growth": 0.248,
-        "earnings_growth": 0.35,
-        "roe": 0.08569,
-        "margin": 0.40895998,
-        "pe": 14.599587,
-        "pb": 0.76816535,
-        "sector": "Financial Services"
-      },
-      "scores": {
-        "total": 66.9,
-        "growth": 40.5,
-        "profitability": 73.0,
-        "momentum": 73.0,
-        "valuation": 86.5
-      }
-    },
-    {
-      "code": "6988",
-      "name": "日東電工",
-      "symbol": "6988.T",
-      "price": 3526.0,
-      "change_1d_pct": -0.62,
-      "ma13w": 3393.69,
-      "ma26w": 3256.62,
-      "golden_cross_active": true,
-      "return_13w_pct": 9.83,
-      "relative_topix_13w_pct": 8.26,
-      "distance_52w_high_pct": -13.32,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.111,
-        "roe": 0.12546,
-        "margin": 0.18114,
-        "pe": 17.880108,
-        "pb": 2.09316,
-        "sector": "Basic Materials"
-      },
-      "scores": {
-        "total": 59.9,
-        "growth": 27.0,
-        "profitability": 40.5,
-        "momentum": 89.2,
-        "valuation": 78.4
       }
     },
     {
       "code": "7974",
       "name": "任天堂",
       "symbol": "7974.T",
-      "price": 7851.0,
-      "change_1d_pct": 0.98,
-      "ma13w": 8055.92,
-      "ma26w": 7765.12,
+      "price": 8146.0,
+      "change_1d_pct": 3.76,
+      "ma13w": 8141.77,
+      "ma26w": 7759.19,
       "golden_cross_active": true,
-      "return_13w_pct": 10.05,
-      "relative_topix_13w_pct": 8.49,
-      "distance_52w_high_pct": -44.34,
+      "return_13w_pct": 15.87,
+      "relative_topix_13w_pct": 13.41,
+      "distance_52w_high_pct": -42.25,
       "fundamentals": {
         "revenue_growth": -0.095,
         "earnings_growth": 0.55,
@@ -256,54 +198,141 @@
         "sector": "Communication Services"
       },
       "scores": {
-        "total": 57.6,
-        "growth": 35.1,
+        "total": 60.1,
+        "growth": 37.8,
         "profitability": 83.8,
-        "momentum": 54.1,
+        "momentum": 59.5,
         "valuation": 59.5
       }
     },
     {
-      "code": "7203",
-      "name": "トヨタ自動車",
-      "symbol": "7203.T",
-      "price": 2902.0,
-      "change_1d_pct": 0.05,
-      "ma13w": 2993.65,
-      "ma26w": 2987.37,
+      "code": "8316",
+      "name": "三井住友フィナンシャルグループ",
+      "symbol": "8316.T",
+      "price": 3256.0,
+      "change_1d_pct": -1.24,
+      "ma13w": 3417.38,
+      "ma26w": 3219.35,
       "golden_cross_active": true,
-      "return_13w_pct": 2.73,
-      "relative_topix_13w_pct": 1.16,
-      "distance_52w_high_pct": -26.42,
+      "return_13w_pct": -1.91,
+      "relative_topix_13w_pct": -4.37,
+      "distance_52w_high_pct": -9.73,
       "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.869,
-        "roe": 0.12404,
-        "margin": 0.07863,
-        "pe": 8.283055,
-        "pb": 0.9237935,
-        "sector": "Consumer Cyclical"
+        "revenue_growth": 0.248,
+        "earnings_growth": 0.35,
+        "roe": 0.08569,
+        "margin": 0.40895998,
+        "pe": 14.599587,
+        "pb": 0.76816535,
+        "sector": "Financial Services"
       },
       "scores": {
-        "total": 56.0,
-        "growth": 73.0,
-        "profitability": 16.2,
-        "momentum": 56.8,
-        "valuation": 91.9
+        "total": 60.0,
+        "growth": 43.2,
+        "profitability": 73.0,
+        "momentum": 51.4,
+        "valuation": 86.5
+      }
+    },
+    {
+      "code": "6988",
+      "name": "日東電工",
+      "symbol": "6988.T",
+      "price": 3615.0,
+      "change_1d_pct": 2.52,
+      "ma13w": 3426.15,
+      "ma26w": 3272.85,
+      "golden_cross_active": true,
+      "return_13w_pct": 14.27,
+      "relative_topix_13w_pct": 11.8,
+      "distance_52w_high_pct": -11.14,
+      "fundamentals": {
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.111,
+        "roe": 0.12546,
+        "margin": 0.18114,
+        "pe": 17.880108,
+        "pb": 2.09316,
+        "sector": "Basic Materials"
+      },
+      "scores": {
+        "total": 58.0,
+        "growth": 27.0,
+        "profitability": 40.5,
+        "momentum": 83.8,
+        "valuation": 78.4
+      }
+    },
+    {
+      "code": "7701",
+      "name": "島津製作所",
+      "symbol": "7701.T",
+      "price": 4325.0,
+      "change_1d_pct": 2.42,
+      "ma13w": 4057.62,
+      "ma26w": 3938.31,
+      "golden_cross_active": true,
+      "return_13w_pct": 5.18,
+      "relative_topix_13w_pct": 2.71,
+      "distance_52w_high_pct": -3.27,
+      "fundamentals": {
+        "revenue_growth": 0.103,
+        "earnings_growth": 0.683,
+        "roe": 0.12335,
+        "margin": 0.109230004,
+        "pe": 18.960981,
+        "pb": 2.1727653,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 56.6,
+        "growth": 62.2,
+        "profitability": 21.6,
+        "momentum": 73.0,
+        "valuation": 67.6
+      }
+    },
+    {
+      "code": "4062",
+      "name": "イビデン",
+      "symbol": "4062.T",
+      "price": 11515.0,
+      "change_1d_pct": -2.5,
+      "ma13w": 9966.54,
+      "ma26w": 9572.6,
+      "golden_cross_active": true,
+      "return_13w_pct": 13.6,
+      "relative_topix_13w_pct": 11.14,
+      "distance_52w_high_pct": -12.85,
+      "fundamentals": {
+        "revenue_growth": 0.264,
+        "earnings_growth": 0.417,
+        "roe": 0.12655,
+        "margin": 0.21139,
+        "pe": 98.92612,
+        "pb": 11.293446,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 53.4,
+        "growth": 51.4,
+        "profitability": 48.6,
+        "momentum": 81.1,
+        "valuation": 0.0
       }
     },
     {
       "code": "6758",
       "name": "ソニーグループ",
       "symbol": "6758.T",
-      "price": 3706.0,
-      "change_1d_pct": -0.99,
-      "ma13w": 3696.0,
-      "ma26w": 3512.77,
+      "price": 3814.0,
+      "change_1d_pct": 2.91,
+      "ma13w": 3731.0,
+      "ma26w": 3531.58,
       "golden_cross_active": true,
-      "return_13w_pct": 11.57,
-      "relative_topix_13w_pct": 10.0,
-      "distance_52w_high_pct": -21.15,
+      "return_13w_pct": 14.09,
+      "relative_topix_13w_pct": 11.62,
+      "distance_52w_high_pct": -18.85,
       "fundamentals": {
         "revenue_growth": 0.082,
         "earnings_growth": 0.476,
@@ -314,54 +343,25 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 55.4,
-        "growth": 37.8,
+        "total": 53.2,
+        "growth": 40.5,
         "profitability": 32.4,
-        "momentum": 83.8,
+        "momentum": 75.7,
         "valuation": 56.8
-      }
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "symbol": "7701.T",
-      "price": 4223.0,
-      "change_1d_pct": 0.21,
-      "ma13w": 4043.38,
-      "ma26w": 3917.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -5.28,
-      "relative_topix_13w_pct": -6.84,
-      "distance_52w_high_pct": -5.55,
-      "fundamentals": {
-        "revenue_growth": 0.103,
-        "earnings_growth": 0.683,
-        "roe": 0.12335,
-        "margin": 0.109230004,
-        "pe": 18.960152,
-        "pb": 2.1727653,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 53.8,
-        "growth": 62.2,
-        "profitability": 21.6,
-        "momentum": 64.9,
-        "valuation": 67.6
       }
     },
     {
       "code": "9843",
       "name": "ニトリホールディングス",
       "symbol": "9843.T",
-      "price": 3116.0,
-      "change_1d_pct": -0.29,
-      "ma13w": 2869.19,
-      "ma26w": 2659.73,
+      "price": 3176.0,
+      "change_1d_pct": 1.93,
+      "ma13w": 2930.42,
+      "ma26w": 2688.81,
       "golden_cross_active": true,
-      "return_13w_pct": 29.32,
-      "relative_topix_13w_pct": 27.75,
-      "distance_52w_high_pct": -9.21,
+      "return_13w_pct": 34.17,
+      "relative_topix_13w_pct": 31.71,
+      "distance_52w_high_pct": -7.46,
       "fundamentals": {
         "revenue_growth": -0.023,
         "earnings_growth": -0.015,
@@ -380,75 +380,46 @@
       }
     },
     {
-      "code": "4062",
-      "name": "イビデン",
-      "symbol": "4062.T",
-      "price": 11810.0,
-      "change_1d_pct": -3.75,
-      "ma13w": 9861.54,
-      "ma26w": 9319.87,
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "symbol": "7203.T",
+      "price": 2910.5,
+      "change_1d_pct": 0.29,
+      "ma13w": 3000.38,
+      "ma26w": 2971.65,
       "golden_cross_active": true,
-      "return_13w_pct": 3.8,
-      "relative_topix_13w_pct": 2.23,
-      "distance_52w_high_pct": -10.61,
+      "return_13w_pct": 4.86,
+      "relative_topix_13w_pct": 2.39,
+      "distance_52w_high_pct": -26.2,
       "fundamentals": {
-        "revenue_growth": 0.264,
-        "earnings_growth": 0.417,
-        "roe": 0.12655,
-        "margin": 0.21139,
-        "pe": 98.92612,
-        "pb": 11.293446,
-        "sector": "Technology"
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.869,
+        "roe": 0.12404,
+        "margin": 0.07863,
+        "pe": 8.283055,
+        "pb": 0.9237935,
+        "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 51.7,
-        "growth": 48.6,
-        "profitability": 48.6,
-        "momentum": 78.4,
-        "valuation": 0.0
-      }
-    },
-    {
-      "code": "8035",
-      "name": "東京エレクトロン",
-      "symbol": "8035.T",
-      "price": 12190.0,
-      "change_1d_pct": -2.48,
-      "ma13w": 11619.38,
-      "ma26w": 11465.62,
-      "golden_cross_active": true,
-      "return_13w_pct": -14.43,
-      "relative_topix_13w_pct": -16.0,
-      "distance_52w_high_pct": -22.65,
-      "fundamentals": {
-        "revenue_growth": 0.333,
-        "earnings_growth": 0.404,
-        "roe": 0.30929002,
-        "margin": 0.28866,
-        "pe": 45.937763,
-        "pb": 2.6404095,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 50.1,
-        "growth": 59.5,
-        "profitability": 86.5,
-        "momentum": 29.7,
-        "valuation": 21.6
+        "total": 53.1,
+        "growth": 73.0,
+        "profitability": 16.2,
+        "momentum": 48.6,
+        "valuation": 91.9
       }
     },
     {
       "code": "6525",
       "name": "ＫＯＫＵＳＡＩ　ＥＬＥＣＴＲＩＣ",
       "symbol": "6525.T",
-      "price": 9814.0,
-      "change_1d_pct": -0.16,
-      "ma13w": 8836.31,
-      "ma26w": 8462.15,
+      "price": 10090.0,
+      "change_1d_pct": 2.81,
+      "ma13w": 8778.62,
+      "ma26w": 8586.42,
       "golden_cross_active": true,
-      "return_13w_pct": -15.96,
-      "relative_topix_13w_pct": -17.52,
-      "distance_52w_high_pct": -18.22,
+      "return_13w_pct": -6.59,
+      "relative_topix_13w_pct": -9.06,
+      "distance_52w_high_pct": -15.92,
       "fundamentals": {
         "revenue_growth": 0.456,
         "earnings_growth": 0.704,
@@ -459,54 +430,25 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 48.0,
+        "total": 51.5,
         "growth": 78.4,
-        "profitability": 64.9,
-        "momentum": 32.4,
+        "profitability": 67.6,
+        "momentum": 40.5,
         "valuation": 5.4
-      }
-    },
-    {
-      "code": "2802",
-      "name": "味の素",
-      "symbol": "2802.T",
-      "price": 5293.0,
-      "change_1d_pct": -0.99,
-      "ma13w": 5222.31,
-      "ma26w": 5203.27,
-      "golden_cross_active": true,
-      "return_13w_pct": -15.06,
-      "relative_topix_13w_pct": -16.63,
-      "distance_52w_high_pct": -14.28,
-      "fundamentals": {
-        "revenue_growth": 0.132,
-        "earnings_growth": 0.168,
-        "roe": 0.18486,
-        "margin": 0.12911999,
-        "pe": 37.534763,
-        "pb": 6.653751,
-        "sector": "Consumer Defensive"
-      },
-      "scores": {
-        "total": 37.3,
-        "growth": 32.4,
-        "profitability": 45.9,
-        "momentum": 37.8,
-        "valuation": 29.7
       }
     },
     {
       "code": "7735",
       "name": "ＳＣＲＥＥＮホールディングス",
       "symbol": "7735.T",
-      "price": 15910.0,
-      "change_1d_pct": -0.03,
-      "ma13w": 14188.46,
-      "ma26w": 13465.38,
+      "price": 16545.0,
+      "change_1d_pct": 3.99,
+      "ma13w": 14065.0,
+      "ma26w": 13688.46,
       "golden_cross_active": true,
-      "return_13w_pct": -17.99,
-      "relative_topix_13w_pct": -19.56,
-      "distance_52w_high_pct": -18.37,
+      "return_13w_pct": -8.45,
+      "relative_topix_13w_pct": -10.91,
+      "distance_52w_high_pct": -15.11,
       "fundamentals": {
         "revenue_growth": -0.103,
         "earnings_growth": -0.372,
@@ -517,120 +459,33 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 26.9,
+        "total": 30.6,
         "growth": 5.4,
         "profitability": 43.2,
-        "momentum": 27.0,
+        "momentum": 37.8,
         "valuation": 35.1
-      }
-    },
-    {
-      "code": "6594",
-      "name": "ニデック",
-      "symbol": "6594.T",
-      "price": 2140.0,
-      "change_1d_pct": -1.15,
-      "ma13w": 2625.69,
-      "ma26w": 2602.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -24.04,
-      "relative_topix_13w_pct": -25.61,
-      "distance_52w_high_pct": -26.18,
-      "fundamentals": {
-        "revenue_growth": 0.091,
-        "earnings_growth": null,
-        "roe": -0.49664003,
-        "margin": -0.87868,
-        "pe": null,
-        "pb": 2.9012659,
-        "sector": "Industrials"
-      },
-      "scores": {
-        "total": 24.0,
-        "growth": 18.9,
-        "profitability": 0.0,
-        "momentum": 13.5,
-        "valuation": 97.3
-      }
-    },
-    {
-      "code": "3436",
-      "name": "ＳＵＭＣＯ",
-      "symbol": "3436.T",
-      "price": 3473.0,
-      "change_1d_pct": -5.73,
-      "ma13w": 3559.0,
-      "ma26w": 3456.52,
-      "golden_cross_active": true,
-      "return_13w_pct": -29.56,
-      "relative_topix_13w_pct": -31.13,
-      "distance_52w_high_pct": -34.56,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": null,
-        "roe": -0.04061,
-        "margin": -0.02728,
-        "pe": null,
-        "pb": 2.1088982,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 21.1,
-        "growth": 21.6,
-        "profitability": 2.7,
-        "momentum": 0.0,
-        "valuation": 100.0
       }
     }
   ],
   "rows": [
     {
-      "code": "8306",
-      "name": "三菱ＵＦＪフィナンシャル・グループ",
-      "symbol": "8306.T",
-      "price": 3504.0,
-      "change_1d_pct": -3.26,
-      "ma13w": 3615.31,
-      "ma26w": 3320.0,
-      "golden_cross_active": true,
-      "return_13w_pct": 7.95,
-      "relative_topix_13w_pct": 6.38,
-      "distance_52w_high_pct": -7.77,
-      "fundamentals": {
-        "revenue_growth": 0.288,
-        "earnings_growth": 0.509,
-        "roe": 0.09458999,
-        "margin": 0.45599997,
-        "pe": 14.640335,
-        "pb": 1.716642,
-        "sector": "Financial Services"
-      },
-      "scores": {
-        "total": 81.2,
-        "growth": 64.9,
-        "profitability": 81.1,
-        "momentum": 91.9,
-        "valuation": 83.8
-      }
-    },
-    {
       "code": "6857",
       "name": "アドバンテスト",
       "symbol": "6857.T",
-      "price": 40930.0,
-      "change_1d_pct": -0.87,
-      "ma13w": 32961.54,
-      "ma26w": 30595.77,
+      "price": 41610.0,
+      "change_1d_pct": 1.66,
+      "ma13w": 33867.69,
+      "ma26w": 31235.0,
       "golden_cross_active": true,
-      "return_13w_pct": 31.64,
-      "relative_topix_13w_pct": 30.07,
-      "distance_52w_high_pct": -2.2,
+      "return_13w_pct": 39.49,
+      "relative_topix_13w_pct": 37.03,
+      "distance_52w_high_pct": -0.57,
       "fundamentals": {
         "revenue_growth": 0.393,
         "earnings_growth": 0.953,
         "roe": 0.56895,
         "margin": 0.51702,
-        "pe": 66.00571,
+        "pe": 66.00676,
         "pb": 28.892221,
         "sector": "Technology"
       },
@@ -646,20 +501,20 @@
       "code": "6098",
       "name": "リクルートホールディングス",
       "symbol": "6098.T",
-      "price": 17200.0,
-      "change_1d_pct": 1.18,
-      "ma13w": 15006.92,
-      "ma26w": 12139.08,
+      "price": 17755.0,
+      "change_1d_pct": 3.23,
+      "ma13w": 15431.15,
+      "ma26w": 12548.23,
       "golden_cross_active": true,
-      "return_13w_pct": 40.09,
-      "relative_topix_13w_pct": 38.52,
-      "distance_52w_high_pct": -5.57,
+      "return_13w_pct": 45.17,
+      "relative_topix_13w_pct": 42.71,
+      "distance_52w_high_pct": -2.53,
       "fundamentals": {
         "revenue_growth": 0.189,
         "earnings_growth": 0.737,
         "roe": 0.36222,
         "margin": 0.24433,
-        "pe": 43.42031,
+        "pe": 43.41925,
         "pb": 13.928133,
         "sector": "Communication Services"
       },
@@ -672,17 +527,46 @@
       }
     },
     {
+      "code": "8306",
+      "name": "三菱ＵＦＪフィナンシャル・グループ",
+      "symbol": "8306.T",
+      "price": 3462.0,
+      "change_1d_pct": -1.2,
+      "ma13w": 3615.38,
+      "ma26w": 3343.85,
+      "golden_cross_active": true,
+      "return_13w_pct": 1.34,
+      "relative_topix_13w_pct": -1.13,
+      "distance_52w_high_pct": -8.87,
+      "fundamentals": {
+        "revenue_growth": 0.288,
+        "earnings_growth": 0.509,
+        "roe": 0.09458999,
+        "margin": 0.45599997,
+        "pe": 14.640335,
+        "pb": 1.716642,
+        "sector": "Financial Services"
+      },
+      "scores": {
+        "total": 71.8,
+        "growth": 64.9,
+        "profitability": 81.1,
+        "momentum": 64.9,
+        "valuation": 83.8
+      }
+    },
+    {
       "code": "5108",
       "name": "ブリヂストン",
       "symbol": "5108.T",
-      "price": 3882.0,
-      "change_1d_pct": 1.33,
-      "ma13w": 3894.46,
-      "ma26w": 3636.92,
+      "price": 3913.0,
+      "change_1d_pct": 0.8,
+      "ma13w": 3920.92,
+      "ma26w": 3655.12,
       "golden_cross_active": true,
-      "return_13w_pct": 7.54,
-      "relative_topix_13w_pct": 5.97,
-      "distance_52w_high_pct": -10.14,
+      "return_13w_pct": 9.64,
+      "relative_topix_13w_pct": 7.17,
+      "distance_52w_high_pct": -9.42,
       "fundamentals": {
         "revenue_growth": 0.142,
         "earnings_growth": 2.101,
@@ -693,10 +577,10 @@
         "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 71.9,
+        "total": 69.1,
         "growth": 97.3,
         "profitability": 27.0,
-        "momentum": 86.5,
+        "momentum": 78.4,
         "valuation": 70.3
       }
     },
@@ -704,14 +588,14 @@
       "code": "8750",
       "name": "第一ライフグループ",
       "symbol": "8750.T",
-      "price": 1793.5,
-      "change_1d_pct": -2.39,
-      "ma13w": 1869.92,
-      "ma26w": 1739.5,
+      "price": 1785.0,
+      "change_1d_pct": -0.47,
+      "ma13w": 1864.08,
+      "ma26w": 1751.15,
       "golden_cross_active": true,
-      "return_13w_pct": -1.24,
-      "relative_topix_13w_pct": -2.8,
-      "distance_52w_high_pct": -8.45,
+      "return_13w_pct": -2.27,
+      "relative_topix_13w_pct": -4.74,
+      "distance_52w_high_pct": -8.88,
       "fundamentals": {
         "revenue_growth": 0.28,
         "earnings_growth": 2.783,
@@ -722,83 +606,25 @@
         "sector": "Financial Services"
       },
       "scores": {
-        "total": 70.8,
+        "total": 66.1,
         "growth": 100.0,
         "profitability": 35.1,
-        "momentum": 67.6,
+        "momentum": 54.1,
         "valuation": 89.2
-      }
-    },
-    {
-      "code": "8316",
-      "name": "三井住友フィナンシャルグループ",
-      "symbol": "8316.T",
-      "price": 3297.0,
-      "change_1d_pct": -2.22,
-      "ma13w": 3429.0,
-      "ma26w": 3200.58,
-      "golden_cross_active": true,
-      "return_13w_pct": 2.18,
-      "relative_topix_13w_pct": 0.61,
-      "distance_52w_high_pct": -8.59,
-      "fundamentals": {
-        "revenue_growth": 0.248,
-        "earnings_growth": 0.35,
-        "roe": 0.08569,
-        "margin": 0.40895998,
-        "pe": 14.599587,
-        "pb": 0.76816535,
-        "sector": "Financial Services"
-      },
-      "scores": {
-        "total": 66.9,
-        "growth": 40.5,
-        "profitability": 73.0,
-        "momentum": 73.0,
-        "valuation": 86.5
-      }
-    },
-    {
-      "code": "6988",
-      "name": "日東電工",
-      "symbol": "6988.T",
-      "price": 3526.0,
-      "change_1d_pct": -0.62,
-      "ma13w": 3393.69,
-      "ma26w": 3256.62,
-      "golden_cross_active": true,
-      "return_13w_pct": 9.83,
-      "relative_topix_13w_pct": 8.26,
-      "distance_52w_high_pct": -13.32,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.111,
-        "roe": 0.12546,
-        "margin": 0.18114,
-        "pe": 17.880108,
-        "pb": 2.09316,
-        "sector": "Basic Materials"
-      },
-      "scores": {
-        "total": 59.9,
-        "growth": 27.0,
-        "profitability": 40.5,
-        "momentum": 89.2,
-        "valuation": 78.4
       }
     },
     {
       "code": "7974",
       "name": "任天堂",
       "symbol": "7974.T",
-      "price": 7851.0,
-      "change_1d_pct": 0.98,
-      "ma13w": 8055.92,
-      "ma26w": 7765.12,
+      "price": 8146.0,
+      "change_1d_pct": 3.76,
+      "ma13w": 8141.77,
+      "ma26w": 7759.19,
       "golden_cross_active": true,
-      "return_13w_pct": 10.05,
-      "relative_topix_13w_pct": 8.49,
-      "distance_52w_high_pct": -44.34,
+      "return_13w_pct": 15.87,
+      "relative_topix_13w_pct": 13.41,
+      "distance_52w_high_pct": -42.25,
       "fundamentals": {
         "revenue_growth": -0.095,
         "earnings_growth": 0.55,
@@ -809,54 +635,141 @@
         "sector": "Communication Services"
       },
       "scores": {
-        "total": 57.6,
-        "growth": 35.1,
+        "total": 60.1,
+        "growth": 37.8,
         "profitability": 83.8,
-        "momentum": 54.1,
+        "momentum": 59.5,
         "valuation": 59.5
       }
     },
     {
-      "code": "7203",
-      "name": "トヨタ自動車",
-      "symbol": "7203.T",
-      "price": 2902.0,
-      "change_1d_pct": 0.05,
-      "ma13w": 2993.65,
-      "ma26w": 2987.37,
+      "code": "8316",
+      "name": "三井住友フィナンシャルグループ",
+      "symbol": "8316.T",
+      "price": 3256.0,
+      "change_1d_pct": -1.24,
+      "ma13w": 3417.38,
+      "ma26w": 3219.35,
       "golden_cross_active": true,
-      "return_13w_pct": 2.73,
-      "relative_topix_13w_pct": 1.16,
-      "distance_52w_high_pct": -26.42,
+      "return_13w_pct": -1.91,
+      "relative_topix_13w_pct": -4.37,
+      "distance_52w_high_pct": -9.73,
       "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": 0.869,
-        "roe": 0.12404,
-        "margin": 0.07863,
-        "pe": 8.283055,
-        "pb": 0.9237935,
-        "sector": "Consumer Cyclical"
+        "revenue_growth": 0.248,
+        "earnings_growth": 0.35,
+        "roe": 0.08569,
+        "margin": 0.40895998,
+        "pe": 14.599587,
+        "pb": 0.76816535,
+        "sector": "Financial Services"
       },
       "scores": {
-        "total": 56.0,
-        "growth": 73.0,
-        "profitability": 16.2,
-        "momentum": 56.8,
-        "valuation": 91.9
+        "total": 60.0,
+        "growth": 43.2,
+        "profitability": 73.0,
+        "momentum": 51.4,
+        "valuation": 86.5
+      }
+    },
+    {
+      "code": "6988",
+      "name": "日東電工",
+      "symbol": "6988.T",
+      "price": 3615.0,
+      "change_1d_pct": 2.52,
+      "ma13w": 3426.15,
+      "ma26w": 3272.85,
+      "golden_cross_active": true,
+      "return_13w_pct": 14.27,
+      "relative_topix_13w_pct": 11.8,
+      "distance_52w_high_pct": -11.14,
+      "fundamentals": {
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.111,
+        "roe": 0.12546,
+        "margin": 0.18114,
+        "pe": 17.880108,
+        "pb": 2.09316,
+        "sector": "Basic Materials"
+      },
+      "scores": {
+        "total": 58.0,
+        "growth": 27.0,
+        "profitability": 40.5,
+        "momentum": 83.8,
+        "valuation": 78.4
+      }
+    },
+    {
+      "code": "7701",
+      "name": "島津製作所",
+      "symbol": "7701.T",
+      "price": 4325.0,
+      "change_1d_pct": 2.42,
+      "ma13w": 4057.62,
+      "ma26w": 3938.31,
+      "golden_cross_active": true,
+      "return_13w_pct": 5.18,
+      "relative_topix_13w_pct": 2.71,
+      "distance_52w_high_pct": -3.27,
+      "fundamentals": {
+        "revenue_growth": 0.103,
+        "earnings_growth": 0.683,
+        "roe": 0.12335,
+        "margin": 0.109230004,
+        "pe": 18.960981,
+        "pb": 2.1727653,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 56.6,
+        "growth": 62.2,
+        "profitability": 21.6,
+        "momentum": 73.0,
+        "valuation": 67.6
+      }
+    },
+    {
+      "code": "4062",
+      "name": "イビデン",
+      "symbol": "4062.T",
+      "price": 11515.0,
+      "change_1d_pct": -2.5,
+      "ma13w": 9966.54,
+      "ma26w": 9572.6,
+      "golden_cross_active": true,
+      "return_13w_pct": 13.6,
+      "relative_topix_13w_pct": 11.14,
+      "distance_52w_high_pct": -12.85,
+      "fundamentals": {
+        "revenue_growth": 0.264,
+        "earnings_growth": 0.417,
+        "roe": 0.12655,
+        "margin": 0.21139,
+        "pe": 98.92612,
+        "pb": 11.293446,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 53.4,
+        "growth": 51.4,
+        "profitability": 48.6,
+        "momentum": 81.1,
+        "valuation": 0.0
       }
     },
     {
       "code": "6758",
       "name": "ソニーグループ",
       "symbol": "6758.T",
-      "price": 3706.0,
-      "change_1d_pct": -0.99,
-      "ma13w": 3696.0,
-      "ma26w": 3512.77,
+      "price": 3814.0,
+      "change_1d_pct": 2.91,
+      "ma13w": 3731.0,
+      "ma26w": 3531.58,
       "golden_cross_active": true,
-      "return_13w_pct": 11.57,
-      "relative_topix_13w_pct": 10.0,
-      "distance_52w_high_pct": -21.15,
+      "return_13w_pct": 14.09,
+      "relative_topix_13w_pct": 11.62,
+      "distance_52w_high_pct": -18.85,
       "fundamentals": {
         "revenue_growth": 0.082,
         "earnings_growth": 0.476,
@@ -867,54 +780,25 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 55.4,
-        "growth": 37.8,
+        "total": 53.2,
+        "growth": 40.5,
         "profitability": 32.4,
-        "momentum": 83.8,
+        "momentum": 75.7,
         "valuation": 56.8
-      }
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "symbol": "7701.T",
-      "price": 4223.0,
-      "change_1d_pct": 0.21,
-      "ma13w": 4043.38,
-      "ma26w": 3917.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -5.28,
-      "relative_topix_13w_pct": -6.84,
-      "distance_52w_high_pct": -5.55,
-      "fundamentals": {
-        "revenue_growth": 0.103,
-        "earnings_growth": 0.683,
-        "roe": 0.12335,
-        "margin": 0.109230004,
-        "pe": 18.960152,
-        "pb": 2.1727653,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 53.8,
-        "growth": 62.2,
-        "profitability": 21.6,
-        "momentum": 64.9,
-        "valuation": 67.6
       }
     },
     {
       "code": "9843",
       "name": "ニトリホールディングス",
       "symbol": "9843.T",
-      "price": 3116.0,
-      "change_1d_pct": -0.29,
-      "ma13w": 2869.19,
-      "ma26w": 2659.73,
+      "price": 3176.0,
+      "change_1d_pct": 1.93,
+      "ma13w": 2930.42,
+      "ma26w": 2688.81,
       "golden_cross_active": true,
-      "return_13w_pct": 29.32,
-      "relative_topix_13w_pct": 27.75,
-      "distance_52w_high_pct": -9.21,
+      "return_13w_pct": 34.17,
+      "relative_topix_13w_pct": 31.71,
+      "distance_52w_high_pct": -7.46,
       "fundamentals": {
         "revenue_growth": -0.023,
         "earnings_growth": -0.015,
@@ -933,75 +817,46 @@
       }
     },
     {
-      "code": "4062",
-      "name": "イビデン",
-      "symbol": "4062.T",
-      "price": 11810.0,
-      "change_1d_pct": -3.75,
-      "ma13w": 9861.54,
-      "ma26w": 9319.87,
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "symbol": "7203.T",
+      "price": 2910.5,
+      "change_1d_pct": 0.29,
+      "ma13w": 3000.38,
+      "ma26w": 2971.65,
       "golden_cross_active": true,
-      "return_13w_pct": 3.8,
-      "relative_topix_13w_pct": 2.23,
-      "distance_52w_high_pct": -10.61,
+      "return_13w_pct": 4.86,
+      "relative_topix_13w_pct": 2.39,
+      "distance_52w_high_pct": -26.2,
       "fundamentals": {
-        "revenue_growth": 0.264,
-        "earnings_growth": 0.417,
-        "roe": 0.12655,
-        "margin": 0.21139,
-        "pe": 98.92612,
-        "pb": 11.293446,
-        "sector": "Technology"
+        "revenue_growth": 0.104,
+        "earnings_growth": 0.869,
+        "roe": 0.12404,
+        "margin": 0.07863,
+        "pe": 8.283055,
+        "pb": 0.9237935,
+        "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 51.7,
-        "growth": 48.6,
-        "profitability": 48.6,
-        "momentum": 78.4,
-        "valuation": 0.0
-      }
-    },
-    {
-      "code": "8035",
-      "name": "東京エレクトロン",
-      "symbol": "8035.T",
-      "price": 12190.0,
-      "change_1d_pct": -2.48,
-      "ma13w": 11619.38,
-      "ma26w": 11465.62,
-      "golden_cross_active": true,
-      "return_13w_pct": -14.43,
-      "relative_topix_13w_pct": -16.0,
-      "distance_52w_high_pct": -22.65,
-      "fundamentals": {
-        "revenue_growth": 0.333,
-        "earnings_growth": 0.404,
-        "roe": 0.30929002,
-        "margin": 0.28866,
-        "pe": 45.937763,
-        "pb": 2.6404095,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 50.1,
-        "growth": 59.5,
-        "profitability": 86.5,
-        "momentum": 29.7,
-        "valuation": 21.6
+        "total": 53.1,
+        "growth": 73.0,
+        "profitability": 16.2,
+        "momentum": 48.6,
+        "valuation": 91.9
       }
     },
     {
       "code": "6525",
       "name": "ＫＯＫＵＳＡＩ　ＥＬＥＣＴＲＩＣ",
       "symbol": "6525.T",
-      "price": 9814.0,
-      "change_1d_pct": -0.16,
-      "ma13w": 8836.31,
-      "ma26w": 8462.15,
+      "price": 10090.0,
+      "change_1d_pct": 2.81,
+      "ma13w": 8778.62,
+      "ma26w": 8586.42,
       "golden_cross_active": true,
-      "return_13w_pct": -15.96,
-      "relative_topix_13w_pct": -17.52,
-      "distance_52w_high_pct": -18.22,
+      "return_13w_pct": -6.59,
+      "relative_topix_13w_pct": -9.06,
+      "distance_52w_high_pct": -15.92,
       "fundamentals": {
         "revenue_growth": 0.456,
         "earnings_growth": 0.704,
@@ -1012,54 +867,25 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 48.0,
+        "total": 51.5,
         "growth": 78.4,
-        "profitability": 64.9,
-        "momentum": 32.4,
+        "profitability": 67.6,
+        "momentum": 40.5,
         "valuation": 5.4
-      }
-    },
-    {
-      "code": "2802",
-      "name": "味の素",
-      "symbol": "2802.T",
-      "price": 5293.0,
-      "change_1d_pct": -0.99,
-      "ma13w": 5222.31,
-      "ma26w": 5203.27,
-      "golden_cross_active": true,
-      "return_13w_pct": -15.06,
-      "relative_topix_13w_pct": -16.63,
-      "distance_52w_high_pct": -14.28,
-      "fundamentals": {
-        "revenue_growth": 0.132,
-        "earnings_growth": 0.168,
-        "roe": 0.18486,
-        "margin": 0.12911999,
-        "pe": 37.534763,
-        "pb": 6.653751,
-        "sector": "Consumer Defensive"
-      },
-      "scores": {
-        "total": 37.3,
-        "growth": 32.4,
-        "profitability": 45.9,
-        "momentum": 37.8,
-        "valuation": 29.7
       }
     },
     {
       "code": "7735",
       "name": "ＳＣＲＥＥＮホールディングス",
       "symbol": "7735.T",
-      "price": 15910.0,
-      "change_1d_pct": -0.03,
-      "ma13w": 14188.46,
-      "ma26w": 13465.38,
+      "price": 16545.0,
+      "change_1d_pct": 3.99,
+      "ma13w": 14065.0,
+      "ma26w": 13688.46,
       "golden_cross_active": true,
-      "return_13w_pct": -17.99,
-      "relative_topix_13w_pct": -19.56,
-      "distance_52w_high_pct": -18.37,
+      "return_13w_pct": -8.45,
+      "relative_topix_13w_pct": -10.91,
+      "distance_52w_high_pct": -15.11,
       "fundamentals": {
         "revenue_growth": -0.103,
         "earnings_growth": -0.372,
@@ -1070,83 +896,25 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 26.9,
+        "total": 30.6,
         "growth": 5.4,
         "profitability": 43.2,
-        "momentum": 27.0,
+        "momentum": 37.8,
         "valuation": 35.1
-      }
-    },
-    {
-      "code": "6594",
-      "name": "ニデック",
-      "symbol": "6594.T",
-      "price": 2140.0,
-      "change_1d_pct": -1.15,
-      "ma13w": 2625.69,
-      "ma26w": 2602.88,
-      "golden_cross_active": true,
-      "return_13w_pct": -24.04,
-      "relative_topix_13w_pct": -25.61,
-      "distance_52w_high_pct": -26.18,
-      "fundamentals": {
-        "revenue_growth": 0.091,
-        "earnings_growth": null,
-        "roe": -0.49664003,
-        "margin": -0.87868,
-        "pe": null,
-        "pb": 2.9012659,
-        "sector": "Industrials"
-      },
-      "scores": {
-        "total": 24.0,
-        "growth": 18.9,
-        "profitability": 0.0,
-        "momentum": 13.5,
-        "valuation": 97.3
-      }
-    },
-    {
-      "code": "3436",
-      "name": "ＳＵＭＣＯ",
-      "symbol": "3436.T",
-      "price": 3473.0,
-      "change_1d_pct": -5.73,
-      "ma13w": 3559.0,
-      "ma26w": 3456.52,
-      "golden_cross_active": true,
-      "return_13w_pct": -29.56,
-      "relative_topix_13w_pct": -31.13,
-      "distance_52w_high_pct": -34.56,
-      "fundamentals": {
-        "revenue_growth": 0.104,
-        "earnings_growth": null,
-        "roe": -0.04061,
-        "margin": -0.02728,
-        "pe": null,
-        "pb": 2.1088982,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 21.1,
-        "growth": 21.6,
-        "profitability": 2.7,
-        "momentum": 0.0,
-        "valuation": 100.0
       }
     },
     {
       "code": "6855",
       "name": "日本電子材料",
       "symbol": "6855.T",
-      "price": 8560.0,
-      "change_1d_pct": -0.35,
-      "ma13w": 6758.46,
-      "ma26w": 7076.15,
+      "price": 8970.0,
+      "change_1d_pct": 4.79,
+      "ma13w": 6884.62,
+      "ma26w": 7168.08,
       "golden_cross_active": false,
-      "return_13w_pct": 7.83,
-      "relative_topix_13w_pct": 6.27,
-      "distance_52w_high_pct": -14.31,
+      "return_13w_pct": 23.36,
+      "relative_topix_13w_pct": 20.9,
+      "distance_52w_high_pct": -10.21,
       "fundamentals": {
         "revenue_growth": 0.773,
         "earnings_growth": 0.893,
@@ -1157,10 +925,10 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 81.0,
+        "total": 84.7,
         "growth": 89.2,
         "profitability": 75.7,
-        "momentum": 81.1,
+        "momentum": 91.9,
         "valuation": 75.7
       }
     },
@@ -1168,14 +936,14 @@
       "code": "6871",
       "name": "日本マイクロニクス",
       "symbol": "6871.T",
-      "price": 16320.0,
-      "change_1d_pct": -2.63,
-      "ma13w": 13993.08,
-      "ma26w": 14207.31,
+      "price": 17330.0,
+      "change_1d_pct": 6.19,
+      "ma13w": 14041.54,
+      "ma26w": 14381.15,
       "golden_cross_active": false,
-      "return_13w_pct": -6.13,
-      "relative_topix_13w_pct": -7.69,
-      "distance_52w_high_pct": -7.54,
+      "return_13w_pct": 3.77,
+      "relative_topix_13w_pct": 1.31,
+      "distance_52w_high_pct": -1.81,
       "fundamentals": {
         "revenue_growth": 0.488,
         "earnings_growth": 1.279,
@@ -1186,54 +954,54 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 72.6,
+        "total": 75.0,
         "growth": 91.9,
         "profitability": 91.9,
-        "momentum": 62.2,
-        "valuation": 32.4
+        "momentum": 70.3,
+        "valuation": 29.7
       }
     },
     {
-      "code": "6273",
-      "name": "ＳＭＣ",
-      "symbol": "6273.T",
-      "price": 71780.0,
-      "change_1d_pct": -2.82,
-      "ma13w": 70996.92,
-      "ma26w": 71016.15,
+      "code": "6323",
+      "name": "ローツェ",
+      "symbol": "6323.T",
+      "price": 5134.0,
+      "change_1d_pct": 15.79,
+      "ma13w": 4077.23,
+      "ma26w": 4108.27,
       "golden_cross_active": false,
-      "return_13w_pct": -2.4,
-      "relative_topix_13w_pct": -3.97,
-      "distance_52w_high_pct": -15.11,
+      "return_13w_pct": 10.29,
+      "relative_topix_13w_pct": 7.83,
+      "distance_52w_high_pct": 0.0,
       "fundamentals": {
-        "revenue_growth": 0.354,
-        "earnings_growth": 0.979,
-        "roe": 0.09846,
-        "margin": 0.27302998,
-        "pe": 27.842405,
-        "pb": 2.1335833,
-        "sector": "Industrials"
+        "revenue_growth": 0.307,
+        "earnings_growth": 0.365,
+        "roe": 0.16409999,
+        "margin": 0.30254,
+        "pe": 37.060566,
+        "pb": 6.074115,
+        "sector": "Technology"
       },
       "scores": {
-        "total": 61.9,
-        "growth": 81.1,
-        "profitability": 54.1,
-        "momentum": 59.5,
-        "valuation": 48.6
+        "total": 65.8,
+        "growth": 48.6,
+        "profitability": 70.3,
+        "momentum": 89.2,
+        "valuation": 32.4
       }
     },
     {
       "code": "3110",
       "name": "日東紡績",
       "symbol": "3110.T",
-      "price": 3525.0,
-      "change_1d_pct": -4.08,
-      "ma13w": 3068.46,
-      "ma26w": 3908.42,
+      "price": 3415.0,
+      "change_1d_pct": -3.12,
+      "ma13w": 3066.15,
+      "ma26w": 3828.77,
       "golden_cross_active": false,
-      "return_13w_pct": -6.67,
-      "relative_topix_13w_pct": -8.24,
-      "distance_52w_high_pct": -44.84,
+      "return_13w_pct": -0.49,
+      "relative_topix_13w_pct": -2.95,
+      "distance_52w_high_pct": -46.56,
       "fundamentals": {
         "revenue_growth": 0.206,
         "earnings_growth": 0.842,
@@ -1244,112 +1012,83 @@
         "sector": "Consumer Cyclical"
       },
       "scores": {
-        "total": 58.2,
+        "total": 60.1,
         "growth": 75.7,
         "profitability": 78.4,
-        "momentum": 21.6,
+        "momentum": 27.0,
         "valuation": 81.1
       }
     },
     {
-      "code": "8058",
-      "name": "三菱商事",
-      "symbol": "8058.T",
-      "price": 4590.0,
-      "change_1d_pct": -1.84,
-      "ma13w": 4782.62,
-      "ma26w": 4889.96,
+      "code": "6273",
+      "name": "ＳＭＣ",
+      "symbol": "6273.T",
+      "price": 73120.0,
+      "change_1d_pct": 1.87,
+      "ma13w": 70808.46,
+      "ma26w": 71116.92,
       "golden_cross_active": false,
-      "return_13w_pct": 6.69,
-      "relative_topix_13w_pct": 5.12,
-      "distance_52w_high_pct": -21.97,
+      "return_13w_pct": -2.54,
+      "relative_topix_13w_pct": -5.01,
+      "distance_52w_high_pct": -13.53,
       "fundamentals": {
-        "revenue_growth": 0.228,
-        "earnings_growth": 0.579,
-        "roe": 0.10077,
-        "margin": 0.02901,
-        "pe": 19.188375,
-        "pb": 1.7471054,
+        "revenue_growth": 0.354,
+        "earnings_growth": 0.979,
+        "roe": 0.09846,
+        "margin": 0.27302998,
+        "pe": 27.84198,
+        "pb": 2.1335833,
         "sector": "Industrials"
       },
       "scores": {
-        "total": 54.5,
-        "growth": 67.6,
-        "profitability": 8.1,
-        "momentum": 70.3,
-        "valuation": 73.0
+        "total": 57.8,
+        "growth": 81.1,
+        "profitability": 56.8,
+        "momentum": 45.9,
+        "valuation": 48.6
       }
     },
     {
       "code": "7729",
       "name": "東京精密",
       "symbol": "7729.T",
-      "price": 20225.0,
-      "change_1d_pct": -0.91,
-      "ma13w": 17675.38,
-      "ma26w": 17760.96,
+      "price": 20590.0,
+      "change_1d_pct": 1.8,
+      "ma13w": 17805.0,
+      "ma26w": 17941.73,
       "golden_cross_active": false,
-      "return_13w_pct": 0.0,
-      "relative_topix_13w_pct": -1.56,
-      "distance_52w_high_pct": -3.32,
+      "return_13w_pct": 9.85,
+      "relative_topix_13w_pct": 7.39,
+      "distance_52w_high_pct": -1.58,
       "fundamentals": {
         "revenue_growth": 0.189,
         "earnings_growth": 0.445,
         "roe": 0.144,
         "margin": 0.16126,
-        "pe": 32.10616,
+        "pe": 32.105656,
         "pb": 4.3804793,
         "sector": "Technology"
       },
       "scores": {
-        "total": 53.1,
+        "total": 56.9,
         "growth": 45.9,
         "profitability": 37.8,
-        "momentum": 75.7,
+        "momentum": 86.5,
         "valuation": 37.8
-      }
-    },
-    {
-      "code": "6323",
-      "name": "ローツェ",
-      "symbol": "6323.T",
-      "price": 4434.0,
-      "change_1d_pct": -1.03,
-      "ma13w": 4040.38,
-      "ma26w": 4063.46,
-      "golden_cross_active": false,
-      "return_13w_pct": -14.62,
-      "relative_topix_13w_pct": -16.18,
-      "distance_52w_high_pct": -12.72,
-      "fundamentals": {
-        "revenue_growth": 0.125,
-        "earnings_growth": 0.583,
-        "roe": 0.15192,
-        "margin": 0.27497998,
-        "pe": 40.501736,
-        "pb": 6.5161467,
-        "sector": "Technology"
-      },
-      "scores": {
-        "total": 49.9,
-        "growth": 56.8,
-        "profitability": 67.6,
-        "momentum": 43.2,
-        "valuation": 24.3
       }
     },
     {
       "code": "4369",
       "name": "トリケミカル研究所",
       "symbol": "4369.T",
-      "price": 3405.0,
-      "change_1d_pct": -1.59,
-      "ma13w": 3168.77,
-      "ma26w": 3306.5,
+      "price": 3475.0,
+      "change_1d_pct": 2.06,
+      "ma13w": 3180.31,
+      "ma26w": 3326.69,
       "golden_cross_active": false,
-      "return_13w_pct": -11.42,
-      "relative_topix_13w_pct": -12.98,
-      "distance_52w_high_pct": -18.54,
+      "return_13w_pct": 4.51,
+      "relative_topix_13w_pct": 2.05,
+      "distance_52w_high_pct": -16.87,
       "fundamentals": {
         "revenue_growth": 0.243,
         "earnings_growth": -0.032,
@@ -1360,112 +1099,112 @@
         "sector": "Basic Materials"
       },
       "scores": {
-        "total": 47.4,
+        "total": 53.8,
         "growth": 24.3,
-        "profitability": 62.2,
-        "momentum": 45.9,
+        "profitability": 64.9,
+        "momentum": 62.2,
         "valuation": 64.9
       }
     },
     {
-      "code": "9983",
-      "name": "ファーストリテイリング",
-      "symbol": "9983.T",
-      "price": 74800.0,
-      "change_1d_pct": 0.03,
-      "ma13w": 73862.31,
-      "ma26w": 75698.08,
+      "code": "8035",
+      "name": "東京エレクトロン",
+      "symbol": "8035.T",
+      "price": 12445.0,
+      "change_1d_pct": 2.09,
+      "ma13w": 11454.54,
+      "ma26w": 11605.5,
       "golden_cross_active": false,
-      "return_13w_pct": -14.43,
-      "relative_topix_13w_pct": -16.0,
-      "distance_52w_high_pct": -14.9,
+      "return_13w_pct": -11.68,
+      "relative_topix_13w_pct": -14.14,
+      "distance_52w_high_pct": -21.03,
       "fundamentals": {
-        "revenue_growth": 0.222,
-        "earnings_growth": 0.391,
-        "roe": 0.22481,
-        "margin": 0.20999001,
-        "pe": 42.414394,
-        "pb": 8.072656,
-        "sector": "Consumer Cyclical"
-      },
-      "scores": {
-        "total": 45.4,
-        "growth": 43.2,
-        "profitability": 70.3,
-        "momentum": 40.5,
-        "valuation": 18.9
-      }
-    },
-    {
-      "code": "6146",
-      "name": "ディスコ",
-      "symbol": "6146.T",
-      "price": 61140.0,
-      "change_1d_pct": -0.39,
-      "ma13w": 59592.31,
-      "ma26w": 66221.92,
-      "golden_cross_active": false,
-      "return_13w_pct": -21.03,
-      "relative_topix_13w_pct": -22.6,
-      "distance_52w_high_pct": -30.9,
-      "fundamentals": {
-        "revenue_growth": 0.271,
-        "earnings_growth": 0.435,
-        "roe": 0.27376,
-        "margin": 0.42685002,
-        "pe": 45.800728,
-        "pb": 11.451016,
+        "revenue_growth": 0.333,
+        "earnings_growth": 0.404,
+        "roe": 0.30929002,
+        "margin": 0.28866,
+        "pe": 45.93946,
+        "pb": 2.6404095,
         "sector": "Technology"
       },
       "scores": {
-        "total": 44.9,
-        "growth": 54.1,
-        "profitability": 94.6,
-        "momentum": 16.2,
-        "valuation": 13.5
+        "total": 50.1,
+        "growth": 59.5,
+        "profitability": 86.5,
+        "momentum": 29.7,
+        "valuation": 21.6
       }
     },
     {
       "code": "6920",
       "name": "レーザーテック",
       "symbol": "6920.T",
-      "price": 46610.0,
-      "change_1d_pct": -0.19,
-      "ma13w": 39020.77,
-      "ma26w": 41390.77,
+      "price": 48560.0,
+      "change_1d_pct": 4.18,
+      "ma13w": 39342.31,
+      "ma26w": 41659.23,
       "golden_cross_active": false,
-      "return_13w_pct": -3.19,
-      "relative_topix_13w_pct": -4.76,
-      "distance_52w_high_pct": -18.93,
+      "return_13w_pct": 9.42,
+      "relative_topix_13w_pct": 6.95,
+      "distance_52w_high_pct": -15.53,
       "fundamentals": {
         "revenue_growth": -0.263,
         "earnings_growth": -0.349,
         "roe": 0.33929002,
         "margin": 0.44412997,
-        "pe": 56.318428,
+        "pe": 56.31581,
         "pb": 17.632092,
         "sector": "Technology"
       },
       "scores": {
-        "total": 43.2,
+        "total": 49.9,
         "growth": 2.7,
         "profitability": 97.3,
-        "momentum": 48.6,
+        "momentum": 67.6,
         "valuation": 8.1
+      }
+    },
+    {
+      "code": "8058",
+      "name": "三菱商事",
+      "symbol": "8058.T",
+      "price": 4596.0,
+      "change_1d_pct": 0.13,
+      "ma13w": 4797.0,
+      "ma26w": 4862.62,
+      "golden_cross_active": false,
+      "return_13w_pct": 5.6,
+      "relative_topix_13w_pct": 3.14,
+      "distance_52w_high_pct": -21.86,
+      "fundamentals": {
+        "revenue_growth": 0.228,
+        "earnings_growth": 0.579,
+        "roe": 0.10077,
+        "margin": 0.02901,
+        "pe": 19.188375,
+        "pb": 1.7471054,
+        "sector": "Industrials"
+      },
+      "scores": {
+        "total": 49.8,
+        "growth": 67.6,
+        "profitability": 8.1,
+        "momentum": 56.8,
+        "valuation": 73.0
       }
     },
     {
       "code": "4186",
       "name": "東京応化工業",
       "symbol": "4186.T",
-      "price": 9342.0,
-      "change_1d_pct": 0.68,
-      "ma13w": 8947.23,
-      "ma26w": 9558.38,
+      "price": 9334.0,
+      "change_1d_pct": -0.09,
+      "ma13w": 8867.92,
+      "ma26w": 9567.46,
       "golden_cross_active": false,
-      "return_13w_pct": -17.94,
-      "relative_topix_13w_pct": -19.5,
-      "distance_52w_high_pct": -19.6,
+      "return_13w_pct": -9.95,
+      "relative_topix_13w_pct": -12.41,
+      "distance_52w_high_pct": -19.67,
       "fundamentals": {
         "revenue_growth": 0.266,
         "earnings_growth": 0.422,
@@ -1476,54 +1215,54 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 42.7,
-        "growth": 51.4,
-        "profitability": 59.5,
-        "momentum": 24.3,
+        "total": 47.8,
+        "growth": 54.1,
+        "profitability": 62.2,
+        "momentum": 35.1,
         "valuation": 43.2
       }
     },
     {
-      "code": "9984",
-      "name": "ソフトバンクグループ",
-      "symbol": "9984.T",
-      "price": 6040.0,
-      "change_1d_pct": -4.28,
-      "ma13w": 5782.0,
-      "ma26w": 5937.92,
+      "code": "6146",
+      "name": "ディスコ",
+      "symbol": "6146.T",
+      "price": 61460.0,
+      "change_1d_pct": 0.52,
+      "ma13w": 58738.46,
+      "ma26w": 66013.08,
       "golden_cross_active": false,
-      "return_13w_pct": 2.38,
-      "relative_topix_13w_pct": 0.81,
-      "distance_52w_high_pct": -30.03,
+      "return_13w_pct": -15.03,
+      "relative_topix_13w_pct": -17.49,
+      "distance_52w_high_pct": -30.54,
       "fundamentals": {
-        "revenue_growth": 0.109,
-        "earnings_growth": -0.178,
-        "roe": 0.31964,
-        "margin": -0.115509994,
-        "pe": 6.75435,
-        "pb": 1.8143039,
-        "sector": "Communication Services"
+        "revenue_growth": 0.271,
+        "earnings_growth": 0.435,
+        "roe": 0.27376,
+        "margin": 0.42685002,
+        "pe": 45.800045,
+        "pb": 11.451016,
+        "sector": "Technology"
       },
       "scores": {
-        "total": 39.6,
-        "growth": 10.8,
-        "profitability": 18.9,
-        "momentum": 51.4,
-        "valuation": 94.6
+        "total": 44.6,
+        "growth": 56.8,
+        "profitability": 94.6,
+        "momentum": 13.5,
+        "valuation": 13.5
       }
     },
     {
       "code": "6315",
       "name": "ＴＯＷＡ",
       "symbol": "6315.T",
-      "price": 2519.0,
-      "change_1d_pct": -2.55,
-      "ma13w": 2470.08,
-      "ma26w": 2730.96,
+      "price": 2650.0,
+      "change_1d_pct": 5.2,
+      "ma13w": 2433.15,
+      "ma26w": 2727.58,
       "golden_cross_active": false,
-      "return_13w_pct": -28.49,
-      "relative_topix_13w_pct": -30.05,
-      "distance_52w_high_pct": -28.84,
+      "return_13w_pct": -15.34,
+      "relative_topix_13w_pct": -17.8,
+      "distance_52w_high_pct": -25.14,
       "fundamentals": {
         "revenue_growth": 1.003,
         "earnings_growth": null,
@@ -1534,25 +1273,112 @@
         "sector": "Technology"
       },
       "scores": {
-        "total": 39.4,
+        "total": 42.3,
         "growth": 94.6,
         "profitability": 24.3,
-        "momentum": 8.1,
+        "momentum": 16.2,
         "valuation": 45.9
+      }
+    },
+    {
+      "code": "6728",
+      "name": "アルバック",
+      "symbol": "6728.T",
+      "price": 8704.0,
+      "change_1d_pct": 5.52,
+      "ma13w": 8228.08,
+      "ma26w": 8979.27,
+      "golden_cross_active": false,
+      "return_13w_pct": -12.91,
+      "relative_topix_13w_pct": -15.37,
+      "distance_52w_high_pct": -23.11,
+      "fundamentals": {
+        "revenue_growth": 0.221,
+        "earnings_growth": 1.233,
+        "roe": 0.07804,
+        "margin": 0.06297,
+        "pe": 25.069847,
+        "pb": 1.7762058,
+        "sector": "Industrials"
+      },
+      "scores": {
+        "total": 40.5,
+        "growth": 86.5,
+        "profitability": 10.8,
+        "momentum": 24.3,
+        "valuation": 51.4
+      }
+    },
+    {
+      "code": "2802",
+      "name": "味の素",
+      "symbol": "2802.T",
+      "price": 5399.0,
+      "change_1d_pct": 2.0,
+      "ma13w": 5196.77,
+      "ma26w": 5232.0,
+      "golden_cross_active": false,
+      "return_13w_pct": -5.32,
+      "relative_topix_13w_pct": -7.78,
+      "distance_52w_high_pct": -12.57,
+      "fundamentals": {
+        "revenue_growth": 0.132,
+        "earnings_growth": 0.168,
+        "roe": 0.18486,
+        "margin": 0.12911999,
+        "pe": 37.534763,
+        "pb": 6.653751,
+        "sector": "Consumer Defensive"
+      },
+      "scores": {
+        "total": 38.7,
+        "growth": 32.4,
+        "profitability": 45.9,
+        "momentum": 43.2,
+        "valuation": 27.0
+      }
+    },
+    {
+      "code": "9983",
+      "name": "ファーストリテイリング",
+      "symbol": "9983.T",
+      "price": 71780.0,
+      "change_1d_pct": -4.04,
+      "ma13w": 73067.69,
+      "ma26w": 75553.46,
+      "golden_cross_active": false,
+      "return_13w_pct": -11.93,
+      "relative_topix_13w_pct": -14.39,
+      "distance_52w_high_pct": -18.34,
+      "fundamentals": {
+        "revenue_growth": 0.146,
+        "earnings_growth": 0.24,
+        "roe": 0.22297001,
+        "margin": 0.14305,
+        "pe": 40.651974,
+        "pb": 8.072656,
+        "sector": "Consumer Cyclical"
+      },
+      "scores": {
+        "total": 36.5,
+        "growth": 35.1,
+        "profitability": 54.1,
+        "momentum": 32.4,
+        "valuation": 18.9
       }
     },
     {
       "code": "4063",
       "name": "信越化学工業",
       "symbol": "4063.T",
-      "price": 6121.0,
-      "change_1d_pct": -1.81,
-      "ma13w": 6215.85,
-      "ma26w": 6659.96,
+      "price": 6085.0,
+      "change_1d_pct": -0.59,
+      "ma13w": 6120.85,
+      "ma26w": 6641.85,
       "golden_cross_active": false,
-      "return_13w_pct": -13.04,
-      "relative_topix_13w_pct": -14.61,
-      "distance_52w_high_pct": -21.59,
+      "return_13w_pct": -16.58,
+      "relative_topix_13w_pct": -19.05,
+      "distance_52w_high_pct": -22.05,
       "fundamentals": {
         "revenue_growth": 0.054,
         "earnings_growth": 0.057,
@@ -1563,54 +1389,54 @@
         "sector": "Basic Materials"
       },
       "scores": {
-        "total": 38.6,
+        "total": 33.7,
         "growth": 16.2,
-        "profitability": 56.8,
-        "momentum": 35.1,
+        "profitability": 59.5,
+        "momentum": 18.9,
         "valuation": 54.1
       }
     },
     {
-      "code": "6728",
-      "name": "アルバック",
-      "symbol": "6728.T",
-      "price": 8249.0,
-      "change_1d_pct": -1.52,
-      "ma13w": 8327.31,
-      "ma26w": 9024.92,
+      "code": "9984",
+      "name": "ソフトバンクグループ",
+      "symbol": "9984.T",
+      "price": 5803.0,
+      "change_1d_pct": -3.92,
+      "ma13w": 5738.38,
+      "ma26w": 6015.81,
       "golden_cross_active": false,
-      "return_13w_pct": -19.35,
-      "relative_topix_13w_pct": -20.91,
-      "distance_52w_high_pct": -27.13,
+      "return_13w_pct": -8.82,
+      "relative_topix_13w_pct": -11.28,
+      "distance_52w_high_pct": -32.77,
       "fundamentals": {
-        "revenue_growth": 0.221,
-        "earnings_growth": 1.233,
-        "roe": 0.07804,
-        "margin": 0.06297,
-        "pe": 25.07057,
-        "pb": 1.7762058,
-        "sector": "Industrials"
+        "revenue_growth": 0.109,
+        "earnings_growth": -0.178,
+        "roe": 0.31964,
+        "margin": -0.115509994,
+        "pe": 6.75435,
+        "pb": 1.8143039,
+        "sector": "Communication Services"
       },
       "scores": {
-        "total": 38.6,
-        "growth": 86.5,
-        "profitability": 10.8,
-        "momentum": 18.9,
-        "valuation": 51.4
+        "total": 29.2,
+        "growth": 10.8,
+        "profitability": 18.9,
+        "momentum": 21.6,
+        "valuation": 94.6
       }
     },
     {
       "code": "6590",
       "name": "芝浦メカトロニクス",
       "symbol": "6590.T",
-      "price": 4235.0,
-      "change_1d_pct": -0.82,
-      "ma13w": 4363.08,
-      "ma26w": 4677.5,
+      "price": 4300.0,
+      "change_1d_pct": 1.53,
+      "ma13w": 4248.46,
+      "ma26w": 4657.5,
       "golden_cross_active": false,
-      "return_13w_pct": -28.76,
-      "relative_topix_13w_pct": -30.33,
-      "distance_52w_high_pct": -29.42,
+      "return_13w_pct": -25.73,
+      "relative_topix_13w_pct": -28.2,
+      "distance_52w_high_pct": -28.33,
       "fundamentals": {
         "revenue_growth": -0.07,
         "earnings_growth": -0.326,
@@ -1629,17 +1455,75 @@
       }
     },
     {
+      "code": "6594",
+      "name": "ニデック",
+      "symbol": "6594.T",
+      "price": 2010.0,
+      "change_1d_pct": -6.07,
+      "ma13w": 2575.69,
+      "ma26w": 2591.81,
+      "golden_cross_active": false,
+      "return_13w_pct": -24.44,
+      "relative_topix_13w_pct": -26.9,
+      "distance_52w_high_pct": -30.67,
+      "fundamentals": {
+        "revenue_growth": 0.091,
+        "earnings_growth": null,
+        "roe": -0.49664003,
+        "margin": -0.87868,
+        "pe": null,
+        "pb": 2.9012659,
+        "sector": "Industrials"
+      },
+      "scores": {
+        "total": 22.2,
+        "growth": 18.9,
+        "profitability": 0.0,
+        "momentum": 8.1,
+        "valuation": 97.3
+      }
+    },
+    {
+      "code": "3436",
+      "name": "ＳＵＭＣＯ",
+      "symbol": "3436.T",
+      "price": 3426.0,
+      "change_1d_pct": -1.35,
+      "ma13w": 3419.15,
+      "ma26w": 3510.08,
+      "golden_cross_active": false,
+      "return_13w_pct": -34.67,
+      "relative_topix_13w_pct": -37.13,
+      "distance_52w_high_pct": -35.44,
+      "fundamentals": {
+        "revenue_growth": 0.104,
+        "earnings_growth": null,
+        "roe": -0.04061,
+        "margin": -0.02728,
+        "pe": null,
+        "pb": 2.1088982,
+        "sector": "Technology"
+      },
+      "scores": {
+        "total": 21.1,
+        "growth": 21.6,
+        "profitability": 2.7,
+        "momentum": 0.0,
+        "valuation": 100.0
+      }
+    },
+    {
       "code": "6526",
       "name": "ソシオネクスト",
       "symbol": "6526.T",
-      "price": 2140.0,
-      "change_1d_pct": -4.46,
-      "ma13w": 2135.77,
-      "ma26w": 2244.54,
+      "price": 2109.5,
+      "change_1d_pct": -1.43,
+      "ma13w": 2078.81,
+      "ma26w": 2256.4,
       "golden_cross_active": false,
-      "return_13w_pct": -21.94,
-      "relative_topix_13w_pct": -23.51,
-      "distance_52w_high_pct": -38.7,
+      "return_13w_pct": -25.1,
+      "relative_topix_13w_pct": -27.57,
+      "distance_52w_high_pct": -39.57,
       "fundamentals": {
         "revenue_growth": 0.13,
         "earnings_growth": null,
@@ -1650,10 +1534,10 @@
         "sector": "Industrials"
       },
       "scores": {
-        "total": 15.0,
+        "total": 12.2,
         "growth": 29.7,
         "profitability": 5.4,
-        "momentum": 10.8,
+        "momentum": 2.7,
         "valuation": 16.2
       }
     },
@@ -1661,14 +1545,14 @@
       "code": "6254",
       "name": "野村マイクロ・サイエンス",
       "symbol": "6254.T",
-      "price": 3685.0,
-      "change_1d_pct": -3.03,
-      "ma13w": 3759.62,
-      "ma26w": 4055.0,
+      "price": 3780.0,
+      "change_1d_pct": 2.58,
+      "ma13w": 3694.62,
+      "ma26w": 4063.27,
       "golden_cross_active": false,
-      "return_13w_pct": -28.06,
-      "relative_topix_13w_pct": -29.63,
-      "distance_52w_high_pct": -32.39,
+      "return_13w_pct": -17.55,
+      "relative_topix_13w_pct": -20.02,
+      "distance_52w_high_pct": -30.64,
       "fundamentals": {
         "revenue_growth": -0.258,
         "earnings_growth": -0.495,
@@ -1679,62 +1563,50 @@
         "sector": "Industrials"
       },
       "scores": {
-        "total": 8.4,
+        "total": 10.8,
         "growth": 0.0,
         "profitability": 13.5,
-        "momentum": 2.7,
-        "valuation": 27.0
+        "momentum": 10.8,
+        "valuation": 24.3
       }
     }
   ],
   "sectors": [
     {
-      "label": "Consumer Cyclical",
-      "count": 5,
-      "change_1d_pct": -0.59
-    },
-    {
-      "label": "Communication Services",
-      "count": 3,
-      "change_1d_pct": -0.71
+      "label": "Technology",
+      "count": 17,
+      "change_1d_pct": 3.06
     },
     {
       "label": "Consumer Defensive",
       "count": 1,
-      "change_1d_pct": -0.99
-    },
-    {
-      "label": "Technology",
-      "count": 17,
-      "change_1d_pct": -1.29
+      "change_1d_pct": 2.0
     },
     {
       "label": "Basic Materials",
       "count": 3,
-      "change_1d_pct": -1.34
+      "change_1d_pct": 1.33
+    },
+    {
+      "label": "Communication Services",
+      "count": 3,
+      "change_1d_pct": 1.02
     },
     {
       "label": "Industrials",
       "count": 6,
-      "change_1d_pct": -2.47
+      "change_1d_pct": 0.43
+    },
+    {
+      "label": "Consumer Cyclical",
+      "count": 5,
+      "change_1d_pct": -0.83
     },
     {
       "label": "Financial Services",
       "count": 3,
-      "change_1d_pct": -2.62
+      "change_1d_pct": -0.97
     }
   ],
-  "disclosures": [
-    {
-      "id": "6920-140120260924539712",
-      "code": "6920",
-      "name": "レーザーテック",
-      "title": "譲渡制限付株式報酬としての自己株式の処分に関するお知らせ",
-      "published_at": "2026-09-25 17:00:00",
-      "report_date": "2026-09-28",
-      "url": "https://www.release.tdnet.info/inbs/140120260924539712.pdf",
-      "source": "TDnet",
-      "earnings": {}
-    }
-  ]
+  "disclosures": []
 }
