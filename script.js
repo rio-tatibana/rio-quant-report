@@ -4,6 +4,7 @@ const NAV_ITEMS = [
   { href: 'index.html#market', label: 'マーケット' },
   { href: 'index.html#research', label: '銘柄' },
   { href: 'minervini-report.html', label: 'トレンドテンプレート' },
+  { href: 'wyckoff-guide.html', label: 'ワイコフ入門' },
   { href: 'index.html#sectors', label: 'セクター' },
   { href: 'daily-report.html', label: 'デイリーレポート' },
   { href: 'golden-cross-report.html', label: 'ゴールデンクロス' },
