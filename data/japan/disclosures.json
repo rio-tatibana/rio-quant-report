@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "6098-140120261102562483",
+    "code": "6098",
+    "name": "リクルートＨＤ",
+    "title": "自己株式の取得状況について",
+    "published_at": "2026-11-02 15:30:00",
+    "report_date": "2026-11-03",
+    "url": "https://www.release.tdnet.info/inbs/140120261102562483.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  },
+  {
+    "id": "6857-140120261102562507",
+    "code": "6857",
+    "name": "アドバンテス",
+    "title": "自己株式の取得状況に関するお知らせ",
+    "published_at": "2026-11-02 15:30:00",
+    "report_date": "2026-11-03",
+    "url": "https://www.release.tdnet.info/inbs/140120261102562507.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  }
+]
