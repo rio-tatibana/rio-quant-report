@@ -1,0 +1,948 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "アップル",
+    "date": "2026-11-02",
+    "release_date": "2026-11-02",
+    "release_session": "AFTER",
+    "call_date": "2026-11-02",
+    "period": "2026Q4",
+    "revenue": {
+      "actual": 114477,
+      "estimate": 113400,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+        "https://apnews.com/article/9698be9e0226091a537611382144eb44"
+      ]
+    },
+    "eps": {
+      "actual": 2.1,
+      "estimate": 1.99,
+      "currency": "USD",
+      "basis": "GAAP希薄化後EPS（関税還付の利益を含む）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+        "https://apnews.com/article/9698be9e0226091a537611382144eb44"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "メモリー価格の上昇とSiri AI費用が、次四半期の利益率を圧迫する見通し。",
+        "サービスの成長率は次四半期8〜9％を想定し、為替とライセンス収入が逆風。"
+      ],
+      "qa": [
+        "サービス成長の持続性への質問に、経営陣は25億台超の稼働端末を長期成長の基盤と説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "iPhone売上高",
+        "actual": "576億ドル、前年同期比17％増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "数量ではなく金額。会社の定量目標は今回確認した資料にない。",
+        "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/"
+      },
+      {
+        "name": "全社粗利益率",
+        "actual": "47.9％",
+        "target": null,
+        "status": "一時利益を含む",
+        "note": "関税還付による約1ポイントの押し上げを含む。",
+        "source_url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      }
+    ],
+    "guidance": [
+      "12月四半期売上成長率7〜10％、全社粗利益率45〜46％。"
+    ],
+    "reaction": {
+      "change_pct": -2.6,
+      "window": "11月2日の時間外取引・説明会中の報道時点",
+      "summary": "AP報道では、利益率見通し低下を示した説明会中に下落。これは報道時点の値で、翌日終値の変化ではない。",
+      "source_url": "https://apnews.com/article/9698be9e0226091a537611382144eb44"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://apnews.com/article/9698be9e0226091a537611382144eb44"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "EPS $2.10には関税還付による$0.05の利益を含む。調整後EPSを使う他社と利益の質を単純比較しない。"
+    ]
+  },
+  {
+    "ticker": "PLTR",
+    "name": "パランティア",
+    "date": "2026-11-02",
+    "release_date": "2026-11-02",
+    "release_session": "AFTER",
+    "call_date": "2026-11-02",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 2313.411,
+      "estimate": 2170,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+      ]
+    },
+    "eps": {
+      "actual": 0.44,
+      "estimate": 0.41,
+      "currency": "USD",
+      "basis": "調整後希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "米国商用事業が急拡大し、米国政府売上を初めて上回った。",
+        "経営陣は顧客の導入判断が速まる一方、需要に対する供給能力の制約にも言及。"
+      ],
+      "qa": [
+        "顧客獲得への質問に、ブートキャンプから本番導入への移行が短期化していると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "米国商用売上",
+        "actual": "9.84億ドル、前年同期比148％増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "成長率を確認。独立した四半期目標値は未確認。",
+        "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+      },
+      {
+        "name": "顧客売上継続率（NDR）",
+        "actual": "165％",
+        "target": "前四半期157％",
+        "status": "前四半期比8ポイント改善",
+        "note": "既存顧客からの売上拡大を示す。目標達成率ではない。",
+        "source_url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf"
+      }
+    ],
+    "guidance": [
+      "通期売上見通し85.30〜85.34億ドルへ引き上げ。米国商用売上は通期143％以上増を想定。"
+    ],
+    "reaction": {
+      "change_pct": -3.82,
+      "window": "11月2日の時間外取引・記事掲載時点",
+      "summary": "業績上振れでも下落。高い評価倍率への懸念が背景との報道上の解釈で、単独の下落原因を確定するものではない。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "調整後EPSとGAAP EPSは今回ともに$0.44。予想$0.41は同じ報道の調整後EPS予想。"
+    ]
+  },
+  {
+    "ticker": "VRTX",
+    "name": "バーテックス・ファーマシューティカルズ",
+    "date": "2026-11-02",
+    "release_date": "2026-11-02",
+    "release_session": "AFTER",
+    "call_date": "2026-11-02",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 3440.8,
+      "estimate": 3410,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109"
+      ]
+    },
+    "eps": {
+      "actual": 4.76,
+      "estimate": 4.92,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results",
+        "https://www.zacks.com/stock/news/3021132/vertex-pharmaceuticals-vrtx-misses-q3-earnings-estimates"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "CASGEVYとJOURNAVXの拡大が進む一方、買収関連費用と販売体制への投資が増加。",
+        "JOURNAVXの処方は伸びたが、患者支援と保険償還の影響で処方増がそのまま売上増にはならない。"
+      ],
+      "qa": [
+        "JOURNAVXの収益化について、患者支援制度を2027年まで延長し、アクセスを優先する方針を説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "JOURNAVX処方件数",
+        "actual": "四半期75万件超、前四半期比40％超増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "処方件数と売上を別々に追跡する必要がある。",
+        "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/"
+      },
+      {
+        "name": "CASGEVY＋JOURNAVX売上",
+        "actual": "年初来3.5億ドル超",
+        "target": "通期5億ドル超",
+        "status": "年途中・進捗70％超",
+        "note": "会社は通期目標を維持。年間目標の達成確定ではない。",
+        "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/"
+      }
+    ],
+    "guidance": [
+      "通期売上見通し131.5〜132.5億ドルへ引き上げ。"
+    ],
+    "reaction": {
+      "change_pct": 1.35,
+      "window": "11月2日の時間外取引・記事掲載時点",
+      "summary": "売上拡大と通期見通し引き上げを伴い上昇。ただし株価要因の分離はできない。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.zacks.com/stock/news/3021132/vertex-pharmaceuticals-vrtx-misses-q3-earnings-estimates"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/"
+      },
+      {
+        "title": "売上予想と時間外反応",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "売上予想はInvesting.com、EPS予想はZacks。Zacks EPS予想$4.92に対して未達。一方Investing.comはEPS予想$4.76と報道しており、予想集計元で判定が異なる。GAAP EPS $2.56を調整後予想へ比較していない。"
+    ]
+  },
+  {
+    "ticker": "MAR",
+    "name": "マリオット・インターナショナル",
+    "date": "2026-11-02",
+    "release_date": "2026-11-02",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-02",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 7005,
+      "estimate": 6930,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a",
+        "https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/"
+      ]
+    },
+    "eps": {
+      "actual": 3.02,
+      "estimate": 2.84,
+      "currency": "USD",
+      "basis": "調整後希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a",
+        "https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/"
+      ]
+    },
+    "call": {
+      "status": "公式の説明会記録を確認",
+      "summary": [
+        "宿泊需要が幅広く強く、世界のRevPARと決算実績が会社の従来想定を上回った。",
+        "中国需要はまだらで、中東は第4四半期の比較条件が厳しくなる。"
+      ],
+      "qa": [
+        "ホテル所有者との関係への質問に、ホテル側の採算改善と継続的な対話を重視すると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公式カンファレンスコール記録",
+          "url": "https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "世界RevPAR（販売可能客室当たり売上）",
+        "actual": "前年同期比6.5％増",
+        "target": "会社は従来想定を上回ったと説明",
+        "status": "会社想定超過",
+        "note": "客室単価と稼働率の両方を反映。",
+        "source_url": "https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b"
+      },
+      {
+        "name": "純客室数増加率",
+        "actual": "過去12カ月で4.6％",
+        "target": "通期4.5〜5％の下限寄り",
+        "status": "進捗確認・通期未確定",
+        "note": "年間見通しとの比較。四半期だけの達成率ではない。",
+        "source_url": "https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b"
+      }
+    ],
+    "guidance": [
+      "通期世界RevPAR成長率4.5〜5％へ引き上げ。2027年は暫定的に3.5〜4.5％増を想定。"
+    ],
+    "reaction": {
+      "change_pct": 4.26,
+      "window": "11月2日の通常取引・前営業日終値比",
+      "summary": "KGIの決算レビューでは当日4.26％上昇。RevPARと利益見通しの引き上げが確認された日だが、他の市場要因も含む。",
+      "source_url": "https://www.kgieworld.sg/research/technical-analysis-3-november-2026/"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b"
+      },
+      {
+        "title": "当日終値の反応",
+        "url": "https://www.kgieworld.sg/research/technical-analysis-3-november-2026/"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "連結売上には費用償還収入を含む。手数料収入や償還除外売上と混同しない。GAAP EPSは$3.04、比較には調整後$3.02を使用。"
+    ]
+  },
+  {
+    "ticker": "WMB",
+    "name": "ウィリアムズ・カンパニーズ",
+    "date": "2026-11-02",
+    "release_date": "2026-11-02",
+    "release_session": "AFTER",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 3223,
+      "estimate": 3000,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d",
+        "https://www.investing.com/equities/williams-cos-earnings"
+      ]
+    },
+    "eps": {
+      "actual": 0.54,
+      "estimate": 0.54,
+      "currency": "USD",
+      "basis": "調整後希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d",
+        "https://www.investing.com/equities/williams-cos-earnings"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "送ガス・貯蔵・新規設備が調整後EBITDAの増加を支えた。",
+        "通期EBITDAは会社予想の上半分を目指すと説明。"
+      ],
+      "qa": [
+        "SESI IIの追加契約について、残り容量の顧客と最終条件を詰めていると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "調整後EBITDA（利払い・税・減価償却前の利益）",
+        "actual": "四半期20.39億ドル、年初来約62億ドル",
+        "target": "通期83〜85億ドル",
+        "status": "会社は上半分での着地に向け進捗",
+        "note": "年初来実績は通期目標の約73〜75％。",
+        "source_url": "https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d"
+      },
+      {
+        "name": "有利子負債／調整後EBITDA",
+        "actual": "3.80倍",
+        "target": "年末約3.75倍",
+        "status": "目標より0.05倍高い・年途中",
+        "note": "低い方が負債負担は軽い。目標は年末時点。",
+        "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
+      }
+    ],
+    "guidance": [
+      "通期調整後EBITDA83〜85億ドル、成長投資73〜79億ドルを維持。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "決算直後の統一された観測時点の株価変化は今回の資料で未確認。天然ガス設備の拡張と負債管理が今後の確認点。",
+      "source_url": null
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/equities/williams-cos-earnings"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
+      },
+      {
+        "title": "別集計のEPS予想（Zacks）",
+        "url": "https://www.zacks.com/stock/news/3021126/williams-companies-inc-the-wmb-lags-q3-earnings-estimates"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "Investing.comの予想EPS $0.54では一致。Zacksは$0.55予想で1.82％未達と報道。売上予想も集計元で差が大きく、掲載比較はInvesting.comの30億ドルに統一。GAAP EPS $0.56と混同しない。"
+    ]
+  },
+  {
+    "ticker": "AMD",
+    "name": "AMD",
+    "date": "2026-11-03",
+    "release_date": "2026-11-03",
+    "release_session": "AFTER",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 13377,
+      "estimate": 13060,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+      ]
+    },
+    "eps": {
+      "actual": 2.09,
+      "estimate": 1.94,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "AI向けGPUとEPYCが成長を主導し、データセンターが売上の64％を占めた。",
+        "2027年の全社売上は80％超増を見込む一方、需要が供給を上回る状況と説明。"
+      ],
+      "qa": [
+        "供給能力への質問に、ウエハー・先端パッケージ・メモリーの調達を顧客計画と合わせて増強していると回答。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+        },
+        {
+          "title": "供給制約を確認した説明会記録",
+          "url": "https://stockanalysis.com/stocks/amd/transcripts/724028-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "データセンター売上",
+        "actual": "約85億ドル、前年同期比97％増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "会社は四半期売上が従来ガイダンス上限を超えたと説明。",
+        "source_url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "name": "non-GAAP粗利益率",
+        "actual": "56％",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "GAAP粗利益率54％とは区別。",
+        "source_url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      }
+    ],
+    "guidance": [
+      "第4四半期売上170億ドル±3％、non-GAAP粗利益率55％。"
+    ],
+    "reaction": {
+      "change_pct": 7.54,
+      "window": "11月3日の時間外取引・記事掲載時点",
+      "summary": "AI・サーバー需要と2027年見通しを示して時間外上昇。ただし単独要因の寄与率を示すものではない。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "GAAP EPSは$1.46。比較は公式non-GAAP $2.09と同じ報道のnon-GAAP予想$1.94を使用。"
+    ]
+  },
+  {
+    "ticker": "AMGN",
+    "name": "アムジェン",
+    "date": "2026-11-03",
+    "release_date": "2026-11-03",
+    "release_session": "AFTER",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 10365,
+      "estimate": 10060,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+      ]
+    },
+    "eps": {
+      "actual": 6.45,
+      "estimate": 5.76,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "主要成長製品の伸びが支え、通期売上と利益見通しを引き上げた。",
+        "研究開発と製造能力への投資を続けつつ、2027年の利益率の維持に自信を示した。"
+      ],
+      "qa": [
+        "MariTideの忍容性と生産体制への質問に、追加データの取得と慎重な設備計画を優先すると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "2桁売上成長の製品数",
+        "actual": "17製品",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "製品ポートフォリオの広がりを確認。",
+        "source_url": "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "name": "フリーキャッシュフロー（設備投資後の現金創出）",
+        "actual": "37億ドル",
+        "target": "前年同期42億ドル",
+        "status": "前年同期比減少",
+        "note": "会社は運転資本の変化を要因として説明。目標未達を意味しない。",
+        "source_url": "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+      }
+    ],
+    "guidance": [
+      "通期売上389〜397億ドル、non-GAAP EPS22.90〜23.70ドルへ引き上げ。"
+    ],
+    "reaction": {
+      "change_pct": -1.36,
+      "window": "11月3日の時間外取引・記事掲載時点",
+      "summary": "予想超過と見通し引き上げにもかかわらず時間外で下落。利益確定などは報道の解釈で、原因は確定できない。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "GAAP EPS $7.08に対し、比較はnon-GAAP $6.45を使用。"
+    ]
+  },
+  {
+    "ticker": "ANET",
+    "name": "アリスタ・ネットワークス",
+    "date": "2026-11-03",
+    "release_date": "2026-11-03",
+    "release_session": "AFTER",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 3657.6,
+      "estimate": 3330,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.arista.com/en/company/news/press-release/25025-pr-20261103",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+      ]
+    },
+    "eps": {
+      "actual": 1.2,
+      "estimate": 1.08,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.arista.com/en/company/news/press-release/25025-pr-20261103",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "AIネットワーク需要と企業向け更新需要が広がり、通期見通しを再び引き上げた。",
+        "在庫・購入約束が増え、供給確保と売上計上時期の変動が引き続き確認点。"
+      ],
+      "qa": [
+        "10GW超の導入見通しへの質問に、2026〜27年のAIネットワーク展開と複数アクセラレーター対応の広がりを説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "四半期売上",
+        "actual": "36.576億ドル",
+        "target": "会社の従来ガイダンス33億ドル",
+        "status": "会社予想を約10.8％上回る",
+        "note": "市場予想との差とは別の比較。",
+        "source_url": "https://www.arista.com/en/company/news/press-release/25025-pr-20261103"
+      },
+      {
+        "name": "non-GAAP営業利益率",
+        "actual": "49.1％",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "GAAP営業利益率44.9％とは区別。",
+        "source_url": "https://www.arista.com/en/company/news/press-release/25025-pr-20261103"
+      }
+    ],
+    "guidance": [
+      "第4四半期売上39〜40億ドル、通期売上約133億ドル。2027年売上成長率38〜40％を初期想定。"
+    ],
+    "reaction": {
+      "change_pct": 12.1,
+      "window": "11月3日の時間外取引・記事掲載時点",
+      "summary": "売上・EPSの予想超過と見通し引き上げに伴い時間外で上昇。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://www.arista.com/en/company/news/press-release/25025-pr-20261103"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "GAAP EPS $1.22と、比較に使ったnon-GAAP EPS $1.20は別の値。売上の予想33.3億ドルは報道の丸め値。"
+    ]
+  },
+  {
+    "ticker": "SHOP",
+    "name": "ショッピファイ",
+    "date": "2026-11-03",
+    "release_date": "2026-11-03",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 3742,
+      "estimate": 3740,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+      ]
+    },
+    "eps": {
+      "actual": 0.49,
+      "estimate": 0.47,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "GMVと現金創出は拡大したが、次四半期のAI・販促・インフラ投資の負担が焦点。",
+        "特定のAIエージェントに依存せず、幅広い経路で加盟店の商品を販売する方針を説明。"
+      ],
+      "qa": [
+        "Sidekickの費用への質問に、AIやホスティング投資を進めつつ長期の粗利益率の枠組みは維持すると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "GMV（流通取引総額）",
+        "actual": "1,191.45億ドル",
+        "target": "前年同期920.13億ドル",
+        "status": "前年同期比約29.5％増",
+        "note": "GMVはShopify自身の売上ではない。",
+        "source_url": "https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22"
+      },
+      {
+        "name": "フリーキャッシュフロー利益率",
+        "actual": "22％",
+        "target": "前年同期18％",
+        "status": "前年同期比4ポイント改善",
+        "note": "会社目標の達成率ではなく前年との比較。",
+        "source_url": "https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22"
+      }
+    ],
+    "guidance": [
+      "第4四半期売上は前年比30％台前半の成長、営業費用率29〜30％を予想。"
+    ],
+    "reaction": {
+      "change_pct": -6.65,
+      "window": "11月3日の寄り付き前取引・記事掲載時点",
+      "summary": "利益は予想を上回ったが、報道時点の株価は下落。投資負担と高い期待への懸念は報道上の解釈。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "GAAP EPS $0.36ではなくnon-GAAP $0.49を比較。報道の売上実績・予想はともに37.4億ドルと丸められ一致。詳細実績37.42億ドルから計算する差は丸め誤差の範囲。"
+    ]
+  },
+  {
+    "ticker": "PFE",
+    "name": "ファイザー",
+    "date": "2026-11-03",
+    "release_date": "2026-11-03",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-03",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 16583,
+      "estimate": 15910,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+      ]
+    },
+    "eps": {
+      "actual": 0.87,
+      "estimate": 0.73,
+      "currency": "USD",
+      "basis": "調整後希薄化後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+      ]
+    },
+    "call": {
+      "status": "第三者公開の説明会記録を確認",
+      "summary": [
+        "新製品・買収製品と非COVID事業が成長し、通期見通しを引き上げた。",
+        "特許切れと薬価圧力を越えるため、開発案件とコスト削減の実行が焦点。"
+      ],
+      "qa": [
+        "特許切れへの対応に関する質問に、新製品と第2段階の費用削減を組み合わせる方針を説明。"
+      ],
+      "sources": [
+        {
+          "title": "公開カンファレンスコール記録",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "新発売・買収製品の売上",
+        "actual": "38億ドル、為替影響除外で32％増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "為替影響を除いた成長率。",
+        "source_url": "https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum"
+      },
+      {
+        "name": "非COVID製品売上成長率",
+        "actual": "為替影響除外で7％増",
+        "target": null,
+        "status": "目標比較なし",
+        "note": "COVID需要の変動を除く事業の動向。",
+        "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+      }
+    ],
+    "guidance": [
+      "通期売上620〜640億ドル、調整後EPS2.95〜3.05ドルへ引き上げ。"
+    ],
+    "reaction": {
+      "change_pct": -0.72,
+      "window": "11月3日の寄り付き前取引・記事掲載時点",
+      "summary": "業績と見通しは改善したが報道時点では下落。長期の特許切れと薬価への懸念は記事の分析であり、因果関係を確定しない。",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+    },
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum"
+      },
+      {
+        "title": "市場予想の照合元",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+      },
+      {
+        "title": "カンファレンスコール記録",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972"
+      }
+    ],
+    "notes": [
+      "売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。",
+      "GAAP EPS $0.56に対し、比較は調整後$0.87と同基準の予想$0.73。売上16.583十億ドルはAPI詳細実績、報道は16.6十億ドルに丸めている。"
+    ]
+  }
+]

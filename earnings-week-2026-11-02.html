@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2026年11月2〜6日の米国上場株25社を決算・市場予想との差・説明会・KPI・株価反応で比較。">
+  <title>米国株 週間決算レビュー 11/2〜11/6 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="earnings-week.js" defer></script>
+</head>
+<body class="earnings-page">
+  <header class="mobile-bar"><a class="logo" href="index.html">rio<span>Quant</span></a><button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="sidebar-brand"><a class="logo" href="index.html">rio<span>Quant</span></a><span class="tagline">数字で見る米国株・マーケット分析</span></div><nav></nav></aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <div class="page"><main>
+      <section class="report-hero"><div class="container">
+        <div class="eyebrow">WEEKLY EARNINGS REVIEW · NOV 02–06, 2026</div>
+        <h1>数字の上振れ。<br>その先の、事業の変化。</h1>
+        <p>米国株 週間決算レビュー｜各曜日の時価総額上位5銘柄、計25社。<br>売上・利益の予想との差、説明会、KPI、株価の反応を一緒に読みます。</p>
+        <div class="methodology"><b>比較の前提</b><br>対象は11月2〜6日のmoomoo決算カレンダーから抽出した25社。外国企業の米国上場株を含みます。時価総額は11月9日21:27（日本時間）の取得値です。カレンダー日と公式発表日・説明会日が異なる銘柄は詳細に併記しています。</div>
+      </div></section>
+      <section class="section"><div class="container">
+        <div class="earn-intro"><div><span class="eyebrow">AT A GLANCE</span><h2>市場の期待に、どこまで届いたか。</h2></div><a class="btn secondary" href="#reading-guide">数字の読み方</a></div>
+        <div class="gc-kpis earn-overview"><div class="gc-kpi"><div class="label">対象</div><div class="value">25<span class="earn-unit">社</span></div><div class="sub">5日 × 時価総額上位5銘柄</div></div><div class="gc-kpi"><div class="label">売上市場予想との比較</div><div class="value">25<span class="earn-unit">/ 25</span></div><div class="sub">基準と出典を確認できた銘柄</div></div><div class="gc-kpi"><div class="label">利益市場予想との比較</div><div class="value">25<span class="earn-unit">/ 25</span></div><div class="sub">利益の定義が一致する銘柄</div></div></div>
+        <div class="card earn-toolbar"><div class="earn-filters" role="group" aria-label="抽出曜日で絞り込み"><button type="button" class="active" data-day-filter="all" aria-pressed="true">すべて</button><button type="button" data-day-filter="2026-11-02" aria-pressed="false">11/2 月</button><button type="button" data-day-filter="2026-11-03" aria-pressed="false">11/3 火</button><button type="button" data-day-filter="2026-11-04" aria-pressed="false">11/4 水</button><button type="button" data-day-filter="2026-11-05" aria-pressed="false">11/5 木</button><button type="button" data-day-filter="2026-11-06" aria-pressed="false">11/6 金</button></div><div class="earn-controls"><label>銘柄を探す<input type="search" id="earnSearch" placeholder="コード・企業名" autocomplete="off"></label><label>並べ替え<select id="earnSort"><option value="day">曜日・時価総額順</option><option value="revenue">売上の上振れ順</option><option value="eps">利益の上振れ順</option></select></label><button type="button" id="earnReset">リセット</button></div></div>
+        <p class="section-note" id="earnCount" aria-live="polite">25社を表示。コードを押すと詳細が開きます。並べ替えは比較表に適用されます。</p>
+        <div class="card earn-comparison"><h2>決算サプライズ一覧</h2><p class="section-note">売上は表示通貨の百万単位。利益は主に1株当たりEPS、トヨタは百万JPYの営業利益、BAMは1株当たり分配可能利益（DE）。ソニーは配信元のUSD換算値です。通貨が違う企業同士の金額は単純比較できません。左右にスクロールできます。</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="決算比較表。横スクロールできます"><table class="data earn-table"><thead><tr><th rowspan="2" scope="col">抽出日</th><th rowspan="2" scope="col">銘柄 / 詳細</th><th colspan="3" scope="colgroup">売上高</th><th colspan="3" scope="colgroup">利益指標（EPS等）</th><th rowspan="2" scope="col">利益の指標・基準</th></tr><tr><th scope="col">実績</th><th scope="col">市場予想</th><th scope="col">予想との差</th><th scope="col">実績</th><th scope="col">市場予想</th><th scope="col">予想との差</th></tr></thead><tbody id="earnTableBody"><tr data-day="2026-11-02" data-search="AAPL アップル" data-revenue="0.9497354497354498" data-eps="5.527638190954779">
+          <td>11-02<small>日内1位</small></td><th scope="row"><a href="#company-AAPL" class="earn-company-link">AAPL</a><small>アップル</small></th>
+          <td class="num">114,477<small>USD 百万</small></td><td class="num">113,400</td><td><span class="badge positive">+0.95% 上振れ</span></td>
+          <td class="num">2.1<small>USD/株</small></td><td class="num">1.99</td><td><span class="badge positive">+5.53% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>GAAP希薄化後EPS（関税還付の利益を含む）</td></tr>
+<tr data-day="2026-11-02" data-search="PLTR パランティア" data-revenue="6.608801843317975" data-eps="7.317073170731714">
+          <td>11-02<small>日内2位</small></td><th scope="row"><a href="#company-PLTR" class="earn-company-link">PLTR</a><small>パランティア</small></th>
+          <td class="num">2,313.411<small>USD 百万</small></td><td class="num">2,170</td><td><span class="badge positive">+6.61% 上振れ</span></td>
+          <td class="num">0.44<small>USD/株</small></td><td class="num">0.41</td><td><span class="badge positive">+7.32% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化後EPS</td></tr>
+<tr data-day="2026-11-02" data-search="VRTX バーテックス・ファーマシューティカルズ" data-revenue="0.9032258064516182" data-eps="-3.2520325203252063">
+          <td>11-02<small>日内3位</small></td><th scope="row"><a href="#company-VRTX" class="earn-company-link">VRTX</a><small>バーテックス・ファーマシューティカルズ</small></th>
+          <td class="num">3,440.8<small>USD 百万</small></td><td class="num">3,410</td><td><span class="badge positive">+0.90% 上振れ</span></td>
+          <td class="num">4.76<small>USD/株</small></td><td class="num">4.92</td><td><span class="badge negative">-3.25% 下振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化後EPS</td></tr>
+<tr data-day="2026-11-02" data-search="MAR マリオット・インターナショナル" data-revenue="1.0822510822510822" data-eps="6.33802816901409">
+          <td>11-02<small>日内4位</small></td><th scope="row"><a href="#company-MAR" class="earn-company-link">MAR</a><small>マリオット・インターナショナル</small></th>
+          <td class="num">7,005<small>USD 百万</small></td><td class="num">6,930</td><td><span class="badge positive">+1.08% 上振れ</span></td>
+          <td class="num">3.02<small>USD/株</small></td><td class="num">2.84</td><td><span class="badge positive">+6.34% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化後EPS</td></tr>
+<tr data-day="2026-11-02" data-search="WMB ウィリアムズ・カンパニーズ" data-revenue="7.433333333333334" data-eps="0.0">
+          <td>11-02<small>日内5位</small></td><th scope="row"><a href="#company-WMB" class="earn-company-link">WMB</a><small>ウィリアムズ・カンパニーズ</small></th>
+          <td class="num">3,223<small>USD 百万</small></td><td class="num">3,000</td><td><span class="badge positive">+7.43% 上振れ</span></td>
+          <td class="num">0.54<small>USD/株</small></td><td class="num">0.54</td><td><span class="badge positive">+0.00% 予想どおり</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化後EPS</td></tr>
+<tr data-day="2026-11-03" data-search="AMD AMD" data-revenue="2.427258805513017" data-eps="7.7319587628865944">
+          <td>11-03<small>日内1位</small></td><th scope="row"><a href="#company-AMD" class="earn-company-link">AMD</a><small>AMD</small></th>
+          <td class="num">13,377<small>USD 百万</small></td><td class="num">13,060</td><td><span class="badge positive">+2.43% 上振れ</span></td>
+          <td class="num">2.09<small>USD/株</small></td><td class="num">1.94</td><td><span class="badge positive">+7.73% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化後EPS</td></tr>
+<tr data-day="2026-11-03" data-search="AMGN アムジェン" data-revenue="3.0318091451292246" data-eps="11.979166666666675">
+          <td>11-03<small>日内2位</small></td><th scope="row"><a href="#company-AMGN" class="earn-company-link">AMGN</a><small>アムジェン</small></th>
+          <td class="num">10,365<small>USD 百万</small></td><td class="num">10,060</td><td><span class="badge positive">+3.03% 上振れ</span></td>
+          <td class="num">6.45<small>USD/株</small></td><td class="num">5.76</td><td><span class="badge positive">+11.98% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化後EPS</td></tr>
+<tr data-day="2026-11-03" data-search="ANET アリスタ・ネットワークス" data-revenue="9.837837837837835" data-eps="11.1111111111111">
+          <td>11-03<small>日内3位</small></td><th scope="row"><a href="#company-ANET" class="earn-company-link">ANET</a><small>アリスタ・ネットワークス</small></th>
+          <td class="num">3,657.6<small>USD 百万</small></td><td class="num">3,330</td><td><span class="badge positive">+9.84% 上振れ</span></td>
+          <td class="num">1.2<small>USD/株</small></td><td class="num">1.08</td><td><span class="badge positive">+11.11% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化後EPS</td></tr>
+<tr data-day="2026-11-03" data-search="SHOP ショッピファイ" data-revenue="0.053475935828877004" data-eps="4.255319148936175">
+          <td>11-03<small>日内4位</small></td><th scope="row"><a href="#company-SHOP" class="earn-company-link">SHOP</a><small>ショッピファイ</small></th>
+          <td class="num">3,742<small>USD 百万</small></td><td class="num">3,740</td><td><span class="badge positive">+0.05% 上振れ</span></td>
+          <td class="num">0.49<small>USD/株</small></td><td class="num">0.47</td><td><span class="badge positive">+4.26% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化後EPS</td></tr>
+<tr data-day="2026-11-03" data-search="PFE ファイザー" data-revenue="4.230043997485858" data-eps="19.178082191780824">
+          <td>11-03<small>日内5位</small></td><th scope="row"><a href="#company-PFE" class="earn-company-link">PFE</a><small>ファイザー</small></th>
+          <td class="num">16,583<small>USD 百万</small></td><td class="num">15,910</td><td><span class="badge positive">+4.23% 上振れ</span></td>
+          <td class="num">0.87<small>USD/株</small></td><td class="num">0.73</td><td><span class="badge positive">+19.18% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化後EPS</td></tr>
+<tr data-day="2026-11-04" data-search="MCD マクドナルド" data-revenue="-1.6954603323450002" data-eps="5.621301775147928">
+          <td>11-04<small>日内1位</small></td><th scope="row"><a href="#company-MCD" class="earn-company-link">MCD</a><small>マクドナルド</small></th>
+          <td class="num">7,157<small>USD 百万</small></td><td class="num">7,280.4369</td><td><span class="badge negative">-1.70% 下振れ</span></td>
+          <td class="num">3.57<small>USD/株</small></td><td class="num">3.38</td><td><span class="badge positive">+5.62% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化EPS（再編費用等を除く）</td></tr>
+<tr data-day="2026-11-04" data-search="ARM アーム" data-revenue="4.7095063322656765" data-eps="10.638297872340436">
+          <td>11-04<small>日内2位</small></td><th scope="row"><a href="#company-ARM" class="earn-company-link">ARM</a><small>アーム</small></th>
+          <td class="num">1,443<small>USD 百万</small></td><td class="num">1,378.0984</td><td><span class="badge positive">+4.71% 上振れ</span></td>
+          <td class="num">0.52<small>USD/株</small></td><td class="num">0.47</td><td><span class="badge positive">+10.64% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化EPS</td></tr>
+<tr data-day="2026-11-04" data-search="NVO ノボ・ノルディスク" data-revenue="7.562562365115243" data-eps="15.109343936381705">
+          <td>11-04<small>日内3位</small></td><th scope="row"><a href="#company-NVO" class="earn-company-link">NVO</a><small>ノボ・ノルディスク</small></th>
+          <td class="num">79,195<small>DKK 百万</small></td><td class="num">73,626.9184</td><td><span class="badge positive">+7.56% 上振れ</span></td>
+          <td class="num">5.79<small>DKK/株</small></td><td class="num">5.03</td><td><span class="badge positive">+15.11% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後希薄化EPS／ADR（DKK、non-IFRS）</td></tr>
+<tr data-day="2026-11-04" data-search="QCOM クアルコム" data-revenue="2.963333549012033" data-eps="0.0">
+          <td>11-04<small>日内4位</small></td><th scope="row"><a href="#company-QCOM" class="earn-company-link">QCOM</a><small>クアルコム</small></th>
+          <td class="num">10,442<small>USD 百万</small></td><td class="num">10,141.4743</td><td><span class="badge positive">+2.96% 上振れ</span></td>
+          <td class="num">2.17<small>USD/株</small></td><td class="num">2.17</td><td><span class="badge positive">+0.00% 予想どおり</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化EPS</td></tr>
+<tr data-day="2026-11-04" data-search="UBER ウーバー" data-revenue="0.708293101708157" data-eps="1.8518518518518534">
+          <td>11-04<small>日内5位</small></td><th scope="row"><a href="#company-UBER" class="earn-company-link">UBER</a><small>ウーバー</small></th>
+          <td class="num">14,766<small>USD 百万</small></td><td class="num">14,662.149</td><td><span class="badge positive">+0.71% 上振れ</span></td>
+          <td class="num">0.88<small>USD/株</small></td><td class="num">0.864</td><td><span class="badge positive">+1.85% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>non-GAAP希薄化EPS</td></tr>
+<tr data-day="2026-11-05" data-search="TM トヨタ自動車" data-revenue="0.2765820895522388" data-eps="13.669354838709676">
+          <td>11-05<small>日内1位</small></td><th scope="row"><a href="#company-TM" class="earn-company-link">TM</a><small>トヨタ自動車</small></th>
+          <td class="num">13,437,062<small>JPY 百万</small></td><td class="num">13,400,000</td><td><span class="badge positive">+0.28% 上振れ</span></td>
+          <td class="num">1,127,600<small>JPY 百万</small></td><td class="num">992,000</td><td><span class="badge positive">+13.67% 上振れ</span></td>
+          <td class="earn-basis">営業利益<br>IFRS・7〜9月営業利益（百万JPY）。EPSではない／LSEGアナリスト9名中央値</td></tr>
+<tr data-day="2026-11-05" data-search="COP コノコフィリップス" data-revenue="9.124047878128401" data-eps="6.862745098039215">
+          <td>11-05<small>日内2位</small></td><th scope="row"><a href="#company-COP" class="earn-company-link">COP</a><small>コノコフィリップス</small></th>
+          <td class="num">20,057<small>USD 百万</small></td><td class="num">18,380</td><td><span class="badge positive">+9.12% 上振れ</span></td>
+          <td class="num">3.27<small>USD/株</small></td><td class="num">3.06</td><td><span class="badge positive">+6.86% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後EPS・Zacksコンセンサス</td></tr>
+<tr data-day="2026-11-05" data-search="SONY ソニーグループ" data-revenue="7.596822244289971" data-eps="20.64676616915422">
+          <td>11-05<small>日内3位</small></td><th scope="row"><a href="#company-SONY" class="earn-company-link">SONY</a><small>ソニーグループ</small></th>
+          <td class="num">21,670<small>USD 百万</small></td><td class="num">20,140</td><td><span class="badge positive">+7.60% 上振れ</span></td>
+          <td class="num">0.485<small>USD/株</small></td><td class="num">0.402</td><td><span class="badge positive">+20.65% 上振れ</span></td>
+          <td class="earn-basis">ADRのEPS<br>Investing.com掲載の米国ADRのEPS（USD/ADR）</td></tr>
+<tr data-day="2026-11-05" data-search="PH パーカー・ハネフィン" data-revenue="3.132530120481928" data-eps="8.404384896467715">
+          <td>11-05<small>日内4位</small></td><th scope="row"><a href="#company-PH" class="earn-company-link">PH</a><small>パーカー・ハネフィン</small></th>
+          <td class="num">5,992<small>USD 百万</small></td><td class="num">5,810</td><td><span class="badge positive">+3.13% 上振れ</span></td>
+          <td class="num">8.9<small>USD/株</small></td><td class="num">8.21</td><td><span class="badge positive">+8.40% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後EPS</td></tr>
+<tr data-day="2026-11-05" data-search="ABNB エアビーアンドビー" data-revenue="2.5052631578947366" data-eps="10.877192982456142">
+          <td>11-05<small>日内5位</small></td><th scope="row"><a href="#company-ABNB" class="earn-company-link">ABNB</a><small>エアビーアンドビー</small></th>
+          <td class="num">4,869<small>USD 百万</small></td><td class="num">4,750</td><td><span class="badge positive">+2.51% 上振れ</span></td>
+          <td class="num">3.16<small>USD/株</small></td><td class="num">2.85</td><td><span class="badge positive">+10.88% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>公開決算比較EPS。実績は会社GAAP EPSと一致</td></tr>
+<tr data-day="2026-11-06" data-search="ENB エンブリッジ" data-revenue="57.64397905759162" data-eps="-2.0000000000000018">
+          <td>11-06<small>日内1位</small></td><th scope="row"><a href="#company-ENB" class="earn-company-link">ENB</a><small>エンブリッジ</small></th>
+          <td class="num">21,077<small>CAD 百万</small></td><td class="num">13,370</td><td><span class="badge positive">+57.64% 上振れ</span></td>
+          <td class="num">0.49<small>CAD/株</small></td><td class="num">0.5</td><td><span class="badge negative">-2.00% 下振れ</span></td>
+          <td class="earn-basis">調整後EPS<br>調整後EPS（CAD/普通株）／Investing.comのCAD市場予想</td></tr>
+<tr data-day="2026-11-06" data-search="MRNA モデルナ" data-revenue="47.486661050266775" data-eps="134.54545454545453">
+          <td>11-06<small>日内2位</small></td><th scope="row"><a href="#company-MRNA" class="earn-company-link">MRNA</a><small>モデルナ</small></th>
+          <td class="num">1,313<small>USD 百万</small></td><td class="num">890.25</td><td><span class="badge positive">+47.49% 上振れ</span></td>
+          <td class="num">0.38<small>USD/株</small></td><td class="num">-1.1</td><td><span class="badge positive">+134.55% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>GAAP希薄化後EPS。予想損失から黒字</td></tr>
+<tr data-day="2026-11-06" data-search="BAM ブルックフィールド・アセット・マネジメント" data-revenue="34.3125" data-eps="1.8638925010836578">
+          <td>11-06<small>日内3位</small></td><th scope="row"><a href="#company-BAM" class="earn-company-link">BAM</a><small>ブルックフィールド・アセット・マネジメント</small></th>
+          <td class="num">2,149<small>USD 百万</small></td><td class="num">1,600</td><td><span class="badge positive">+34.31% 上振れ</span></td>
+          <td class="num">0.47<small>USD/株</small></td><td class="num">0.4614</td><td><span class="badge positive">+1.86% 上振れ</span></td>
+          <td class="earn-basis">1株当たり分配可能利益（DE）<br>1株当たり分配可能利益（DE・非GAAP）</td></tr>
+<tr data-day="2026-11-06" data-search="EOG EOGリソーシズ" data-revenue="17.270233196159122" data-eps="9.43820224719101">
+          <td>11-06<small>日内4位</small></td><th scope="row"><a href="#company-EOG" class="earn-company-link">EOG</a><small>EOGリソーシズ</small></th>
+          <td class="num">8,549<small>USD 百万</small></td><td class="num">7,290</td><td><span class="badge positive">+17.27% 上振れ</span></td>
+          <td class="num">4.87<small>USD/株</small></td><td class="num">4.45</td><td><span class="badge positive">+9.44% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後EPS・TheFly配信の市場予想</td></tr>
+<tr data-day="2026-11-06" data-search="HUM ヒューマナ" data-revenue="0.6973330070956691" data-eps="30.000000000000004">
+          <td>11-06<small>日内5位</small></td><th scope="row"><a href="#company-HUM" class="earn-company-link">HUM</a><small>ヒューマナ</small></th>
+          <td class="num">41,155<small>USD 百万</small></td><td class="num">40,870</td><td><span class="badge positive">+0.70% 上振れ</span></td>
+          <td class="num">-0.7<small>USD/株</small></td><td class="num">-1</td><td><span class="badge positive">+30.00% 上振れ</span></td>
+          <td class="earn-basis">EPS<br>調整後EPS・MarketBeatコンセンサス</td></tr></tbody></table></div>
+          <p class="table-note">緑＝予想以上、赤＝予想以下。「比較未確認」はゼロではありません。会社見通しとの比較は各社KPI欄を参照してください。</p></div>
+        <div class="earn-intro earn-detail-heading"><div><span class="eyebrow">BEHIND THE NUMBERS</span><h2>25社の説明会・KPI・株価反応</h2></div><button type="button" id="earnExpand">表示中の詳細をすべて開く</button></div>
+        <div id="earnCompanies"><details class="card earn-company" id="company-AAPL" data-day="2026-11-02" data-search="AAPL アップル">
+      <summary><span class="earn-ticker">AAPL</span><span>アップル<small>2026Q4 · 抽出日 2026-11-02</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.95% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+5.53% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-02 ／ 説明会日：2026-11-02 ／ 抽出時時価総額：4,975.38 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">114,477 <small>百万USD</small></p>
+      <p>市場予想 113,400 百万USD</p><span class="badge positive">+0.95% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/" target="_blank" rel="noopener noreferrer">www.apple.com</a> · <a href="https://apnews.com/article/9698be9e0226091a537611382144eb44" target="_blank" rel="noopener noreferrer">apnews.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">2.1 <small>USD/株</small></p>
+      <p>市場予想 1.99 USD/株</p><span class="badge positive">+5.53% 上振れ</span>
+      <p class="section-note">GAAP希薄化後EPS（関税還付の利益を含む）</p>
+      <p class="earn-sources"><a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/" target="_blank" rel="noopener noreferrer">www.apple.com</a> · <a href="https://apnews.com/article/9698be9e0226091a537611382144eb44" target="_blank" rel="noopener noreferrer">apnews.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>メモリー価格の上昇とSiri AI費用が、次四半期の利益率を圧迫する見通し。</li><li>サービスの成長率は次四半期8〜9％を想定し、為替とライセンス収入が逆風。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>サービス成長の持続性への質問に、経営陣は25億台超の稼働端末を長期成長の基盤と説明。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-1.90%</p><p>2026-11-02 終値 338.32 USD → 2026-11-03 終値 331.9 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/AAPL/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-2.60%</p><p class="section-note">11月2日の時間外取引・説明会中の報道時点</p><p>AP報道では、利益率見通し低下を示した説明会中に下落。これは報道時点の値で、翌日終値の変化ではない。</p>
+          <p class="earn-sources"><a href="https://apnews.com/article/9698be9e0226091a537611382144eb44" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>12月四半期売上成長率7〜10％、全社粗利益率45〜46％。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">iPhone売上高</th><td>576億ドル、前年同期比17％増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>数量ではなく金額。会社の定量目標は今回確認した資料にない。</small>
+          <br><a href="https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">全社粗利益率</th><td>47.9％</td>
+          <td>比較可能な目標を確認できず</td><td>一時利益を含む<br><small>関税還付による約1ポイントの押し上げを含む。</small>
+          <br><a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>EPS $2.10には関税還付による$0.05の利益を含む。調整後EPSを使う他社と利益の質を単純比較しない。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://apnews.com/article/9698be9e0226091a537611382144eb44" target="_blank" rel="noopener noreferrer">市場予想の照合元</a> · <a href="https://www.fool.com/earnings/call-transcripts/2026/11/02/apple-aapl-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">カンファレンスコール記録</a></p>
+      </div></details>
+<details class="card earn-company" id="company-PLTR" data-day="2026-11-02" data-search="PLTR パランティア">
+      <summary><span class="earn-ticker">PLTR</span><span>パランティア<small>2026Q3 · 抽出日 2026-11-02</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+6.61% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+7.32% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-02 ／ 説明会日：2026-11-02 ／ 抽出時時価総額：386.44 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">2,313.411 <small>百万USD</small></p>
+      <p>市場予想 2,170 百万USD</p><span class="badge positive">+6.61% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf" target="_blank" rel="noopener noreferrer">investors.palantir.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.44 <small>USD/株</small></p>
+      <p>市場予想 0.41 USD/株</p><span class="badge positive">+7.32% 上振れ</span>
+      <p class="section-note">調整後希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf" target="_blank" rel="noopener noreferrer">investors.palantir.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>米国商用事業が急拡大し、米国政府売上を初めて上回った。</li><li>経営陣は顧客の導入判断が速まる一方、需要に対する供給能力の制約にも言及。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>顧客獲得への質問に、ブートキャンプから本番導入への移行が短期化していると説明。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-1.65%</p><p>2026-11-02 終値 178.34 USD → 2026-11-03 終値 175.4 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/PLTR/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-3.82%</p><p class="section-note">11月2日の時間外取引・記事掲載時点</p><p>業績上振れでも下落。高い評価倍率への懸念が背景との報道上の解釈で、単独の下落原因を確定するものではない。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期売上見通し85.30〜85.34億ドルへ引き上げ。米国商用売上は通期143％以上増を想定。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">米国商用売上</th><td>9.84億ドル、前年同期比148％増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>成長率を確認。独立した四半期目標値は未確認。</small>
+          <br><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">顧客売上継続率（NDR）</th><td>165％</td>
+          <td>前四半期157％</td><td>前四半期比8ポイント改善<br><small>既存顧客からの売上拡大を示す。目標達成率ではない。</small>
+          <br><a href="https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>調整後EPSとGAAP EPSは今回ともに$0.44。予想$0.41は同じ報道の調整後EPS予想。</li></ul></div>
+        <p class="earn-sources"><a href="https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-palantir-tops-q3-2026-estimates-but-shares-fall-93CH-4993152" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-VRTX" data-day="2026-11-02" data-search="VRTX バーテックス・ファーマシューティカルズ">
+      <summary><span class="earn-ticker">VRTX</span><span>バーテックス・ファーマシューティカルズ<small>2026Q3 · 抽出日 2026-11-02</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.90% 上振れ</span> 1株当たり利益（EPS） <span class="badge negative">-3.25% 下振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-02 ／ 説明会日：2026-11-02 ／ 抽出時時価総額：138.71 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">3,440.8 <small>百万USD</small></p>
+      <p>市場予想 3,410 百万USD</p><span class="badge positive">+0.90% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">news.vrtx.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">4.76 <small>USD/株</small></p>
+      <p>市場予想 4.92 USD/株</p><span class="badge negative">-3.25% 下振れ</span>
+      <p class="section-note">non-GAAP希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">news.vrtx.com</a> · <a href="https://www.zacks.com/stock/news/3021132/vertex-pharmaceuticals-vrtx-misses-q3-earnings-estimates" target="_blank" rel="noopener noreferrer">www.zacks.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>CASGEVYとJOURNAVXの拡大が進む一方、買収関連費用と販売体制への投資が増加。</li><li>JOURNAVXの処方は伸びたが、患者支援と保険償還の影響で処方増がそのまま売上増にはならない。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>JOURNAVXの収益化について、患者支援制度を2027年まで延長し、アクセスを優先する方針を説明。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-4.05%</p><p>2026-11-02 終値 553.15 USD → 2026-11-03 終値 530.76 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/VRTX/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+1.35%</p><p class="section-note">11月2日の時間外取引・記事掲載時点</p><p>売上拡大と通期見通し引き上げを伴い上昇。ただし株価要因の分離はできない。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期売上見通し131.5〜132.5億ドルへ引き上げ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">JOURNAVX処方件数</th><td>四半期75万件超、前四半期比40％超増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>処方件数と売上を別々に追跡する必要がある。</small>
+          <br><a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">CASGEVY＋JOURNAVX売上</th><td>年初来3.5億ドル超</td>
+          <td>通期5億ドル超</td><td>年途中・進捗70％超<br><small>会社は通期目標を維持。年間目標の達成確定ではない。</small>
+          <br><a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>売上予想はInvesting.com、EPS予想はZacks。Zacks EPS予想$4.92に対して未達。一方Investing.comはEPS予想$4.76と報道しており、予想集計元で判定が異なる。GAAP EPS $2.56を調整後予想へ比較していない。</li></ul></div>
+        <p class="earn-sources"><a href="https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.zacks.com/stock/news/3021132/vertex-pharmaceuticals-vrtx-misses-q3-earnings-estimates" target="_blank" rel="noopener noreferrer">市場予想の照合元</a> · <a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/vertex-vrtx-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">カンファレンスコール記録</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-vertex-tops-revenue-forecast-in-q3-2026-shares-edge-higher-93CH-4993109" target="_blank" rel="noopener noreferrer">売上予想と時間外反応</a></p>
+      </div></details>
+<details class="card earn-company" id="company-MAR" data-day="2026-11-02" data-search="MAR マリオット・インターナショナル">
+      <summary><span class="earn-ticker">MAR</span><span>マリオット・インターナショナル<small>2026Q3 · 抽出日 2026-11-02</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+1.08% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+6.34% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-02 ／ 説明会日：2026-11-02 ／ 抽出時時価総額：107.24 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">7,005 <small>百万USD</small></p>
+      <p>市場予想 6,930 百万USD</p><span class="badge positive">+1.08% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a" target="_blank" rel="noopener noreferrer">marriott.gcs-web.com</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">3.02 <small>USD/株</small></p>
+      <p>市場予想 2.84 USD/株</p><span class="badge positive">+6.34% 上振れ</span>
+      <p class="section-note">調整後希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a" target="_blank" rel="noopener noreferrer">marriott.gcs-web.com</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">公式の説明会記録を確認</p><ul><li>宿泊需要が幅広く強く、世界のRevPARと決算実績が会社の従来想定を上回った。</li><li>中国需要はまだらで、中東は第4四半期の比較条件が厳しくなる。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>ホテル所有者との関係への質問に、ホテル側の採算改善と継続的な対話を重視すると説明。</li></ul><p class="earn-sources"><a href="https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b" target="_blank" rel="noopener noreferrer">公式カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+4.26%</p><p>2026-10-30 終値 399.3 USD → 2026-11-02 終値 416.3 USD</p>
+          <p class="section-note">同期間のSPY：-0.48%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/MAR/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+4.26%</p><p class="section-note">11月2日の通常取引・前営業日終値比</p><p>KGIの決算レビューでは当日4.26％上昇。RevPARと利益見通しの引き上げが確認された日だが、他の市場要因も含む。</p>
+          <p class="earn-sources"><a href="https://www.kgieworld.sg/research/technical-analysis-3-november-2026/" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期世界RevPAR成長率4.5〜5％へ引き上げ。2027年は暫定的に3.5〜4.5％増を想定。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">世界RevPAR（販売可能客室当たり売上）</th><td>前年同期比6.5％増</td>
+          <td>会社は従来想定を上回ったと説明</td><td>会社想定超過<br><small>客室単価と稼働率の両方を反映。</small>
+          <br><a href="https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">純客室数増加率</th><td>過去12カ月で4.6％</td>
+          <td>通期4.5〜5％の下限寄り</td><td>進捗確認・通期未確定<br><small>年間見通しとの比較。四半期だけの達成率ではない。</small>
+          <br><a href="https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>連結売上には費用償還収入を含む。手数料収入や償還除外売上と混同しない。GAAP EPSは$3.04、比較には調整後$3.02を使用。</li></ul></div>
+        <p class="earn-sources"><a href="https://marriott.gcs-web.com/static-files/d5abd6d2-a2d4-4ef3-8f9b-43a07fbf987a" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-02-marriott-international-inc-stock/" target="_blank" rel="noopener noreferrer">市場予想の照合元</a> · <a href="https://marriott.gcs-web.com/static-files/6cf87b29-97f1-40d5-accd-0d043262ef0b" target="_blank" rel="noopener noreferrer">カンファレンスコール記録</a> · <a href="https://www.kgieworld.sg/research/technical-analysis-3-november-2026/" target="_blank" rel="noopener noreferrer">当日終値の反応</a></p>
+      </div></details>
+<details class="card earn-company" id="company-WMB" data-day="2026-11-02" data-search="WMB ウィリアムズ・カンパニーズ">
+      <summary><span class="earn-ticker">WMB</span><span>ウィリアムズ・カンパニーズ<small>2026Q3 · 抽出日 2026-11-02</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+7.43% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+0.00% 予想どおり</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-02 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：80.11 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">3,223 <small>百万USD</small></p>
+      <p>市場予想 3,000 百万USD</p><span class="badge positive">+7.43% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d" target="_blank" rel="noopener noreferrer">investor.williams.com</a> · <a href="https://www.investing.com/equities/williams-cos-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.54 <small>USD/株</small></p>
+      <p>市場予想 0.54 USD/株</p><span class="badge positive">+0.00% 予想どおり</span>
+      <p class="section-note">調整後希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d" target="_blank" rel="noopener noreferrer">investor.williams.com</a> · <a href="https://www.investing.com/equities/williams-cos-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>送ガス・貯蔵・新規設備が調整後EBITDAの増加を支えた。</li><li>通期EBITDAは会社予想の上半分を目指すと説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>SESI IIの追加契約について、残り容量の顧客と最終条件を詰めていると説明。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+1.80%</p><p>2026-11-02 終値 71.19 USD → 2026-11-03 終値 72.47 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/WMB/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>決算直後の統一された観測時点の株価変化は今回の資料で未確認。天然ガス設備の拡張と負債管理が今後の確認点。</p>
+          <p class="earn-sources"></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期調整後EBITDA83〜85億ドル、成長投資73〜79億ドルを維持。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">調整後EBITDA（利払い・税・減価償却前の利益）</th><td>四半期20.39億ドル、年初来約62億ドル</td>
+          <td>通期83〜85億ドル</td><td>会社は上半分での着地に向け進捗<br><small>年初来実績は通期目標の約73〜75％。</small>
+          <br><a href="https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">有利子負債／調整後EBITDA</th><td>3.80倍</td>
+          <td>年末約3.75倍</td><td>目標より0.05倍高い・年途中<br><small>低い方が負債負担は軽い。目標は年末時点。</small>
+          <br><a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>Investing.comの予想EPS $0.54では一致。Zacksは$0.55予想で1.82％未達と報道。売上予想も集計元で差が大きく、掲載比較はInvesting.comの30億ドルに統一。GAAP EPS $0.56と混同しない。</li></ul></div>
+        <p class="earn-sources"><a href="https://investor.williams.com/static-files/23f6f6ef-69c5-4061-a15c-401c6f5a5e1d" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/equities/williams-cos-earnings" target="_blank" rel="noopener noreferrer">市場予想の照合元</a> · <a href="https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">カンファレンスコール記録</a> · <a href="https://www.zacks.com/stock/news/3021126/williams-companies-inc-the-wmb-lags-q3-earnings-estimates" target="_blank" rel="noopener noreferrer">別集計のEPS予想（Zacks）</a></p>
+      </div></details>
+<details class="card earn-company" id="company-AMD" data-day="2026-11-03" data-search="AMD AMD">
+      <summary><span class="earn-ticker">AMD</span><span>AMD<small>2026Q3 · 抽出日 2026-11-03</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+2.43% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+7.73% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-03 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：736.46 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">13,377 <small>百万USD</small></p>
+      <p>市場予想 13,060 百万USD</p><span class="badge positive">+2.43% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">ir.amd.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">2.09 <small>USD/株</small></p>
+      <p>市場予想 1.94 USD/株</p><span class="badge positive">+7.73% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">ir.amd.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>AI向けGPUとEPYCが成長を主導し、データセンターが売上の64％を占めた。</li><li>2027年の全社売上は80％超増を見込む一方、需要が供給を上回る状況と説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>供給能力への質問に、ウエハー・先端パッケージ・メモリーの調達を顧客計画と合わせて増強していると回答。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a> · <a href="https://stockanalysis.com/stocks/amd/transcripts/724028-q3-2026/" target="_blank" rel="noopener noreferrer">供給制約を確認した説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+1.01%</p><p>2026-11-03 終値 483.9 USD → 2026-11-04 終値 488.78 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/AMD/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+7.54%</p><p class="section-note">11月3日の時間外取引・記事掲載時点</p><p>AI・サーバー需要と2027年見通しを示して時間外上昇。ただし単独要因の寄与率を示すものではない。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>第4四半期売上170億ドル±3％、non-GAAP粗利益率55％。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">データセンター売上</th><td>約85億ドル、前年同期比97％増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>会社は四半期売上が従来ガイダンス上限を超えたと説明。</small>
+          <br><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">non-GAAP粗利益率</th><td>56％</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>GAAP粗利益率54％とは区別。</small>
+          <br><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>GAAP EPSは$1.46。比較は公式non-GAAP $2.09と同じ報道のnon-GAAP予想$1.94を使用。</li></ul></div>
+        <p class="earn-sources"><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-AMGN" data-day="2026-11-03" data-search="AMGN アムジェン">
+      <summary><span class="earn-ticker">AMGN</span><span>アムジェン<small>2026Q3 · 抽出日 2026-11-03</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+3.03% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+11.98% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-03 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：249.05 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">10,365 <small>百万USD</small></p>
+      <p>市場予想 10,060 百万USD</p><span class="badge positive">+3.03% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">www.amgen.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">6.45 <small>USD/株</small></p>
+      <p>市場予想 5.76 USD/株</p><span class="badge positive">+11.98% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">www.amgen.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>主要成長製品の伸びが支え、通期売上と利益見通しを引き上げた。</li><li>研究開発と製造能力への投資を続けつつ、2027年の利益率の維持に自信を示した。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>MariTideの忍容性と生産体制への質問に、追加データの取得と慎重な設備計画を優先すると説明。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+3.73%</p><p>2026-11-03 終値 461.26 USD → 2026-11-04 終値 478.48 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/AMGN/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-1.36%</p><p class="section-note">11月3日の時間外取引・記事掲載時点</p><p>予想超過と見通し引き上げにもかかわらず時間外で下落。利益確定などは報道の解釈で、原因は確定できない。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期売上389〜397億ドル、non-GAAP EPS22.90〜23.70ドルへ引き上げ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">2桁売上成長の製品数</th><td>17製品</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>製品ポートフォリオの広がりを確認。</small>
+          <br><a href="https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">フリーキャッシュフロー（設備投資後の現金創出）</th><td>37億ドル</td>
+          <td>前年同期42億ドル</td><td>前年同期比減少<br><small>会社は運転資本の変化を要因として説明。目標未達を意味しない。</small>
+          <br><a href="https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>GAAP EPS $7.08に対し、比較はnon-GAAP $6.45を使用。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-amgen-tops-q3-2026-estimates-shares-slip-after-hours-93CH-4996821" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-ANET" data-day="2026-11-03" data-search="ANET アリスタ・ネットワークス">
+      <summary><span class="earn-ticker">ANET</span><span>アリスタ・ネットワークス<small>2026Q3 · 抽出日 2026-11-03</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+9.84% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+11.11% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-03 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：215.79 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">3,657.6 <small>百万USD</small></p>
+      <p>市場予想 3,330 百万USD</p><span class="badge positive">+9.84% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener noreferrer">www.arista.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">1.2 <small>USD/株</small></p>
+      <p>市場予想 1.08 USD/株</p><span class="badge positive">+11.11% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener noreferrer">www.arista.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>AIネットワーク需要と企業向け更新需要が広がり、通期見通しを再び引き上げた。</li><li>在庫・購入約束が増え、供給確保と売上計上時期の変動が引き続き確認点。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>10GW超の導入見通しへの質問に、2026〜27年のAIネットワーク展開と複数アクセラレーター対応の広がりを説明。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+5.04%</p><p>2026-11-03 終値 169.91 USD → 2026-11-04 終値 178.48 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/ANET/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+12.10%</p><p class="section-note">11月3日の時間外取引・記事掲載時点</p><p>売上・EPSの予想超過と見通し引き上げに伴い時間外で上昇。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>第4四半期売上39〜40億ドル、通期売上約133億ドル。2027年売上成長率38〜40％を初期想定。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">四半期売上</th><td>36.576億ドル</td>
+          <td>会社の従来ガイダンス33億ドル</td><td>会社予想を約10.8％上回る<br><small>市場予想との差とは別の比較。</small>
+          <br><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">non-GAAP営業利益率</th><td>49.1％</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>GAAP営業利益率44.9％とは区別。</small>
+          <br><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>GAAP EPS $1.22と、比較に使ったnon-GAAP EPS $1.20は別の値。売上の予想33.3億ドルは報道の丸め値。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-arista-networks-tops-q3-2026-estimates-shares-jump-93CH-4996815" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-SHOP" data-day="2026-11-03" data-search="SHOP ショッピファイ">
+      <summary><span class="earn-ticker">SHOP</span><span>ショッピファイ<small>2026Q3 · 抽出日 2026-11-03</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.05% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+4.26% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-03 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：191.58 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">3,742 <small>百万USD</small></p>
+      <p>市場予想 3,740 百万USD</p><span class="badge positive">+0.05% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22" target="_blank" rel="noopener noreferrer">www.shopify.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.49 <small>USD/株</small></p>
+      <p>市場予想 0.47 USD/株</p><span class="badge positive">+4.26% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22" target="_blank" rel="noopener noreferrer">www.shopify.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>GMVと現金創出は拡大したが、次四半期のAI・販促・インフラ投資の負担が焦点。</li><li>特定のAIエージェントに依存せず、幅広い経路で加盟店の商品を販売する方針を説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>Sidekickの費用への質問に、AIやホスティング投資を進めつつ長期の粗利益率の枠組みは維持すると説明。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-8.74%</p><p>2026-11-02 終値 156.22 USD → 2026-11-03 終値 142.57 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/SHOP/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-6.65%</p><p class="section-note">11月3日の寄り付き前取引・記事掲載時点</p><p>利益は予想を上回ったが、報道時点の株価は下落。投資負担と高い期待への懸念は報道上の解釈。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>第4四半期売上は前年比30％台前半の成長、営業費用率29〜30％を予想。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">GMV（流通取引総額）</th><td>1,191.45億ドル</td>
+          <td>前年同期920.13億ドル</td><td>前年同期比約29.5％増<br><small>GMVはShopify自身の売上ではない。</small>
+          <br><a href="https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">フリーキャッシュフロー利益率</th><td>22％</td>
+          <td>前年同期18％</td><td>前年同期比4ポイント改善<br><small>会社目標の達成率ではなく前年との比較。</small>
+          <br><a href="https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>GAAP EPS $0.36ではなくnon-GAAP $0.49を比較。報道の売上実績・予想はともに37.4億ドルと丸められ一致。詳細実績37.42億ドルから計算する差は丸め誤差の範囲。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.shopify.com/investors/press-releases/shopify-sustains-rapid-growth-revenue-32-and-free-cash-flow-margin-22" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-shopify-tops-profit-view-in-q3-2026-but-shares-fall-93CH-4995839" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-PFE" data-day="2026-11-03" data-search="PFE ファイザー">
+      <summary><span class="earn-ticker">PFE</span><span>ファイザー<small>2026Q3 · 抽出日 2026-11-03</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+4.23% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+19.18% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-03 ／ 説明会日：2026-11-03 ／ 抽出時時価総額：167.52 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">16,583 <small>百万USD</small></p>
+      <p>市場予想 15,910 百万USD</p><span class="badge positive">+4.23% 上振れ</span>
+      <p class="section-note">連結売上高</p>
+      <p class="earn-sources"><a href="https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum" target="_blank" rel="noopener noreferrer">www.pfizer.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.87 <small>USD/株</small></p>
+      <p>市場予想 0.73 USD/株</p><span class="badge positive">+19.18% 上振れ</span>
+      <p class="section-note">調整後希薄化後EPS</p>
+      <p class="earn-sources"><a href="https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum" target="_blank" rel="noopener noreferrer">www.pfizer.com</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">第三者公開の説明会記録を確認</p><ul><li>新製品・買収製品と非COVID事業が成長し、通期見通しを引き上げた。</li><li>特許切れと薬価圧力を越えるため、開発案件とコスト削減の実行が焦点。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>特許切れへの対応に関する質問に、新製品と第2段階の費用削減を組み合わせる方針を説明。</li></ul><p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">公開カンファレンスコール記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-2.18%</p><p>2026-11-02 終値 30.67 USD → 2026-11-03 終値 30 USD</p>
+          <p class="section-note">同期間のSPY：+0.30%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/PFE/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-0.72%</p><p class="section-note">11月3日の寄り付き前取引・記事掲載時点</p><p>業績と見通しは改善したが報道時点では下落。長期の特許切れと薬価への懸念は記事の分析であり、因果関係を確定しない。</p>
+          <p class="earn-sources"><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期売上620〜640億ドル、調整後EPS2.95〜3.05ドルへ引き上げ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">新発売・買収製品の売上</th><td>38億ドル、為替影響除外で32％増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>為替影響を除いた成長率。</small>
+          <br><a href="https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">非COVID製品売上成長率</th><td>為替影響除外で7％増</td>
+          <td>比較可能な目標を確認できず</td><td>目標比較なし<br><small>COVID需要の変動を除く事業の動向。</small>
+          <br><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は百万米ドル。予想値は照合元の公表値で、集計会社・集計時点によりmoomooの予想値と異なります。公表予想が丸められている場合、乖離率は概算です。</li><li>GAAP EPS $0.56に対し、比較は調整後$0.87と同基準の予想$0.73。売上16.583十億ドルはAPI詳細実績、報道は16.6十億ドルに丸めている。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.pfizer.com/news/articles/pfizer_s_third_quarter_results_reflect_confidence_and_momentum" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-pfizer-tops-q3-2026-estimates-lifts-outlook-93CH-4995972" target="_blank" rel="noopener noreferrer">市場予想の照合元</a></p>
+      </div></details>
+<details class="card earn-company" id="company-MCD" data-day="2026-11-04" data-search="MCD マクドナルド">
+      <summary><span class="earn-ticker">MCD</span><span>マクドナルド<small>2026Q3 · 抽出日 2026-11-04</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge negative">-1.70% 下振れ</span> 1株当たり利益（EPS） <span class="badge positive">+5.62% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-04 ／ 説明会日：2026-11-04 ／ 抽出時時価総額：195.16 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">7,157 <small>百万USD</small></p>
+      <p>市場予想 7,280.4369 百万USD</p><span class="badge negative">-1.70% 下振れ</span>
+      <p class="section-note">GAAP連結売上高</p>
+      <p class="earn-sources"><a href="https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS" target="_blank" rel="noopener noreferrer">mcdonalds.mediaroom.com</a> · <a href="https://apnews.com/article/7fee4f873c6230e20f9e366e35094444" target="_blank" rel="noopener noreferrer">apnews.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">3.57 <small>USD/株</small></p>
+      <p>市場予想 3.38 USD/株</p><span class="badge positive">+5.62% 上振れ</span>
+      <p class="section-note">調整後希薄化EPS（再編費用等を除く）</p>
+      <p class="earn-sources"><a href="https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS" target="_blank" rel="noopener noreferrer">mcdonalds.mediaroom.com</a> · <a href="https://apnews.com/article/7fee4f873c6230e20f9e366e35094444" target="_blank" rel="noopener noreferrer">apnews.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会文字記録確認（二次資料）</p><ul><li>米国の客数は減少したが、割安なセット商品の導入後、9月の既存店売上はプラスに改善。</li><li>新しい価格設定を1,900店舗で8週間テストし、価格に敏感な顧客の回復を目指す。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>経営陣は厳しい消費環境が年内続くと想定。国際部門では市場シェアの維持・拡大を重視すると説明。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/04/mcdonalds-mcd-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">MCD Q3 2026 earnings call transcript（Motley Fool）</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+6.53%</p><p>2026-11-03 終値 263.04 USD → 2026-11-04 終値 280.22 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/MCD/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+4.73%</p><p class="section-note">11月4日9:51 ET時点の場中報道（前日比、終値ではない）</p><p>上昇を観測。分析上は、調整後EPSの予想超過と米国既存店売上の予想比改善が好材料候補。売上高自体は予想未達。</p>
+          <p class="earn-sources"><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>割安なセットの新施策を2027年初めに展開する方針。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">世界既存店売上成長率</th><td>+1.5%</td>
+          <td>比較可能な目標を確認できず</td><td>目標との比較未確認<br><small>公式リリースの数値。AP記事の1.3%と差があるため公式値を採用。</small>
+          <br><a href="https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">米国既存店売上成長率</th><td>-0.2%</td>
+          <td>市場予想 -0.5%</td><td>市場予想を0.3ポイント上回る<br><small>客数減を客単価の上昇で一部相殺。予想はAP報道。</small>
+          <br><a href="https://apnews.com/article/7fee4f873c6230e20f9e366e35094444" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">ロイヤルティ会員経由売上</th><td>四半期110億USD超／直近12カ月410億USD</td>
+          <td>比較可能な目標を確認できず</td><td>目標との比較未確認<br><small>70市場合計。</small>
+          <br><a href="https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上の実績は公式とmoomoo一致。予想はmoomoo 7,280.43692百万USDを採用し、APの約7,280百万USDと照合。</li><li>GAAP EPS3.51とmoomoo予想3.4127は基準未確認のため比較せず、調整後3.57とAPの同基準予想3.38で比較。</li><li>市場予想と会社目標は区別。公表目標がないKPIに達成・未達の判定を付けない。</li></ul></div>
+        <p class="earn-sources"><a href="https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS" target="_blank" rel="noopener noreferrer">公式 Q3 2026 決算リリース</a> · <a href="https://apnews.com/article/7fee4f873c6230e20f9e366e35094444" target="_blank" rel="noopener noreferrer">AP 決算・コンセンサス報道</a></p>
+      </div></details>
+<details class="card earn-company" id="company-ARM" data-day="2026-11-04" data-search="ARM アーム">
+      <summary><span class="earn-ticker">ARM</span><span>アーム<small>2027Q2 · 抽出日 2026-11-04</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+4.71% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+10.64% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-04 ／ 説明会日：2026-11-04 ／ 抽出時時価総額：186.84 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">1,443 <small>百万USD</small></p>
+      <p>市場予想 1,378.0984 百万USD</p><span class="badge positive">+4.71% 上振れ</span>
+      <p class="section-note">GAAP売上高</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html" target="_blank" rel="noopener noreferrer">www.streetinsider.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.52 <small>USD/株</small></p>
+      <p>市場予想 0.47 USD/株</p><span class="badge positive">+10.64% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化EPS</p>
+      <p class="earn-sources"><a href="https://investors.arm.com/static-files/b49cf5cc-d133-4c4d-80f6-c499312bfeb3" target="_blank" rel="noopener noreferrer">investors.arm.com</a> · <a href="https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html" target="_blank" rel="noopener noreferrer">www.streetinsider.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">公式IR掲載の説明会文字記録確認</p><ul><li>ライセンス売上は長期契約の前倒しで想定を約1億USD上回った。</li><li>データセンターのロイヤルティは前年比約2倍。一方、スマートフォンはメモリー価格上昇の影響を受けた。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>AGI CPUの供給確保と顧客拡大が焦点。経営陣はMeta以外の複数顧客から受注し、供給網への確信が高まったと説明。</li></ul><p class="earn-sources"><a href="https://investors.arm.com/static-files/6f3ab670-7d16-479b-948a-7b1df5ff5b32" target="_blank" rel="noopener noreferrer">公式IR掲載 Q2 FY2027 transcript（FactSet）</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-13.08%</p><p>2026-11-04 終値 191.8 USD → 2026-11-05 終値 166.72 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/ARM/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-3.10%</p><p class="section-note">11月4日16:58:30 ETの時間外（説明会開始前、終値比）</p><p>決算リリース後の下落を観測。分析上の注目点は、実績の上振れに比べ次四半期見通しの市場予想超過が小さいことと、スマートフォンの逆風。説明会後の反応と混同しない。</p>
+          <p class="earn-sources"><a href="https://marketchameleon.com/Overview/ARM/StockPosts/" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>Q3売上1,490〜1,590百万USD、non-GAAP EPS0.52〜0.60 USD。</li><li>AGI CPU売上はFY2027〜2028合計で最大20億USDへの確信を表明。実現済み売上ではない。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">売上高（会社予想との比較）</th><td>1,443百万USD</td>
+          <td>会社予想1,330〜1,430百万USD</td><td>上限を13百万USD上回る<br><small>会社予想は7月29日のQ1資料。市場予想とは別。</small>
+          <br><a href="https://investors.arm.com/static-files/673c8e81-66f9-4411-adb8-571a63f811b2" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">non-GAAP EPS（会社予想との比較）</th><td>0.52 USD</td>
+          <td>会社予想0.43〜0.51 USD</td><td>上限を0.01 USD上回る<br><small>前四半期公表レンジとの比較。</small>
+          <br><a href="https://investors.arm.com/static-files/673c8e81-66f9-4411-adb8-571a63f811b2" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">ライセンス／ロイヤルティ売上</th><td>773／670百万USD（前年比+50%／+8%）</td>
+          <td>比較可能な目標を確認できず</td><td>個別目標との比較未確認<br><small>GAAP売上内訳。</small>
+          <br><a href="https://newsroom.arm.com/news/arm-q2-fye27-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上は公式とmoomoo一致。予想はmoomoo 1,378.09837百万USD、報道の約1,380百万USDと照合。</li><li>APIのGAAP EPS0.12と予想0.2272は使用しない。調整後0.52対StreetInsider予想0.47で比較。FT系には予想0.48もあり、コンセンサス提供元によって乖離率が異なる。</li><li>株価変動の要因は分析上の候補であり因果関係の断定ではない。</li></ul></div>
+        <p class="earn-sources"><a href="https://investors.arm.com/static-files/b49cf5cc-d133-4c4d-80f6-c499312bfeb3" target="_blank" rel="noopener noreferrer">公式 FY2027 Q2 6-K</a> · <a href="https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html" target="_blank" rel="noopener noreferrer">StreetInsider 決算・市場予想</a></p>
+      </div></details>
+<details class="card earn-company" id="company-NVO" data-day="2026-11-04" data-search="NVO ノボ・ノルディスク">
+      <summary><span class="earn-ticker">NVO</span><span>ノボ・ノルディスク<small>2026Q3 · 抽出日 2026-11-04</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+7.56% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+15.11% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-04 ／ 説明会日：2026-11-04 ／ 抽出時時価総額：179.98 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">79,195 <small>百万DKK</small></p>
+      <p>市場予想 73,626.9184 百万DKK</p><span class="badge positive">+7.56% 上振れ</span>
+      <p class="section-note">IFRS売上高（当四半期は調整後売上高と同額）</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.google.com/finance/beta/quote/NVO%3ANYSE?hl=en" target="_blank" rel="noopener noreferrer">www.google.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">5.79 <small>DKK/株</small></p>
+      <p>市場予想 5.03 DKK/株</p><span class="badge positive">+15.11% 上振れ</span>
+      <p class="section-note">調整後希薄化EPS／ADR（DKK、non-IFRS）</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://finance.yahoo.com/healthcare/articles/novo-nordisk-outlook-upgrade-leaves-143000007.html" target="_blank" rel="noopener noreferrer">finance.yahoo.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会文字記録確認（二次資料・公式音声未照合）</p><ul><li>経口Wegovyの普及と海外発売を成長材料とする一方、価格低下と保険適用の制約を課題として説明。</li><li>2027年の成長率はまだ示さず、発売効果や特許切れ、価格の影響を注視する姿勢。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>発売加速は生産と規制対応の改善が背景。米国の保険者は患者数増加による総費用を懸念していると説明。</li></ul><p class="earn-sources"><a href="https://gloom.sh/stocks/nvo/transcripts/q3-2026" target="_blank" rel="noopener noreferrer">NVO Q3 2026 transcript（二次文字起こし）</a> · <a href="https://www.novonordisk.com/investors/financial-results.html" target="_blank" rel="noopener noreferrer">公式決算資料・説明会録画入口</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+4.95%</p><p>2026-11-03 終値 40.19 USD → 2026-11-04 終値 42.18 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/NVO/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+5.65%</p><p class="section-note">11月4日10:35 ETの米国ADR場中（前日比、終値ではない）</p><p>上昇を観測。経口Wegovyの拡大と通期見通し引き上げが材料として報じられた。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/healthcare/articles/novo-nordisk-stocks-rise-5-183620131.html" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>2026年の調整後売上・営業利益成長率を、為替一定で各-6〜0%から各-2〜+2%へ引き上げ。</li><li>非現金減損8,700百万DKKにより、報告営業利益と調整後利益の方向は異なる。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">経口Wegovy売上</th><td>5,394百万DKK</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>四半期売上。発売国の拡大が進む。</small>
+          <br><a href="https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=919765" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">調整後営業利益</th><td>31,720百万DKK（為替一定で前年比+27%）</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>報告営業利益23,011百万DKKとは異なる。減損等の調整に注意。</small>
+          <br><a href="https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">Wegovyの米国新規患者シェア</th><td>ブランド肥満症薬市場で50%超</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>会社発表の定義。経口薬だけのシェアではない。</small>
+          <br><a href="https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=919765" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>米国ADRだが決算通貨はDKK。USDのEPS・売上と比較しない。</li><li>売上予想はmoomoo 73,626.91838百万DKKを採用し、Google Financeの約73,630百万DKKと照合。</li><li>moomoo EPS実績3.79はIFRS、予想5.282の基準未確認。公式調整後5.79とProactive掲載の同基準予想5.03で比較する。提供元によって予想値は異なる。</li><li>二次文字起こしは人名・製品名に誤変換が見られるため、直接引用せず公式資料で確認できる範囲を中心に要約。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm" target="_blank" rel="noopener noreferrer">公式 Q3 2026決算（SEC 6-K）</a> · <a href="https://finance.yahoo.com/healthcare/articles/novo-nordisk-outlook-upgrade-leaves-143000007.html" target="_blank" rel="noopener noreferrer">Proactive / Jefferies コンセンサス比較</a></p>
+      </div></details>
+<details class="card earn-company" id="company-QCOM" data-day="2026-11-04" data-search="QCOM クアルコム">
+      <summary><span class="earn-ticker">QCOM</span><span>クアルコム<small>2026Q4 · 抽出日 2026-11-04</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+2.96% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+0.00% 予想どおり</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-04 ／ 説明会日：2026-11-04 ／ 抽出時時価総額：176.99 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">10,442 <small>百万USD</small></p>
+      <p>市場予想 10,141.4743 百万USD</p><span class="badge positive">+2.96% 上振れ</span>
+      <p class="section-note">non-GAAP売上高</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html" target="_blank" rel="noopener noreferrer">www.streetinsider.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">2.17 <small>USD/株</small></p>
+      <p>市場予想 2.17 USD/株</p><span class="badge positive">+0.00% 予想どおり</span>
+      <p class="section-note">non-GAAP希薄化EPS</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html" target="_blank" rel="noopener noreferrer">www.streetinsider.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会文字記録確認（二次資料）</p><ul><li>自動車・IoTの拡大を強調し、スマートフォン依存からの分散を進める方針。</li><li>自動車売上の年率換算は80億USDとなり、従来想定70億USDを超えたと説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>FY2027データセンター売上50億USDの大部分はAmazonを含む2社が牽引する計画と説明。顧客集中と立ち上げが確認点。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">QCOM Q4 FY2026 earnings call transcript（Motley Fool）</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-9.49%</p><p>2026-11-04 終値 173.19 USD → 2026-11-05 終値 156.75 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/QCOM/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">-8.70%</p><p class="section-note">11月4日決算リリース直後の時間外報道（終値比、終値ではない）</p><p>下落を観測。分析上は、売上予想超過よりもスマートフォン減収と利益見通しの弱さが重視された可能性がある。</p>
+          <p class="earn-sources"><a href="https://stockstory.org/us/stocks/nasdaq/qcom/news/earnings/qualcomm-nasdaqqcom-surprises-with-q3-sales-but-stock-drops" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>FY2027 Q1売上10,400〜11,200百万USD、non-GAAP EPS2.15〜2.35 USD。</li><li>FY2027データセンター売上50億USDの目標を維持。非スマートフォン売上は前年比60%超の成長を見込む。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">QCT自動車売上</th><td>約2,000百万USD（前年比+89%）</td>
+          <td>比較可能な目標を確認できず</td><td>初の四半期20億USD到達<br><small>自動車プラットフォームの量産拡大。</small>
+          <br><a href="https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">QCTスマートフォン売上</th><td>約5,100百万USD（前年比-26%）</td>
+          <td>比較可能な目標を確認できず</td><td>目標との比較未確認<br><small>Apple製品の移行とメモリー制約が逆風。</small>
+          <br><a href="https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">non-GAAP売上の会社予想比較</th><td>10,442百万USD</td>
+          <td>9,700〜10,500百万USD</td><td>予想レンジ内・上限付近<br><small>7月29日の説明会で示した会社予想。Q4経営陣は上限付近の達成と説明。</small>
+          <br><a href="https://www.marketbeat.com/earnings/reports/2026-7-29-qualcomm-incorporated-stock/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>GAAP売上10,322百万USD、non-GAAP売上10,442百万USDで異なる。APIは後者。StreetInsiderの10.44対10.14十億USDと照合して比較。</li><li>GAAP EPS1.17とAPI予想1.3349は比較基準未確認。公式non-GAAP2.17対StreetInsider予想2.17で比較する。Zacks等の予想2.16とは差がある。</li><li>文字記録の掲載日は11月5日だが、決算発表・説明会は11月4日。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm" target="_blank" rel="noopener noreferrer">公式 FY2026 Q4決算（SEC）</a> · <a href="https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html" target="_blank" rel="noopener noreferrer">StreetInsider 決算・市場予想</a></p>
+      </div></details>
+<details class="card earn-company" id="company-UBER" data-day="2026-11-04" data-search="UBER ウーバー">
+      <summary><span class="earn-ticker">UBER</span><span>ウーバー<small>2026Q3 · 抽出日 2026-11-04</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.71% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+1.85% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-04 ／ 説明会日：2026-11-04 ／ 抽出時時価総額：140.05 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">14,766 <small>百万USD</small></p>
+      <p>市場予想 14,662.149 百万USD</p><span class="badge positive">+0.71% 上振れ</span>
+      <p class="section-note">GAAP売上高</p>
+      <p class="earn-sources"><a href="https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/" target="_blank" rel="noopener noreferrer">investor.uber.com</a> · <a href="https://www.marketbeat.com/stocks/NYSE/UBER/earnings/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.88 <small>USD/株</small></p>
+      <p>市場予想 0.864 USD/株</p><span class="badge positive">+1.85% 上振れ</span>
+      <p class="section-note">non-GAAP希薄化EPS</p>
+      <p class="earn-sources"><a href="https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/" target="_blank" rel="noopener noreferrer">investor.uber.com</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-4-uber-technologies-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会文字記録確認（二次資料）</p><ul><li>国際配車では需要に運転手の供給が追いつかず、会社の期待を下回った。</li><li>自動運転は商用展開の段階へ移行し、2026年末に約700台をネットワークで稼働させる計画。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>運転手不足への対応として利用者向け奨励金を運転手側へ振り向けると説明。利用者価格への影響も注視。</li></ul><p class="earn-sources"><a href="https://www.fool.com/earnings/call-transcripts/2026/11/04/uber-uber-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener noreferrer">UBER Q3 2026 earnings call transcript（Motley Fool）</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+4.91%</p><p>2026-11-03 終値 66.6 USD → 2026-11-04 終値 69.87 USD</p>
+          <p class="section-note">同期間のSPY：+1.65%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/UBER/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+3.47%</p><p class="section-note">11月4日9:37 ET時点の場中報道（前日比、終値ではない）</p><p>上昇を観測。一方で次四半期利益見通しの予想未達、燃料高と運転手不足も報じられた。単一の好材料だけで値動きを説明しない。</p>
+          <p class="earn-sources"><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>Q4総取扱高63,250〜65,250百万USD、non-GAAP EPS0.95〜0.99 USD。</li><li>Q4の利益見通しはLSEG予想1.06 USDを下回るとReuters経由報道。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">Gross Bookings（総取扱高）</th><td>59,819百万USD（前年比+20%）</td>
+          <td>会社予想58,250〜60,250百万USD</td><td>会社予想レンジ内<br><small>売上高とは別の指標。前四半期ガイダンスと比較。</small>
+          <br><a href="https://investor.uber.com/files/doc_earnings/2026/q2/earnings-result/Uber-Q2-26-Earnings-Press-Release.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">non-GAAP EPS（会社予想比較）</th><td>0.88 USD</td>
+          <td>会社予想0.84〜0.88 USD</td><td>上限に到達<br><small>同じnon-GAAP基準。</small>
+          <br><a href="https://investor.uber.com/files/doc_earnings/2026/q2/earnings-result/Uber-Q2-26-Earnings-Press-Release.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">月間利用者／利用回数</th><td>2.15億人／40.61億回（前年比+14%／+16%）</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>アクティブ利用者とTrips。</small>
+          <br><a href="https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>売上は公式とAPI一致。予想はAPI14,662.14901百万USD、MarketBeatの約14,660百万USDと照合。</li><li>APIのGAAP EPS0.25は投資評価損等を含むため、市場比較には公式non-GAAP EPS0.88とMarketBeatの同実績に対応する予想0.864を採用。API予想0.9042は基準未確認につき不使用。</li><li>前年GAAP純利益には大型税効果があり、純利益の減少率だけでは本業の状態を表せない。</li></ul></div>
+        <p class="earn-sources"><a href="https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/" target="_blank" rel="noopener noreferrer">公式 Q3 2026決算</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-4-uber-technologies-inc-stock/" target="_blank" rel="noopener noreferrer">MarketBeat 決算・市場予想</a> · <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026" target="_blank" rel="noopener noreferrer">TheStreet / Reuters 市場反応と見通し</a></p>
+      </div></details>
+<details class="card earn-company" id="company-TM" data-day="2026-11-05" data-search="TM トヨタ自動車">
+      <summary><span class="earn-ticker">TM</span><span>トヨタ自動車<small>FY2027 Q2（2026年7〜9月） · 抽出日 2026-11-05</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.28% 上振れ</span> 営業利益 <span class="badge positive">+13.67% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-05 ／ 抽出時時価総額：254.63 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">13,437,062 <small>百万JPY</small></p>
+      <p>市場予想 13,400,000 百万JPY</p><span class="badge positive">+0.28% 上振れ</span>
+      <p class="section-note">IFRS・7〜9月売上収益／Reuters掲載の市場予想（丸め値）</p>
+      <p class="earn-sources"><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">global.toyota</a> · <a href="https://www.marketscreener.com/news/toyota-second-quarter-profit-seen-climbing-18-first-increase-in-six-quarters-ce785fdede8fff21" target="_blank" rel="noopener noreferrer">www.marketscreener.com</a></p></div><div class="earn-metric"><h4>営業利益</h4><p class="earn-value">1,127,600 <small>百万JPY</small></p>
+      <p>市場予想 992,000 百万JPY</p><span class="badge positive">+13.67% 上振れ</span>
+      <p class="section-note">IFRS・7〜9月営業利益（百万JPY）。EPSではない／LSEGアナリスト9名中央値</p>
+      <p class="earn-sources"><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">global.toyota</a> · <a href="https://www.marketscreener.com/news/toyota-second-quarter-profit-seen-climbing-18-first-increase-in-six-quarters-ce785fdede8fff21" target="_blank" rel="noopener noreferrer">www.marketscreener.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">公式Q&amp;A確認済み</p><ul><li>関税・中東情勢による負担を、原価改善と販売努力で吸収する方針。</li><li>資本政策では自己株保有比率を約20%から15%へ見直し、株式消却を説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>関税への質問に、物流経路変更と北米現地生産で負担を減らすと回答。</li><li>RAV4はケンタッキー工場の切替を経て2027年の本格生産を計画。</li></ul><p class="earn-sources"><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_qa_en.pdf" target="_blank" rel="noopener noreferrer">公式投資家向けQ&amp;A</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+9.35%</p><p>2026-11-04 終値 199.46 USD → 2026-11-05 終値 218.11 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/TM/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の注目点は利益予想引き上げと資本政策。ADRの値動きとの因果関係は未確定。</p>
+          <p class="earn-sources"><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期営業利益予想3.9兆円、純利益予想3.57兆円、売上収益53.5兆円。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">上期連結販売台数</th><td>475.8万台</td>
+          <td>前年同期478.3万台</td><td>前年同期比減少<br><small>上期累計。会社目標達成率を意味しない。</small>
+          <br><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">上期営業利益</th><td>2兆1,911億円</td>
+          <td>前年同期2兆57億円</td><td>前年同期比増益<br><small>関税・資材高の中で9.2%増益。</small>
+          <br><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>ADR換算のEPSを使わず、利益の比較は円建て営業利益に統一。公式補足表の7〜9月営業利益1,127.6十億円を採用。市場予想992十億円はReutersが11月4日に報じたLSEGの9名中央値。</li><li>売上市場予想13.4兆円はReutersの丸め値。+0.28%は概算であり、未丸めの予想なら符号が変わる可能性がある。</li><li>四半期売上・営業利益と、KPI欄の上期累計は対象期間が異なる。</li></ul></div>
+        <p class="earn-sources"><a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf" target="_blank" rel="noopener noreferrer">公式決算短信</a> · <a href="https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_qa_en.pdf" target="_blank" rel="noopener noreferrer">公式投資家向けQ&amp;A</a></p>
+      </div></details>
+<details class="card earn-company" id="company-COP" data-day="2026-11-05" data-search="COP コノコフィリップス">
+      <summary><span class="earn-ticker">COP</span><span>コノコフィリップス<small>2026 Q3 · 抽出日 2026-11-05</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+9.12% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+6.86% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-05 ／ 抽出時時価総額：161.12 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">20,057 <small>百万USD</small></p>
+      <p>市場予想 18,380 百万USD</p><span class="badge positive">+9.12% 上振れ</span>
+      <p class="section-note">総収入・その他収益。予想はZacks（十億ドル丸め）</p>
+      <p class="earn-sources"><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">www.conocophillips.com</a> · <a href="https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices" target="_blank" rel="noopener noreferrer">www.zacks.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">3.27 <small>USD/株</small></p>
+      <p>市場予想 3.06 USD/株</p><span class="badge positive">+6.86% 上振れ</span>
+      <p class="section-note">調整後EPS・Zacksコンセンサス</p>
+      <p class="earn-sources"><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">www.conocophillips.com</a> · <a href="https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices" target="_blank" rel="noopener noreferrer">www.zacks.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>大型案件の稼働とコスト低減により、2029年以降も低い再投資率でキャッシュフロー成長を目指す。</li><li>LNG引取契約は年1,300万トンへ拡大。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>Norway売却への質問には、未決定であり期待を超える提案がなければ保有継続と回答。</li><li>2029年以降の成長資金について、プロジェクト稼働で資本支出が低下するとの考えを説明。</li></ul><p class="earn-sources"><a href="https://www.marketbeat.com/earnings/reports/2026-11-05-conocophillips-stock/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-1.08%</p><p>2026-11-04 終値 136.94 USD → 2026-11-05 終値 135.46 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/COP/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の材料は調整後EPS上振れと増配。ただし原油価格や市場全体の影響も大きく、決算単独の要因とは断定しない。</p>
+          <p class="earn-sources"><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>営業キャッシュフローの45%を2026年に株主還元する計画を維持。四半期配当を11%増額し0.93ドル。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">生産量</th><td>230.2万BOE/日</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>Lower48の成長を、中東の操業影響等が相殺。</small>
+          <br><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">Willowのモジュール製作</th><td>75%超完了</td>
+          <td>2029年初の初生産</td><td>会社説明では計画通り<br><small>生産開始の実績ではなく進捗。</small>
+          <br><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>GAAP EPS3.34ドルを調整後予想と比較しない。moomoo予想3.008とは異なるZacks予想3.06を採用。</li><li>総収入にはその他収益を含む。予想提供元・丸めにより乖離率は変わる。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/" target="_blank" rel="noopener noreferrer">公式決算リリース</a> · <a href="https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices" target="_blank" rel="noopener noreferrer">Zacks市場予想</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-05-conocophillips-stock/" target="_blank" rel="noopener noreferrer">説明会記録</a></p>
+      </div></details>
+<details class="card earn-company" id="company-SONY" data-day="2026-11-05" data-search="SONY ソニーグループ">
+      <summary><span class="earn-ticker">SONY</span><span>ソニーグループ<small>FY2026 Q2（2027年3月期） · 抽出日 2026-11-05</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+7.60% 上振れ</span> ADRのEPS <span class="badge positive">+20.65% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-05 ／ 抽出時時価総額：157.36 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">21,670 <small>百万USD</small></p>
+      <p>市場予想 20,140 百万USD</p><span class="badge positive">+7.60% 上振れ</span>
+      <p class="section-note">Investing.com掲載の米ドル換算売上高・同じ配信元の実績と予想を比較</p>
+      <p class="earn-sources"><a href="https://www.investing.com/equities/sony-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>ADRのEPS</h4><p class="earn-value">0.485 <small>USD/株</small></p>
+      <p>市場予想 0.402 USD/株</p><span class="badge positive">+20.65% 上振れ</span>
+      <p class="section-note">Investing.com掲載の米国ADRのEPS（USD/ADR）</p>
+      <p class="earn-sources"><a href="https://www.investing.com/equities/sony-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">公式説明原稿・Q&amp;A記録確認済み</p><ul><li>ゲームのソフト・ネットワークサービスと映画事業が利益拡大を支えた。</li><li>メモリー高騰には価格・販促調整とコスト削減で対応し、ハード収益性維持を見込む。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>次世代ゲーム機への投資とメモリー費上昇を質問され、利用者の継続的な活動と収益化を重視すると説明。</li></ul><p class="earn-sources"><a href="https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf" target="_blank" rel="noopener noreferrer">公式説明原稿</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/sony-group-sony-q2-2026-172958168.html" target="_blank" rel="noopener noreferrer">説明会Q&amp;A記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+6.13%</p><p>2026-11-04 終値 25.95 USD → 2026-11-05 終値 27.54 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/SONY/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の好材料はゲーム・映画の増益と予想引き上げ。メモリー費と次世代機投資は先行きの確認事項。</p>
+          <p class="earn-sources"><a href="https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>ゲーム事業の通期売上予想を4兆8,300億円、営業利益を7,000億円にそれぞれ約6%引き上げ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">PlayStation月間アクティブ利用者</th><td>1億2,700万アカウント</td>
+          <td>前年同月比+7%</td><td>9月として過去最高<br><small>目標値未公表のため達成率は算出しない。</small>
+          <br><a href="https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">連結営業利益率</th><td>18.1%</td>
+          <td>前年13.8%</td><td>4.3ポイント改善<br><small>連結営業利益6,223億円。</small>
+          <br><a href="https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>比較表はInvesting.comの米ドル換算ペアを採用。会社公表値は売上3,429,446百万JPY、普通株の希薄化後EPS76.49JPY。JPY実績とUSD予想を混ぜていない。</li><li>配信元差がある。MarketBeatは売上21.77十億USD対予想20.15十億USD、EPS0.49対0.38で、同じ四半期でも乖離率が異なる。</li><li>米国データの2027Q2と会社表記FY2026 Q2は同じ2027年3月期第2四半期。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf" target="_blank" rel="noopener noreferrer">公式説明原稿</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/sony-group-sony-q2-2026-172958168.html" target="_blank" rel="noopener noreferrer">説明会Q&amp;A記録</a></p>
+      </div></details>
+<details class="card earn-company" id="company-PH" data-day="2026-11-05" data-search="PH パーカー・ハネフィン">
+      <summary><span class="earn-ticker">PH</span><span>パーカー・ハネフィン<small>FY2027 Q1 · 抽出日 2026-11-05</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+3.13% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+8.40% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-05 ／ 抽出時時価総額：115.73 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">5,992 <small>百万USD</small></p>
+      <p>市場予想 5,810 百万USD</p><span class="badge positive">+3.13% 上振れ</span>
+      <p class="section-note">連結売上高。市場予想は公開コンセンサス（丸め値）</p>
+      <p class="earn-sources"><a href="https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results" target="_blank" rel="noopener noreferrer">investors.parker.com</a> · <a href="https://www.investing.com/equities/parkerhannifin-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">8.9 <small>USD/株</small></p>
+      <p>市場予想 8.21 USD/株</p><span class="badge positive">+8.40% 上振れ</span>
+      <p class="section-note">調整後EPS</p>
+      <p class="earn-sources"><a href="https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results" target="_blank" rel="noopener noreferrer">investors.parker.com</a> · <a href="https://www.lighthorse.io/tickers/ph/earnings" target="_blank" rel="noopener noreferrer">www.lighthorse.io</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>産業機器・航空宇宙の幅広い需要が成長し、Filtration Group買収の完了で事業を拡充。</li><li>受注の強さと既存事業の利益改善が通期予想の引き上げを支えた。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>説明会ではFiltration統合、航空宇宙・産業向け需要と収益性が論点。詳細な個別Q&amp;A回答は本稿では採録していない。</li></ul><p class="earn-sources"><a href="https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-1.97%</p><p>2026-11-04 終値 910.19 USD → 2026-11-05 終値 892.29 USD</p>
+          <p class="section-note">同期間のSPY：-4.41%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/PH/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の材料は既存事業成長の計画超過と通期予想引き上げ。買収統合・負債コストも確認事項。</p>
+          <p class="earn-sources"><a href="https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期調整後EPS予想36.45〜37.25ドル、既存事業売上成長率7.5〜10.5%。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">既存事業売上成長率</th><td>11.5%</td>
+          <td>会社事前予想8%</td><td>3.5ポイント上振れ<br><small>買収・為替影響を除いた成長率。</small>
+          <br><a href="https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">調整後部門営業利益率</th><td>28.6%</td>
+          <td>前年27.4%</td><td>1.2ポイント改善<br><small>会社発表の過去最高値。</small>
+          <br><a href="https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>GAAP EPS6.92ドルと調整後EPS8.90ドルは異なる。市場予想8.21ドルは調整後基準で比較。</li><li>市場予想売上58.1億ドルは丸め値。moomoo予想57.89億ドルとは提供元が異なる。</li></ul></div>
+        <p class="earn-sources"><a href="https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results" target="_blank" rel="noopener noreferrer">公式決算リリース</a> · <a href="https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript" target="_blank" rel="noopener noreferrer">説明会記録</a> · <a href="https://www.lighthorse.io/tickers/ph/earnings" target="_blank" rel="noopener noreferrer">EPS市場予想</a> · <a href="https://www.investing.com/equities/parkerhannifin-earnings" target="_blank" rel="noopener noreferrer">売上市場予想</a></p>
+      </div></details>
+<details class="card earn-company" id="company-ABNB" data-day="2026-11-05" data-search="ABNB エアビーアンドビー">
+      <summary><span class="earn-ticker">ABNB</span><span>エアビーアンドビー<small>2026 Q3 · 抽出日 2026-11-05</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+2.51% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+10.88% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-05 ／ 抽出時時価総額：111.63 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">4,869 <small>百万USD</small></p>
+      <p>市場予想 4,750 百万USD</p><span class="badge positive">+2.51% 上振れ</span>
+      <p class="section-note">連結売上高・MarketBeat市場予想（丸め値）</p>
+      <p class="earn-sources"><a href="https://news.airbnb.com/airbnb-q3-2026-financial-results" target="_blank" rel="noopener noreferrer">news.airbnb.com</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">3.16 <small>USD/株</small></p>
+      <p>市場予想 2.85 USD/株</p><span class="badge positive">+10.88% 上振れ</span>
+      <p class="section-note">公開決算比較EPS。実績は会社GAAP EPSと一致</p>
+      <p class="earn-sources"><a href="https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>予約泊数等は16%増え、主要市場で成長が加速。後払い予約の拡大が約3ポイント寄与した。</li><li>AI活用による効率化と一部広告費の第4四半期へのずれが利益率を押し上げた。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>経営陣はAI経由の予約は現時点でごく少なく、旅行者向け自社AIエージェントは翌年前半に展開予定と説明。</li></ul><p class="earn-sources"><a href="https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+11.67%</p><p>2026-11-05 終値 170.13 USD → 2026-11-06 終値 189.99 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/ABNB/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">+11.67%</p><p class="section-note">11/5終値→11/6通常取引終値</p><p>売上・EPS上振れと成長加速を受け、翌日の通常取引終値で11.67%上昇。個々の材料の寄与率は分離できない。</p>
+          <p class="earn-sources"><a href="https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>第4四半期売上予想32.2〜32.8億ドル（前年同期比16〜18%増）。通期調整後EBITDA利益率予想を約36%へ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">予約泊数・座席数の成長</th><td>前年同期比+16%</td>
+          <td>会社説明では主要KPIの見通し超過</td><td>会社説明で上振れ<br><small>後払い予約の押し上げを除く成長は約13%。</small>
+          <br><a href="https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">予約総額（GBV）</th><td>277億ドル・前年同期比+21%</td>
+          <td>比較可能な目標を確認できず</td><td>目標値未確認<br><small>予約総額は売上高とは異なる。</small>
+          <br><a href="https://news.airbnb.com/airbnb-q3-2026-financial-results" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">調整後EBITDA利益率</th><td>52%</td>
+          <td>前年50%</td><td>2ポイント改善<br><small>一部費用の四半期間ずれに注意。</small>
+          <br><a href="https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>市場予想はMarketBeatの丸め値。ZacksのEPS予想2.86ドル、moomoo2.8472ドルとは差がある。</li><li>利益には税金費用の減少効果、利益率には広告費の時期ずれが含まれる。</li></ul></div>
+        <p class="earn-sources"><a href="https://news.airbnb.com/airbnb-q3-2026-financial-results" target="_blank" rel="noopener noreferrer">公式決算概要</a> · <a href="https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/" target="_blank" rel="noopener noreferrer">市場予想・値動き</a></p>
+      </div></details>
+<details class="card earn-company" id="company-ENB" data-day="2026-11-06" data-search="ENB エンブリッジ">
+      <summary><span class="earn-ticker">ENB</span><span>エンブリッジ<small>2026 Q3 · 抽出日 2026-11-06</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+57.64% 上振れ</span> 調整後EPS <span class="badge negative">-2.00% 下振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-06 ／ 説明会日：2026-11-06 ／ 抽出時時価総額：104.51 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">21,077 <small>百万CAD</small></p>
+      <p>市場予想 13,370 百万CAD</p><span class="badge positive">+57.64% 上振れ</span>
+      <p class="section-note">7〜9月総営業収益／Investing.com掲載CAD予想（13.37十億CAD・丸め値）</p>
+      <p class="earn-sources"><a href="https://www.enbridge.com/investment-center/reports-and-sec-filings/sec-filings/sec-filing-details?docId=265343" target="_blank" rel="noopener noreferrer">www.enbridge.com</a> · <a href="https://www.investing.com/equities/enbridge-inc.-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div><div class="earn-metric"><h4>調整後EPS</h4><p class="earn-value">0.49 <small>CAD/株</small></p>
+      <p>市場予想 0.5 CAD/株</p><span class="badge negative">-2.00% 下振れ</span>
+      <p class="section-note">調整後EPS（CAD/普通株）／Investing.comのCAD市場予想</p>
+      <p class="earn-sources"><a href="https://www.enbridge.com/media-center/news/details?id=123894" target="_blank" rel="noopener noreferrer">www.enbridge.com</a> · <a href="https://www.investing.com/equities/enbridge-inc.-earnings" target="_blank" rel="noopener noreferrer">www.investing.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>ガス輸送・公益事業の増益と新規案件稼働を背景に、通期見通しを維持。</li><li>借入金/EBITDAは5.1倍だが、為替影響調整後は会社目標範囲内と説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>買収後の財務規律への質問では、増資と資産リサイクルを使い目標レバレッジ4.5〜5倍を守る方針を説明。</li></ul><p class="earn-sources"><a href="https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-down">-2.54%</p><p>2026-11-05 終値 48.11 USD → 2026-11-06 終値 46.89 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/ENB/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の好材料はガス案件の稼働と利益成長。増資による希薄化、買収負担、レバレッジは確認事項。</p>
+          <p class="earn-sources"><a href="https://www.enbridge.com/media-center/news/details?id=123894" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>2026年通期見通しを維持し、会社は予想レンジの中央値着地を見込む。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">調整後EBITDA</th><td>44.34億カナダドル</td>
+          <td>比較可能な目標を確認できず</td><td>前年同期比増加<br><small>売上高より事業の継続的な稼ぐ力を把握しやすい指標。</small>
+          <br><a href="https://www.enbridge.com/media-center/news/details?id=123894" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">借入金/EBITDA</th><td>5.1倍</td>
+          <td>会社目標4.5〜5.0倍</td><td>表面上は上限超過<br><small>会社は為替調整後は範囲内と説明。</small>
+          <br><a href="https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">新規案件の稼働</th><td>約30億カナダドル</td>
+          <td>比較可能な目標を確認できず</td><td>稼働実績<br><small>ガス輸送案件を中心に運転開始。</small>
+          <br><a href="https://www.enbridge.com/media-center/news/details?id=123894" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>Investing.comの決算表の『All numbers in CAD』を確認し、会社公表のCAD調整後EPSと比較。株価がUSD表示でも決算表はCAD。</li><li>総営業収益21,077百万CADは四半期報告と照合。エネルギー取引の通過売上を含むため、売上の大幅上振れだけで利益の質を判断せず、調整後EBITDAも確認する。</li><li>市場予想は配信元差がある。USDのGAAP EPSや通貨の異なる売上予想とは比較していない。予想値が丸められているため乖離率は概算。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.enbridge.com/media-center/news/details?id=123894" target="_blank" rel="noopener noreferrer">公式決算リリース</a> · <a href="https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p>
+      </div></details>
+<details class="card earn-company" id="company-MRNA" data-day="2026-11-06" data-search="MRNA モデルナ">
+      <summary><span class="earn-ticker">MRNA</span><span>モデルナ<small>2026 Q3 · 抽出日 2026-11-06</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+47.49% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+134.55% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-06 ／ 説明会日：2026-11-06 ／ 抽出時時価総額：102.85 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">1,313 <small>百万USD</small></p>
+      <p>市場予想 890.25 百万USD</p><span class="badge positive">+47.49% 上振れ</span>
+      <p class="section-note">連結売上高・MarketBeat市場予想</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">0.38 <small>USD/株</small></p>
+      <p>市場予想 -1.1 USD/株</p><span class="badge positive">+134.55% 上振れ</span>
+      <p class="section-note">GAAP希薄化後EPS。予想損失から黒字</p>
+      <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">www.sec.gov</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>米国・海外とも需要と出荷が想定より強く、一部の第4四半期出荷が第3四半期へ前倒しされた。</li><li>費用管理を継続し、通期売上成長見通しを15〜25%へ引き上げた。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>米国のインフル/COVID混合ワクチン申請について、FDAとの協議が必要であり、今後数か月で方向を明確にすると回答。</li></ul><p class="earn-sources"><a href="https://stockanalysis.com/stocks/mrna/transcripts/721307-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+5.27%</p><p>2026-11-05 終値 241.46 USD → 2026-11-06 終値 254.19 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/MRNA/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の材料は予想赤字に対する黒字化、売上見通し引き上げ、臨床・承認進捗。季節性と出荷前倒しを分けて見る必要がある。</p>
+          <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期売上成長率15〜25%（従来は最大10%）。年末現金・投資残高81〜83億ドルを見込む。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">研究開発費</th><td>5.83億ドル</td>
+          <td>前年同期比-27%</td><td>費用削減<br><small>感染症の後期試験完了・縮小等が寄与。</small>
+          <br><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">海外売上</th><td>5.33億ドル</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>長期政府契約の納入が売上を支えた。</small>
+          <br><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>moomoo EPS予想-1.2546ではなくMarketBeat-1.10を採用。市場予想は提供元で異なる。</li><li>黒字転換なので乖離率には分母の絶対値を用い、単なる利益成長率とは区別する。</li></ul></div>
+        <p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener noreferrer">公式決算リリース（SEC）</a> · <a href="https://stockanalysis.com/stocks/mrna/transcripts/721307-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/" target="_blank" rel="noopener noreferrer">市場予想</a></p>
+      </div></details>
+<details class="card earn-company" id="company-BAM" data-day="2026-11-06" data-search="BAM ブルックフィールド・アセット・マネジメント">
+      <summary><span class="earn-ticker">BAM</span><span>ブルックフィールド・アセット・マネジメント<small>2026 Q3 · 抽出日 2026-11-06</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+34.31% 上振れ</span> 1株当たり分配可能利益（DE） <span class="badge positive">+1.86% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-06 ／ 説明会日：2026-11-06 ／ 抽出時時価総額：84.61 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">2,149 <small>百万USD</small></p>
+      <p>市場予想 1,600 百万USD</p><span class="badge positive">+34.31% 上振れ</span>
+      <p class="section-note">GAAP総収入・MarketBeat市場予想（丸め値）</p>
+      <p class="earn-sources"><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">bam.brookfield.com</a> · <a href="https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり分配可能利益（DE）</h4><p class="earn-value">0.47 <small>USD/株</small></p>
+      <p>市場予想 0.4614 USD/株</p><span class="badge positive">+1.86% 上振れ</span>
+      <p class="section-note">1株当たり分配可能利益（DE・非GAAP）</p>
+      <p class="earn-sources"><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">bam.brookfield.com</a> · <a href="https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>資金調達は好調だが、旗艦インフラファンドの課金開始が翌年1月にずれ、2026年の利益は年初想定をやや下回る見込み。</li><li>BBUの成功報酬は株価のハイウォーターマークに届かず2026年は計上しないと説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>AIインフラのリスクを問われ、長期契約・許認可・設備供給を確保してから投資し、顧客信用と建設・運営リスクを管理すると回答。</li></ul><p class="earn-sources"><a href="https://stockanalysis.com/quote/tsx/BAM/transcripts/725144-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+0.93%</p><p>2026-11-05 終値 52.46 USD → 2026-11-06 終値 52.95 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/BAM/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の材料は資金流入の強さと、手数料計上の翌年へのずれ。GAAP利益にはOaktree連結に伴う非現金利益がある。</p>
+          <p class="earn-sources"><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>資金調達は過去最高水準を見込む一方、報酬計上時期のずれで利益は年初想定をやや下回ると説明。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">四半期手数料関連利益（FRE）</th><td>8.64億ドル</td>
+          <td>前年同期比+15%</td><td>増益<br><small>運用手数料からの継続利益の指標。</small>
+          <br><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">手数料を生む運用資産</th><td>6,820億ドル</td>
+          <td>前年同期比+13%</td><td>拡大<br><small>会社目標達成率ではない。</small>
+          <br><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">年初来資金調達</th><td>1,230億ドル</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>四半期の資金調達は250億ドル。</small>
+          <br><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>GAAP EPS1.64ドルではなく、市場比較で用いられるDE/株0.47ドルを採用。</li><li>GAAP純利益はOaktree取得・連結の非現金利益約20億ドルを含む。売上予想との比較も企業再編影響に注意。</li><li>MarketBeatの個別記事の日付11/7は公式11/6と不一致のため、公式発表日を採用。</li></ul></div>
+        <p class="earn-sources"><a href="https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf" target="_blank" rel="noopener noreferrer">公式決算資料</a> · <a href="https://stockanalysis.com/quote/tsx/BAM/transcripts/725144-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a> · <a href="https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/" target="_blank" rel="noopener noreferrer">市場予想</a></p>
+      </div></details>
+<details class="card earn-company" id="company-EOG" data-day="2026-11-06" data-search="EOG EOGリソーシズ">
+      <summary><span class="earn-ticker">EOG</span><span>EOGリソーシズ<small>2026 Q3 · 抽出日 2026-11-06</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+17.27% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+9.44% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-05 ／ 説明会日：2026-11-06 ／ 抽出時時価総額：76.28 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">8,549 <small>百万USD</small></p>
+      <p>市場予想 7,290 百万USD</p><span class="badge positive">+17.27% 上振れ</span>
+      <p class="section-note">総収入・TheFly配信の市場予想（丸め値）</p>
+      <p class="earn-sources"><a href="https://stockanalysis.com/stocks/eog/" target="_blank" rel="noopener noreferrer">stockanalysis.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">4.87 <small>USD/株</small></p>
+      <p>市場予想 4.45 USD/株</p><span class="badge positive">+9.44% 上振れ</span>
+      <p class="section-note">調整後EPS・TheFly配信の市場予想</p>
+      <p class="earn-sources"><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">stockanalysis.com</a> · <a href="https://stockanalysis.com/stocks/eog/" target="_blank" rel="noopener noreferrer">stockanalysis.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">説明会記録確認済み（二次配信）</p><ul><li>原油・NGL・ガスの各生産量が会社見通し中央値を超え、単位当たり費用は中央値を下回った。</li><li>高いフリーキャッシュフローを背景に配当を8%増額。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>2027年の費用インフレを質問され、サービス・鋼材・軽油の上昇を生産性と購買力で抑えると回答。</li><li>ENGIE契約は2030年までに始まる10年契約で、ガス価格の地域分散を進めると説明。</li></ul><p class="earn-sources"><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+1.55%</p><p>2026-11-05 終値 144.89 USD → 2026-11-06 終値 147.13 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/EOG/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の材料は生産・費用の計画超過と増配。2027年のコスト上昇と原油市況は確認事項。</p>
+          <p class="earn-sources"><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>2026年原油生産+5%、全生産+14%、設備投資65億ドルの計画維持。2027年原油は低い1桁成長を想定。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">生産量</th><td>原油・NGL・天然ガスで過去最高</td>
+          <td>会社見通し中央値</td><td>3分野とも中央値超過<br><small>数値目標の具体値は本稿では未採録。</small>
+          <br><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">フリーキャッシュフロー</th><td>22億ドル</td>
+          <td>比較可能な目標を確認できず</td><td>会社目標との比較未確認<br><small>株主還元は約15億ドル。</small>
+          <br><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">通期設備投資</th><td>65億ドル</td>
+          <td>従来予想65億ドル</td><td>据え置き<br><small>四半期投資は時期ずれにより中央値未満。</small>
+          <br><a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>moomooカレンダー11/6は説明会日。公式決算リリースは11/5引け後で、原抽出の曜日分類と一致しない。対象銘柄は当初抽出を維持。</li><li>GAAP EPS5.33ドルではなく調整後4.87ドルで比較。市場予想4.45はmoomoo4.4774と異なる。</li></ul></div>
+        <p class="earn-sources"><a href="https://investors.eogresources.com/" target="_blank" rel="noopener noreferrer">公式IR・発表日</a> · <a href="https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/" target="_blank" rel="noopener noreferrer">説明会記録</a> · <a href="https://stockanalysis.com/stocks/eog/" target="_blank" rel="noopener noreferrer">市場予想（TheFly配信）</a></p>
+      </div></details>
+<details class="card earn-company" id="company-HUM" data-day="2026-11-06" data-search="HUM ヒューマナ">
+      <summary><span class="earn-ticker">HUM</span><span>ヒューマナ<small>2026 Q3 · 抽出日 2026-11-06</small></span>
+        <span class="earn-summary-badges">売上 <span class="badge positive">+0.70% 上振れ</span> 1株当たり利益（EPS） <span class="badge positive">+30.00% 上振れ</span></span></summary>
+      <div class="earn-company-body">
+        <p class="section-note">公式発表日：2026-11-06 ／ 説明会日：2026-11-06 ／ 抽出時時価総額：52.09 十億USD</p>
+        <div class="earn-metrics"><div class="earn-metric"><h4>売上高</h4><p class="earn-value">41,155 <small>百万USD</small></p>
+      <p>市場予想 40,870 百万USD</p><span class="badge positive">+0.70% 上振れ</span>
+      <p class="section-note">連結総収入・MarketBeat予想（丸め値）</p>
+      <p class="earn-sources"><a href="https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div><div class="earn-metric"><h4>1株当たり利益（EPS）</h4><p class="earn-value">-0.7 <small>USD/株</small></p>
+      <p>市場予想 -1 USD/株</p><span class="badge positive">+30.00% 上振れ</span>
+      <p class="section-note">調整後EPS・MarketBeatコンセンサス</p>
+      <p class="earn-sources"><a href="https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full" target="_blank" rel="noopener noreferrer">humana.gcs-web.com</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/" target="_blank" rel="noopener noreferrer">www.marketbeat.com</a></p></div></div>
+        <div class="earn-columns"><section><h3>説明会・経営陣の説明</h3><p class="earn-status">公式事前説明原稿確認済み（Q&amp;A全文未確認）</p><ul><li>医療給付費率が想定より良好で、通期調整後EPS予想を引き上げ。</li><li>2027年のMedicare Advantage入札方針が2028年の持続可能な税前利益率3%以上への進展を支えると説明。</li></ul>
+          <h4>質疑応答の焦点</h4><ul><li>当日のQ&amp;A開催は確認したが、本稿では回答全文の検証を完了していない。</li></ul><p class="earn-sources"><a href="https://www.sec.gov/Archives/edgar/data/49071/000004907126000064/a3q2026humanaincpostedrema.htm" target="_blank" rel="noopener noreferrer">公式経営陣説明原稿（SEC）</a></p></section>
+          <section><h3>株価の反応と変動要因</h3><div class="earn-daily"><h4>決算発表を挟む日次終値の変化</h4>
+          <p class="earn-value earn-price-up">+5.33%</p><p>2026-11-05 終値 411.79 USD → 2026-11-06 終値 433.74 USD</p>
+          <p class="section-note">同期間のSPY：+0.31%。配当調整なし。決算以外の市場要因も含みます。</p>
+          <p class="earn-sources"><a href="https://finance.yahoo.com/quote/HUM/history/" target="_blank" rel="noopener noreferrer">Yahoo Finance 日次株価</a> · <a href="https://finance.yahoo.com/quote/SPY/history/" target="_blank" rel="noopener noreferrer">SPY 日次株価</a></p></div><h4>報道・資料で確認する変動要因</h4><p class="earn-value">変動率未確認</p><p class="section-note">記事の観測期間は未確認</p><p>分析上の好材料は給付費率の改善と予想赤字縮小。GAAP利益には評価益が含まれ、基礎収益と区別が必要。</p>
+          <p class="earn-sources"><a href="https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full" target="_blank" rel="noopener noreferrer">株価反応の出典</a></p>
+          <h4>会社の見通し（ガイダンス）</h4><ul><li>通期調整後EPS予想を9.00ドル以上から9.50ドル以上へ引き上げ。</li></ul></section></div>
+        <h3>KPI：事業の達成状況</h3><p class="section-note">KPIは事業を測る重要指標です。前年からの増減と、事前目標の達成は分けて読みます。</p>
+        <div class="table-wrap"><table class="data earn-kpi-table"><thead><tr><th>重要指標</th><th>実績</th><th>事前目標・比較対象</th><th>達成状況・読み方</th></tr></thead><tbody><tr><th scope="row">保険事業の給付費率</th><td>93.7%</td>
+          <td>会社見通し94%をやや上回る水準</td><td>会社想定より良好<br><small>給付費率は低いほど保険収益性に有利。</small>
+          <br><a href="https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full" target="_blank" rel="noopener noreferrer">出典</a></td></tr><tr><th scope="row">CenterWell患者数の年初来増加</th><td>14万6,800人・+30%</td>
+          <td>比較可能な目標を確認できず</td><td>成長実績<br><small>目標値未確認につき達成率なし。</small>
+          <br><a href="https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full" target="_blank" rel="noopener noreferrer">出典</a></td></tr></tbody></table></div>
+        <div class="earn-notes"><h4>比較・日付についての補足</h4><ul><li>GAAP EPS+1.33ではなく調整後EPS-0.70を市場予想と比較する。</li><li>MarketBeatの予想-1.00を採用。Zacksは-1.03、moomooは-1.135。売上も投資収益等の範囲により配信値が異なる。</li><li>EPSの赤字予想比較は予想値の絶対値を分母にした乖離率とし、赤字解消や増益率と誤解させない。</li></ul></div>
+        <p class="earn-sources"><a href="https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full" target="_blank" rel="noopener noreferrer">公式決算リリース</a> · <a href="https://www.sec.gov/Archives/edgar/data/49071/000004907126000064/a3q2026humanaincpostedrema.htm" target="_blank" rel="noopener noreferrer">公式経営陣説明原稿</a> · <a href="https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/" target="_blank" rel="noopener noreferrer">市場予想</a></p>
+      </div></details></div>
+        <p id="earnEmpty" class="card" hidden>一致する銘柄がありません。曜日や検索文字を変えてください。</p>
+        <section class="card earn-guide" id="reading-guide"><h2>数字の読み方と出典の使い方</h2>
+          <h3>「予想との差」は何％？</h3><p><strong>（実績 − 市場予想）÷ 市場予想の絶対値 × 100</strong>で計算しています。例：予想100に対し実績110なら+10%。予想−1に対し実績−0.5なら+50%で、赤字幅の縮小を示します。予想ゼロや基準不明の場合は計算しません。</p>
+          <h3>利益にはいくつかの定義があります</h3><p>EPSは「1株当たり利益」です。トヨタはEPSの換算差を避けて営業利益、資産運用会社BAMは1株当たり分配可能利益（DE）を使い、数値・単位・指標名を明示しています。GAAP・IFRSは会計基準に沿った数値、調整後（non-GAAP）は会社が一時費用などを除いた数値です。実績と市場予想の定義・期間・通貨をそろえ、利益総額を使うトヨタは別の単位で表示します。市場予想は収集元や集計時点で差が生じます。</p>
+          <h3>KPIの成長と、目標達成は別です</h3><p>前年から伸びていても、事前の会社目標を満たしたとは限りません。目標が確認できない指標には目標達成の判定を付けません。会社の見通しは市場予想と区別しています。</p>
+          <h3>株価反応から原因を断定しません</h3><p>日次終値の反応は、米国寄り付き前の発表なら前営業日終値→当日終値、引け後なら発表日終値→翌営業日終値で算出。SPY（S&P500連動ETF）を同期間の参考として併記しています。記事の反応は出典ごとの観測期間の値です。時間外取引・取引時間中・終値の変化率は異なります。変動要因は報道の説明や経営陣の発言を整理したもので、決算だけの影響を切り出した因果分析ではありません。説明会記録が確認できない場合は、その旨を表示しています。</p>
+          <p class="table-note">調査・ページ生成：2026-11-09 22:13:09+09:00。各社の公式IR、決算資料、説明会記録と市場予想・値動きの報道を参照。出典は各社詳細に掲載。<a href="data/earnings/week_2026-11-02.json">集計データ（JSON）</a>。</p>
+        </section>
+      </div></section>
+    </main><footer><div class="container footer-inner"><div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div><div class="footer-links"><a href="about.html">運営者情報</a><a href="disclaimer.html">免責事項</a><a href="privacy-policy.html">プライバシーポリシー</a></div><p class="copyright">情報提供を目的とし、特定銘柄の売買を推奨するものではありません。</p></div></footer></div>
+  </div>
+  <script src="script.js"></script>
+</body></html>

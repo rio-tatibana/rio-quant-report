@@ -1,0 +1,505 @@
+[
+  {
+    "ticker": "MCD",
+    "date": "2026-11-04",
+    "name": "マクドナルド",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 7157,
+      "estimate": 7280.43692,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "GAAP連結売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS",
+        "https://apnews.com/article/7fee4f873c6230e20f9e366e35094444"
+      ]
+    },
+    "eps": {
+      "actual": 3.57,
+      "estimate": 3.38,
+      "currency": "USD",
+      "basis": "調整後希薄化EPS（再編費用等を除く）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS",
+        "https://apnews.com/article/7fee4f873c6230e20f9e366e35094444"
+      ]
+    },
+    "call": {
+      "status": "説明会文字記録確認（二次資料）",
+      "summary": [
+        "米国の客数は減少したが、割安なセット商品の導入後、9月の既存店売上はプラスに改善。",
+        "新しい価格設定を1,900店舗で8週間テストし、価格に敏感な顧客の回復を目指す。"
+      ],
+      "qa": [
+        "経営陣は厳しい消費環境が年内続くと想定。国際部門では市場シェアの維持・拡大を重視すると説明。"
+      ],
+      "sources": [
+        {
+          "title": "MCD Q3 2026 earnings call transcript（Motley Fool）",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/mcdonalds-mcd-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "世界既存店売上成長率",
+        "actual": "+1.5%",
+        "target": null,
+        "status": "目標との比較未確認",
+        "note": "公式リリースの数値。AP記事の1.3%と差があるため公式値を採用。",
+        "source_url": "https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS"
+      },
+      {
+        "name": "米国既存店売上成長率",
+        "actual": "-0.2%",
+        "target": "市場予想 -0.5%",
+        "status": "市場予想を0.3ポイント上回る",
+        "note": "客数減を客単価の上昇で一部相殺。予想はAP報道。",
+        "source_url": "https://apnews.com/article/7fee4f873c6230e20f9e366e35094444"
+      },
+      {
+        "name": "ロイヤルティ会員経由売上",
+        "actual": "四半期110億USD超／直近12カ月410億USD",
+        "target": null,
+        "status": "目標との比較未確認",
+        "note": "70市場合計。",
+        "source_url": "https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS"
+      }
+    ],
+    "guidance": [
+      "割安なセットの新施策を2027年初めに展開する方針。"
+    ],
+    "reaction": {
+      "change_pct": 4.73,
+      "window": "11月4日9:51 ET時点の場中報道（前日比、終値ではない）",
+      "summary": "上昇を観測。分析上は、調整後EPSの予想超過と米国既存店売上の予想比改善が好材料候補。売上高自体は予想未達。",
+      "source_url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+    },
+    "sources": [
+      {
+        "title": "公式 Q3 2026 決算リリース",
+        "url": "https://mcdonalds.mediaroom.com/2026-11-04-McDONALDS-REPORTS-THIRD-QUARTER-2026-RESULTS"
+      },
+      {
+        "title": "AP 決算・コンセンサス報道",
+        "url": "https://apnews.com/article/7fee4f873c6230e20f9e366e35094444"
+      }
+    ],
+    "notes": [
+      "売上の実績は公式とmoomoo一致。予想はmoomoo 7,280.43692百万USDを採用し、APの約7,280百万USDと照合。",
+      "GAAP EPS3.51とmoomoo予想3.4127は基準未確認のため比較せず、調整後3.57とAPの同基準予想3.38で比較。",
+      "市場予想と会社目標は区別。公表目標がないKPIに達成・未達の判定を付けない。"
+    ],
+    "release_date": "2026-11-04",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-04"
+  },
+  {
+    "ticker": "ARM",
+    "date": "2026-11-04",
+    "name": "アーム",
+    "period": "2027Q2",
+    "revenue": {
+      "actual": 1443,
+      "estimate": 1378.09837,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "GAAP売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm",
+        "https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html"
+      ]
+    },
+    "eps": {
+      "actual": 0.52,
+      "estimate": 0.47,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investors.arm.com/static-files/b49cf5cc-d133-4c4d-80f6-c499312bfeb3",
+        "https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html"
+      ]
+    },
+    "call": {
+      "status": "公式IR掲載の説明会文字記録確認",
+      "summary": [
+        "ライセンス売上は長期契約の前倒しで想定を約1億USD上回った。",
+        "データセンターのロイヤルティは前年比約2倍。一方、スマートフォンはメモリー価格上昇の影響を受けた。"
+      ],
+      "qa": [
+        "AGI CPUの供給確保と顧客拡大が焦点。経営陣はMeta以外の複数顧客から受注し、供給網への確信が高まったと説明。"
+      ],
+      "sources": [
+        {
+          "title": "公式IR掲載 Q2 FY2027 transcript（FactSet）",
+          "url": "https://investors.arm.com/static-files/6f3ab670-7d16-479b-948a-7b1df5ff5b32"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "売上高（会社予想との比較）",
+        "actual": "1,443百万USD",
+        "target": "会社予想1,330〜1,430百万USD",
+        "status": "上限を13百万USD上回る",
+        "note": "会社予想は7月29日のQ1資料。市場予想とは別。",
+        "source_url": "https://investors.arm.com/static-files/673c8e81-66f9-4411-adb8-571a63f811b2"
+      },
+      {
+        "name": "non-GAAP EPS（会社予想との比較）",
+        "actual": "0.52 USD",
+        "target": "会社予想0.43〜0.51 USD",
+        "status": "上限を0.01 USD上回る",
+        "note": "前四半期公表レンジとの比較。",
+        "source_url": "https://investors.arm.com/static-files/673c8e81-66f9-4411-adb8-571a63f811b2"
+      },
+      {
+        "name": "ライセンス／ロイヤルティ売上",
+        "actual": "773／670百万USD（前年比+50%／+8%）",
+        "target": null,
+        "status": "個別目標との比較未確認",
+        "note": "GAAP売上内訳。",
+        "source_url": "https://newsroom.arm.com/news/arm-q2-fye27-results"
+      }
+    ],
+    "guidance": [
+      "Q3売上1,490〜1,590百万USD、non-GAAP EPS0.52〜0.60 USD。",
+      "AGI CPU売上はFY2027〜2028合計で最大20億USDへの確信を表明。実現済み売上ではない。"
+    ],
+    "reaction": {
+      "change_pct": -3.1,
+      "window": "11月4日16:58:30 ETの時間外（説明会開始前、終値比）",
+      "summary": "決算リリース後の下落を観測。分析上の注目点は、実績の上振れに比べ次四半期見通しの市場予想超過が小さいことと、スマートフォンの逆風。説明会後の反応と混同しない。",
+      "source_url": "https://marketchameleon.com/Overview/ARM/StockPosts/"
+    },
+    "sources": [
+      {
+        "title": "公式 FY2027 Q2 6-K",
+        "url": "https://investors.arm.com/static-files/b49cf5cc-d133-4c4d-80f6-c499312bfeb3"
+      },
+      {
+        "title": "StreetInsider 決算・市場予想",
+        "url": "https://www.streetinsider.com/Earnings/Arm%2BHoldings%2B%28ARM%29%2BTops%2BQ2%2BEPS%2Bby%2B5c%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ3%2BGuidance/27289718.html"
+      }
+    ],
+    "notes": [
+      "売上は公式とmoomoo一致。予想はmoomoo 1,378.09837百万USD、報道の約1,380百万USDと照合。",
+      "APIのGAAP EPS0.12と予想0.2272は使用しない。調整後0.52対StreetInsider予想0.47で比較。FT系には予想0.48もあり、コンセンサス提供元によって乖離率が異なる。",
+      "株価変動の要因は分析上の候補であり因果関係の断定ではない。"
+    ],
+    "release_date": "2026-11-04",
+    "release_session": "AFTER",
+    "call_date": "2026-11-04"
+  },
+  {
+    "ticker": "NVO",
+    "date": "2026-11-04",
+    "name": "ノボ・ノルディスク",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 79195,
+      "estimate": 73626.91838,
+      "currency": "DKK",
+      "unit": "million",
+      "basis": "IFRS売上高（当四半期は調整後売上高と同額）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm",
+        "https://www.google.com/finance/beta/quote/NVO%3ANYSE?hl=en"
+      ]
+    },
+    "eps": {
+      "actual": 5.79,
+      "estimate": 5.03,
+      "currency": "DKK",
+      "basis": "調整後希薄化EPS／ADR（DKK、non-IFRS）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm",
+        "https://finance.yahoo.com/healthcare/articles/novo-nordisk-outlook-upgrade-leaves-143000007.html"
+      ]
+    },
+    "call": {
+      "status": "説明会文字記録確認（二次資料・公式音声未照合）",
+      "summary": [
+        "経口Wegovyの普及と海外発売を成長材料とする一方、価格低下と保険適用の制約を課題として説明。",
+        "2027年の成長率はまだ示さず、発売効果や特許切れ、価格の影響を注視する姿勢。"
+      ],
+      "qa": [
+        "発売加速は生産と規制対応の改善が背景。米国の保険者は患者数増加による総費用を懸念していると説明。"
+      ],
+      "sources": [
+        {
+          "title": "NVO Q3 2026 transcript（二次文字起こし）",
+          "url": "https://gloom.sh/stocks/nvo/transcripts/q3-2026"
+        },
+        {
+          "title": "公式決算資料・説明会録画入口",
+          "url": "https://www.novonordisk.com/investors/financial-results.html"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "経口Wegovy売上",
+        "actual": "5,394百万DKK",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "四半期売上。発売国の拡大が進む。",
+        "source_url": "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=919765"
+      },
+      {
+        "name": "調整後営業利益",
+        "actual": "31,720百万DKK（為替一定で前年比+27%）",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "報告営業利益23,011百万DKKとは異なる。減損等の調整に注意。",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm"
+      },
+      {
+        "name": "Wegovyの米国新規患者シェア",
+        "actual": "ブランド肥満症薬市場で50%超",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "会社発表の定義。経口薬だけのシェアではない。",
+        "source_url": "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=919765"
+      }
+    ],
+    "guidance": [
+      "2026年の調整後売上・営業利益成長率を、為替一定で各-6〜0%から各-2〜+2%へ引き上げ。",
+      "非現金減損8,700百万DKKにより、報告営業利益と調整後利益の方向は異なる。"
+    ],
+    "reaction": {
+      "change_pct": 5.65,
+      "window": "11月4日10:35 ETの米国ADR場中（前日比、終値ではない）",
+      "summary": "上昇を観測。経口Wegovyの拡大と通期見通し引き上げが材料として報じられた。",
+      "source_url": "https://finance.yahoo.com/healthcare/articles/novo-nordisk-stocks-rise-5-183620131.html"
+    },
+    "sources": [
+      {
+        "title": "公式 Q3 2026決算（SEC 6-K）",
+        "url": "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm"
+      },
+      {
+        "title": "Proactive / Jefferies コンセンサス比較",
+        "url": "https://finance.yahoo.com/healthcare/articles/novo-nordisk-outlook-upgrade-leaves-143000007.html"
+      }
+    ],
+    "notes": [
+      "米国ADRだが決算通貨はDKK。USDのEPS・売上と比較しない。",
+      "売上予想はmoomoo 73,626.91838百万DKKを採用し、Google Financeの約73,630百万DKKと照合。",
+      "moomoo EPS実績3.79はIFRS、予想5.282の基準未確認。公式調整後5.79とProactive掲載の同基準予想5.03で比較する。提供元によって予想値は異なる。",
+      "二次文字起こしは人名・製品名に誤変換が見られるため、直接引用せず公式資料で確認できる範囲を中心に要約。"
+    ],
+    "release_date": "2026-11-04",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-04"
+  },
+  {
+    "ticker": "QCOM",
+    "date": "2026-11-04",
+    "name": "クアルコム",
+    "period": "2026Q4",
+    "revenue": {
+      "actual": 10442,
+      "estimate": 10141.47429,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "non-GAAP売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+        "https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html"
+      ]
+    },
+    "eps": {
+      "actual": 2.17,
+      "estimate": 2.17,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+        "https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html"
+      ]
+    },
+    "call": {
+      "status": "説明会文字記録確認（二次資料）",
+      "summary": [
+        "自動車・IoTの拡大を強調し、スマートフォン依存からの分散を進める方針。",
+        "自動車売上の年率換算は80億USDとなり、従来想定70億USDを超えたと説明。"
+      ],
+      "qa": [
+        "FY2027データセンター売上50億USDの大部分はAmazonを含む2社が牽引する計画と説明。顧客集中と立ち上げが確認点。"
+      ],
+      "sources": [
+        {
+          "title": "QCOM Q4 FY2026 earnings call transcript（Motley Fool）",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "QCT自動車売上",
+        "actual": "約2,000百万USD（前年比+89%）",
+        "target": null,
+        "status": "初の四半期20億USD到達",
+        "note": "自動車プラットフォームの量産拡大。",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm"
+      },
+      {
+        "name": "QCTスマートフォン売上",
+        "actual": "約5,100百万USD（前年比-26%）",
+        "target": null,
+        "status": "目標との比較未確認",
+        "note": "Apple製品の移行とメモリー制約が逆風。",
+        "source_url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/"
+      },
+      {
+        "name": "non-GAAP売上の会社予想比較",
+        "actual": "10,442百万USD",
+        "target": "9,700〜10,500百万USD",
+        "status": "予想レンジ内・上限付近",
+        "note": "7月29日の説明会で示した会社予想。Q4経営陣は上限付近の達成と説明。",
+        "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-29-qualcomm-incorporated-stock/"
+      }
+    ],
+    "guidance": [
+      "FY2027 Q1売上10,400〜11,200百万USD、non-GAAP EPS2.15〜2.35 USD。",
+      "FY2027データセンター売上50億USDの目標を維持。非スマートフォン売上は前年比60%超の成長を見込む。"
+    ],
+    "reaction": {
+      "change_pct": -8.7,
+      "window": "11月4日決算リリース直後の時間外報道（終値比、終値ではない）",
+      "summary": "下落を観測。分析上は、売上予想超過よりもスマートフォン減収と利益見通しの弱さが重視された可能性がある。",
+      "source_url": "https://stockstory.org/us/stocks/nasdaq/qcom/news/earnings/qualcomm-nasdaqqcom-surprises-with-q3-sales-but-stock-drops"
+    },
+    "sources": [
+      {
+        "title": "公式 FY2026 Q4決算（SEC）",
+        "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm"
+      },
+      {
+        "title": "StreetInsider 決算・市場予想",
+        "url": "https://www.streetinsider.com/Earnings/Qualcomm%2B%28QCOM%29%2BReports%2BIn-Line%2BQ4%2BEPS%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ1%2BGuidance/27289488.html"
+      }
+    ],
+    "notes": [
+      "GAAP売上10,322百万USD、non-GAAP売上10,442百万USDで異なる。APIは後者。StreetInsiderの10.44対10.14十億USDと照合して比較。",
+      "GAAP EPS1.17とAPI予想1.3349は比較基準未確認。公式non-GAAP2.17対StreetInsider予想2.17で比較する。Zacks等の予想2.16とは差がある。",
+      "文字記録の掲載日は11月5日だが、決算発表・説明会は11月4日。"
+    ],
+    "release_date": "2026-11-04",
+    "release_session": "AFTER",
+    "call_date": "2026-11-04"
+  },
+  {
+    "ticker": "UBER",
+    "date": "2026-11-04",
+    "name": "ウーバー",
+    "period": "2026Q3",
+    "revenue": {
+      "actual": 14766,
+      "estimate": 14662.14901,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "GAAP売上高",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/",
+        "https://www.marketbeat.com/stocks/NYSE/UBER/earnings/"
+      ]
+    },
+    "eps": {
+      "actual": 0.88,
+      "estimate": 0.864,
+      "currency": "USD",
+      "basis": "non-GAAP希薄化EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/",
+        "https://www.marketbeat.com/earnings/reports/2026-11-4-uber-technologies-inc-stock/"
+      ]
+    },
+    "call": {
+      "status": "説明会文字記録確認（二次資料）",
+      "summary": [
+        "国際配車では需要に運転手の供給が追いつかず、会社の期待を下回った。",
+        "自動運転は商用展開の段階へ移行し、2026年末に約700台をネットワークで稼働させる計画。"
+      ],
+      "qa": [
+        "運転手不足への対応として利用者向け奨励金を運転手側へ振り向けると説明。利用者価格への影響も注視。"
+      ],
+      "sources": [
+        {
+          "title": "UBER Q3 2026 earnings call transcript（Motley Fool）",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/uber-uber-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "Gross Bookings（総取扱高）",
+        "actual": "59,819百万USD（前年比+20%）",
+        "target": "会社予想58,250〜60,250百万USD",
+        "status": "会社予想レンジ内",
+        "note": "売上高とは別の指標。前四半期ガイダンスと比較。",
+        "source_url": "https://investor.uber.com/files/doc_earnings/2026/q2/earnings-result/Uber-Q2-26-Earnings-Press-Release.pdf"
+      },
+      {
+        "name": "non-GAAP EPS（会社予想比較）",
+        "actual": "0.88 USD",
+        "target": "会社予想0.84〜0.88 USD",
+        "status": "上限に到達",
+        "note": "同じnon-GAAP基準。",
+        "source_url": "https://investor.uber.com/files/doc_earnings/2026/q2/earnings-result/Uber-Q2-26-Earnings-Press-Release.pdf"
+      },
+      {
+        "name": "月間利用者／利用回数",
+        "actual": "2.15億人／40.61億回（前年比+14%／+16%）",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "アクティブ利用者とTrips。",
+        "source_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/"
+      }
+    ],
+    "guidance": [
+      "Q4総取扱高63,250〜65,250百万USD、non-GAAP EPS0.95〜0.99 USD。",
+      "Q4の利益見通しはLSEG予想1.06 USDを下回るとReuters経由報道。"
+    ],
+    "reaction": {
+      "change_pct": 3.47,
+      "window": "11月4日9:37 ET時点の場中報道（前日比、終値ではない）",
+      "summary": "上昇を観測。一方で次四半期利益見通しの予想未達、燃料高と運転手不足も報じられた。単一の好材料だけで値動きを説明しない。",
+      "source_url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+    },
+    "sources": [
+      {
+        "title": "公式 Q3 2026決算",
+        "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/"
+      },
+      {
+        "title": "MarketBeat 決算・市場予想",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-4-uber-technologies-inc-stock/"
+      },
+      {
+        "title": "TheStreet / Reuters 市場反応と見通し",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+      }
+    ],
+    "notes": [
+      "売上は公式とAPI一致。予想はAPI14,662.14901百万USD、MarketBeatの約14,660百万USDと照合。",
+      "APIのGAAP EPS0.25は投資評価損等を含むため、市場比較には公式non-GAAP EPS0.88とMarketBeatの同実績に対応する予想0.864を採用。API予想0.9042は基準未確認につき不使用。",
+      "前年GAAP純利益には大型税効果があり、純利益の減少率だけでは本業の状態を表せない。"
+    ],
+    "release_date": "2026-11-04",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-04"
+  }
+]

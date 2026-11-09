@@ -1,0 +1,93 @@
+[
+  {
+    "ticker": "TM",
+    "profit_label": "営業利益",
+    "revenue": {
+      "actual": 13437062,
+      "estimate": 13400000,
+      "currency": "JPY",
+      "unit": "million",
+      "basis": "IFRS・7〜9月売上収益／Reuters掲載の市場予想（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf",
+        "https://www.marketscreener.com/news/toyota-second-quarter-profit-seen-climbing-18-first-increase-in-six-quarters-ce785fdede8fff21"
+      ]
+    },
+    "eps": {
+      "actual": 1127600,
+      "estimate": 992000,
+      "currency": "JPY",
+      "unit": "million",
+      "basis": "IFRS・7〜9月営業利益（百万JPY）。EPSではない／LSEGアナリスト9名中央値",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf",
+        "https://www.marketscreener.com/news/toyota-second-quarter-profit-seen-climbing-18-first-increase-in-six-quarters-ce785fdede8fff21"
+      ]
+    },
+    "notes": [
+      "ADR換算のEPSを使わず、利益の比較は円建て営業利益に統一。公式補足表の7〜9月営業利益1,127.6十億円を採用。市場予想992十億円はReutersが11月4日に報じたLSEGの9名中央値。",
+      "売上市場予想13.4兆円はReutersの丸め値。+0.28%は概算であり、未丸めの予想なら符号が変わる可能性がある。",
+      "四半期売上・営業利益と、KPI欄の上期累計は対象期間が異なる。"
+    ]
+  },
+  {
+    "ticker": "SONY",
+    "profit_label": "ADRのEPS",
+    "revenue": {
+      "actual": 21670,
+      "estimate": 20140,
+      "currency": "USD",
+      "unit": "million",
+      "basis": "Investing.com掲載の米ドル換算売上高・同じ配信元の実績と予想を比較",
+      "estimate_basis_verified": true,
+      "source_urls": ["https://www.investing.com/equities/sony-earnings"]
+    },
+    "eps": {
+      "actual": 0.485,
+      "estimate": 0.402,
+      "currency": "USD",
+      "basis": "Investing.com掲載の米国ADRのEPS（USD/ADR）",
+      "estimate_basis_verified": true,
+      "source_urls": ["https://www.investing.com/equities/sony-earnings"]
+    },
+    "notes": [
+      "比較表はInvesting.comの米ドル換算ペアを採用。会社公表値は売上3,429,446百万JPY、普通株の希薄化後EPS76.49JPY。JPY実績とUSD予想を混ぜていない。",
+      "配信元差がある。MarketBeatは売上21.77十億USD対予想20.15十億USD、EPS0.49対0.38で、同じ四半期でも乖離率が異なる。",
+      "米国データの2027Q2と会社表記FY2026 Q2は同じ2027年3月期第2四半期。"
+    ]
+  },
+  {
+    "ticker": "ENB",
+    "profit_label": "調整後EPS",
+    "revenue": {
+      "actual": 21077,
+      "estimate": 13370,
+      "currency": "CAD",
+      "unit": "million",
+      "basis": "7〜9月総営業収益／Investing.com掲載CAD予想（13.37十億CAD・丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.enbridge.com/investment-center/reports-and-sec-filings/sec-filings/sec-filing-details?docId=265343",
+        "https://www.investing.com/equities/enbridge-inc.-earnings"
+      ]
+    },
+    "eps": {
+      "actual": 0.49,
+      "estimate": 0.50,
+      "currency": "CAD",
+      "basis": "調整後EPS（CAD/普通株）／Investing.comのCAD市場予想",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.enbridge.com/media-center/news/details?id=123894",
+        "https://www.investing.com/equities/enbridge-inc.-earnings"
+      ]
+    },
+    "notes": [
+      "Investing.comの決算表の『All numbers in CAD』を確認し、会社公表のCAD調整後EPSと比較。株価がUSD表示でも決算表はCAD。",
+      "総営業収益21,077百万CADは四半期報告と照合。エネルギー取引の通過売上を含むため、売上の大幅上振れだけで利益の質を判断せず、調整後EBITDAも確認する。",
+      "市場予想は配信元差がある。USDのGAAP EPSや通貨の異なる売上予想とは比較していない。予想値が丸められているため乖離率は概算。"
+    ]
+  }
+]

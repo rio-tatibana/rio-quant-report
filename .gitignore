@@ -16,6 +16,7 @@ config.py
 # Pythonが自動生成する一時キャッシュ
 __pycache__/
 .venv/
+data/earnings/.yf_cache/
 
 # ルールファイル(手元でのみ使う。公開リポジトリには上げない)
 CLAUDE.md

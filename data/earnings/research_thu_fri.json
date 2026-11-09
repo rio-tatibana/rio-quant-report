@@ -1,0 +1,957 @@
+[
+  {
+    "ticker": "TM",
+    "date": "2026-11-05",
+    "name": "トヨタ自動車",
+    "period": "FY2027 Q2（2026年7〜9月）",
+    "release_date": "2026-11-05",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-05",
+    "notes": [
+      "moomooのEPS648.5333円は普通株EPSと直接比較できないため不採用。市場予想の通貨・ADR換算基準を確認できず乖離率は保留。",
+      "四半期売上は公式資料の7〜9月値。KPIの上期累計とは対象期間が異なる。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の注目点は利益予想引き上げと資本政策。ADRの値動きとの因果関係は未確定。",
+      "source_url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+    },
+    "revenue": {
+      "actual": 13437062,
+      "estimate": null,
+      "currency": "JPY",
+      "basis": "IFRS・7〜9月売上収益",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": null,
+      "estimate": null,
+      "currency": "JPY",
+      "basis": "普通株と米国ADRの換算・予想基準未確認",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+      ]
+    },
+    "call": {
+      "status": "公式Q&A確認済み",
+      "summary": [
+        "関税・中東情勢による負担を、原価改善と販売努力で吸収する方針。",
+        "資本政策では自己株保有比率を約20%から15%へ見直し、株式消却を説明。"
+      ],
+      "qa": [
+        "関税への質問に、物流経路変更と北米現地生産で負担を減らすと回答。",
+        "RAV4はケンタッキー工場の切替を経て2027年の本格生産を計画。"
+      ],
+      "sources": [
+        {
+          "title": "公式投資家向けQ&A",
+          "url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_qa_en.pdf"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "上期連結販売台数",
+        "actual": "475.8万台",
+        "target": "前年同期478.3万台",
+        "status": "前年同期比減少",
+        "note": "上期累計。会社目標達成率を意味しない。",
+        "source_url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+      },
+      {
+        "name": "上期営業利益",
+        "actual": "2兆1,911億円",
+        "target": "前年同期2兆57億円",
+        "status": "前年同期比増益",
+        "note": "関税・資材高の中で9.2%増益。",
+        "source_url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+      }
+    ],
+    "guidance": [
+      "通期営業利益予想3.9兆円、純利益予想3.57兆円、売上収益53.5兆円。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算短信",
+        "url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf"
+      },
+      {
+        "title": "公式投資家向けQ&A",
+        "url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_qa_en.pdf"
+      }
+    ]
+  },
+  {
+    "ticker": "COP",
+    "date": "2026-11-05",
+    "name": "コノコフィリップス",
+    "period": "2026 Q3",
+    "release_date": "2026-11-05",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-05",
+    "notes": [
+      "GAAP EPS3.34ドルを調整後予想と比較しない。moomoo予想3.008とは異なるZacks予想3.06を採用。",
+      "総収入にはその他収益を含む。予想提供元・丸めにより乖離率は変わる。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の材料は調整後EPS上振れと増配。ただし原油価格や市場全体の影響も大きく、決算単独の要因とは断定しない。",
+      "source_url": "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/"
+    },
+    "revenue": {
+      "actual": 20057,
+      "estimate": 18380,
+      "currency": "USD",
+      "basis": "総収入・その他収益。予想はZacks（十億ドル丸め）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/",
+        "https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 3.27,
+      "estimate": 3.06,
+      "currency": "USD",
+      "basis": "調整後EPS・Zacksコンセンサス",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/",
+        "https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "大型案件の稼働とコスト低減により、2029年以降も低い再投資率でキャッシュフロー成長を目指す。",
+        "LNG引取契約は年1,300万トンへ拡大。"
+      ],
+      "qa": [
+        "Norway売却への質問には、未決定であり期待を超える提案がなければ保有継続と回答。",
+        "2029年以降の成長資金について、プロジェクト稼働で資本支出が低下するとの考えを説明。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://www.marketbeat.com/earnings/reports/2026-11-05-conocophillips-stock/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "生産量",
+        "actual": "230.2万BOE/日",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "Lower48の成長を、中東の操業影響等が相殺。",
+        "source_url": "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/"
+      },
+      {
+        "name": "Willowのモジュール製作",
+        "actual": "75%超完了",
+        "target": "2029年初の初生産",
+        "status": "会社説明では計画通り",
+        "note": "生産開始の実績ではなく進捗。",
+        "source_url": "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/"
+      }
+    ],
+    "guidance": [
+      "営業キャッシュフローの45%を2026年に株主還元する計画を維持。四半期配当を11%増額し0.93ドル。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算リリース",
+        "url": "https://www.conocophillips.com/news-media/story/conocophillips-announces-third-quarter-2026-results-and-increases-quarterly-ordinary-dividend-by-11/"
+      },
+      {
+        "title": "Zacks市場予想",
+        "url": "https://www.zacks.com/stock/news/3025227/conocophillips-q3-earnings-beat-estimates-on-higher-commodity-prices"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-05-conocophillips-stock/"
+      }
+    ]
+  },
+  {
+    "ticker": "SONY",
+    "date": "2026-11-05",
+    "name": "ソニーグループ",
+    "period": "FY2026 Q2（2027年3月期）",
+    "release_date": "2026-11-05",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-05",
+    "notes": [
+      "米国データの2027Q2と会社表記FY2026 Q2は同じ2027年3月期第2四半期。",
+      "公式の希薄化後EPSは76.49円。moomoo値76.3176円との基準差および予想のADR換算基準が未確認のため予想比較は保留。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の好材料はゲーム・映画の増益と予想引き上げ。メモリー費と次世代機投資は先行きの確認事項。",
+      "source_url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+    },
+    "revenue": {
+      "actual": 3429446,
+      "estimate": null,
+      "currency": "JPY",
+      "basis": "IFRS・7〜9月連結売上高",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 76.49,
+      "estimate": null,
+      "currency": "JPY",
+      "basis": "IFRS・普通株1株当たり希薄化後利益",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+      ]
+    },
+    "call": {
+      "status": "公式説明原稿・Q&A記録確認済み",
+      "summary": [
+        "ゲームのソフト・ネットワークサービスと映画事業が利益拡大を支えた。",
+        "メモリー高騰には価格・販促調整とコスト削減で対応し、ハード収益性維持を見込む。"
+      ],
+      "qa": [
+        "次世代ゲーム機への投資とメモリー費上昇を質問され、利用者の継続的な活動と収益化を重視すると説明。"
+      ],
+      "sources": [
+        {
+          "title": "公式説明原稿",
+          "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+        },
+        {
+          "title": "説明会Q&A記録",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sony-group-sony-q2-2026-172958168.html"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "PlayStation月間アクティブ利用者",
+        "actual": "1億2,700万アカウント",
+        "target": "前年同月比+7%",
+        "status": "9月として過去最高",
+        "note": "目標値未公表のため達成率は算出しない。",
+        "source_url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+      },
+      {
+        "name": "連結営業利益率",
+        "actual": "18.1%",
+        "target": "前年13.8%",
+        "status": "4.3ポイント改善",
+        "note": "連結営業利益6,223億円。",
+        "source_url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+      }
+    ],
+    "guidance": [
+      "ゲーム事業の通期売上予想を4兆8,300億円、営業利益を7,000億円にそれぞれ約6%引き上げ。"
+    ],
+    "sources": [
+      {
+        "title": "公式説明原稿",
+        "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonyspeech.pdf"
+      },
+      {
+        "title": "説明会Q&A記録",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sony-group-sony-q2-2026-172958168.html"
+      }
+    ]
+  },
+  {
+    "ticker": "PH",
+    "date": "2026-11-05",
+    "name": "パーカー・ハネフィン",
+    "period": "FY2027 Q1",
+    "release_date": "2026-11-05",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-05",
+    "notes": [
+      "GAAP EPS6.92ドルと調整後EPS8.90ドルは異なる。市場予想8.21ドルは調整後基準で比較。",
+      "市場予想売上58.1億ドルは丸め値。moomoo予想57.89億ドルとは提供元が異なる。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の材料は既存事業成長の計画超過と通期予想引き上げ。買収統合・負債コストも確認事項。",
+      "source_url": "https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results"
+    },
+    "revenue": {
+      "actual": 5992,
+      "estimate": 5810,
+      "currency": "USD",
+      "basis": "連結売上高。市場予想は公開コンセンサス（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results",
+        "https://www.investing.com/equities/parkerhannifin-earnings"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 8.9,
+      "estimate": 8.21,
+      "currency": "USD",
+      "basis": "調整後EPS",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results",
+        "https://www.lighthorse.io/tickers/ph/earnings"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "産業機器・航空宇宙の幅広い需要が成長し、Filtration Group買収の完了で事業を拡充。",
+        "受注の強さと既存事業の利益改善が通期予想の引き上げを支えた。"
+      ],
+      "qa": [
+        "説明会ではFiltration統合、航空宇宙・産業向け需要と収益性が論点。詳細な個別Q&A回答は本稿では採録していない。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "既存事業売上成長率",
+        "actual": "11.5%",
+        "target": "会社事前予想8%",
+        "status": "3.5ポイント上振れ",
+        "note": "買収・為替影響を除いた成長率。",
+        "source_url": "https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript"
+      },
+      {
+        "name": "調整後部門営業利益率",
+        "actual": "28.6%",
+        "target": "前年27.4%",
+        "status": "1.2ポイント改善",
+        "note": "会社発表の過去最高値。",
+        "source_url": "https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results"
+      }
+    ],
+    "guidance": [
+      "通期調整後EPS予想36.45〜37.25ドル、既存事業売上成長率7.5〜10.5%。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算リリース",
+        "url": "https://investors.parker.com/news-events/press-releases/detail/515/parker-delivers-record-fiscal-2027-first-quarter-results"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://www.benzinga.com/news/26/11/62936673/parker-hannifin-q1-2027-earnings-call-transcript"
+      },
+      {
+        "title": "EPS市場予想",
+        "url": "https://www.lighthorse.io/tickers/ph/earnings"
+      },
+      {
+        "title": "売上市場予想",
+        "url": "https://www.investing.com/equities/parkerhannifin-earnings"
+      }
+    ]
+  },
+  {
+    "ticker": "ABNB",
+    "date": "2026-11-05",
+    "name": "エアビーアンドビー",
+    "period": "2026 Q3",
+    "release_date": "2026-11-05",
+    "release_session": "AFTER",
+    "call_date": "2026-11-05",
+    "notes": [
+      "市場予想はMarketBeatの丸め値。ZacksのEPS予想2.86ドル、moomoo2.8472ドルとは差がある。",
+      "利益には税金費用の減少効果、利益率には広告費の時期ずれが含まれる。"
+    ],
+    "reaction": {
+      "change_pct": 11.67,
+      "window": "11/5終値→11/6通常取引終値",
+      "summary": "売上・EPS上振れと成長加速を受け、翌日の通常取引終値で11.67%上昇。個々の材料の寄与率は分離できない。",
+      "source_url": "https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/"
+    },
+    "revenue": {
+      "actual": 4869,
+      "estimate": 4750,
+      "currency": "USD",
+      "basis": "連結売上高・MarketBeat市場予想（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://news.airbnb.com/airbnb-q3-2026-financial-results",
+        "https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 3.16,
+      "estimate": 2.85,
+      "currency": "USD",
+      "basis": "公開決算比較EPS。実績は会社GAAP EPSと一致",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "予約泊数等は16%増え、主要市場で成長が加速。後払い予約の拡大が約3ポイント寄与した。",
+        "AI活用による効率化と一部広告費の第4四半期へのずれが利益率を押し上げた。"
+      ],
+      "qa": [
+        "経営陣はAI経由の予約は現時点でごく少なく、旅行者向け自社AIエージェントは翌年前半に展開予定と説明。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "予約泊数・座席数の成長",
+        "actual": "前年同期比+16%",
+        "target": "会社説明では主要KPIの見通し超過",
+        "status": "会社説明で上振れ",
+        "note": "後払い予約の押し上げを除く成長は約13%。",
+        "source_url": "https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/"
+      },
+      {
+        "name": "予約総額（GBV）",
+        "actual": "277億ドル・前年同期比+21%",
+        "target": null,
+        "status": "目標値未確認",
+        "note": "予約総額は売上高とは異なる。",
+        "source_url": "https://news.airbnb.com/airbnb-q3-2026-financial-results"
+      },
+      {
+        "name": "調整後EBITDA利益率",
+        "actual": "52%",
+        "target": "前年50%",
+        "status": "2ポイント改善",
+        "note": "一部費用の四半期間ずれに注意。",
+        "source_url": "https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/"
+      }
+    ],
+    "guidance": [
+      "第4四半期売上予想32.2〜32.8億ドル（前年同期比16〜18%増）。通期調整後EBITDA利益率予想を約36%へ。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算概要",
+        "url": "https://news.airbnb.com/airbnb-q3-2026-financial-results"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://stockanalysis.com/stocks/abnb/transcripts/726809-q3-2026/"
+      },
+      {
+        "title": "市場予想・値動き",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-05-airbnb-inc-stock/"
+      }
+    ]
+  },
+  {
+    "ticker": "ENB",
+    "date": "2026-11-06",
+    "name": "エンブリッジ",
+    "period": "2026 Q3",
+    "release_date": "2026-11-06",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-06",
+    "notes": [
+      "CADのGAAP EPS0.59をUSD換算の調整後予想と比較してはならない。",
+      "市場記事のUSD EPS0.39やCAD EPS0.49とmoomoo予想0.5002の換算・基準対応を確認できず、EPS・売上の乖離率は保留。",
+      "売上実績21077百万CADはmoomoo取得値。公式リリースはCAD表記だが、この数値の明細照合は追加確認事項。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の好材料はガス案件の稼働と利益成長。増資による希薄化、買収負担、レバレッジは確認事項。",
+      "source_url": "https://www.enbridge.com/media-center/news/details?id=123894"
+    },
+    "revenue": {
+      "actual": 21077,
+      "estimate": null,
+      "currency": "CAD",
+      "basis": "連結売上高・moomoo実績。CAD換算の予想基準未確認",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://www.enbridge.com/media-center/news/details?id=123894"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 0.49,
+      "estimate": null,
+      "currency": "CAD",
+      "basis": "調整後EPS。会社の報告通貨はカナダドル",
+      "estimate_basis_verified": false,
+      "source_urls": [
+        "https://www.enbridge.com/media-center/news/details?id=123894"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "ガス輸送・公益事業の増益と新規案件稼働を背景に、通期見通しを維持。",
+        "借入金/EBITDAは5.1倍だが、為替影響調整後は会社目標範囲内と説明。"
+      ],
+      "qa": [
+        "買収後の財務規律への質問では、増資と資産リサイクルを使い目標レバレッジ4.5〜5倍を守る方針を説明。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "調整後EBITDA",
+        "actual": "44.34億カナダドル",
+        "target": null,
+        "status": "前年同期比増加",
+        "note": "売上高より事業の継続的な稼ぐ力を把握しやすい指標。",
+        "source_url": "https://www.enbridge.com/media-center/news/details?id=123894"
+      },
+      {
+        "name": "借入金/EBITDA",
+        "actual": "5.1倍",
+        "target": "会社目標4.5〜5.0倍",
+        "status": "表面上は上限超過",
+        "note": "会社は為替調整後は範囲内と説明。",
+        "source_url": "https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/"
+      },
+      {
+        "name": "新規案件の稼働",
+        "actual": "約30億カナダドル",
+        "target": null,
+        "status": "稼働実績",
+        "note": "ガス輸送案件を中心に運転開始。",
+        "source_url": "https://www.enbridge.com/media-center/news/details?id=123894"
+      }
+    ],
+    "guidance": [
+      "2026年通期見通しを維持し、会社は予想レンジの中央値着地を見込む。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算リリース",
+        "url": "https://www.enbridge.com/media-center/news/details?id=123894"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://stockanalysis.com/quote/tsx/ENB/transcripts/719548-q3-2026/"
+      }
+    ]
+  },
+  {
+    "ticker": "MRNA",
+    "date": "2026-11-06",
+    "name": "モデルナ",
+    "period": "2026 Q3",
+    "release_date": "2026-11-06",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-06",
+    "notes": [
+      "moomoo EPS予想-1.2546ではなくMarketBeat-1.10を採用。市場予想は提供元で異なる。",
+      "黒字転換なので乖離率には分母の絶対値を用い、単なる利益成長率とは区別する。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の材料は予想赤字に対する黒字化、売上見通し引き上げ、臨床・承認進捗。季節性と出荷前倒しを分けて見る必要がある。",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+    },
+    "revenue": {
+      "actual": 1313,
+      "estimate": 890.25,
+      "currency": "USD",
+      "basis": "連結売上高・MarketBeat市場予想",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm",
+        "https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 0.38,
+      "estimate": -1.1,
+      "currency": "USD",
+      "basis": "GAAP希薄化後EPS。予想損失から黒字",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm",
+        "https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "米国・海外とも需要と出荷が想定より強く、一部の第4四半期出荷が第3四半期へ前倒しされた。",
+        "費用管理を継続し、通期売上成長見通しを15〜25%へ引き上げた。"
+      ],
+      "qa": [
+        "米国のインフル/COVID混合ワクチン申請について、FDAとの協議が必要であり、今後数か月で方向を明確にすると回答。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://stockanalysis.com/stocks/mrna/transcripts/721307-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "研究開発費",
+        "actual": "5.83億ドル",
+        "target": "前年同期比-27%",
+        "status": "費用削減",
+        "note": "感染症の後期試験完了・縮小等が寄与。",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+      },
+      {
+        "name": "海外売上",
+        "actual": "5.33億ドル",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "長期政府契約の納入が売上を支えた。",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+      }
+    ],
+    "guidance": [
+      "通期売上成長率15〜25%（従来は最大10%）。年末現金・投資残高81〜83億ドルを見込む。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算リリース（SEC）",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://stockanalysis.com/stocks/mrna/transcripts/721307-q3-2026/"
+      },
+      {
+        "title": "市場予想",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-06-moderna-inc-stock/"
+      }
+    ]
+  },
+  {
+    "ticker": "BAM",
+    "date": "2026-11-06",
+    "name": "ブルックフィールド・アセット・マネジメント",
+    "period": "2026 Q3",
+    "release_date": "2026-11-06",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-06",
+    "notes": [
+      "GAAP EPS1.64ドルではなく、市場比較で用いられるDE/株0.47ドルを採用。",
+      "GAAP純利益はOaktree取得・連結の非現金利益約20億ドルを含む。売上予想との比較も企業再編影響に注意。",
+      "MarketBeatの個別記事の日付11/7は公式11/6と不一致のため、公式発表日を採用。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の材料は資金流入の強さと、手数料計上の翌年へのずれ。GAAP利益にはOaktree連結に伴う非現金利益がある。",
+      "source_url": "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf"
+    },
+    "revenue": {
+      "actual": 2149,
+      "estimate": 1600,
+      "currency": "USD",
+      "basis": "GAAP総収入・MarketBeat市場予想（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf",
+        "https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 0.47,
+      "estimate": 0.4614,
+      "currency": "USD",
+      "basis": "1株当たり分配可能利益（DE・非GAAP）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf",
+        "https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "資金調達は好調だが、旗艦インフラファンドの課金開始が翌年1月にずれ、2026年の利益は年初想定をやや下回る見込み。",
+        "BBUの成功報酬は株価のハイウォーターマークに届かず2026年は計上しないと説明。"
+      ],
+      "qa": [
+        "AIインフラのリスクを問われ、長期契約・許認可・設備供給を確保してから投資し、顧客信用と建設・運営リスクを管理すると回答。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://stockanalysis.com/quote/tsx/BAM/transcripts/725144-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "四半期手数料関連利益（FRE）",
+        "actual": "8.64億ドル",
+        "target": "前年同期比+15%",
+        "status": "増益",
+        "note": "運用手数料からの継続利益の指標。",
+        "source_url": "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf"
+      },
+      {
+        "name": "手数料を生む運用資産",
+        "actual": "6,820億ドル",
+        "target": "前年同期比+13%",
+        "status": "拡大",
+        "note": "会社目標達成率ではない。",
+        "source_url": "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf"
+      },
+      {
+        "name": "年初来資金調達",
+        "actual": "1,230億ドル",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "四半期の資金調達は250億ドル。",
+        "source_url": "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf"
+      }
+    ],
+    "guidance": [
+      "資金調達は過去最高水準を見込む一方、報酬計上時期のずれで利益は年初想定をやや下回ると説明。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算資料",
+        "url": "https://bam.brookfield.com/sites/brookfield-bam-v2/files/BAM-IR-Master/Press-Releases/2026/2026-q3-press-release-bam.pdf"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://stockanalysis.com/quote/tsx/BAM/transcripts/725144-q3-2026/"
+      },
+      {
+        "title": "市場予想",
+        "url": "https://www.marketbeat.com/stocks/NYSE/BAM/EARNINGS/"
+      }
+    ]
+  },
+  {
+    "ticker": "EOG",
+    "date": "2026-11-06",
+    "name": "EOGリソーシズ",
+    "period": "2026 Q3",
+    "release_date": "2026-11-05",
+    "release_session": "AFTER",
+    "call_date": "2026-11-06",
+    "notes": [
+      "moomooカレンダー11/6は説明会日。公式決算リリースは11/5引け後で、原抽出の曜日分類と一致しない。対象銘柄は当初抽出を維持。",
+      "GAAP EPS5.33ドルではなく調整後4.87ドルで比較。市場予想4.45はmoomoo4.4774と異なる。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の材料は生産・費用の計画超過と増配。2027年のコスト上昇と原油市況は確認事項。",
+      "source_url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+    },
+    "revenue": {
+      "actual": 8549,
+      "estimate": 7290,
+      "currency": "USD",
+      "basis": "総収入・TheFly配信の市場予想（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://stockanalysis.com/stocks/eog/"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": 4.87,
+      "estimate": 4.45,
+      "currency": "USD",
+      "basis": "調整後EPS・TheFly配信の市場予想",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/",
+        "https://stockanalysis.com/stocks/eog/"
+      ]
+    },
+    "call": {
+      "status": "説明会記録確認済み（二次配信）",
+      "summary": [
+        "原油・NGL・ガスの各生産量が会社見通し中央値を超え、単位当たり費用は中央値を下回った。",
+        "高いフリーキャッシュフローを背景に配当を8%増額。"
+      ],
+      "qa": [
+        "2027年の費用インフレを質問され、サービス・鋼材・軽油の上昇を生産性と購買力で抑えると回答。",
+        "ENGIE契約は2030年までに始まる10年契約で、ガス価格の地域分散を進めると説明。"
+      ],
+      "sources": [
+        {
+          "title": "説明会記録",
+          "url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "生産量",
+        "actual": "原油・NGL・天然ガスで過去最高",
+        "target": "会社見通し中央値",
+        "status": "3分野とも中央値超過",
+        "note": "数値目標の具体値は本稿では未採録。",
+        "source_url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+      },
+      {
+        "name": "フリーキャッシュフロー",
+        "actual": "22億ドル",
+        "target": null,
+        "status": "会社目標との比較未確認",
+        "note": "株主還元は約15億ドル。",
+        "source_url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+      },
+      {
+        "name": "通期設備投資",
+        "actual": "65億ドル",
+        "target": "従来予想65億ドル",
+        "status": "据え置き",
+        "note": "四半期投資は時期ずれにより中央値未満。",
+        "source_url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+      }
+    ],
+    "guidance": [
+      "2026年原油生産+5%、全生産+14%、設備投資65億ドルの計画維持。2027年原油は低い1桁成長を想定。"
+    ],
+    "sources": [
+      {
+        "title": "公式IR・発表日",
+        "url": "https://investors.eogresources.com/"
+      },
+      {
+        "title": "説明会記録",
+        "url": "https://stockanalysis.com/stocks/eog/transcripts/725163-q3-2026/"
+      },
+      {
+        "title": "市場予想（TheFly配信）",
+        "url": "https://stockanalysis.com/stocks/eog/"
+      }
+    ]
+  },
+  {
+    "ticker": "HUM",
+    "date": "2026-11-06",
+    "name": "ヒューマナ",
+    "period": "2026 Q3",
+    "release_date": "2026-11-06",
+    "release_session": "BEFORE",
+    "call_date": "2026-11-06",
+    "notes": [
+      "GAAP EPS+1.33ではなく調整後EPS-0.70を市場予想と比較する。",
+      "MarketBeatの予想-1.00を採用。Zacksは-1.03、moomooは-1.135。売上も投資収益等の範囲により配信値が異なる。",
+      "EPSの赤字予想比較は予想値の絶対値を分母にした乖離率とし、赤字解消や増益率と誤解させない。"
+    ],
+    "reaction": {
+      "change_pct": null,
+      "window": "",
+      "summary": "分析上の好材料は給付費率の改善と予想赤字縮小。GAAP利益には評価益が含まれ、基礎収益と区別が必要。",
+      "source_url": "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full"
+    },
+    "revenue": {
+      "actual": 41155,
+      "estimate": 40870,
+      "currency": "USD",
+      "basis": "連結総収入・MarketBeat予想（丸め値）",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/"
+      ],
+      "unit": "million"
+    },
+    "eps": {
+      "actual": -0.7,
+      "estimate": -1,
+      "currency": "USD",
+      "basis": "調整後EPS・MarketBeatコンセンサス",
+      "estimate_basis_verified": true,
+      "source_urls": [
+        "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full",
+        "https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/"
+      ]
+    },
+    "call": {
+      "status": "公式事前説明原稿確認済み（Q&A全文未確認）",
+      "summary": [
+        "医療給付費率が想定より良好で、通期調整後EPS予想を引き上げ。",
+        "2027年のMedicare Advantage入札方針が2028年の持続可能な税前利益率3%以上への進展を支えると説明。"
+      ],
+      "qa": [
+        "当日のQ&A開催は確認したが、本稿では回答全文の検証を完了していない。"
+      ],
+      "sources": [
+        {
+          "title": "公式経営陣説明原稿（SEC）",
+          "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000064/a3q2026humanaincpostedrema.htm"
+        }
+      ]
+    },
+    "kpis": [
+      {
+        "name": "保険事業の給付費率",
+        "actual": "93.7%",
+        "target": "会社見通し94%をやや上回る水準",
+        "status": "会社想定より良好",
+        "note": "給付費率は低いほど保険収益性に有利。",
+        "source_url": "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full"
+      },
+      {
+        "name": "CenterWell患者数の年初来増加",
+        "actual": "14万6,800人・+30%",
+        "target": null,
+        "status": "成長実績",
+        "note": "目標値未確認につき達成率なし。",
+        "source_url": "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full"
+      }
+    ],
+    "guidance": [
+      "通期調整後EPS予想を9.00ドル以上から9.50ドル以上へ引き上げ。"
+    ],
+    "sources": [
+      {
+        "title": "公式決算リリース",
+        "url": "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full"
+      },
+      {
+        "title": "公式経営陣説明原稿",
+        "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000064/a3q2026humanaincpostedrema.htm"
+      },
+      {
+        "title": "市場予想",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-11-6-humana-inc-stock/"
+      }
+    ]
+  }
+]

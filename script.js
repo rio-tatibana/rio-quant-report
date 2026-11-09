@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: 'wyckoff-guide.html', label: 'ワイコフ入門' },
   { href: 'index.html#sectors', label: 'セクター' },
   { href: 'daily-report.html', label: 'デイリーレポート' },
+  { href: 'earnings-week-2026-11-02.html', label: '週間決算レビュー' },
   { href: 'golden-cross-report.html', label: 'ゴールデンクロス' },
   { href: 'energy-peers-report.html', label: 'エネルギー比較' },
   { href: 'dell-vs-hpe-report.html', label: 'DELL vs HPE比較' },

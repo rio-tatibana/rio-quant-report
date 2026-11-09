@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2026年11月2〜6日の米国上場株25社を決算・市場予想との差・説明会・KPI・株価反応で比較。">
+  <title>米国株 週間決算レビュー 11/2〜11/6 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="earnings-week.js" defer></script>
+</head>
+<body class="earnings-page">
+  <header class="mobile-bar"><a class="logo" href="index.html">rio<span>Quant</span></a><button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button></header>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="sidebar-brand"><a class="logo" href="index.html">rio<span>Quant</span></a><span class="tagline">数字で見る米国株・マーケット分析</span></div><nav></nav></aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <div class="page"><main>
+      <section class="report-hero"><div class="container">
+        <div class="eyebrow">WEEKLY EARNINGS REVIEW · NOV 02–06, 2026</div>
+        <h1>数字の上振れ。<br>その先の、事業の変化。</h1>
+        <p>米国株 週間決算レビュー｜各曜日の時価総額上位5銘柄、計25社。<br>売上・利益の予想との差、説明会、KPI、株価の反応を一緒に読みます。</p>
+        <div class="methodology"><b>比較の前提</b><br>対象は11月2〜6日のmoomoo決算カレンダーから抽出した25社。外国企業の米国上場株を含みます。時価総額は11月9日21:27（日本時間）の取得値です。カレンダー日と公式発表日・説明会日が異なる銘柄は詳細に併記しています。</div>
+      </div></section>
+      <section class="section"><div class="container">
+        <div class="earn-intro"><div><span class="eyebrow">AT A GLANCE</span><h2>市場の期待に、どこまで届いたか。</h2></div><a class="btn secondary" href="#reading-guide">数字の読み方</a></div>
+        <div class="gc-kpis earn-overview"><div class="gc-kpi"><div class="label">対象</div><div class="value">25<span class="earn-unit">社</span></div><div class="sub">5日 × 時価総額上位5銘柄</div></div><div class="gc-kpi"><div class="label">売上市場予想との比較</div><div class="value">{{REV_COUNT}}<span class="earn-unit">/ 25</span></div><div class="sub">基準と出典を確認できた銘柄</div></div><div class="gc-kpi"><div class="label">利益市場予想との比較</div><div class="value">{{EPS_COUNT}}<span class="earn-unit">/ 25</span></div><div class="sub">利益の定義が一致する銘柄</div></div></div>
+        <div class="card earn-toolbar"><div class="earn-filters" role="group" aria-label="抽出曜日で絞り込み">{{BUTTONS}}</div><div class="earn-controls"><label>銘柄を探す<input type="search" id="earnSearch" placeholder="コード・企業名" autocomplete="off"></label><label>並べ替え<select id="earnSort"><option value="day">曜日・時価総額順</option><option value="revenue">売上の上振れ順</option><option value="eps">利益の上振れ順</option></select></label><button type="button" id="earnReset">リセット</button></div></div>
+        <p class="section-note" id="earnCount" aria-live="polite">25社を表示。コードを押すと詳細が開きます。並べ替えは比較表に適用されます。</p>
+        <div class="card earn-comparison"><h2>決算サプライズ一覧</h2><p class="section-note">売上は表示通貨の百万単位。利益は主に1株当たりEPS、トヨタは百万JPYの営業利益、BAMは1株当たり分配可能利益（DE）。ソニーは配信元のUSD換算値です。通貨が違う企業同士の金額は単純比較できません。左右にスクロールできます。</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="決算比較表。横スクロールできます"><table class="data earn-table"><thead><tr><th rowspan="2" scope="col">抽出日</th><th rowspan="2" scope="col">銘柄 / 詳細</th><th colspan="3" scope="colgroup">売上高</th><th colspan="3" scope="colgroup">利益指標（EPS等）</th><th rowspan="2" scope="col">利益の指標・基準</th></tr><tr><th scope="col">実績</th><th scope="col">市場予想</th><th scope="col">予想との差</th><th scope="col">実績</th><th scope="col">市場予想</th><th scope="col">予想との差</th></tr></thead><tbody id="earnTableBody">{{ROWS}}</tbody></table></div>
+          <p class="table-note">緑＝予想以上、赤＝予想以下。「比較未確認」はゼロではありません。会社見通しとの比較は各社KPI欄を参照してください。</p></div>
+        <div class="earn-intro earn-detail-heading"><div><span class="eyebrow">BEHIND THE NUMBERS</span><h2>25社の説明会・KPI・株価反応</h2></div><button type="button" id="earnExpand">表示中の詳細をすべて開く</button></div>
+        <div id="earnCompanies">{{CARDS}}</div>
+        <p id="earnEmpty" class="card" hidden>一致する銘柄がありません。曜日や検索文字を変えてください。</p>
+        <section class="card earn-guide" id="reading-guide"><h2>数字の読み方と出典の使い方</h2>
+          <h3>「予想との差」は何％？</h3><p><strong>（実績 − 市場予想）÷ 市場予想の絶対値 × 100</strong>で計算しています。例：予想100に対し実績110なら+10%。予想−1に対し実績−0.5なら+50%で、赤字幅の縮小を示します。予想ゼロや基準不明の場合は計算しません。</p>
+          <h3>利益にはいくつかの定義があります</h3><p>EPSは「1株当たり利益」です。トヨタはEPSの換算差を避けて営業利益、資産運用会社BAMは1株当たり分配可能利益（DE）を使い、数値・単位・指標名を明示しています。GAAP・IFRSは会計基準に沿った数値、調整後（non-GAAP）は会社が一時費用などを除いた数値です。実績と市場予想の定義・期間・通貨をそろえ、利益総額を使うトヨタは別の単位で表示します。市場予想は収集元や集計時点で差が生じます。</p>
+          <h3>KPIの成長と、目標達成は別です</h3><p>前年から伸びていても、事前の会社目標を満たしたとは限りません。目標が確認できない指標には目標達成の判定を付けません。会社の見通しは市場予想と区別しています。</p>
+          <h3>株価反応から原因を断定しません</h3><p>日次終値の反応は、米国寄り付き前の発表なら前営業日終値→当日終値、引け後なら発表日終値→翌営業日終値で算出。SPY（S&P500連動ETF）を同期間の参考として併記しています。記事の反応は出典ごとの観測期間の値です。時間外取引・取引時間中・終値の変化率は異なります。変動要因は報道の説明や経営陣の発言を整理したもので、決算だけの影響を切り出した因果分析ではありません。説明会記録が確認できない場合は、その旨を表示しています。</p>
+          <p class="table-note">調査・ページ生成：{{UPDATED}}。各社の公式IR、決算資料、説明会記録と市場予想・値動きの報道を参照。出典は各社詳細に掲載。<a href="data/earnings/week_2026-11-02.json">集計データ（JSON）</a>。</p>
+        </section>
+      </div></section>
+    </main><footer><div class="container footer-inner"><div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div><div class="footer-links"><a href="about.html">運営者情報</a><a href="disclaimer.html">免責事項</a><a href="privacy-policy.html">プライバシーポリシー</a></div><p class="copyright">情報提供を目的とし、特定銘柄の売買を推奨するものではありません。</p></div></footer></div>
+  </div>
+  <script src="script.js"></script>
+</body></html>

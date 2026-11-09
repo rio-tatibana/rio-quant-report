@@ -756,3 +756,88 @@ table.data td.negative{color:var(--negative)}
  .wyckoff-lesson{page:wyckoffLessonPage}
  .wyckoff-lesson .slide{transform:none!important}
 }
+
+/* 週間決算レビュー：既存トークンを使い、このページ内だけに適用 */
+.earnings-page [hidden]{display:none!important}
+.earnings-page .earn-intro{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);margin-bottom:var(--sp-6)}
+.earnings-page .earn-intro h2{font:var(--text-h1);margin:var(--sp-3) 0 0}
+.earnings-page .earn-intro .eyebrow{color:var(--accent)}
+.earnings-page .earn-overview{margin-bottom:var(--sp-6)}
+.earnings-page .earn-unit{font:var(--text-h3);color:var(--text-tertiary);margin-left:var(--sp-2)}
+.earnings-page .earn-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--sp-5)}
+.earnings-page .earn-filters,.earnings-page .earn-controls{display:flex;align-items:center;flex-wrap:wrap;gap:var(--sp-2)}
+.earnings-page button,.earnings-page select,.earnings-page input{font:var(--text-body-sm);border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface-card);color:var(--text-primary);padding:var(--sp-2) var(--sp-3)}
+.earnings-page button{cursor:pointer}
+.earnings-page button:hover{border-color:var(--accent)}
+.earnings-page button.active{background:var(--accent);color:var(--text-inverse);border-color:var(--accent)}
+.earnings-page .sidebar-toggle{padding:0;border:0;background:none}
+.earnings-page label{display:flex;flex-direction:column;gap:var(--sp-1);font:var(--text-caption);color:var(--text-secondary)}
+.earnings-page .earn-controls{align-items:end}
+.earnings-page input{width:175px}
+.earnings-page :is(button,select,input,a,summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.earnings-page .earn-comparison h2,.earnings-page .earn-guide h2{font:var(--text-h2);margin:0 0 var(--sp-3)}
+.earnings-page .earn-table{width:100%;border-collapse:collapse;min-width:1070px;font:var(--text-body-sm)}
+.earnings-page .earn-table th,.earnings-page .earn-table td{padding:var(--sp-3);border-bottom:1px solid var(--border-subtle);text-align:left;vertical-align:middle}
+.earnings-page .earn-table thead th{background:var(--surface-sunken);font:var(--text-label);white-space:nowrap}
+.earnings-page .earn-table tbody th{min-width:155px}
+.earnings-page .earn-table small{display:block;font:var(--text-caption);color:var(--text-tertiary);margin-top:var(--sp-1)}
+.earnings-page .earn-table .num{font:var(--num-sm);text-align:right;white-space:nowrap}
+.earnings-page .earn-company-link{font:var(--num-md);color:var(--accent);text-underline-offset:4px}
+.earnings-page .earn-basis{font:var(--text-caption);max-width:180px;min-width:120px}
+.earnings-page .badge{white-space:nowrap;text-transform:none;letter-spacing:0}
+.earnings-page .badge.positive{color:var(--green-600)}
+.earnings-page .badge.negative{color:var(--red-600)}
+.earnings-page .badge.caution{color:var(--amber-600)}
+.earnings-page .earn-detail-heading{margin-top:var(--sp-9)}
+.earnings-page .earn-company{padding:0;margin-bottom:var(--sp-3);scroll-margin-top:var(--sp-6)}
+.earnings-page .earn-company summary{display:flex;align-items:center;gap:var(--sp-4);cursor:pointer;padding:var(--sp-5);list-style:none}
+.earnings-page .earn-company summary::-webkit-details-marker{display:none}
+.earnings-page .earn-company summary::after{content:'＋';font:var(--text-h2);margin-left:auto;color:var(--text-tertiary)}
+.earnings-page .earn-company[open] summary::after{content:'−'}
+.earnings-page .earn-company[open] summary{border-bottom:1px solid var(--border-subtle)}
+.earnings-page .earn-ticker{font:var(--num-md);color:var(--accent);min-width:60px}
+.earnings-page .earn-company summary small{display:block;color:var(--text-tertiary);font:var(--text-caption);margin-top:var(--sp-1)}
+.earnings-page .earn-summary-badges{margin-left:auto;font:var(--text-caption);display:flex;gap:var(--sp-2);align-items:center;flex-wrap:wrap}
+.earnings-page .earn-company-body{padding:var(--sp-6)}
+.earnings-page .earn-company h3{font:var(--text-h3);margin:var(--sp-6) 0 var(--sp-3)}
+.earnings-page .earn-company h4{font:var(--text-body-sm);font-weight:700;margin:var(--sp-4) 0 var(--sp-2)}
+.earnings-page .earn-company p,.earnings-page .earn-company li{font:var(--text-body-sm)}
+.earnings-page .earn-company li{margin-bottom:var(--sp-2)}
+.earnings-page .earn-company ul{padding-left:var(--sp-5)}
+.earnings-page .earn-metrics{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4);margin:var(--sp-5) 0}
+.earnings-page .earn-metric{background:var(--surface-sunken);padding:var(--sp-5);border-radius:var(--radius-md)}
+.earnings-page .earn-metric h4{margin-top:0}
+.earnings-page .earn-value{font:var(--num-lg)!important;margin:var(--sp-3) 0}
+.earnings-page .earn-value small{font:var(--text-caption);color:var(--text-secondary)}
+.earnings-page .earn-columns{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-7)}
+.earnings-page .earn-status{border-left:3px solid var(--accent);padding-left:var(--sp-3);color:var(--text-secondary)}
+.earnings-page .earn-sources{font:var(--text-caption)!important;color:var(--accent);overflow-wrap:anywhere;line-height:1.9}
+.earnings-page .earn-kpi-table{min-width:700px;width:100%;border-collapse:collapse;font:var(--text-body-sm)}
+.earnings-page .earn-kpi-table th,.earnings-page .earn-kpi-table td{padding:var(--sp-3);border-bottom:1px solid var(--border-subtle);text-align:left;vertical-align:top}
+.earnings-page .earn-kpi-table thead{background:var(--surface-sunken)}
+.earnings-page .earn-kpi-table small{color:var(--text-secondary)}
+.earnings-page .earn-notes{background:var(--caution-bg);border-radius:var(--radius-md);padding:var(--sp-3) var(--sp-5);margin-top:var(--sp-5)}
+.earnings-page .earn-guide{margin-top:var(--sp-8)}
+.earnings-page .earn-guide h3{font:var(--text-h3);margin-top:var(--sp-6)}
+.earnings-page .earn-guide p{font:var(--text-body-sm)}
+.earnings-page .earn-daily{padding:var(--sp-4);background:var(--surface-sunken);border-radius:var(--radius-md)}
+.earnings-page .earn-price-up{color:var(--up)}
+.earnings-page .earn-price-down{color:var(--down)}
+@media(max-width:760px){
+ .earnings-page .report-hero h1{font-size:28px}
+ .earnings-page .earn-intro{align-items:start;flex-direction:column}
+ .earnings-page .earn-intro h2{font:var(--text-h2)}
+ .earnings-page .earn-metrics,.earnings-page .earn-columns{grid-template-columns:1fr}
+ .earnings-page .earn-company summary{flex-wrap:wrap;gap:var(--sp-2);padding:var(--sp-4)}
+ .earnings-page .earn-summary-badges{width:100%;margin-left:0;order:3}
+ .earnings-page .earn-company-body{padding:var(--sp-4)}
+ .earnings-page .earn-company summary::after{margin-left:auto}
+ .earnings-page .earn-comparison{padding:var(--sp-4)}
+ .earnings-page .earn-controls{width:100%}
+}
+@media print{
+ .earnings-page .sidebar,.earnings-page .mobile-bar,.earnings-page .earn-toolbar,.earnings-page #earnExpand{display:none}
+ .earnings-page .layout,.earnings-page .page{display:block}
+ .earnings-page .earn-table{font-size:8px;min-width:0}
+ .earnings-page .table-wrap{overflow:visible}
+}

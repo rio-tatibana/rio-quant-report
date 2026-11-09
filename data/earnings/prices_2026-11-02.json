@@ -1,0 +1,232 @@
+{
+  "retrieved_at_jst": "2026-11-09T22:07:23.401888+09:00",
+  "source": "Yahoo Finance via yfinance",
+  "adjustment": "Close・配当調整なし",
+  "items": {
+    "AAPL": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 338.32000732421875,
+      "post_close": 331.8999938964844,
+      "change_pct": -1.8976156564048385,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/AAPL/history/"
+    },
+    "PLTR": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 178.33999633789062,
+      "post_close": 175.39999389648438,
+      "change_pct": -1.6485379061217387,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/PLTR/history/"
+    },
+    "VRTX": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 553.1500244140625,
+      "post_close": 530.760009765625,
+      "change_pct": -4.047729125955413,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/VRTX/history/"
+    },
+    "MAR": {
+      "pre_date": "2026-10-30",
+      "post_date": "2026-11-02",
+      "pre_close": 399.29998779296875,
+      "post_close": 416.29998779296875,
+      "change_pct": 4.257450668597129,
+      "spy_change_pct": -0.47901276365892587,
+      "source_url": "https://finance.yahoo.com/quote/MAR/history/"
+    },
+    "WMB": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 71.19000244140625,
+      "post_close": 72.47000122070312,
+      "change_pct": 1.7980035614556966,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/WMB/history/"
+    },
+    "AMD": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 483.8999938964844,
+      "post_close": 488.7799987792969,
+      "change_pct": 1.0084738467379228,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/AMD/history/"
+    },
+    "AMGN": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 461.260009765625,
+      "post_close": 478.4800109863281,
+      "change_pct": 3.733252581218327,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/AMGN/history/"
+    },
+    "ANET": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 169.91000366210938,
+      "post_close": 178.47999572753906,
+      "change_pct": 5.043841963815354,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/ANET/history/"
+    },
+    "SHOP": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 156.22000122070312,
+      "post_close": 142.57000732421875,
+      "change_pct": -8.737673658829415,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/SHOP/history/"
+    },
+    "PFE": {
+      "pre_date": "2026-11-02",
+      "post_date": "2026-11-03",
+      "pre_close": 30.670000076293945,
+      "post_close": 30.0,
+      "change_pct": -2.1845454014583265,
+      "spy_change_pct": 0.29916235514395595,
+      "source_url": "https://finance.yahoo.com/quote/PFE/history/"
+    },
+    "MCD": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 263.0400085449219,
+      "post_close": 280.2200012207031,
+      "change_pct": 6.531323037440995,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/MCD/history/"
+    },
+    "ARM": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 191.8000030517578,
+      "post_close": 166.72000122070312,
+      "change_pct": -13.07612170594532,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/ARM/history/"
+    },
+    "NVO": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 40.189998626708984,
+      "post_close": 42.18000030517578,
+      "change_pct": 4.951484813299567,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/NVO/history/"
+    },
+    "QCOM": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 173.19000244140625,
+      "post_close": 156.75,
+      "change_pct": -9.492466198773942,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/QCOM/history/"
+    },
+    "UBER": {
+      "pre_date": "2026-11-03",
+      "post_date": "2026-11-04",
+      "pre_close": 66.5999984741211,
+      "post_close": 69.87000274658203,
+      "change_pct": 4.909916437507977,
+      "spy_change_pct": 1.6517561312278106,
+      "source_url": "https://finance.yahoo.com/quote/UBER/history/"
+    },
+    "TM": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 199.4600067138672,
+      "post_close": 218.11000061035156,
+      "change_pct": 9.350242288539823,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/TM/history/"
+    },
+    "COP": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 136.94000244140625,
+      "post_close": 135.4600067138672,
+      "change_pct": -1.0807621594517758,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/COP/history/"
+    },
+    "SONY": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 25.950000762939453,
+      "post_close": 27.540000915527344,
+      "change_pct": 6.1271680379241245,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/SONY/history/"
+    },
+    "PH": {
+      "pre_date": "2026-11-04",
+      "post_date": "2026-11-05",
+      "pre_close": 910.1900024414062,
+      "post_close": 892.2899780273438,
+      "change_pct": -1.9666250306034083,
+      "spy_change_pct": -4.409175371505281,
+      "source_url": "https://finance.yahoo.com/quote/PH/history/"
+    },
+    "ABNB": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 170.1300048828125,
+      "post_close": 189.99000549316406,
+      "change_pct": 11.6734262272145,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/ABNB/history/"
+    },
+    "ENB": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 48.11000061035156,
+      "post_close": 46.88999938964844,
+      "change_pct": -2.5358578366773576,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/ENB/history/"
+    },
+    "MRNA": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 241.4600067138672,
+      "post_close": 254.19000244140625,
+      "change_pct": 5.2720928408753975,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/MRNA/history/"
+    },
+    "BAM": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 52.459999084472656,
+      "post_close": 52.95000076293945,
+      "change_pct": 0.9340482024747576,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/BAM/history/"
+    },
+    "EOG": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 144.88999938964844,
+      "post_close": 147.1300048828125,
+      "change_pct": 1.5460042118849548,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/EOG/history/"
+    },
+    "HUM": {
+      "pre_date": "2026-11-05",
+      "post_date": "2026-11-06",
+      "pre_close": 411.7900085449219,
+      "post_close": 433.739990234375,
+      "change_pct": 5.330382290482061,
+      "spy_change_pct": 0.31241173633611563,
+      "source_url": "https://finance.yahoo.com/quote/HUM/history/"
+    }
+  }
+}
