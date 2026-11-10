@@ -20,5 +20,130 @@
     "url": "https://www.release.tdnet.info/inbs/140120261102562507.pdf",
     "source": "TDnet",
     "earnings": {}
+  },
+  {
+    "id": "6855-140120261109569869",
+    "code": "6855",
+    "name": "電子材料",
+    "title": "2027年度３月期　第２四半期（中間期）決算短信［日本基準］（連結）",
+    "published_at": "2026-11-10 16:00:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261109569869.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 20494000000.0,
+      "operating_income": 6102000000.0,
+      "ordinary_income": 6146000000.0,
+      "net_income_parent": 4219000000.0,
+      "eps": 288.0,
+      "forecast_revenue": 39400000000.0,
+      "forecast_operating_income": 12100000000.0,
+      "forecast_net_income_parent": 8200000000.0,
+      "forecast_eps": 559.58,
+      "dps": 80.0,
+      "forecast_dps": 120.0
+    }
+  },
+  {
+    "id": "6855-140120261109569490",
+    "code": "6855",
+    "name": "電子材料",
+    "title": "2027年３月期通期連結業績予想の修正及び剰余金の配当予想の修正に関するお知らせ",
+    "published_at": "2026-11-10 16:00:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261109569490.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  },
+  {
+    "id": "6728-140120261109569902",
+    "code": "6728",
+    "name": "アルバック",
+    "title": "2027年6月期第1四半期　決算短信〔日本基準〕（連結）",
+    "published_at": "2026-11-10 15:30:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261109569902.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 73299000000.0,
+      "operating_income": 6191000000.0,
+      "ordinary_income": 8981000000.0,
+      "net_income_parent": 5680000000.0,
+      "eps": 115.5,
+      "forecast_revenue": 147000000000.0,
+      "forecast_operating_income": 14500000000.0,
+      "forecast_net_income_parent": 9000000000.0,
+      "forecast_eps": 183.0,
+      "dps": 152.0,
+      "forecast_dps": 152.0
+    }
+  },
+  {
+    "id": "6728-140120261110570526",
+    "code": "6728",
+    "name": "アルバック",
+    "title": "業績予想の修正に関するお知らせ",
+    "published_at": "2026-11-10 15:30:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261110570526.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  },
+  {
+    "id": "9984-140120261109569352",
+    "code": "9984",
+    "name": "ソフトバンクグループ",
+    "title": "2027年３月期 第２四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+    "published_at": "2026-11-10 15:30:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261109569352.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 4235037000000.0,
+      "operating_income": null,
+      "ordinary_income": null,
+      "net_income_parent": -768007000000.0,
+      "eps": -136.47,
+      "forecast_revenue": null,
+      "forecast_operating_income": null,
+      "forecast_net_income_parent": null,
+      "forecast_eps": null,
+      "dps": null,
+      "forecast_dps": 11.0
+    }
+  },
+  {
+    "id": "4186-140120261109568795",
+    "code": "4186",
+    "name": "東応化",
+    "title": "2026年12月期第３四半期決算短信 [日本基準] (連結)",
+    "published_at": "2026-11-10 14:00:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261109568795.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 217524000000.0,
+      "operating_income": 46046000000.0,
+      "ordinary_income": 48334000000.0,
+      "net_income_parent": 32140000000.0,
+      "eps": 267.99,
+      "forecast_revenue": 300000000000.0,
+      "forecast_operating_income": 63500000000.0,
+      "forecast_net_income_parent": 44500000000.0,
+      "forecast_eps": 371.06,
+      "dps": 72.0,
+      "forecast_dps": 80.0
+    }
+  },
+  {
+    "id": "4186-140120261110570759",
+    "code": "4186",
+    "name": "東応化",
+    "title": "業績予想の修正に関するお知らせ",
+    "published_at": "2026-11-10 14:00:00",
+    "report_date": "2026-11-11",
+    "url": "https://www.release.tdnet.info/inbs/140120261110570759.pdf",
+    "source": "TDnet",
+    "earnings": {}
   }
 ]
