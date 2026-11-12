@@ -145,5 +145,96 @@
     "url": "https://www.release.tdnet.info/inbs/140120261110570759.pdf",
     "source": "TDnet",
     "earnings": {}
+  },
+  {
+    "id": "3436-140120261111574325",
+    "code": "3436",
+    "name": "ＳＵＭＣＯ",
+    "title": "2026年12月期 第3四半期決算短信〔日本基準〕（連結）（公認会計士等による期中レビューの完了）",
+    "published_at": "2026-11-12 17:40:00",
+    "report_date": "2026-11-13",
+    "url": "https://www.release.tdnet.info/inbs/140120261111574325.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 332524000000.0,
+      "operating_income": -4397000000.0,
+      "ordinary_income": -9886000000.0,
+      "net_income_parent": -7422000000.0,
+      "eps": -21.22,
+      "forecast_revenue": 439500000000.0,
+      "forecast_operating_income": -3300000000.0,
+      "forecast_net_income_parent": -3400000000.0,
+      "forecast_eps": -9.72,
+      "dps": 20.0,
+      "forecast_dps": 20.0
+    }
+  },
+  {
+    "id": "6871-140120261112574944",
+    "code": "6871",
+    "name": "日マイクロニクス",
+    "title": "2026年12月期 第３四半期決算短信〔日本基準〕（連結）",
+    "published_at": "2026-11-12 15:30:00",
+    "report_date": "2026-11-13",
+    "url": "https://www.release.tdnet.info/inbs/140120261112574944.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 81964000000.0,
+      "operating_income": 26993000000.0,
+      "ordinary_income": 28883000000.0,
+      "net_income_parent": 19506000000.0,
+      "eps": 503.17,
+      "forecast_revenue": 110000000000.0,
+      "forecast_operating_income": 36100000000.0,
+      "forecast_net_income_parent": 26800000000.0,
+      "forecast_eps": 691.3,
+      "dps": 95.0,
+      "forecast_dps": 208.0
+    }
+  },
+  {
+    "id": "6871-140120261112575114",
+    "code": "6871",
+    "name": "日マイクロニクス",
+    "title": "第３四半期（累計）業績予想と実績値との差異に関するお知らせ",
+    "published_at": "2026-11-12 15:30:00",
+    "report_date": "2026-11-13",
+    "url": "https://www.release.tdnet.info/inbs/140120261112575114.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  },
+  {
+    "id": "6871-140120261112575253",
+    "code": "6871",
+    "name": "日マイクロニクス",
+    "title": "業績予想及び配当予想の修正に関するお知らせ",
+    "published_at": "2026-11-12 15:30:00",
+    "report_date": "2026-11-13",
+    "url": "https://www.release.tdnet.info/inbs/140120261112575253.pdf",
+    "source": "TDnet",
+    "earnings": {}
+  },
+  {
+    "id": "5108-140120261110570973",
+    "code": "5108",
+    "name": "ブリヂス",
+    "title": "2026年12月期 第３四半期決算短信〔IFRS〕(連結)",
+    "published_at": "2026-11-12 14:30:00",
+    "report_date": "2026-11-13",
+    "url": "https://www.release.tdnet.info/inbs/140120261110570973.pdf",
+    "source": "TDnet",
+    "earnings": {
+      "revenue": 3554288000000.0,
+      "operating_income": 442562000000.0,
+      "ordinary_income": null,
+      "net_income_parent": 318917000000.0,
+      "eps": 254.14,
+      "forecast_revenue": 4700000000000.0,
+      "forecast_operating_income": null,
+      "forecast_net_income_parent": 340000000000.0,
+      "forecast_eps": 270.87,
+      "dps": 230.0,
+      "forecast_dps": 125.0
+    }
   }
 ]
