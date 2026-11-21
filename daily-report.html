@@ -31,12 +31,12 @@
       <div class="container">
         <div class="eyebrow">DAILY MOVERS REPORT</div>
         <h1>デイリーレポート：値動き上位5銘柄</h1>
-        <p>保有ポートフォリオ32銘柄のうち、直近営業日（2026年11月13日）の値動きが大きかった上位5銘柄について、株価変動の背景をまとめました。</p>
+        <p>保有ポートフォリオ32銘柄のうち、直近の値動きが大きかった上位5銘柄について、株価変動の背景をまとめました。</p>
         <div class="methodology">
           <b>このレポートについて</b><br>
-          data/stocks.json の前日比（ret_1d）が大きい順（絶対値ベース）に5銘柄を自動抽出し、各銘柄の直近ニュース・決算発表の内容をもとにrioが要約しています。投資助言ではありません。
+          data/top_movers.json の前日比（ret_1d）が大きい順（絶対値ベース）に5銘柄を自動抽出し、各銘柄の直近ニュース・決算発表の内容をもとにrioが要約しています。投資助言ではありません。
         </div>
-        <p class="source-links">更新日時：2026年11月14日</p>
+        <p class="source-links">更新日時：2026年11月21日</p>
       </div>
     </section>
 
@@ -45,76 +45,76 @@
         <div class="mover-grid">
           <div class="mover-card">
             <div class="mover-card-head">
-              <div class="name-cell"><span class="ticker">AMD</span><span class="company">アドバンスト マイクロ デバイシズ</span></div>
-              <span class="mover-ret down">-8.75%</span>
+              <div class="name-cell"><span class="ticker">NVDA</span><span class="company">エヌビディア</span></div>
+              <span class="mover-ret down">-14.01%</span>
             </div>
             <p class="mover-body">
-              AMD株は534.06ドルで取引を終えました。直近の半導体株の急落局面では、11月5日に株価が大幅に下落したと報じられ、中間選挙後のデータセンター投資や政策を巡る懸念が背景にあるとされています。11月6日には反発する場面もあり、値動きの大きい状態が続いています。この日の下落に直結する個別の発表は確認できず、業界全体の売りに連動した動きとみられます。
+              エヌビディア株は125.53ドルで取引を終えました。11月5日には約9%下落し、AIチップ株全体の売りに巻き込まれたと報じられています。11月10日には、投資家が損失を受けたとして集団訴訟が提起されたと報じられ、株価の重しになりました。AIデータセンター投資の先行きやAI関連株への警戒感が続くなか、同社固有の決算発表は確認できていません。
             </p>
             <p class="mover-source">
               出典：
-              <a href="https://www.tikr.com/blog/amd-stock-dropped-11-last-week-is-intels-pc-warning-really-that-bad" target="_blank" rel="noopener">TIKR</a>、
-              <a href="https://www.fool.com/investing/2026/11/05/why-amd-stock-is-down-today/" target="_blank" rel="noopener">The Motley Fool</a>
+              <a href="https://www.trefis.com/stock/nvda/articles/624393/what-just-happened-to-nvidia-stock/2026-11-11" target="_blank" rel="noopener">Trefis</a>、
+              <a href="https://www.wfsb.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/?outputType=amp" target="_blank" rel="noopener">AP（WFSB掲載）</a>
+            </p>
+          </div>
+
+          <div class="mover-card">
+            <div class="mover-card-head">
+              <div class="name-cell"><span class="ticker">MU</span><span class="company">マイクロン テクノロジー</span></div>
+              <span class="mover-ret down">-13.89%</span>
+            </div>
+            <p class="mover-body">
+              マイクロン株は594.51ドルで取引を終えました。11月5日には約17%下落し、AIインフラ投資やメモリー価格の上昇がいつまで続くかへの懸念が背景と報じられています。11月16日にも約7.6%下落しましたが、同社の発表はなく、半導体株全体の売りに連動した動きとされています。直近の決算では売上高が大きく伸びており、次回決算は12月に予定されています。
+            </p>
+            <p class="mover-source">
+              出典：
+              <a href="https://www.trefis.com/stock/mu/articles/625793/why-did-micron-stock-fall-nearly-8/2026-11-17" target="_blank" rel="noopener">Trefis</a>、
+              <a href="https://www.tikr.com/blog/micron-lost-17-in-a-day-its-35-billion-buyback-can-start-december-9" target="_blank" rel="noopener">TIKR</a>
+            </p>
+          </div>
+
+          <div class="mover-card">
+            <div class="mover-card-head">
+              <div class="name-cell"><span class="ticker">AMD</span><span class="company">アドバンスト マイクロ デバイシズ</span></div>
+              <span class="mover-ret down">-13.25%</span>
+            </div>
+            <p class="mover-body">
+              AMD株は424.39ドルで取引を終えました。11月13日には約9%下落し、会社固有のニュースは確認できませんでした。直前に急騰していたことへの利益確定や、債券利回りの上昇による半導体株の反転が背景とみられています。11月16日にも半導体株全体の売りに連動して下落しており、同社の発表に直結する材料は見当たりません。
+            </p>
+            <p class="mover-source">
+              出典：
+              <a href="https://www.trefis.com/stock/amd/articles/625220/amd-stock-falls-8-8-to-534-06-with-no-amd-news/2026-11-16" target="_blank" rel="noopener">Trefis</a>、
+              <a href="https://www.tikr.com/blog/amd-sinks-9-marvell-down-5-as-chip-rally-reverses-and-treasury-yields-hit-5" target="_blank" rel="noopener">TIKR</a>
             </p>
           </div>
 
           <div class="mover-card">
             <div class="mover-card-head">
               <div class="name-cell"><span class="ticker">AVGO</span><span class="company">ブロードコム</span></div>
-              <span class="mover-ret down">-4.76%</span>
+              <span class="mover-ret down">-12.19%</span>
             </div>
             <p class="mover-body">
-              ブロードコム株は347.01ドルで取引を終えました。11月初旬の週には、半導体株全体の売りの中で週間で15%超下落したと報じられていますが、同社固有の材料は見当たらなかったとされています。データセンター投資の減速懸念など業界全体のリスク回避が株価の重しとなったとみられ、11月10日には反発する場面もありました。次回の決算は12月9日に予定されています。
+              ブロードコム株は304.41ドルで取引を終えました。11月5日には約10%下落し、選挙後のデータセンター投資の減速懸念が背景と報じられています。その後もアナリストが目標株価を引き下げるなど、慎重な見方が株価の重しになっています。同社固有の悪材料は確認できていません。次回決算は12月9日（米国時間の取引終了後）に予定されています。
             </p>
             <p class="mover-source">
               出典：
               <a href="https://www.trefis.com/stock/avgo/articles/623354/what-just-happened-to-broadcom-stock/2026-11-06" target="_blank" rel="noopener">Trefis</a>、
-              <a href="https://www.tikr.com/blog/broadcom-just-dropped-15-in-a-week-is-it-time-to-sell-or-load-up" target="_blank" rel="noopener">TIKR</a>
+              <a href="https://www.tikr.com/blog/broadcom-and-qualcomm-each-lost-at-least-9-thursday-only-one-is-guiding-for-93-growth" target="_blank" rel="noopener">TIKR</a>
             </p>
           </div>
 
           <div class="mover-card">
             <div class="mover-card-head">
               <div class="name-cell"><span class="ticker">RKLB</span><span class="company">ロケット ラボ コーポレーション</span></div>
-              <span class="mover-ret down">-3.96%</span>
+              <span class="mover-ret down">-10.92%</span>
             </div>
             <p class="mover-body">
-              ロケット・ラボ株は61.53ドルで取引を終えました。11月9日に発表した7〜9月期決算では売上高が2億6,780万ドルと、7〜9月期として過去最高を更新し、受注残も52%増の35億7,000万ドルに拡大しました。一方で、新型ロケット「Neutron」の初打ち上げは2027年以降に延期されており、アナリストが目標株価を引き下げる動きも出ています。この日の下落に直結する個別の発表は確認できておらず、決算を挟んで株価が大きく振れやすい状況が続いています。
+              ロケット・ラボ株は45.42ドルで取引を終えました。11月5日には約12%下落し、AI・テック株全体の売りに巻き込まれたとみられています。11月9日発表の7〜9月期決算では売上高が過去最高を更新しましたが、新型ロケット「Neutron」の初打ち上げが2027年以降に延期されたことが株価の重しになっています。
             </p>
             <p class="mover-source">
               出典：
-              <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262300436-rocket-lab-stock-reclaims-55-record-q3-backlog-68-trendline-november-11-2026-tradingkey" target="_blank" rel="noopener">TradingKey</a>、
+              <a href="https://www.tikr.com/blog/rocket-lab-sinks-12-as-ai-stock-sell-off-hits-space-absolute-slaughter" target="_blank" rel="noopener">TIKR</a>、
               <a href="https://www.benzinga.com/trading-ideas/long-ideas/26/11/63209637/rocket-lab-stock-wall-street-cuts" target="_blank" rel="noopener">Benzinga</a>
-            </p>
-          </div>
-
-          <div class="mover-card">
-            <div class="mover-card-head">
-              <div class="name-cell"><span class="ticker">VRT</span><span class="company">バーティブ・ホールディングス</span></div>
-              <span class="mover-ret down">-3.61%</span>
-            </div>
-            <p class="mover-body">
-              バーティブ株は202.07ドルで取引を終えました。11月5日には、AI関連銘柄全般の弱さと、データセンター案件を巡る政治的な不透明感から大幅に下落したと報じられています。直近の決算では市場予想を上回り、2026年の売上高とフリーキャッシュフローの見通しを引き上げた一方で、株価水準が割高だとする慎重な見方も出ています。この日の下落に直結する個別の発表は確認できていません。
-            </p>
-            <p class="mover-source">
-              出典：
-              <a href="https://www.trefis.com/stock/vrt/articles/623340/what-is-behind-the-drop-in-vertiv-stock/2026-11-06" target="_blank" rel="noopener">Trefis</a>、
-              <a href="https://www.tikr.com/blog/vertiv-beat-by-550-million-last-week-it-has-lost-23-since-tuesdays-vote" target="_blank" rel="noopener">TIKR</a>
-            </p>
-          </div>
-
-          <div class="mover-card">
-            <div class="mover-card-head">
-              <div class="name-cell"><span class="ticker">LRCX</span><span class="company">ラムリサーチ</span></div>
-              <span class="mover-ret down">-3.36%</span>
-            </div>
-            <p class="mover-body">
-              ラムリサーチ株は225.92ドルで取引を終えました。11月初旬の週には、半導体製造装置株の急落の中で週間で約16%下落したと報じられています。同社は250億ドル規模の自社株買いを発表しましたが、AIインフラ向けの設備投資の先行きへの警戒感が株価の重しになったとみられます。一方で、同社CEOは2027年の業界全体の半導体製造装置への投資額が2,000億ドルを超える可能性があると述べています。
-            </p>
-            <p class="mover-source">
-              出典：
-              <a href="https://www.tikr.com/blog/lam-research-sinks-16-applied-materials-15-in-a-week-lam-responds-with-25-billion-buyback" target="_blank" rel="noopener">TIKR</a>、
-              <a href="https://www.trefis.com/stock/lrcx/articles/622263/is-lam-research-stocks-fall-a-bargain-or-a-warning/2026-11-03" target="_blank" rel="noopener">Trefis</a>
             </p>
           </div>
 
