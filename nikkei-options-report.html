@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日経225オプションの建玉(権利行使価格ごとの未決済残高)とIVから、上値・下値の壁と今後の値動きシナリオを整理したレポート">
+  <title>日経225オプション建玉分析 | rioの勝手にクオンツ分析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mobile-bar">
+    <a class="logo" href="index.html">rio<span>Quant</span></a>
+    <button class="sidebar-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand"><a class="logo" href="index.html">rio<span>Quant</span></a><span class="tagline">数字で見る株式・マーケット分析</span></div>
+      <nav></nav>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <div class="page">
+      <main>
+        <section class="report-hero">
+          <div class="container">
+            <div class="eyebrow">NIKKEI 225 OPTIONS OPEN INTEREST</div>
+            <h1>日経225オプション 建玉分析</h1>
+            <p>オプションの「建玉(未決済の残高)」が多い価格は、満期に向けて値動きが止まったり加速したりしやすい目印になります。建玉とIVから、上値・下値の壁と今後のシナリオを整理しました。</p>
+            <div class="methodology"><b>読み方の注意</b><br>建玉は「誰が買い、誰が売りか」までは分かりません。ここでの解釈は「売り手側が多い」という仮説に基づく目安で、将来の値動きを保証するものではありません。投資助言ではありません。</div>
+            <p class="jp-updated" id="optUpdated">データを読み込み中...</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title"><div><span class="eyebrow">KEY NUMBERS</span><h2>まず押さえる数字</h2></div></div>
+            <div class="opt-kpis" id="optKpis"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <div class="section-title"><div><span class="eyebrow">OPEN INTEREST BY STRIKE</span><h2>権利行使価格ごとの建玉</h2></div></div>
+            <p class="section-note">上向きの赤がコール(上がると得)、下向きの青がプット(下がると得)の建玉です。先物の推定位置より上のコールは「上値の壁」、下のプットは「下値の壁」の候補。表示は500円刻みの行使価格のみ(細かい刻みは建玉が小さいため省略)。</p>
+            <div class="opt-legend"><span><i class="sw call"></i>コール建玉</span><span><i class="sw put"></i>プット建玉</span><span><i class="ln fwd"></i>先物の推定位置</span><span><i class="ln mp"></i>Max Pain</span></div>
+            <div class="opt-chart" id="chartOi"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title"><div><span class="eyebrow">SCENARIOS</span><h2>こうなったら、こうなりそう(4つのシナリオ)</h2></div></div>
+            <p class="section-note">確率は、オプション価格(IV)から計算した「市場が織り込む確率」の目安です。下落側は保険料が上乗せされるため、実際の起こりやすさより大きめに出る傾向があります。</p>
+            <div class="opt-scenarios" id="optScenarios"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <div class="section-title"><div><span class="eyebrow">IMPLIED PROBABILITY</span><h2>市場が織り込む満期の値の分布</h2></div></div>
+            <p class="section-note" id="probNote"></p>
+            <div class="opt-chart" id="chartProb"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <div class="section-title"><div><span class="eyebrow">VOLATILITY SMILE</span><h2>IVスマイル(下値の保険料が高い)</h2></div></div>
+            <p class="section-note">IV(インプライド・ボラティリティ)は、市場が見込む値動きの大きさ。左(下値側)ほど高いのは、急落への備えが高く買われているサインです。先物より下はプット、上はコールのIVを使用。</p>
+            <div class="opt-chart" id="chartSmile"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <div class="section-title"><div><span class="eyebrow">MAX PAIN</span><h2>Max Pain(売り手の損失が最小になる価格)</h2></div></div>
+            <p class="section-note" id="painNote"></p>
+            <div class="opt-chart" id="chartPain"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container card">
+            <h2>建玉が多い価格 上位(先物より上=コール、下=プット)</h2>
+            <div class="opt-two" id="optTop"></div>
+            <p class="table-note" id="optSource"></p>
+          </div>
+        </section>
+      </main>
+      <footer><div class="container footer-inner"><div><div class="logo">rio<span>Quant</span></div><p>rioの勝手にクオンツ分析</p></div><div class="footer-links"><a href="about.html">運営者情報</a><a href="privacy-policy.html">プライバシーポリシー</a></div><p class="copyright">© 2026 rio Quant Research</p></div></footer>
+    </div>
+  </div>
+  <div class="opt-tip" id="optTip" role="status" hidden></div>
+  <script src="script.js"></script>
+  <script src="nikkei-options-report.js"></script>
+</body>
+</html>

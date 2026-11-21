@@ -17,6 +17,7 @@ const NAV_ITEMS = [
   { href: 'tempus-ai-report.html', label: 'Tempus AI(オンリーワン)' },
   { href: 'japan-report.html', label: '日本株' },
   { href: 'japan-list-report.html', label: 'List 日本株' },
+  { href: 'nikkei-options-report.html', label: '日経225オプション建玉' },
   { href: 'about.html', label: 'サイトについて' },
 ];
 

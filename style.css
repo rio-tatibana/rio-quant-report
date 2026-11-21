@@ -841,3 +841,65 @@ table.data td.negative{color:var(--negative)}
  .earnings-page .earn-table{font-size:8px;min-width:0}
  .earnings-page .table-wrap{overflow:visible}
 }
+
+/* =========================================================================
+   日経225オプション建玉分析（nikkei-options-report.html）
+   色は共通トークンのみ。コール=--up(赤)、プット=--down(青)＝日本の株価慣習に合わせる
+   ========================================================================= */
+.opt-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.opt-chart{overflow-x:auto;margin-top:12px}
+.opt-chart svg{display:block;width:100%;height:auto}
+.opt-chart svg text{font-family:var(--font-sans)}
+.opt-grid{stroke:var(--border-subtle);stroke-width:1}
+.opt-axis{stroke:var(--border-strong);stroke-width:1.5}
+.opt-tick{font-size:12px;fill:var(--text-tertiary)}
+.opt-axis-title{font-size:12px;fill:var(--text-secondary)}
+.opt-barlabel{font-size:12px;font-weight:600;fill:var(--text-primary)}
+.opt-call{fill:var(--up)}
+.opt-put{fill:var(--down)}
+.opt-bar-in{fill:var(--accent)}
+.opt-bar-out{fill:var(--gray-300)}
+.opt-line{fill:none;stroke:var(--gray-500);stroke-width:2;stroke-linejoin:round}
+.opt-line.thick{stroke:var(--navy-700);stroke-width:2.5}
+.opt-dot-put{fill:var(--down);stroke:var(--surface-card);stroke-width:2}
+.opt-dot-call{fill:var(--up);stroke:var(--surface-card);stroke-width:2}
+.opt-dot-mp{fill:var(--caution);stroke:var(--surface-card);stroke-width:2}
+.opt-vline{stroke-width:1.5;stroke-dasharray:5 4}
+.opt-vline.fwd{stroke:var(--navy-700)}
+.opt-vline.mp{stroke:var(--caution)}
+.opt-vlabel{font-size:12px;font-weight:600}
+.opt-vlabel.fwd{fill:var(--navy-700)}
+.opt-vlabel.mp{fill:var(--amber-600)}
+.opt-hit:hover{fill:rgba(15,23,42,.06)}
+.opt-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px;font:var(--text-caption);color:var(--text-secondary)}
+.opt-legend span{display:inline-flex;align-items:center;gap:6px}
+.opt-legend .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.opt-legend .sw.call{background:var(--up)}
+.opt-legend .sw.put{background:var(--down)}
+.opt-legend .ln{width:18px;height:0;border-top:2px dashed;display:inline-block}
+.opt-legend .ln.fwd{border-color:var(--navy-700)}
+.opt-legend .ln.mp{border-color:var(--caution)}
+.opt-tip{position:fixed;z-index:50;pointer-events:none;background:var(--navy-900);color:var(--text-inverse);border-radius:var(--radius-md);padding:10px 12px;font:var(--text-caption);display:flex;flex-direction:column;gap:3px;box-shadow:var(--shadow-elevated)}
+.opt-tip[hidden]{display:none}
+.opt-tip strong{font-weight:700}
+.opt-scenarios{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:20px}
+.opt-scn{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;border-top:4px solid var(--gray-400)}
+.opt-scn.up{border-top-color:var(--up)}
+.opt-scn.crash{border-top-color:var(--down)}
+.opt-scn.range{border-top-color:var(--navy-700)}
+.opt-scn.dip{border-top-color:var(--accent)}
+.opt-scn-head{display:flex;justify-content:space-between;align-items:center}
+.opt-tag{font:var(--text-label);letter-spacing:var(--letter-label);color:var(--text-secondary);background:var(--surface-sunken);border-radius:var(--radius-sm);padding:4px 8px}
+.opt-prob{font:var(--num-lg);color:var(--text-primary)}
+.opt-scn h3{font:var(--text-h3);margin:12px 0 10px;color:var(--text-primary)}
+.opt-bar{height:6px;background:var(--surface-sunken);border-radius:3px;overflow:hidden}
+.opt-bar i{display:block;height:100%;background:var(--navy-700);border-radius:3px}
+.opt-scn dl{margin:14px 0 0;font:var(--text-body-sm);color:var(--text-secondary)}
+.opt-scn dt{font:var(--text-label);color:var(--text-tertiary);margin-top:10px}
+.opt-scn dd{margin:2px 0 0;line-height:1.7}
+.opt-two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px}
+.opt-two h3{font:var(--text-h3);margin:0 0 8px}
+@media (max-width:900px){
+  .opt-kpis{grid-template-columns:1fr 1fr}
+  .opt-scenarios,.opt-two{grid-template-columns:1fr}
+}
